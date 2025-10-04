@@ -1,0 +1,730 @@
+INFO:     Will watch for changes in these directories: ['/mnt/c/Users/Solomon-PC/Documents/Planning Explorer/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [234008] using StatReload
+2025-10-01 13:10:39,645 - app.middleware.logging - INFO - Logging configured successfully
+2025-10-01 13:10:39,645 - app.middleware.logging - INFO - Log level: INFO
+2025-10-01 13:10:39,646 - app.middleware.logging - INFO - Debug mode: True
+INFO:     Started server process [234011]
+INFO:     Waiting for application startup.
+2025-10-01 13:10:39,831 - app.core.database - INFO - Starting application...
+2025-10-01 13:10:40,084 - elastic_transport.transport - INFO - HEAD https://95.217.117.251:9200/ [status:200 duration:0.162s]
+2025-10-01 13:10:40,085 - app.db.elasticsearch - INFO - Successfully connected to Elasticsearch
+2025-10-01 13:10:40,085 - app.core.database - INFO - ✅ Elasticsearch connection established
+2025-10-01 13:10:40,086 - app.core.database - INFO - ✅ Supabase connection established
+2025-10-01 13:10:40,086 - app.core.database - INFO - 🚀 Application startup complete
+2025-10-01 13:10:40,086 - app.core.startup - INFO - Starting Planning Explorer AI Intelligence Layer initialization...
+2025-10-01 13:10:40,087 - app.core.startup - INFO - AI processing services initialized successfully
+2025-10-01 13:10:40,087 - app.core.startup - INFO - AI components available: 5/5
+2025-10-01 13:10:40,104 - app.services.background_processor - INFO - Started 5 background AI processing workers
+2025-10-01 13:10:40,104 - app.core.startup - INFO - Background processing services started
+2025-10-01 13:10:40,121 - app.services.cache_manager - INFO - Cache manager started
+2025-10-01 13:10:40,122 - app.core.startup - INFO - Cache management services started
+2025-10-01 13:10:40,122 - app.core.startup - INFO - 🚀 AI Intelligence Layer fully operational - all services started successfully
+2025-10-01 13:10:40,124 - app.services.background_processor - INFO - Background worker worker-0 started
+2025-10-01 13:10:40,125 - app.services.background_processor - INFO - Background worker worker-1 started
+2025-10-01 13:10:40,126 - app.services.background_processor - INFO - Background worker worker-2 started
+2025-10-01 13:10:40,126 - app.services.background_processor - INFO - Background worker worker-3 started
+2025-10-01 13:10:40,127 - app.services.background_processor - INFO - Background worker worker-4 started
+INFO:     Application startup complete.
+2025-10-01 13:10:49,571 - app.middleware.logging - INFO - Request started: GET /health
+2025-10-01 13:10:49,629 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/_cluster/health [status:200 duration:0.054s]
+2025-10-01 13:10:49,687 - elastic_transport.transport - INFO - HEAD https://95.217.117.251:9200/planning_applications [status:200 duration:0.053s]
+2025-10-01 13:10:49,692 - app.db.elasticsearch - INFO - Elasticsearch cluster status: yellow
+2025-10-01 13:10:49,693 - app.db.elasticsearch - INFO - Index 'planning_applications' exists: True
+2025-10-01 13:10:49,693 - app.middleware.logging - INFO - Request completed: GET /health - 200
+2025-10-01 13:11:19,916 - app.middleware.logging - INFO - Request started: OPTIONS /api/v1/search/semantic
+2025-10-01 13:11:19,917 - app.middleware.logging - INFO - Request started: OPTIONS /api/v1/search/semantic
+2025-10-01 13:11:19,918 - app.middleware.logging - INFO - Request completed: OPTIONS /api/v1/search/semantic - 200
+2025-10-01 13:11:19,919 - app.middleware.logging - INFO - Request completed: OPTIONS /api/v1/search/semantic - 200
+2025-10-01 13:11:19,924 - app.middleware.logging - INFO - Request started: POST /api/v1/search/semantic
+2025-10-01 13:11:19,925 - app.middleware.logging - INFO - Request started: POST /api/v1/search/semantic
+2025-10-01 13:11:19,927 - app.api.endpoints.search - INFO - [semantic_search_1759320679927] Starting semantic search - query: 'Developments in Newcastle in 2025', k: 10, user: anonymous
+2025-10-01 13:11:19,929 - app.api.endpoints.search - INFO - [semantic_search_1759320679929] Starting semantic search - query: 'Developments in Newcastle in 2025', k: 10, user: anonymous
+2025-10-01 13:11:20,135 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/_cluster/health [status:200 duration:0.207s]
+2025-10-01 13:11:20,139 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/_cluster/health [status:200 duration:0.209s]
+2025-10-01 13:11:20,187 - elastic_transport.transport - INFO - HEAD https://95.217.117.251:9200/planning_applications [status:200 duration:0.049s]
+2025-10-01 13:11:20,190 - app.db.elasticsearch - INFO - Elasticsearch cluster status: yellow
+2025-10-01 13:11:20,191 - app.db.elasticsearch - INFO - Index 'planning_applications' exists: True
+2025-10-01 13:11:20,263 - app.services.search - INFO - [SEMANTIC_SEARCH] Extracted filters from query 'Developments in Newcastle in 2025':
+2025-10-01 13:11:20,263 - app.services.search - INFO -   - statuses: None
+2025-10-01 13:11:20,264 - app.services.search - INFO -   - authorities: ['Newcastle upon Tyne']
+2025-10-01 13:11:20,265 - app.services.search - INFO -   - date_from: 2025-01-01 00:00:00
+2025-10-01 13:11:20,266 - app.services.search - INFO -   - date_to: 2025-12-31 23:59:59
+2025-10-01 13:11:26,381 - elastic_transport.transport - INFO - HEAD https://95.217.117.251:9200/planning_applications [status:200 duration:6.240s]
+2025-10-01 13:11:26,381 - app.db.elasticsearch - INFO - Elasticsearch cluster status: yellow
+2025-10-01 13:11:26,382 - app.db.elasticsearch - INFO - Index 'planning_applications' exists: True
+2025-10-01 13:11:26,402 - app.services.search - INFO - [SEMANTIC_SEARCH] Extracted filters from query 'Developments in Newcastle in 2025':
+2025-10-01 13:11:26,403 - app.services.search - INFO -   - statuses: None
+2025-10-01 13:11:26,403 - app.services.search - INFO -   - authorities: ['Newcastle upon Tyne']
+2025-10-01 13:11:26,403 - app.services.search - INFO -   - date_from: 2025-01-01 00:00:00
+2025-10-01 13:11:26,404 - app.services.search - INFO -   - date_to: 2025-12-31 23:59:59
+2025-10-01 13:11:26,408 - app.middleware.logging - INFO - Request started: GET /api/v1/application
+2025-10-01 13:11:26,409 - app.api.endpoints.applications - INFO - [DEBUG ENDPOINT] Received request for application_id: 'TP/24/00396/X'
+2025-10-01 13:11:26,410 - app.api.endpoints.applications - INFO - [DEBUG ENDPOINT] application_id type: <class 'str'>, len: 13
+2025-10-01 13:11:26,410 - app.api.endpoints.applications - INFO - [DEBUG ENDPOINT] application_id repr: 'TP/24/00396/X'
+2025-10-01 13:11:26,410 - app.services.search - INFO - [DEBUG] get_application_by_id called with application_id: 'TP/24/00396/X'
+2025-10-01 13:11:26,474 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/planning_applications/_doc/TP%2F24%2F00396%2FX [status:404 duration:0.063s]
+2025-10-01 13:11:26,475 - app.db.elasticsearch - ERROR - Failed to get document TP/24/00396/X: NotFoundError(404, "{'_index': 'planning_applications', '_id': 'TP/24/00396/X', 'found': False}")
+2025-10-01 13:11:26,475 - app.services.search - INFO - [DEBUG] Executing ES query for application_id 'TP/24/00396/X'
+2025-10-01 13:11:26,475 - app.services.search - INFO - [DEBUG] Query: {'bool': {'should': [{'term': {'uid.keyword': 'TP/24/00396/X'}}, {'term': {'name.keyword': 'TP/24/00396/X'}}, {'term': {'reference.keyword': 'TP/24/00396/X'}}, {'term': {'uid': 'TP/24/00396/X'}}, {'term': {'name': 'TP/24/00396/X'}}, {'term': {'reference': 'TP/24/00396/X'}}], 'minimum_should_match': 1}}
+2025-10-01 13:11:26,594 - elastic_transport.transport - INFO - POST https://95.217.117.251:9200/planning_applications/_search [status:200 duration:0.118s]
+2025-10-01 13:11:26,594 - app.services.search - INFO - [DEBUG] ES response: total hits = {'value': 1, 'relation': 'eq'}
+2025-10-01 13:11:26,595 - app.services.search - INFO - [DEBUG] Found application: ES _id=3yhuRpEB6zk0AeBPgXUO, uid=TP/24/00396/X, name=Poole/TP/24/00396/X, reference=None
+2025-10-01 13:11:26,784 - app.services.search - ERROR - [DEBUG] Failed to get application TP/24/00396/X: 1 validation error for PlanningApplication
+application_type
+  Input should be 'full', 'outline', 'reserved_matters', 'householder', 'minor', 'major', 'listed_building', 'conservation_area', 'pre_application', 'prior_approval', 'certificate_lawful', 'advertisement', 'discharge_conditions', 'non_material_amendment' or 'other' [type=enum, input_value='Treeworks', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/enum
+2025-10-01 13:11:26,825 - app.services.search - ERROR - [DEBUG] Traceback: Traceback (most recent call last):
+  File "/mnt/c/Users/Solomon-PC/Documents/Planning Explorer/backend/app/services/search.py", line 402, in get_application_by_id
+    return PlanningApplication(**mapped_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Solomon-PC/Documents/Planning Explorer/backend/test_env/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for PlanningApplication
+application_type
+  Input should be 'full', 'outline', 'reserved_matters', 'householder', 'minor', 'major', 'listed_building', 'conservation_area', 'pre_application', 'prior_approval', 'certificate_lawful', 'advertisement', 'discharge_conditions', 'non_material_amendment' or 'other' [type=enum, input_value='Treeworks', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/enum
+
+2025-10-01 13:11:26,826 - app.api.endpoints.applications - INFO - [DEBUG ENDPOINT] search_service returned: False
+2025-10-01 13:11:26,832 - app.services.search - INFO - [SEMANTIC_SEARCH] Built 2 filter clauses
+2025-10-01 13:11:26,833 - app.services.search - INFO - [SEMANTIC_SEARCH] Applied 2 filters to keyword query
+2025-10-01 13:11:26,835 - app.services.search - INFO - [SEMANTIC_SEARCH] Executing hybrid search:
+2025-10-01 13:11:26,837 - app.services.search - INFO -   - KNN candidates: 100
+2025-10-01 13:11:26,838 - app.services.search - INFO -   - Results to return: 10
+2025-10-01 13:11:26,839 - app.services.search - INFO -   - KNN has filters: True
+2025-10-01 13:11:26,839 - app.services.search - INFO -   - Keyword query has filters: True
+2025-10-01 13:11:26,842 - app.middleware.logging - WARNING - Request completed: GET /api/v1/application - 404
+2025-10-01 13:11:26,891 - app.services.search - INFO - [SEMANTIC_SEARCH] Built 2 filter clauses
+2025-10-01 13:11:26,896 - app.services.search - INFO - [SEMANTIC_SEARCH] Applied 2 filters to keyword query
+2025-10-01 13:11:26,897 - app.services.search - INFO - [SEMANTIC_SEARCH] Executing hybrid search:
+2025-10-01 13:11:26,897 - app.services.search - INFO -   - KNN candidates: 100
+2025-10-01 13:11:26,902 - app.services.search - INFO -   - Results to return: 10
+2025-10-01 13:11:26,906 - app.services.search - INFO -   - KNN has filters: True
+2025-10-01 13:11:26,911 - app.services.search - INFO -   - Keyword query has filters: True
+2025-10-01 13:11:27,074 - elastic_transport.transport - INFO - POST https://95.217.117.251:9200/planning_applications/_search [status:200 duration:0.233s]
+2025-10-01 13:11:27,075 - app.services.search - INFO - [SEMANTIC_SEARCH] ES returned 2 total matches, processing 2 results
+2025-10-01 13:11:27,075 - app.api.endpoints.search - INFO - [semantic_search_1759320679929] Semantic search completed successfully - 2 results in 7146ms
+2025-10-01 13:11:27,077 - app.middleware.logging - INFO - Request completed: POST /api/v1/search/semantic - 200
+2025-10-01 13:11:27,078 - app.middleware.logging - WARNING - Slow request detected: 7151.13ms
+2025-10-01 13:11:27,078 - app.middleware.performance - WARNING - Slow response: POST /api/v1/search/semantic took 7154.97ms
+2025-10-01 13:11:27,137 - elastic_transport.transport - INFO - POST https://95.217.117.251:9200/planning_applications/_search [status:200 duration:0.225s]
+2025-10-01 13:11:27,138 - app.services.search - INFO - [SEMANTIC_SEARCH] ES returned 2 total matches, processing 2 results
+2025-10-01 13:11:27,139 - app.api.endpoints.search - INFO - [semantic_search_1759320679927] Semantic search completed successfully - 2 results in 7211ms
+2025-10-01 13:11:27,140 - app.middleware.logging - INFO - Request completed: POST /api/v1/search/semantic - 200
+2025-10-01 13:11:27,141 - app.middleware.logging - WARNING - Slow request detected: 7216.58ms
+2025-10-01 13:11:27,141 - app.middleware.performance - WARNING - Slow response: POST /api/v1/search/semantic took 7217.8ms
+2025-10-01 13:12:08,657 - app.middleware.logging - INFO - Request started: POST /api/v1/search/semantic
+2025-10-01 13:12:08,659 - app.api.endpoints.search - INFO - [semantic_search_1759320728659] Starting semantic search - query: 'Developments in Newcastle in 2025', k: 10, user: anonymous
+2025-10-01 13:12:08,827 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/_cluster/health [status:200 duration:0.168s]
+2025-10-01 13:12:08,875 - elastic_transport.transport - INFO - HEAD https://95.217.117.251:9200/planning_applications [status:200 duration:0.047s]
+2025-10-01 13:12:08,876 - app.db.elasticsearch - INFO - Elasticsearch cluster status: yellow
+2025-10-01 13:12:08,877 - app.db.elasticsearch - INFO - Index 'planning_applications' exists: True
+2025-10-01 13:12:08,902 - app.services.search - INFO - [SEMANTIC_SEARCH] Extracted filters from query 'Developments in Newcastle in 2025':
+2025-10-01 13:12:08,902 - app.services.search - INFO -   - statuses: None
+2025-10-01 13:12:08,902 - app.services.search - INFO -   - authorities: ['Newcastle upon Tyne']
+2025-10-01 13:12:08,903 - app.services.search - INFO -   - date_from: 2025-01-01 00:00:00
+2025-10-01 13:12:08,903 - app.services.search - INFO -   - date_to: 2025-12-31 23:59:59
+2025-10-01 13:12:09,448 - app.services.search - INFO - [SEMANTIC_SEARCH] Built 2 filter clauses
+2025-10-01 13:12:09,448 - app.services.search - INFO - [SEMANTIC_SEARCH] Applied 2 filters to keyword query
+2025-10-01 13:12:09,448 - app.services.search - INFO - [SEMANTIC_SEARCH] Executing hybrid search:
+2025-10-01 13:12:09,449 - app.services.search - INFO -   - KNN candidates: 100
+2025-10-01 13:12:09,449 - app.services.search - INFO -   - Results to return: 10
+2025-10-01 13:12:09,449 - app.services.search - INFO -   - KNN has filters: True
+2025-10-01 13:12:09,449 - app.services.search - INFO -   - Keyword query has filters: True
+2025-10-01 13:12:09,687 - elastic_transport.transport - INFO - POST https://95.217.117.251:9200/planning_applications/_search [status:200 duration:0.236s]
+2025-10-01 13:12:09,688 - app.services.search - INFO - [SEMANTIC_SEARCH] ES returned 2 total matches, processing 2 results
+2025-10-01 13:12:09,689 - app.api.endpoints.search - INFO - [semantic_search_1759320728659] Semantic search completed successfully - 2 results in 1030ms
+2025-10-01 13:12:09,690 - app.middleware.logging - INFO - Request completed: POST /api/v1/search/semantic - 200
+2025-10-01 13:12:09,690 - app.middleware.logging - WARNING - Slow request detected: 1033.51ms
+2025-10-01 13:12:09,691 - app.middleware.performance - WARNING - Slow response: POST /api/v1/search/semantic took 1034.86ms
+2025-10-01 13:12:13,462 - app.middleware.logging - INFO - Request started: OPTIONS /api/v1/applications/2025/0588/01/NPV
+2025-10-01 13:12:13,463 - app.middleware.logging - INFO - Request completed: OPTIONS /api/v1/applications/2025/0588/01/NPV - 200
+2025-10-01 13:12:13,467 - app.middleware.logging - INFO - Request started: OPTIONS /api/v1/applications/2025/0588/01/NPV
+2025-10-01 13:12:13,468 - app.middleware.logging - INFO - Request completed: OPTIONS /api/v1/applications/2025/0588/01/NPV - 200
+2025-10-01 13:12:13,769 - app.middleware.logging - INFO - Request started: GET /api/v1/applications/2025/0588/01/NPV
+2025-10-01 13:12:13,772 - app.middleware.logging - WARNING - Request completed: GET /api/v1/applications/2025/0588/01/NPV - 404
+2025-10-01 13:12:13,777 - app.middleware.logging - INFO - Request started: GET /api/v1/applications/2025/0588/01/NPV
+2025-10-01 13:12:13,778 - app.middleware.logging - WARNING - Request completed: GET /api/v1/applications/2025/0588/01/NPV - 404
+2025-10-01 13:12:15,034 - app.middleware.logging - INFO - Request started: POST /api/v1/search/semantic
+2025-10-01 13:12:15,037 - app.api.endpoints.search - INFO - [semantic_search_1759320735037] Starting semantic search - query: 'Developments in Newcastle in 2025', k: 10, user: anonymous
+2025-10-01 13:12:15,039 - app.middleware.logging - INFO - Request started: POST /api/v1/search/semantic
+2025-10-01 13:12:15,041 - app.api.endpoints.search - INFO - [semantic_search_1759320735041] Starting semantic search - query: 'Developments in Newcastle in 2025', k: 10, user: anonymous
+2025-10-01 13:12:15,087 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/_cluster/health [status:200 duration:0.049s]
+2025-10-01 13:12:15,140 - elastic_transport.transport - INFO - HEAD https://95.217.117.251:9200/planning_applications [status:200 duration:0.053s]
+2025-10-01 13:12:15,143 - app.db.elasticsearch - INFO - Elasticsearch cluster status: yellow
+2025-10-01 13:12:15,148 - app.db.elasticsearch - INFO - Index 'planning_applications' exists: True
+2025-10-01 13:12:15,170 - app.services.search - INFO - [SEMANTIC_SEARCH] Extracted filters from query 'Developments in Newcastle in 2025':
+2025-10-01 13:12:15,174 - app.services.search - INFO -   - statuses: None
+2025-10-01 13:12:15,179 - app.services.search - INFO -   - authorities: ['Newcastle upon Tyne']
+2025-10-01 13:12:15,184 - app.services.search - INFO -   - date_from: 2025-01-01 00:00:00
+2025-10-01 13:12:15,190 - app.services.search - INFO -   - date_to: 2025-12-31 23:59:59
+2025-10-01 13:12:15,246 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/_cluster/health [status:200 duration:0.204s]
+2025-10-01 13:12:15,301 - elastic_transport.transport - INFO - HEAD https://95.217.117.251:9200/planning_applications [status:200 duration:0.050s]
+2025-10-01 13:12:15,302 - app.db.elasticsearch - INFO - Elasticsearch cluster status: yellow
+2025-10-01 13:12:15,302 - app.db.elasticsearch - INFO - Index 'planning_applications' exists: True
+2025-10-01 13:12:15,325 - app.services.search - INFO - [SEMANTIC_SEARCH] Extracted filters from query 'Developments in Newcastle in 2025':
+2025-10-01 13:12:15,326 - app.services.search - INFO -   - statuses: None
+2025-10-01 13:12:15,327 - app.services.search - INFO -   - authorities: ['Newcastle upon Tyne']
+2025-10-01 13:12:15,328 - app.services.search - INFO -   - date_from: 2025-01-01 00:00:00
+2025-10-01 13:12:15,328 - app.services.search - INFO -   - date_to: 2025-12-31 23:59:59
+2025-10-01 13:12:15,482 - app.services.search - INFO - [SEMANTIC_SEARCH] Built 2 filter clauses
+2025-10-01 13:12:15,487 - app.services.search - INFO - [SEMANTIC_SEARCH] Applied 2 filters to keyword query
+2025-10-01 13:12:15,492 - app.services.search - INFO - [SEMANTIC_SEARCH] Executing hybrid search:
+2025-10-01 13:12:15,495 - app.services.search - INFO -   - KNN candidates: 100
+2025-10-01 13:12:15,495 - app.services.search - INFO -   - Results to return: 10
+2025-10-01 13:12:15,495 - app.services.search - INFO -   - KNN has filters: True
+2025-10-01 13:12:15,500 - app.services.search - INFO -   - Keyword query has filters: True
+2025-10-01 13:12:15,611 - app.services.search - INFO - [SEMANTIC_SEARCH] Built 2 filter clauses
+2025-10-01 13:12:15,611 - app.services.search - INFO - [SEMANTIC_SEARCH] Applied 2 filters to keyword query
+2025-10-01 13:12:15,612 - app.services.search - INFO - [SEMANTIC_SEARCH] Executing hybrid search:
+2025-10-01 13:12:15,613 - app.services.search - INFO -   - KNN candidates: 100
+2025-10-01 13:12:15,613 - app.services.search - INFO -   - Results to return: 10
+2025-10-01 13:12:15,614 - app.services.search - INFO -   - KNN has filters: True
+2025-10-01 13:12:15,615 - app.services.search - INFO -   - Keyword query has filters: True
+2025-10-01 13:12:15,742 - elastic_transport.transport - INFO - POST https://95.217.117.251:9200/planning_applications/_search [status:200 duration:0.238s]
+2025-10-01 13:12:15,743 - app.services.search - INFO - [SEMANTIC_SEARCH] ES returned 2 total matches, processing 2 results
+2025-10-01 13:12:15,743 - app.api.endpoints.search - INFO - [semantic_search_1759320735037] Semantic search completed successfully - 2 results in 706ms
+2025-10-01 13:12:15,744 - app.middleware.logging - INFO - Request completed: POST /api/v1/search/semantic - 200
+2025-10-01 13:12:15,841 - elastic_transport.transport - INFO - POST https://95.217.117.251:9200/planning_applications/_search [status:200 duration:0.225s]
+2025-10-01 13:12:15,842 - app.services.search - INFO - [SEMANTIC_SEARCH] ES returned 2 total matches, processing 2 results
+2025-10-01 13:12:15,843 - app.api.endpoints.search - INFO - [semantic_search_1759320735041] Semantic search completed successfully - 2 results in 801ms
+2025-10-01 13:12:15,844 - app.middleware.logging - INFO - Request completed: POST /api/v1/search/semantic - 200
+2025-10-01 13:12:30,949 - app.middleware.logging - INFO - Request started: OPTIONS /api/v1/search/semantic
+2025-10-01 13:12:30,950 - app.middleware.logging - INFO - Request completed: OPTIONS /api/v1/search/semantic - 200
+2025-10-01 13:12:30,953 - app.middleware.logging - INFO - Request started: OPTIONS /api/v1/search/semantic
+2025-10-01 13:12:30,958 - app.middleware.logging - INFO - Request completed: OPTIONS /api/v1/search/semantic - 200
+2025-10-01 13:12:30,964 - app.middleware.logging - INFO - Request started: POST /api/v1/search/semantic
+2025-10-01 13:12:30,969 - app.middleware.logging - INFO - Request started: POST /api/v1/search/semantic
+2025-10-01 13:12:30,974 - app.api.endpoints.search - INFO - [semantic_search_1759320750974] Starting semantic search - query: 'Developments in manchester in 2025', k: 10, user: anonymous
+2025-10-01 13:12:30,976 - app.api.endpoints.search - INFO - [semantic_search_1759320750976] Starting semantic search - query: 'Developments in manchester in 2025', k: 10, user: anonymous
+2025-10-01 13:12:31,027 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/_cluster/health [status:200 duration:0.050s]
+2025-10-01 13:12:31,031 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/_cluster/health [status:200 duration:0.055s]
+2025-10-01 13:12:31,079 - elastic_transport.transport - INFO - HEAD https://95.217.117.251:9200/planning_applications [status:200 duration:0.049s]
+2025-10-01 13:12:31,082 - app.db.elasticsearch - INFO - Elasticsearch cluster status: yellow
+2025-10-01 13:12:31,085 - app.db.elasticsearch - INFO - Index 'planning_applications' exists: True
+2025-10-01 13:12:31,108 - app.services.search - INFO - [SEMANTIC_SEARCH] Extracted filters from query 'Developments in manchester in 2025':
+2025-10-01 13:12:31,112 - app.services.search - INFO -   - statuses: None
+2025-10-01 13:12:31,117 - app.services.search - INFO -   - authorities: ['Manchester']
+2025-10-01 13:12:31,125 - app.services.search - INFO -   - date_from: 2025-01-01 00:00:00
+2025-10-01 13:12:31,127 - app.services.search - INFO -   - date_to: 2025-12-31 23:59:59
+2025-10-01 13:12:31,129 - elastic_transport.transport - INFO - HEAD https://95.217.117.251:9200/planning_applications [status:200 duration:0.095s]
+2025-10-01 13:12:31,131 - app.db.elasticsearch - INFO - Elasticsearch cluster status: yellow
+2025-10-01 13:12:31,132 - app.db.elasticsearch - INFO - Index 'planning_applications' exists: True
+2025-10-01 13:12:31,153 - app.services.search - INFO - [SEMANTIC_SEARCH] Extracted filters from query 'Developments in manchester in 2025':
+2025-10-01 13:12:31,154 - app.services.search - INFO -   - statuses: None
+2025-10-01 13:12:31,154 - app.services.search - INFO -   - authorities: ['Manchester']
+2025-10-01 13:12:31,155 - app.services.search - INFO -   - date_from: 2025-01-01 00:00:00
+2025-10-01 13:12:31,155 - app.services.search - INFO -   - date_to: 2025-12-31 23:59:59
+2025-10-01 13:12:31,609 - app.services.search - INFO - [SEMANTIC_SEARCH] Built 2 filter clauses
+2025-10-01 13:12:31,610 - app.services.search - INFO - [SEMANTIC_SEARCH] Applied 2 filters to keyword query
+2025-10-01 13:12:31,611 - app.services.search - INFO - [SEMANTIC_SEARCH] Executing hybrid search:
+2025-10-01 13:12:31,611 - app.services.search - INFO -   - KNN candidates: 100
+2025-10-01 13:12:31,611 - app.services.search - INFO -   - Results to return: 10
+2025-10-01 13:12:31,612 - app.services.search - INFO -   - KNN has filters: True
+2025-10-01 13:12:31,612 - app.services.search - INFO -   - Keyword query has filters: True
+2025-10-01 13:12:32,170 - app.services.search - INFO - [SEMANTIC_SEARCH] Built 2 filter clauses
+2025-10-01 13:12:32,171 - app.services.search - INFO - [SEMANTIC_SEARCH] Applied 2 filters to keyword query
+2025-10-01 13:12:32,172 - app.services.search - INFO - [SEMANTIC_SEARCH] Executing hybrid search:
+2025-10-01 13:12:32,172 - app.services.search - INFO -   - KNN candidates: 100
+2025-10-01 13:12:32,173 - app.services.search - INFO -   - Results to return: 10
+2025-10-01 13:12:32,174 - app.services.search - INFO -   - KNN has filters: True
+2025-10-01 13:12:32,175 - app.services.search - INFO -   - Keyword query has filters: True
+2025-10-01 13:12:32,248 - elastic_transport.transport - INFO - POST https://95.217.117.251:9200/planning_applications/_search [status:200 duration:0.635s]
+2025-10-01 13:12:32,251 - app.services.search - INFO - [SEMANTIC_SEARCH] ES returned 10 total matches, processing 10 results
+2025-10-01 13:12:32,260 - app.api.endpoints.search - INFO - [semantic_search_1759320750974] Semantic search completed successfully - 10 results in 1285ms
+2025-10-01 13:12:32,262 - app.middleware.logging - INFO - Request completed: POST /api/v1/search/semantic - 200
+2025-10-01 13:12:32,263 - app.middleware.logging - WARNING - Slow request detected: 1298.02ms
+2025-10-01 13:12:32,264 - app.middleware.performance - WARNING - Slow response: POST /api/v1/search/semantic took 1300.15ms
+2025-10-01 13:12:32,511 - elastic_transport.transport - INFO - POST https://95.217.117.251:9200/planning_applications/_search [status:200 duration:0.335s]
+2025-10-01 13:12:32,512 - app.services.search - INFO - [SEMANTIC_SEARCH] ES returned 10 total matches, processing 10 results
+2025-10-01 13:12:32,514 - app.api.endpoints.search - INFO - [semantic_search_1759320750976] Semantic search completed successfully - 10 results in 1538ms
+2025-10-01 13:12:32,519 - app.middleware.logging - INFO - Request completed: POST /api/v1/search/semantic - 200
+2025-10-01 13:12:32,522 - app.middleware.logging - WARNING - Slow request detected: 1549.61ms
+2025-10-01 13:12:32,523 - app.middleware.performance - WARNING - Slow response: POST /api/v1/search/semantic took 1554.01ms
+2025-10-01 13:12:53,102 - app.middleware.logging - INFO - Request started: OPTIONS /api/v1/search/semantic
+2025-10-01 13:12:53,103 - app.middleware.logging - INFO - Request completed: OPTIONS /api/v1/search/semantic - 200
+2025-10-01 13:12:53,107 - app.middleware.logging - INFO - Request started: OPTIONS /api/v1/search/semantic
+2025-10-01 13:12:53,107 - app.middleware.logging - INFO - Request completed: OPTIONS /api/v1/search/semantic - 200
+2025-10-01 13:12:53,402 - app.middleware.logging - INFO - Request started: POST /api/v1/search/semantic
+2025-10-01 13:12:53,405 - app.api.endpoints.search - INFO - [semantic_search_1759320773405] Starting semantic search - query: 'Developments in Manchester in 2025', k: 10, user: anonymous
+2025-10-01 13:12:53,412 - app.middleware.logging - INFO - Request started: POST /api/v1/search/semantic
+2025-10-01 13:12:53,414 - app.api.endpoints.search - INFO - [semantic_search_1759320773414] Starting semantic search - query: 'Developments in Manchester in 2025', k: 10, user: anonymous
+2025-10-01 13:12:53,574 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/_cluster/health [status:200 duration:0.168s]
+2025-10-01 13:12:53,589 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/_cluster/health [status:200 duration:0.173s]
+2025-10-01 13:12:53,627 - elastic_transport.transport - INFO - HEAD https://95.217.117.251:9200/planning_applications [status:200 duration:0.051s]
+2025-10-01 13:12:53,628 - app.db.elasticsearch - INFO - Elasticsearch cluster status: yellow
+2025-10-01 13:12:53,630 - app.db.elasticsearch - INFO - Index 'planning_applications' exists: True
+2025-10-01 13:12:53,653 - app.services.search - INFO - [SEMANTIC_SEARCH] Extracted filters from query 'Developments in Manchester in 2025':
+2025-10-01 13:12:53,654 - app.services.search - INFO -   - statuses: None
+2025-10-01 13:12:53,655 - app.services.search - INFO -   - authorities: ['Manchester']
+2025-10-01 13:12:53,657 - app.services.search - INFO -   - date_from: 2025-01-01 00:00:00
+2025-10-01 13:12:53,658 - app.services.search - INFO -   - date_to: 2025-12-31 23:59:59
+2025-10-01 13:12:53,659 - elastic_transport.transport - INFO - HEAD https://95.217.117.251:9200/planning_applications [status:200 duration:0.068s]
+2025-10-01 13:12:53,660 - app.db.elasticsearch - INFO - Elasticsearch cluster status: yellow
+2025-10-01 13:12:53,660 - app.db.elasticsearch - INFO - Index 'planning_applications' exists: True
+2025-10-01 13:12:53,680 - app.services.search - INFO - [SEMANTIC_SEARCH] Extracted filters from query 'Developments in Manchester in 2025':
+2025-10-01 13:12:53,683 - app.services.search - INFO -   - statuses: None
+2025-10-01 13:12:53,683 - app.services.search - INFO -   - authorities: ['Manchester']
+2025-10-01 13:12:53,685 - app.services.search - INFO -   - date_from: 2025-01-01 00:00:00
+2025-10-01 13:12:53,687 - app.services.search - INFO -   - date_to: 2025-12-31 23:59:59
+2025-10-01 13:12:53,969 - app.services.search - INFO - [SEMANTIC_SEARCH] Built 2 filter clauses
+2025-10-01 13:12:53,970 - app.services.search - INFO - [SEMANTIC_SEARCH] Applied 2 filters to keyword query
+2025-10-01 13:12:53,974 - app.services.search - INFO - [SEMANTIC_SEARCH] Executing hybrid search:
+2025-10-01 13:12:53,975 - app.services.search - INFO -   - KNN candidates: 100
+2025-10-01 13:12:53,976 - app.services.search - INFO -   - Results to return: 10
+2025-10-01 13:12:53,977 - app.services.search - INFO -   - KNN has filters: True
+2025-10-01 13:12:53,977 - app.services.search - INFO -   - Keyword query has filters: True
+2025-10-01 13:12:54,084 - app.services.search - INFO - [SEMANTIC_SEARCH] Built 2 filter clauses
+2025-10-01 13:12:54,084 - app.services.search - INFO - [SEMANTIC_SEARCH] Applied 2 filters to keyword query
+2025-10-01 13:12:54,084 - app.services.search - INFO - [SEMANTIC_SEARCH] Executing hybrid search:
+2025-10-01 13:12:54,085 - app.services.search - INFO -   - KNN candidates: 100
+2025-10-01 13:12:54,085 - app.services.search - INFO -   - Results to return: 10
+2025-10-01 13:12:54,085 - app.services.search - INFO -   - KNN has filters: True
+2025-10-01 13:12:54,085 - app.services.search - INFO -   - Keyword query has filters: True
+2025-10-01 13:12:54,274 - elastic_transport.transport - INFO - POST https://95.217.117.251:9200/planning_applications/_search [status:200 duration:0.296s]
+2025-10-01 13:12:54,274 - app.services.search - INFO - [SEMANTIC_SEARCH] ES returned 10 total matches, processing 10 results
+2025-10-01 13:12:54,277 - app.api.endpoints.search - INFO - [semantic_search_1759320773405] Semantic search completed successfully - 10 results in 871ms
+2025-10-01 13:12:54,279 - app.middleware.logging - INFO - Request completed: POST /api/v1/search/semantic - 200
+2025-10-01 13:12:54,419 - elastic_transport.transport - INFO - POST https://95.217.117.251:9200/planning_applications/_search [status:200 duration:0.333s]
+2025-10-01 13:12:54,420 - app.services.search - INFO - [SEMANTIC_SEARCH] ES returned 10 total matches, processing 10 results
+2025-10-01 13:12:54,421 - app.api.endpoints.search - INFO - [semantic_search_1759320773414] Semantic search completed successfully - 10 results in 1007ms
+2025-10-01 13:12:54,423 - app.middleware.logging - INFO - Request completed: POST /api/v1/search/semantic - 200
+2025-10-01 13:12:54,423 - app.middleware.logging - WARNING - Slow request detected: 1010.58ms
+2025-10-01 13:12:54,423 - app.middleware.performance - WARNING - Slow response: POST /api/v1/search/semantic took 1011.75ms
+2025-10-01 13:13:17,238 - app.middleware.logging - INFO - Request started: OPTIONS /api/v1/search/semantic
+2025-10-01 13:13:17,239 - app.middleware.logging - INFO - Request completed: OPTIONS /api/v1/search/semantic - 200
+2025-10-01 13:13:17,243 - app.middleware.logging - INFO - Request started: OPTIONS /api/v1/search/semantic
+2025-10-01 13:13:17,244 - app.middleware.logging - INFO - Request completed: OPTIONS /api/v1/search/semantic - 200
+2025-10-01 13:13:17,535 - app.middleware.logging - INFO - Request started: POST /api/v1/search/semantic
+2025-10-01 13:13:17,538 - app.api.endpoints.search - INFO - [semantic_search_1759320797538] Starting semantic search - query: 'Approved Developments in Manchester in 2025', k: 10, user: anonymous
+2025-10-01 13:13:17,550 - app.middleware.logging - INFO - Request started: POST /api/v1/search/semantic
+2025-10-01 13:13:17,552 - app.api.endpoints.search - INFO - [semantic_search_1759320797552] Starting semantic search - query: 'Approved Developments in Manchester in 2025', k: 10, user: anonymous
+2025-10-01 13:13:17,701 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/_cluster/health [status:200 duration:0.162s]
+2025-10-01 13:13:17,721 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/_cluster/health [status:200 duration:0.169s]
+2025-10-01 13:13:17,752 - elastic_transport.transport - INFO - HEAD https://95.217.117.251:9200/planning_applications [status:200 duration:0.050s]
+2025-10-01 13:13:17,752 - app.db.elasticsearch - INFO - Elasticsearch cluster status: yellow
+2025-10-01 13:13:17,753 - app.db.elasticsearch - INFO - Index 'planning_applications' exists: True
+2025-10-01 13:13:17,773 - app.services.search - INFO - [SEMANTIC_SEARCH] Extracted filters from query 'Approved Developments in Manchester in 2025':
+2025-10-01 13:13:17,774 - app.services.search - INFO -   - statuses: ['approved']
+2025-10-01 13:13:17,774 - app.services.search - INFO -   - authorities: ['Manchester']
+2025-10-01 13:13:17,775 - app.services.search - INFO -   - date_from: 2025-01-01 00:00:00
+2025-10-01 13:13:17,776 - app.services.search - INFO -   - date_to: 2025-12-31 23:59:59
+2025-10-01 13:13:17,777 - elastic_transport.transport - INFO - HEAD https://95.217.117.251:9200/planning_applications [status:200 duration:0.055s]
+2025-10-01 13:13:17,778 - app.db.elasticsearch - INFO - Elasticsearch cluster status: yellow
+2025-10-01 13:13:17,780 - app.db.elasticsearch - INFO - Index 'planning_applications' exists: True
+2025-10-01 13:13:17,809 - app.services.search - INFO - [SEMANTIC_SEARCH] Extracted filters from query 'Approved Developments in Manchester in 2025':
+2025-10-01 13:13:17,810 - app.services.search - INFO -   - statuses: ['approved']
+2025-10-01 13:13:17,810 - app.services.search - INFO -   - authorities: ['Manchester']
+2025-10-01 13:13:17,811 - app.services.search - INFO -   - date_from: 2025-01-01 00:00:00
+2025-10-01 13:13:17,812 - app.services.search - INFO -   - date_to: 2025-12-31 23:59:59
+2025-10-01 13:13:18,122 - app.services.search - INFO - [SEMANTIC_SEARCH] Built 3 filter clauses
+2025-10-01 13:13:18,123 - app.services.search - INFO - [SEMANTIC_SEARCH] Applied 3 filters to keyword query
+2025-10-01 13:13:18,123 - app.services.search - INFO - [SEMANTIC_SEARCH] Executing hybrid search:
+2025-10-01 13:13:18,123 - app.services.search - INFO -   - KNN candidates: 100
+2025-10-01 13:13:18,124 - app.services.search - INFO -   - Results to return: 10
+2025-10-01 13:13:18,124 - app.services.search - INFO -   - KNN has filters: True
+2025-10-01 13:13:18,124 - app.services.search - INFO -   - Keyword query has filters: True
+2025-10-01 13:13:18,146 - app.services.search - INFO - [SEMANTIC_SEARCH] Built 3 filter clauses
+2025-10-01 13:13:18,147 - app.services.search - INFO - [SEMANTIC_SEARCH] Applied 3 filters to keyword query
+2025-10-01 13:13:18,148 - app.services.search - INFO - [SEMANTIC_SEARCH] Executing hybrid search:
+2025-10-01 13:13:18,148 - app.services.search - INFO -   - KNN candidates: 100
+2025-10-01 13:13:18,149 - app.services.search - INFO -   - Results to return: 10
+2025-10-01 13:13:18,149 - app.services.search - INFO -   - KNN has filters: True
+2025-10-01 13:13:18,150 - app.services.search - INFO -   - Keyword query has filters: True
+2025-10-01 13:13:18,466 - elastic_transport.transport - INFO - POST https://95.217.117.251:9200/planning_applications/_search [status:200 duration:0.341s]
+2025-10-01 13:13:18,469 - app.services.search - INFO - [SEMANTIC_SEARCH] ES returned 0 total matches, processing 0 results
+2025-10-01 13:13:18,470 - app.api.endpoints.search - INFO - [semantic_search_1759320797538] Semantic search completed successfully - 0 results in 932ms
+2025-10-01 13:13:18,471 - elastic_transport.transport - INFO - POST https://95.217.117.251:9200/planning_applications/_search [status:200 duration:0.319s]
+2025-10-01 13:13:18,471 - app.services.search - INFO - [SEMANTIC_SEARCH] ES returned 0 total matches, processing 0 results
+2025-10-01 13:13:18,472 - app.api.endpoints.search - INFO - [semantic_search_1759320797552] Semantic search completed successfully - 0 results in 920ms
+2025-10-01 13:13:18,473 - app.middleware.logging - INFO - Request completed: POST /api/v1/search/semantic - 200
+2025-10-01 13:13:18,473 - app.middleware.logging - INFO - Request completed: POST /api/v1/search/semantic - 200
+2025-10-01 13:13:25,266 - app.middleware.logging - INFO - Request started: POST /api/v1/search/semantic
+2025-10-01 13:13:25,268 - app.api.endpoints.search - INFO - [semantic_search_1759320805268] Starting semantic search - query: 'Approved Developments in Manchester in 2025', k: 10, user: anonymous
+2025-10-01 13:13:25,321 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/_cluster/health [status:200 duration:0.052s]
+2025-10-01 13:13:25,371 - elastic_transport.transport - INFO - HEAD https://95.217.117.251:9200/planning_applications [status:200 duration:0.050s]
+2025-10-01 13:13:25,371 - app.db.elasticsearch - INFO - Elasticsearch cluster status: yellow
+2025-10-01 13:13:25,372 - app.db.elasticsearch - INFO - Index 'planning_applications' exists: True
+2025-10-01 13:13:25,403 - app.services.search - INFO - [SEMANTIC_SEARCH] Extracted filters from query 'Approved Developments in Manchester in 2025':
+2025-10-01 13:13:25,404 - app.services.search - INFO -   - statuses: ['approved']
+2025-10-01 13:13:25,405 - app.services.search - INFO -   - authorities: ['Manchester']
+2025-10-01 13:13:25,405 - app.services.search - INFO -   - date_from: 2025-01-01 00:00:00
+2025-10-01 13:13:25,406 - app.services.search - INFO -   - date_to: 2025-12-31 23:59:59
+2025-10-01 13:13:25,569 - app.middleware.logging - INFO - Request started: POST /api/v1/search/semantic
+2025-10-01 13:13:25,571 - app.api.endpoints.search - INFO - [semantic_search_1759320805571] Starting semantic search - query: 'Approved Developments in Manchester in 2025', k: 10, user: anonymous
+2025-10-01 13:13:25,621 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/_cluster/health [status:200 duration:0.050s]
+2025-10-01 13:13:25,671 - elastic_transport.transport - INFO - HEAD https://95.217.117.251:9200/planning_applications [status:200 duration:0.048s]
+2025-10-01 13:13:25,671 - app.db.elasticsearch - INFO - Elasticsearch cluster status: yellow
+2025-10-01 13:13:25,672 - app.db.elasticsearch - INFO - Index 'planning_applications' exists: True
+2025-10-01 13:13:25,695 - app.services.search - INFO - [SEMANTIC_SEARCH] Extracted filters from query 'Approved Developments in Manchester in 2025':
+2025-10-01 13:13:25,702 - app.services.search - INFO -   - statuses: ['approved']
+2025-10-01 13:13:25,707 - app.services.search - INFO -   - authorities: ['Manchester']
+2025-10-01 13:13:25,714 - app.services.search - INFO -   - date_from: 2025-01-01 00:00:00
+2025-10-01 13:13:25,720 - app.services.search - INFO -   - date_to: 2025-12-31 23:59:59
+2025-10-01 13:13:25,741 - app.services.search - INFO - [SEMANTIC_SEARCH] Built 3 filter clauses
+2025-10-01 13:13:25,741 - app.services.search - INFO - [SEMANTIC_SEARCH] Applied 3 filters to keyword query
+2025-10-01 13:13:25,742 - app.services.search - INFO - [SEMANTIC_SEARCH] Executing hybrid search:
+2025-10-01 13:13:25,743 - app.services.search - INFO -   - KNN candidates: 100
+2025-10-01 13:13:25,743 - app.services.search - INFO -   - Results to return: 10
+2025-10-01 13:13:25,744 - app.services.search - INFO -   - KNN has filters: True
+2025-10-01 13:13:25,745 - app.services.search - INFO -   - Keyword query has filters: True
+2025-10-01 13:13:26,015 - app.services.search - INFO - [SEMANTIC_SEARCH] Built 3 filter clauses
+2025-10-01 13:13:26,017 - app.services.search - INFO - [SEMANTIC_SEARCH] Applied 3 filters to keyword query
+2025-10-01 13:13:26,017 - app.services.search - INFO - [SEMANTIC_SEARCH] Executing hybrid search:
+2025-10-01 13:13:26,018 - app.services.search - INFO -   - KNN candidates: 100
+2025-10-01 13:13:26,018 - app.services.search - INFO -   - Results to return: 10
+2025-10-01 13:13:26,019 - app.services.search - INFO -   - KNN has filters: True
+2025-10-01 13:13:26,019 - app.services.search - INFO -   - Keyword query has filters: True
+2025-10-01 13:13:26,026 - elastic_transport.transport - INFO - POST https://95.217.117.251:9200/planning_applications/_search [status:200 duration:0.279s]
+2025-10-01 13:13:26,031 - app.services.search - INFO - [SEMANTIC_SEARCH] ES returned 0 total matches, processing 0 results
+2025-10-01 13:13:26,034 - app.api.endpoints.search - INFO - [semantic_search_1759320805268] Semantic search completed successfully - 0 results in 766ms
+2025-10-01 13:13:26,039 - app.middleware.logging - INFO - Request completed: POST /api/v1/search/semantic - 200
+2025-10-01 13:13:26,285 - elastic_transport.transport - INFO - POST https://95.217.117.251:9200/planning_applications/_search [status:200 duration:0.264s]
+2025-10-01 13:13:26,286 - app.services.search - INFO - [SEMANTIC_SEARCH] ES returned 0 total matches, processing 0 results
+2025-10-01 13:13:26,287 - app.api.endpoints.search - INFO - [semantic_search_1759320805571] Semantic search completed successfully - 0 results in 715ms
+2025-10-01 13:13:26,287 - app.middleware.logging - INFO - Request completed: POST /api/v1/search/semantic - 200
+2025-10-01 13:13:33,797 - app.middleware.logging - INFO - Request started: POST /api/v1/search/semantic
+2025-10-01 13:13:33,798 - app.middleware.logging - INFO - Request started: POST /api/v1/search/semantic
+2025-10-01 13:13:33,799 - app.api.endpoints.search - INFO - [semantic_search_1759320813799] Starting semantic search - query: 'Approved Developments in Manchester in 2025', k: 10, user: anonymous
+2025-10-01 13:13:33,800 - app.api.endpoints.search - INFO - [semantic_search_1759320813800] Starting semantic search - query: 'Approved Developments in Manchester in 2025', k: 10, user: anonymous
+2025-10-01 13:13:33,850 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/_cluster/health [status:200 duration:0.050s]
+2025-10-01 13:13:33,851 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/_cluster/health [status:200 duration:0.051s]
+2025-10-01 13:13:33,903 - elastic_transport.transport - INFO - HEAD https://95.217.117.251:9200/planning_applications [status:200 duration:0.051s]
+2025-10-01 13:13:33,906 - app.db.elasticsearch - INFO - Elasticsearch cluster status: yellow
+2025-10-01 13:13:33,909 - app.db.elasticsearch - INFO - Index 'planning_applications' exists: True
+2025-10-01 13:13:33,938 - app.services.search - INFO - [SEMANTIC_SEARCH] Extracted filters from query 'Approved Developments in Manchester in 2025':
+2025-10-01 13:13:33,950 - app.services.search - INFO -   - statuses: ['approved']
+2025-10-01 13:13:33,951 - app.services.search - INFO -   - authorities: ['Manchester']
+2025-10-01 13:13:33,952 - app.services.search - INFO -   - date_from: 2025-01-01 00:00:00
+2025-10-01 13:13:33,952 - app.services.search - INFO -   - date_to: 2025-12-31 23:59:59
+2025-10-01 13:13:33,954 - elastic_transport.transport - INFO - HEAD https://95.217.117.251:9200/planning_applications [status:200 duration:0.103s]
+2025-10-01 13:13:33,958 - app.db.elasticsearch - INFO - Elasticsearch cluster status: yellow
+2025-10-01 13:13:33,961 - app.db.elasticsearch - INFO - Index 'planning_applications' exists: True
+2025-10-01 13:13:33,989 - app.services.search - INFO - [SEMANTIC_SEARCH] Extracted filters from query 'Approved Developments in Manchester in 2025':
+2025-10-01 13:13:33,990 - app.services.search - INFO -   - statuses: ['approved']
+2025-10-01 13:13:33,994 - app.services.search - INFO -   - authorities: ['Manchester']
+2025-10-01 13:13:34,000 - app.services.search - INFO -   - date_from: 2025-01-01 00:00:00
+2025-10-01 13:13:34,004 - app.services.search - INFO -   - date_to: 2025-12-31 23:59:59
+2025-10-01 13:13:34,282 - app.services.search - INFO - [SEMANTIC_SEARCH] Built 3 filter clauses
+2025-10-01 13:13:34,287 - app.services.search - INFO - [SEMANTIC_SEARCH] Applied 3 filters to keyword query
+2025-10-01 13:13:34,289 - app.services.search - INFO - [SEMANTIC_SEARCH] Executing hybrid search:
+2025-10-01 13:13:34,291 - app.services.search - INFO -   - KNN candidates: 100
+2025-10-01 13:13:34,291 - app.services.search - INFO -   - Results to return: 10
+2025-10-01 13:13:34,291 - app.services.search - INFO -   - KNN has filters: True
+2025-10-01 13:13:34,291 - app.services.search - INFO -   - Keyword query has filters: True
+2025-10-01 13:13:34,315 - app.services.search - INFO - [SEMANTIC_SEARCH] Built 3 filter clauses
+2025-10-01 13:13:34,320 - app.services.search - INFO - [SEMANTIC_SEARCH] Applied 3 filters to keyword query
+2025-10-01 13:13:34,325 - app.services.search - INFO - [SEMANTIC_SEARCH] Executing hybrid search:
+2025-10-01 13:13:34,326 - app.services.search - INFO -   - KNN candidates: 100
+2025-10-01 13:13:34,327 - app.services.search - INFO -   - Results to return: 10
+2025-10-01 13:13:34,327 - app.services.search - INFO -   - KNN has filters: True
+2025-10-01 13:13:34,328 - app.services.search - INFO -   - Keyword query has filters: True
+2025-10-01 13:13:34,564 - elastic_transport.transport - INFO - POST https://95.217.117.251:9200/planning_applications/_search [status:200 duration:0.271s]
+2025-10-01 13:13:34,568 - app.services.search - INFO - [SEMANTIC_SEARCH] ES returned 0 total matches, processing 0 results
+2025-10-01 13:13:34,569 - app.api.endpoints.search - INFO - [semantic_search_1759320813800] Semantic search completed successfully - 0 results in 769ms
+2025-10-01 13:13:34,570 - app.middleware.logging - INFO - Request completed: POST /api/v1/search/semantic - 200
+2025-10-01 13:13:34,600 - elastic_transport.transport - INFO - POST https://95.217.117.251:9200/planning_applications/_search [status:200 duration:0.270s]
+2025-10-01 13:13:34,602 - app.services.search - INFO - [SEMANTIC_SEARCH] ES returned 0 total matches, processing 0 results
+2025-10-01 13:13:34,603 - app.api.endpoints.search - INFO - [semantic_search_1759320813799] Semantic search completed successfully - 0 results in 803ms
+2025-10-01 13:13:34,605 - app.middleware.logging - INFO - Request completed: POST /api/v1/search/semantic - 200
+2025-10-01 13:13:43,353 - app.middleware.logging - INFO - Request started: POST /api/v1/search/semantic
+2025-10-01 13:13:43,355 - app.api.endpoints.search - INFO - [semantic_search_1759320823355] Starting semantic search - query: 'Developments in Manchester in 2025', k: 10, user: anonymous
+2025-10-01 13:13:43,405 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/_cluster/health [status:200 duration:0.049s]
+2025-10-01 13:13:43,456 - elastic_transport.transport - INFO - HEAD https://95.217.117.251:9200/planning_applications [status:200 duration:0.050s]
+2025-10-01 13:13:43,457 - app.db.elasticsearch - INFO - Elasticsearch cluster status: yellow
+2025-10-01 13:13:43,457 - app.db.elasticsearch - INFO - Index 'planning_applications' exists: True
+2025-10-01 13:13:43,491 - app.services.search - INFO - [SEMANTIC_SEARCH] Extracted filters from query 'Developments in Manchester in 2025':
+2025-10-01 13:13:43,497 - app.services.search - INFO -   - statuses: None
+2025-10-01 13:13:43,500 - app.services.search - INFO -   - authorities: ['Manchester']
+2025-10-01 13:13:43,501 - app.services.search - INFO -   - date_from: 2025-01-01 00:00:00
+2025-10-01 13:13:43,501 - app.services.search - INFO -   - date_to: 2025-12-31 23:59:59
+2025-10-01 13:13:43,657 - app.middleware.logging - INFO - Request started: POST /api/v1/search/semantic
+2025-10-01 13:13:43,659 - app.api.endpoints.search - INFO - [semantic_search_1759320823659] Starting semantic search - query: 'Developments in Manchester in 2025', k: 10, user: anonymous
+2025-10-01 13:13:43,713 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/_cluster/health [status:200 duration:0.053s]
+2025-10-01 13:13:43,763 - elastic_transport.transport - INFO - HEAD https://95.217.117.251:9200/planning_applications [status:200 duration:0.049s]
+2025-10-01 13:13:43,764 - app.db.elasticsearch - INFO - Elasticsearch cluster status: yellow
+2025-10-01 13:13:43,764 - app.db.elasticsearch - INFO - Index 'planning_applications' exists: True
+2025-10-01 13:13:43,785 - app.services.search - INFO - [SEMANTIC_SEARCH] Extracted filters from query 'Developments in Manchester in 2025':
+2025-10-01 13:13:43,786 - app.services.search - INFO -   - statuses: None
+2025-10-01 13:13:43,786 - app.services.search - INFO -   - authorities: ['Manchester']
+2025-10-01 13:13:43,786 - app.services.search - INFO -   - date_from: 2025-01-01 00:00:00
+2025-10-01 13:13:43,787 - app.services.search - INFO -   - date_to: 2025-12-31 23:59:59
+2025-10-01 13:13:43,806 - app.services.search - INFO - [SEMANTIC_SEARCH] Built 2 filter clauses
+2025-10-01 13:13:43,808 - app.services.search - INFO - [SEMANTIC_SEARCH] Applied 2 filters to keyword query
+2025-10-01 13:13:43,808 - app.services.search - INFO - [SEMANTIC_SEARCH] Executing hybrid search:
+2025-10-01 13:13:43,809 - app.services.search - INFO -   - KNN candidates: 100
+2025-10-01 13:13:43,810 - app.services.search - INFO -   - Results to return: 10
+2025-10-01 13:13:43,811 - app.services.search - INFO -   - KNN has filters: True
+2025-10-01 13:13:43,811 - app.services.search - INFO -   - Keyword query has filters: True
+2025-10-01 13:13:44,109 - app.services.search - INFO - [SEMANTIC_SEARCH] Built 2 filter clauses
+2025-10-01 13:13:44,109 - app.services.search - INFO - [SEMANTIC_SEARCH] Applied 2 filters to keyword query
+2025-10-01 13:13:44,109 - app.services.search - INFO - [SEMANTIC_SEARCH] Executing hybrid search:
+2025-10-01 13:13:44,110 - app.services.search - INFO -   - KNN candidates: 100
+2025-10-01 13:13:44,110 - app.services.search - INFO -   - Results to return: 10
+2025-10-01 13:13:44,110 - app.services.search - INFO -   - KNN has filters: True
+2025-10-01 13:13:44,110 - app.services.search - INFO -   - Keyword query has filters: True
+2025-10-01 13:13:44,124 - elastic_transport.transport - INFO - POST https://95.217.117.251:9200/planning_applications/_search [status:200 duration:0.311s]
+2025-10-01 13:13:44,124 - app.services.search - INFO - [SEMANTIC_SEARCH] ES returned 10 total matches, processing 10 results
+2025-10-01 13:13:44,126 - app.api.endpoints.search - INFO - [semantic_search_1759320823355] Semantic search completed successfully - 10 results in 770ms
+2025-10-01 13:13:44,128 - app.middleware.logging - INFO - Request completed: POST /api/v1/search/semantic - 200
+2025-10-01 13:13:44,423 - elastic_transport.transport - INFO - POST https://95.217.117.251:9200/planning_applications/_search [status:200 duration:0.311s]
+2025-10-01 13:13:44,427 - app.services.search - INFO - [SEMANTIC_SEARCH] ES returned 10 total matches, processing 10 results
+2025-10-01 13:13:44,434 - app.api.endpoints.search - INFO - [semantic_search_1759320823659] Semantic search completed successfully - 10 results in 775ms
+2025-10-01 13:13:44,436 - app.middleware.logging - INFO - Request completed: POST /api/v1/search/semantic - 200
+2025-10-01 13:17:13,571 - app.middleware.logging - INFO - Request started: GET /api/v1/application
+2025-10-01 13:17:13,572 - app.api.endpoints.applications - INFO - [DEBUG ENDPOINT] Received request for application_id: 'TP/24/00396/X'
+2025-10-01 13:17:13,572 - app.api.endpoints.applications - INFO - [DEBUG ENDPOINT] application_id type: <class 'str'>, len: 13
+2025-10-01 13:17:13,572 - app.api.endpoints.applications - INFO - [DEBUG ENDPOINT] application_id repr: 'TP/24/00396/X'
+2025-10-01 13:17:13,572 - app.services.search - INFO - [DEBUG] get_application_by_id called with application_id: 'TP/24/00396/X'
+2025-10-01 13:17:13,738 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/planning_applications/_doc/TP%2F24%2F00396%2FX [status:404 duration:0.165s]
+2025-10-01 13:17:13,741 - app.db.elasticsearch - ERROR - Failed to get document TP/24/00396/X: NotFoundError(404, "{'_index': 'planning_applications', '_id': 'TP/24/00396/X', 'found': False}")
+2025-10-01 13:17:13,745 - app.services.search - INFO - [DEBUG] Executing ES query for application_id 'TP/24/00396/X'
+2025-10-01 13:17:13,746 - app.services.search - INFO - [DEBUG] Query: {'bool': {'should': [{'term': {'uid.keyword': 'TP/24/00396/X'}}, {'term': {'name.keyword': 'TP/24/00396/X'}}, {'term': {'reference.keyword': 'TP/24/00396/X'}}, {'term': {'uid': 'TP/24/00396/X'}}, {'term': {'name': 'TP/24/00396/X'}}, {'term': {'reference': 'TP/24/00396/X'}}], 'minimum_should_match': 1}}
+2025-10-01 13:17:13,821 - elastic_transport.transport - INFO - POST https://95.217.117.251:9200/planning_applications/_search [status:200 duration:0.075s]
+2025-10-01 13:17:13,822 - app.services.search - INFO - [DEBUG] ES response: total hits = {'value': 1, 'relation': 'eq'}
+2025-10-01 13:17:13,822 - app.services.search - INFO - [DEBUG] Found application: ES _id=3yhuRpEB6zk0AeBPgXUO, uid=TP/24/00396/X, name=Poole/TP/24/00396/X, reference=None
+2025-10-01 13:17:13,824 - app.services.search - ERROR - [DEBUG] Failed to get application TP/24/00396/X: 1 validation error for PlanningApplication
+application_type
+  Input should be 'full', 'outline', 'reserved_matters', 'householder', 'minor', 'major', 'listed_building', 'conservation_area', 'pre_application', 'prior_approval', 'certificate_lawful', 'advertisement', 'discharge_conditions', 'non_material_amendment' or 'other' [type=enum, input_value='Treeworks', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/enum
+2025-10-01 13:17:13,832 - app.services.search - ERROR - [DEBUG] Traceback: Traceback (most recent call last):
+  File "/mnt/c/Users/Solomon-PC/Documents/Planning Explorer/backend/app/services/search.py", line 402, in get_application_by_id
+    return PlanningApplication(**mapped_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Solomon-PC/Documents/Planning Explorer/backend/test_env/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for PlanningApplication
+application_type
+  Input should be 'full', 'outline', 'reserved_matters', 'householder', 'minor', 'major', 'listed_building', 'conservation_area', 'pre_application', 'prior_approval', 'certificate_lawful', 'advertisement', 'discharge_conditions', 'non_material_amendment' or 'other' [type=enum, input_value='Treeworks', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/enum
+
+2025-10-01 13:17:13,832 - app.api.endpoints.applications - INFO - [DEBUG ENDPOINT] search_service returned: False
+2025-10-01 13:17:13,833 - app.middleware.logging - WARNING - Request completed: GET /api/v1/application - 404
+2025-10-01 13:17:52,797 - app.middleware.logging - INFO - Request started: GET /api/v1/application
+2025-10-01 13:17:52,798 - app.api.endpoints.applications - INFO - [DEBUG ENDPOINT] Received request for application_id: 'TP/24/00396/X'
+2025-10-01 13:17:52,798 - app.api.endpoints.applications - INFO - [DEBUG ENDPOINT] application_id type: <class 'str'>, len: 13
+2025-10-01 13:17:52,799 - app.api.endpoints.applications - INFO - [DEBUG ENDPOINT] application_id repr: 'TP/24/00396/X'
+2025-10-01 13:17:52,799 - app.services.search - INFO - [DEBUG] get_application_by_id called with application_id: 'TP/24/00396/X'
+2025-10-01 13:17:53,056 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/planning_applications/_doc/TP%2F24%2F00396%2FX [status:404 duration:0.255s]
+2025-10-01 13:17:53,059 - app.db.elasticsearch - ERROR - Failed to get document TP/24/00396/X: NotFoundError(404, "{'_index': 'planning_applications', '_id': 'TP/24/00396/X', 'found': False}")
+2025-10-01 13:17:53,059 - app.services.search - INFO - [DEBUG] Executing ES query for application_id 'TP/24/00396/X'
+2025-10-01 13:17:53,060 - app.services.search - INFO - [DEBUG] Query: {'bool': {'should': [{'term': {'uid.keyword': 'TP/24/00396/X'}}, {'term': {'name.keyword': 'TP/24/00396/X'}}, {'term': {'reference.keyword': 'TP/24/00396/X'}}, {'term': {'uid': 'TP/24/00396/X'}}, {'term': {'name': 'TP/24/00396/X'}}, {'term': {'reference': 'TP/24/00396/X'}}], 'minimum_should_match': 1}}
+2025-10-01 13:17:53,142 - elastic_transport.transport - INFO - POST https://95.217.117.251:9200/planning_applications/_search [status:200 duration:0.082s]
+2025-10-01 13:17:53,146 - app.services.search - INFO - [DEBUG] ES response: total hits = {'value': 1, 'relation': 'eq'}
+2025-10-01 13:17:53,146 - app.services.search - INFO - [DEBUG] Found application: ES _id=3yhuRpEB6zk0AeBPgXUO, uid=TP/24/00396/X, name=Poole/TP/24/00396/X, reference=None
+2025-10-01 13:17:53,147 - app.services.search - ERROR - [DEBUG] Failed to get application TP/24/00396/X: 1 validation error for PlanningApplication
+application_type
+  Input should be 'full', 'outline', 'reserved_matters', 'householder', 'minor', 'major', 'listed_building', 'conservation_area', 'pre_application', 'prior_approval', 'certificate_lawful', 'advertisement', 'discharge_conditions', 'non_material_amendment' or 'other' [type=enum, input_value='Treeworks', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/enum
+2025-10-01 13:17:53,151 - app.services.search - ERROR - [DEBUG] Traceback: Traceback (most recent call last):
+  File "/mnt/c/Users/Solomon-PC/Documents/Planning Explorer/backend/app/services/search.py", line 402, in get_application_by_id
+    return PlanningApplication(**mapped_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Solomon-PC/Documents/Planning Explorer/backend/test_env/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for PlanningApplication
+application_type
+  Input should be 'full', 'outline', 'reserved_matters', 'householder', 'minor', 'major', 'listed_building', 'conservation_area', 'pre_application', 'prior_approval', 'certificate_lawful', 'advertisement', 'discharge_conditions', 'non_material_amendment' or 'other' [type=enum, input_value='Treeworks', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/enum
+
+2025-10-01 13:17:53,152 - app.api.endpoints.applications - INFO - [DEBUG ENDPOINT] search_service returned: False
+2025-10-01 13:17:53,152 - app.middleware.logging - WARNING - Request completed: GET /api/v1/application - 404
+2025-10-01 13:18:17,684 - app.middleware.logging - INFO - Request started: GET /openapi.json
+2025-10-01 13:18:17,737 - app.middleware.logging - INFO - Request completed: GET /openapi.json - 200
+2025-10-01 13:18:30,273 - app.middleware.logging - INFO - Request started: GET /api/v1/application
+2025-10-01 13:18:30,274 - app.api.endpoints.applications - INFO - [DEBUG ENDPOINT] Received request for application_id: 'TP/24/00396/X'
+2025-10-01 13:18:30,275 - app.api.endpoints.applications - INFO - [DEBUG ENDPOINT] application_id type: <class 'str'>, len: 13
+2025-10-01 13:18:30,275 - app.api.endpoints.applications - INFO - [DEBUG ENDPOINT] application_id repr: 'TP/24/00396/X'
+2025-10-01 13:18:30,276 - app.services.search - INFO - [DEBUG] get_application_by_id called with application_id: 'TP/24/00396/X'
+2025-10-01 13:18:30,434 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/planning_applications/_doc/TP%2F24%2F00396%2FX [status:404 duration:0.157s]
+2025-10-01 13:18:30,438 - app.db.elasticsearch - ERROR - Failed to get document TP/24/00396/X: NotFoundError(404, "{'_index': 'planning_applications', '_id': 'TP/24/00396/X', 'found': False}")
+2025-10-01 13:18:30,439 - app.services.search - INFO - [DEBUG] Executing ES query for application_id 'TP/24/00396/X'
+2025-10-01 13:18:30,439 - app.services.search - INFO - [DEBUG] Query: {'bool': {'should': [{'term': {'uid.keyword': 'TP/24/00396/X'}}, {'term': {'name.keyword': 'TP/24/00396/X'}}, {'term': {'reference.keyword': 'TP/24/00396/X'}}, {'term': {'uid': 'TP/24/00396/X'}}, {'term': {'name': 'TP/24/00396/X'}}, {'term': {'reference': 'TP/24/00396/X'}}], 'minimum_should_match': 1}}
+2025-10-01 13:18:30,513 - elastic_transport.transport - INFO - POST https://95.217.117.251:9200/planning_applications/_search [status:200 duration:0.074s]
+2025-10-01 13:18:30,513 - app.services.search - INFO - [DEBUG] ES response: total hits = {'value': 1, 'relation': 'eq'}
+2025-10-01 13:18:30,514 - app.services.search - INFO - [DEBUG] Found application: ES _id=3yhuRpEB6zk0AeBPgXUO, uid=TP/24/00396/X, name=Poole/TP/24/00396/X, reference=None
+2025-10-01 13:18:30,515 - app.services.search - ERROR - [DEBUG] Failed to get application TP/24/00396/X: 1 validation error for PlanningApplication
+application_type
+  Input should be 'full', 'outline', 'reserved_matters', 'householder', 'minor', 'major', 'listed_building', 'conservation_area', 'pre_application', 'prior_approval', 'certificate_lawful', 'advertisement', 'discharge_conditions', 'non_material_amendment' or 'other' [type=enum, input_value='Treeworks', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/enum
+2025-10-01 13:18:30,517 - app.services.search - ERROR - [DEBUG] Traceback: Traceback (most recent call last):
+  File "/mnt/c/Users/Solomon-PC/Documents/Planning Explorer/backend/app/services/search.py", line 402, in get_application_by_id
+    return PlanningApplication(**mapped_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Solomon-PC/Documents/Planning Explorer/backend/test_env/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for PlanningApplication
+application_type
+  Input should be 'full', 'outline', 'reserved_matters', 'householder', 'minor', 'major', 'listed_building', 'conservation_area', 'pre_application', 'prior_approval', 'certificate_lawful', 'advertisement', 'discharge_conditions', 'non_material_amendment' or 'other' [type=enum, input_value='Treeworks', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/enum
+
+2025-10-01 13:18:30,518 - app.api.endpoints.applications - INFO - [DEBUG ENDPOINT] search_service returned: False
+2025-10-01 13:18:30,518 - app.middleware.logging - WARNING - Request completed: GET /api/v1/application - 404
+2025-10-01 13:18:41,978 - app.middleware.logging - INFO - Request started: GET /openapi.json
+2025-10-01 13:18:41,981 - app.middleware.logging - INFO - Request completed: GET /openapi.json - 200
+2025-10-01 13:18:53,628 - app.middleware.logging - INFO - Request started: GET /api/v1/application
+2025-10-01 13:18:53,628 - app.api.endpoints.applications - INFO - [DEBUG ENDPOINT] Received request for application_id: 'test123'
+2025-10-01 13:18:53,629 - app.api.endpoints.applications - INFO - [DEBUG ENDPOINT] application_id type: <class 'str'>, len: 7
+2025-10-01 13:18:53,629 - app.api.endpoints.applications - INFO - [DEBUG ENDPOINT] application_id repr: 'test123'
+2025-10-01 13:18:53,629 - app.services.search - INFO - [DEBUG] get_application_by_id called with application_id: 'test123'
+2025-10-01 13:18:53,810 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/planning_applications/_doc/test123 [status:404 duration:0.180s]
+2025-10-01 13:18:53,810 - app.db.elasticsearch - ERROR - Failed to get document test123: NotFoundError(404, "{'_index': 'planning_applications', '_id': 'test123', 'found': False}")
+2025-10-01 13:18:53,810 - app.services.search - INFO - [DEBUG] Executing ES query for application_id 'test123'
+2025-10-01 13:18:53,811 - app.services.search - INFO - [DEBUG] Query: {'bool': {'should': [{'term': {'uid.keyword': 'test123'}}, {'term': {'name.keyword': 'test123'}}, {'term': {'reference.keyword': 'test123'}}, {'term': {'uid': 'test123'}}, {'term': {'name': 'test123'}}, {'term': {'reference': 'test123'}}], 'minimum_should_match': 1}}
+2025-10-01 13:18:53,861 - elastic_transport.transport - INFO - POST https://95.217.117.251:9200/planning_applications/_search [status:200 duration:0.049s]
+2025-10-01 13:18:53,862 - app.services.search - INFO - [DEBUG] ES response: total hits = {'value': 3, 'relation': 'eq'}
+2025-10-01 13:18:53,864 - app.services.search - INFO - [DEBUG] Found application: ES _id=cTFyRpEB6zk0AeBPzDeP, uid=Test123, name=MoleValley/Test123, reference=None
+2025-10-01 13:18:53,864 - app.services.search - ERROR - [DEBUG] Failed to get application test123: 1 validation error for PlanningApplication
+application_type
+  Input should be 'full', 'outline', 'reserved_matters', 'householder', 'minor', 'major', 'listed_building', 'conservation_area', 'pre_application', 'prior_approval', 'certificate_lawful', 'advertisement', 'discharge_conditions', 'non_material_amendment' or 'other' [type=enum, input_value='Advertisement', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/enum
+2025-10-01 13:18:53,874 - app.services.search - ERROR - [DEBUG] Traceback: Traceback (most recent call last):
+  File "/mnt/c/Users/Solomon-PC/Documents/Planning Explorer/backend/app/services/search.py", line 402, in get_application_by_id
+    return PlanningApplication(**mapped_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Solomon-PC/Documents/Planning Explorer/backend/test_env/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for PlanningApplication
+application_type
+  Input should be 'full', 'outline', 'reserved_matters', 'householder', 'minor', 'major', 'listed_building', 'conservation_area', 'pre_application', 'prior_approval', 'certificate_lawful', 'advertisement', 'discharge_conditions', 'non_material_amendment' or 'other' [type=enum, input_value='Advertisement', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/enum
+
+2025-10-01 13:18:53,875 - app.api.endpoints.applications - INFO - [DEBUG ENDPOINT] search_service returned: False
+2025-10-01 13:18:53,875 - app.middleware.logging - WARNING - Request completed: GET /api/v1/application - 404
+2025-10-01 13:19:28,566 - app.middleware.logging - INFO - Request started: GET /api/v1/application
+2025-10-01 13:19:28,570 - app.api.endpoints.applications - INFO - [DEBUG ENDPOINT] Received request for application_id: 'TP/24/00396/X'
+2025-10-01 13:19:28,575 - app.api.endpoints.applications - INFO - [DEBUG ENDPOINT] application_id type: <class 'str'>, len: 13
+2025-10-01 13:19:28,580 - app.api.endpoints.applications - INFO - [DEBUG ENDPOINT] application_id repr: 'TP/24/00396/X'
+2025-10-01 13:19:28,584 - app.services.search - INFO - [DEBUG] get_application_by_id called with application_id: 'TP/24/00396/X'
+2025-10-01 13:19:28,849 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/planning_applications/_doc/TP%2F24%2F00396%2FX [status:404 duration:0.259s]
+2025-10-01 13:19:28,850 - app.db.elasticsearch - ERROR - Failed to get document TP/24/00396/X: NotFoundError(404, "{'_index': 'planning_applications', '_id': 'TP/24/00396/X', 'found': False}")
+2025-10-01 13:19:28,852 - app.services.search - INFO - [DEBUG] Executing ES query for application_id 'TP/24/00396/X'
+2025-10-01 13:19:28,853 - app.services.search - INFO - [DEBUG] Query: {'bool': {'should': [{'term': {'uid.keyword': 'TP/24/00396/X'}}, {'term': {'name.keyword': 'TP/24/00396/X'}}, {'term': {'reference.keyword': 'TP/24/00396/X'}}, {'term': {'uid': 'TP/24/00396/X'}}, {'term': {'name': 'TP/24/00396/X'}}, {'term': {'reference': 'TP/24/00396/X'}}], 'minimum_should_match': 1}}
+2025-10-01 13:19:28,909 - elastic_transport.transport - INFO - POST https://95.217.117.251:9200/planning_applications/_search [status:200 duration:0.055s]
+2025-10-01 13:19:28,909 - app.services.search - INFO - [DEBUG] ES response: total hits = {'value': 1, 'relation': 'eq'}
+2025-10-01 13:19:28,913 - app.services.search - INFO - [DEBUG] Found application: ES _id=3yhuRpEB6zk0AeBPgXUO, uid=TP/24/00396/X, name=Poole/TP/24/00396/X, reference=None
+2025-10-01 13:19:28,920 - app.services.search - ERROR - [DEBUG] Failed to get application TP/24/00396/X: 1 validation error for PlanningApplication
+application_type
+  Input should be 'full', 'outline', 'reserved_matters', 'householder', 'minor', 'major', 'listed_building', 'conservation_area', 'pre_application', 'prior_approval', 'certificate_lawful', 'advertisement', 'discharge_conditions', 'non_material_amendment' or 'other' [type=enum, input_value='Treeworks', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/enum
+2025-10-01 13:19:28,944 - app.services.search - ERROR - [DEBUG] Traceback: Traceback (most recent call last):
+  File "/mnt/c/Users/Solomon-PC/Documents/Planning Explorer/backend/app/services/search.py", line 402, in get_application_by_id
+    return PlanningApplication(**mapped_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Solomon-PC/Documents/Planning Explorer/backend/test_env/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for PlanningApplication
+application_type
+  Input should be 'full', 'outline', 'reserved_matters', 'householder', 'minor', 'major', 'listed_building', 'conservation_area', 'pre_application', 'prior_approval', 'certificate_lawful', 'advertisement', 'discharge_conditions', 'non_material_amendment' or 'other' [type=enum, input_value='Treeworks', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/enum
+
+2025-10-01 13:19:28,945 - app.api.endpoints.applications - INFO - [DEBUG ENDPOINT] search_service returned: False
+2025-10-01 13:19:28,950 - app.middleware.logging - WARNING - Request completed: GET /api/v1/application - 404
+2025-10-01 13:21:33,641 - app.middleware.logging - INFO - Request started: POST /api/v1/search/semantic
+2025-10-01 13:21:33,643 - app.api.endpoints.search - INFO - [semantic_search_1759321293643] Starting semantic search - query: 'Developments in Manchester in 2025', k: 10, user: anonymous
+2025-10-01 13:21:33,824 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/_cluster/health [status:200 duration:0.180s]
+2025-10-01 13:21:33,878 - elastic_transport.transport - INFO - HEAD https://95.217.117.251:9200/planning_applications [status:200 duration:0.053s]
+2025-10-01 13:21:33,878 - app.db.elasticsearch - INFO - Elasticsearch cluster status: yellow
+2025-10-01 13:21:33,879 - app.db.elasticsearch - INFO - Index 'planning_applications' exists: True
+2025-10-01 13:21:33,905 - app.services.search - INFO - [SEMANTIC_SEARCH] Extracted filters from query 'Developments in Manchester in 2025':
+2025-10-01 13:21:33,906 - app.services.search - INFO -   - statuses: None
+2025-10-01 13:21:33,907 - app.services.search - INFO -   - authorities: ['Manchester']
+2025-10-01 13:21:33,907 - app.services.search - INFO -   - date_from: 2025-01-01 00:00:00
+2025-10-01 13:21:33,908 - app.services.search - INFO -   - date_to: 2025-12-31 23:59:59
+2025-10-01 13:21:34,241 - app.services.search - INFO - [SEMANTIC_SEARCH] Built 2 filter clauses
+2025-10-01 13:21:34,241 - app.services.search - INFO - [SEMANTIC_SEARCH] Applied 2 filters to keyword query
+2025-10-01 13:21:34,242 - app.services.search - INFO - [SEMANTIC_SEARCH] Executing hybrid search:
+2025-10-01 13:21:34,242 - app.services.search - INFO -   - KNN candidates: 100
+2025-10-01 13:21:34,242 - app.services.search - INFO -   - Results to return: 10
+2025-10-01 13:21:34,243 - app.services.search - INFO -   - KNN has filters: True
+2025-10-01 13:21:34,244 - app.services.search - INFO -   - Keyword query has filters: True
+2025-10-01 13:21:34,672 - elastic_transport.transport - INFO - POST https://95.217.117.251:9200/planning_applications/_search [status:200 duration:0.426s]
+2025-10-01 13:21:34,673 - app.services.search - INFO - [SEMANTIC_SEARCH] ES returned 10 total matches, processing 10 results
+2025-10-01 13:21:34,675 - app.api.endpoints.search - INFO - [semantic_search_1759321293643] Semantic search completed successfully - 10 results in 1031ms
+2025-10-01 13:21:34,677 - app.middleware.logging - INFO - Request completed: POST /api/v1/search/semantic - 200
+2025-10-01 13:21:34,677 - app.middleware.logging - WARNING - Slow request detected: 1035.43ms
+2025-10-01 13:21:34,679 - app.middleware.performance - WARNING - Slow response: POST /api/v1/search/semantic took 1038.03ms
+WARNING:  StatReload detected changes in 'app/api/endpoints/search.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-10-01 13:24:20,440 - app.core.startup - INFO - Shutting down AI Intelligence Layer services...
+2025-10-01 13:24:20,444 - app.services.cache_manager - INFO - Cache manager stopped
+2025-10-01 13:24:20,447 - app.core.startup - INFO - Cache manager stopped
+2025-10-01 13:24:20,451 - app.services.background_processor - INFO - Background worker worker-0 stopped
+2025-10-01 13:24:20,456 - app.services.background_processor - INFO - Background worker worker-1 stopped
+2025-10-01 13:24:20,460 - app.services.background_processor - INFO - Background worker worker-2 stopped
+2025-10-01 13:24:20,464 - app.services.background_processor - INFO - Background worker worker-3 stopped
+2025-10-01 13:24:20,465 - app.services.background_processor - INFO - Background worker worker-4 stopped
+2025-10-01 13:24:20,465 - app.services.background_processor - INFO - Stopped background AI processing workers
+2025-10-01 13:24:20,466 - app.core.startup - INFO - Background processor stopped
+2025-10-01 13:24:20,467 - app.core.startup - INFO - AI Intelligence Layer shutdown complete
+2025-10-01 13:24:20,467 - app.core.database - INFO - Shutting down application...
+2025-10-01 13:24:20,468 - app.db.elasticsearch - INFO - Disconnected from Elasticsearch
+2025-10-01 13:24:20,469 - app.core.database - INFO - ✅ Elasticsearch connection closed
+/mnt/c/Users/Solomon-PC/Documents/Planning Explorer/backend/app/core/database.py:60: RuntimeWarning: coroutine 'SupabaseClient.disconnect' was never awaited
+  supabase_client.disconnect()
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+2025-10-01 13:24:20,504 - app.core.database - INFO - ✅ Supabase connection closed
+2025-10-01 13:24:20,506 - app.core.database - INFO - 👋 Application shutdown complete
+/usr/lib/python3.12/contextlib.py:217: RuntimeWarning: coroutine 'SupabaseClient.connect' was never awaited
+  await anext(self.gen)
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     Application shutdown complete.
+INFO:     Finished server process [234011]
+2025-10-01 13:25:27,522 - app.middleware.logging - INFO - Logging configured successfully
+2025-10-01 13:25:27,523 - app.middleware.logging - INFO - Log level: INFO
+2025-10-01 13:25:27,523 - app.middleware.logging - INFO - Debug mode: True
+INFO:     Started server process [237317]
+INFO:     Waiting for application startup.
+2025-10-01 13:25:27,626 - app.core.database - INFO - Starting application...
+2025-10-01 13:25:27,916 - elastic_transport.transport - INFO - HEAD https://95.217.117.251:9200/ [status:200 duration:0.173s]
+2025-10-01 13:25:27,916 - app.db.elasticsearch - INFO - Successfully connected to Elasticsearch
+2025-10-01 13:25:27,917 - app.core.database - INFO - ✅ Elasticsearch connection established
+2025-10-01 13:25:27,917 - app.core.database - INFO - ✅ Supabase connection established
+2025-10-01 13:25:27,917 - app.core.database - INFO - 🚀 Application startup complete
+2025-10-01 13:25:27,917 - app.core.startup - INFO - Starting Planning Explorer AI Intelligence Layer initialization...
+2025-10-01 13:25:27,918 - app.core.startup - INFO - AI processing services initialized successfully
+2025-10-01 13:25:27,918 - app.core.startup - INFO - AI components available: 5/5
+2025-10-01 13:25:27,929 - app.services.background_processor - INFO - Started 5 background AI processing workers
+2025-10-01 13:25:27,929 - app.core.startup - INFO - Background processing services started
+2025-10-01 13:25:27,938 - app.services.cache_manager - INFO - Cache manager started
+2025-10-01 13:25:27,938 - app.core.startup - INFO - Cache management services started
+2025-10-01 13:25:27,938 - app.core.startup - INFO - 🚀 AI Intelligence Layer fully operational - all services started successfully
+2025-10-01 13:25:27,938 - app.services.background_processor - INFO - Background worker worker-0 started
+2025-10-01 13:25:27,939 - app.services.background_processor - INFO - Background worker worker-1 started
+2025-10-01 13:25:27,939 - app.services.background_processor - INFO - Background worker worker-2 started
+2025-10-01 13:25:27,939 - app.services.background_processor - INFO - Background worker worker-3 started
+2025-10-01 13:25:27,939 - app.services.background_processor - INFO - Background worker worker-4 started
+INFO:     Application startup complete.
+2025-10-01 13:30:05,887 - app.middleware.logging - INFO - Request started: OPTIONS /api/v1/search/semantic
+2025-10-01 13:30:05,888 - app.middleware.logging - INFO - Request completed: OPTIONS /api/v1/search/semantic - 200
+2025-10-01 13:30:05,892 - app.middleware.logging - INFO - Request started: POST /api/v1/search/semantic
+2025-10-01 13:30:05,896 - app.api.endpoints.search - INFO - [semantic_search_1759321805896] Starting semantic search - query: 'Developments in Manchester in 2025', k: 20, user: anonymous
+2025-10-01 13:30:06,082 - elastic_transport.transport - INFO - GET https://95.217.117.251:9200/_cluster/health [status:200 duration:0.185s]
+2025-10-01 13:30:06,132 - elastic_transport.transport - INFO - HEAD https://95.217.117.251:9200/planning_applications [status:200 duration:0.049s]
+2025-10-01 13:30:06,133 - app.db.elasticsearch - INFO - Elasticsearch cluster status: yellow
+2025-10-01 13:30:06,133 - app.db.elasticsearch - INFO - Index 'planning_applications' exists: True
+2025-10-01 13:30:06,195 - app.services.search - INFO - [SEMANTIC_SEARCH] Extracted filters from query 'Developments in Manchester in 2025':
+2025-10-01 13:30:06,196 - app.services.search - INFO -   - statuses: None
+2025-10-01 13:30:06,196 - app.services.search - INFO -   - authorities: ['Manchester']
+2025-10-01 13:30:06,197 - app.services.search - INFO -   - date_from: 2025-01-01 00:00:00
+2025-10-01 13:30:06,197 - app.services.search - INFO -   - date_to: 2025-12-31 23:59:59
+2025-10-01 13:30:13,218 - app.services.search - INFO - [SEMANTIC_SEARCH] Built 2 filter clauses
+2025-10-01 13:30:13,219 - app.services.search - INFO - [SEMANTIC_SEARCH] Applied 2 filters to keyword query
+2025-10-01 13:30:13,220 - app.services.search - INFO - [SEMANTIC_SEARCH] Executing hybrid search:
+2025-10-01 13:30:13,220 - app.services.search - INFO -   - KNN candidates: 100
+2025-10-01 13:30:13,220 - app.services.search - INFO -   - Results to return: 20
+2025-10-01 13:30:13,221 - app.services.search - INFO -   - KNN has filters: True
+2025-10-01 13:30:13,221 - app.services.search - INFO -   - Keyword query has filters: True
+2025-10-01 13:30:13,505 - elastic_transport.transport - INFO - POST https://95.217.117.251:9200/planning_applications/_search [status:200 duration:0.282s]
+2025-10-01 13:30:13,508 - app.services.search - INFO - [SEMANTIC_SEARCH] ES returned 10 total matches, processing 10 results
+2025-10-01 13:30:13,816 - app.api.endpoints.search - INFO - [semantic_search_1759321805896] Semantic search completed successfully - 10 results in 7920ms
+2025-10-01 13:30:13,817 - app.middleware.logging - INFO - Request completed: POST /api/v1/search/semantic - 200
+2025-10-01 13:30:13,817 - app.middleware.logging - WARNING - Slow request detected: 7925.22ms
+2025-10-01 13:30:13,818 - app.middleware.performance - WARNING - Slow response: POST /api/v1/search/semantic took 7926.07ms

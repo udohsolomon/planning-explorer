@@ -1,0 +1,266 @@
+@import "tailwindcss";
+
+:root {
+  /* Planning Explorer Original Color Palette - Brand Color #043F2E */
+  --planning-primary: #043F2E;
+  --planning-secondary: #065940;
+  --planning-accent: #087952;
+  --planning-bright: #043F2E;
+  --planning-highlight: #0A9963;
+  --planning-button: #043F2E;
+  --planning-white: #ffffff;
+  --planning-text-dark: #1a1a1a;
+  --planning-text-light: #666666;
+  --planning-border: #e5e5e5;
+
+  /* Base theme variables */
+  --background: var(--planning-white);
+  --foreground: var(--planning-text-dark);
+  --primary: var(--planning-primary);
+  --secondary: var(--planning-secondary);
+  --accent: var(--planning-bright);
+  --muted: #f8f9fa;
+  --border: var(--planning-border);
+}
+
+@theme inline {
+  /* Color System */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+
+  /* Planning-specific colors - Brand Color #043F2E */
+  --color-planning-primary: #043F2E;
+  --color-planning-secondary: #065940;
+  --color-planning-accent: #087952;
+  --color-planning-bright: #043F2E;
+  --color-planning-highlight: #0A9963;
+  --color-planning-button: #043F2E;
+  --color-planning-white: #ffffff;
+  --color-planning-text-dark: #1a1a1a;
+  --color-planning-text-light: #666666;
+
+  /* Typography */
+  --font-sans: var(--font-dm-sans), system-ui, -apple-system, sans-serif;
+  --font-heading: var(--font-dm-sans), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-inter), 'Courier New', monospace;
+
+  /* Responsive Typography Scale */
+  --text-xs: 0.75rem;     /* 12px */
+  --text-sm: 0.875rem;    /* 14px */
+  --text-base: 1rem;      /* 16px */
+  --text-lg: 1.125rem;    /* 18px - main body text */
+  --text-xl: 1.25rem;     /* 20px */
+  --text-2xl: 1.5rem;     /* 24px */
+  --text-3xl: 1.875rem;   /* 30px */
+  --text-4xl: 2.25rem;    /* 36px */
+  --text-5xl: 3rem;       /* 48px */
+  --text-6xl: 5rem;       /* 80px - large heading */
+
+  /* Spacing Scale */
+  --spacing-1: 0.25rem;   /* 4px */
+  --spacing-2: 0.5rem;    /* 8px */
+  --spacing-3: 0.75rem;   /* 12px */
+  --spacing-4: 1rem;      /* 16px */
+  --spacing-6: 1.5rem;    /* 24px */
+  --spacing-8: 2rem;      /* 32px */
+  --spacing-12: 3rem;     /* 48px */
+  --spacing-16: 4rem;     /* 64px */
+  --spacing-20: 5rem;     /* 80px */
+
+  /* Container Widths */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1290px;  /* Planning Insights max width */
+
+  /* Breakpoints */
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* Border Radius */
+  --radius-sm: 0.125rem;   /* 2px */
+  --radius: 0.25rem;       /* 4px */
+  --radius-md: 0.375rem;   /* 6px */
+  --radius-lg: 0.5rem;     /* 8px - Planning Insights buttons */
+  --radius-xl: 0.75rem;    /* 12px */
+  --radius-2xl: 1rem;      /* 16px */
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+}
+
+/* Global Styles */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  font-size: var(--text-lg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--planning-primary);
+}
+
+/* Button Base Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  transition: all var(--transition-fast);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--planning-button);
+  color: var(--planning-white);
+  padding: 18px 36px;
+  font-size: var(--text-lg);
+  line-height: 1.5;
+}
+
+.btn-primary:hover {
+  background-color: var(--planning-primary);
+  color: var(--planning-white);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Container Utilities */
+.container {
+  width: 100%;
+  max-width: var(--container-2xl);
+  margin: 0 auto;
+  padding: 0 var(--spacing-4);
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 var(--spacing-6);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 var(--spacing-8);
+  }
+}
+
+/* Responsive Typography */
+@media (max-width: 480px) {
+  :root {
+    --text-6xl: 1.875rem; /* 30px on mobile */
+    --text-5xl: 2.25rem;  /* 36px on mobile */
+  }
+}
+
+/* Leaflet Map Styles */
+@import "leaflet/dist/leaflet.css";
+
+/* Custom Marker Styles */
+.custom-marker-icon {
+  background: transparent;
+  border: none;
+}
+
+.marker-pin {
+  width: 30px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.marker-pin svg {
+  transform: rotate(45deg);
+}
+
+/* Marker Cluster Styles */
+.marker-cluster-small {
+  background-color: rgba(45, 204, 158, 0.6);
+}
+
+.marker-cluster-small div {
+  background-color: rgba(45, 204, 158, 0.8);
+}
+
+.marker-cluster-medium {
+  background-color: rgba(255, 167, 38, 0.6);
+}
+
+.marker-cluster-medium div {
+  background-color: rgba(255, 167, 38, 0.8);
+}
+
+.marker-cluster-large {
+  background-color: rgba(239, 83, 80, 0.6);
+}
+
+.marker-cluster-large div {
+  background-color: rgba(239, 83, 80, 0.8);
+}
+
+.marker-cluster {
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+.marker-cluster div {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Leaflet Popup Styles */
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.leaflet-popup-content {
+  margin: 0;
+  padding: 0;
+}
+
+/* Fix Leaflet default icon paths */
+.leaflet-default-icon-path {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='36'%3E%3Cpath fill='%232563eb' d='M12 0C7.2 0 3.3 3.9 3.3 8.7c0 6.6 8.7 27.3 8.7 27.3s8.7-20.7 8.7-27.3C20.7 3.9 16.8 0 12 0z'/%3E%3Ccircle fill='%23fff' cx='12' cy='8.7' r='3.7'/%3E%3C/svg%3E");
+}

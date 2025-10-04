@@ -1,0 +1,113 @@
+{
+  "id": "demo-session-20250928-204719-6d28876b",
+  "name": "demo-session",
+  "started": "2025-09-28T20:47:19.381277",
+  "last_updated": "2025-09-28T20:47:40.338174",
+  "phase": "testing",
+  "status": "active",
+  "progress_percentage": 0,
+  "estimated_completion": "Calculating...",
+  "total_tokens": 92400,
+  "total_tools": 41,
+  "agents": {
+    "master-orchestrator": {
+      "status": "completed",
+      "current_task": "Planning complete",
+      "progress": 100,
+      "metrics": {
+        "tokens_used": 14500,
+        "tools_used": 7,
+        "elapsed_seconds": 2.841419,
+        "efficiency_score": 100.0
+      }
+    },
+    "elasticsearch-architect": {
+      "status": "completed",
+      "current_task": "Schema design complete",
+      "progress": 100,
+      "metrics": {
+        "tokens_used": 11600,
+        "tools_used": 5,
+        "elapsed_seconds": 4.915923,
+        "efficiency_score": 100.0
+      }
+    },
+    "backend-engineer": {
+      "status": "completed",
+      "current_task": "API development complete",
+      "progress": 100,
+      "metrics": {
+        "tokens_used": 16800,
+        "tools_used": 6,
+        "elapsed_seconds": 4.939859,
+        "efficiency_score": 100.0
+      }
+    },
+    "frontend-specialist": {
+      "status": "completed",
+      "current_task": "UI implementation complete",
+      "progress": 100,
+      "metrics": {
+        "tokens_used": 15800,
+        "tools_used": 6,
+        "elapsed_seconds": 4.943656,
+        "efficiency_score": 100.0
+      }
+    },
+    "ai-engineer": {
+      "status": "completed",
+      "current_task": "AI integration complete",
+      "progress": 100,
+      "metrics": {
+        "tokens_used": 21600,
+        "tools_used": 8,
+        "elapsed_seconds": 3.585719,
+        "efficiency_score": 100.0
+      }
+    },
+    "devops-specialist": {
+      "status": "idle",
+      "current_task": null,
+      "progress": 0,
+      "metrics": {
+        "tokens_used": 0,
+        "tools_used": 0,
+        "elapsed_seconds": 0,
+        "efficiency_score": 100.0
+      }
+    },
+    "qa-engineer": {
+      "status": "completed",
+      "current_task": "Tests passed",
+      "progress": 100,
+      "metrics": {
+        "tokens_used": 8100,
+        "tools_used": 5,
+        "elapsed_seconds": 2.076358,
+        "efficiency_score": 100.0
+      }
+    },
+    "security-auditor": {
+      "status": "completed",
+      "current_task": "Security verified",
+      "progress": 100,
+      "metrics": {
+        "tokens_used": 4000,
+        "tools_used": 4,
+        "elapsed_seconds": 3.212829,
+        "efficiency_score": 100.0
+      }
+    },
+    "docs-writer": {
+      "status": "idle",
+      "current_task": null,
+      "progress": 0,
+      "metrics": {
+        "tokens_used": 0,
+        "tools_used": 0,
+        "elapsed_seconds": 0,
+        "efficiency_score": 100.0
+      }
+    }
+  }
+}

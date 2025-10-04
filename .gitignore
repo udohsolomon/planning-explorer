@@ -1,0 +1,140 @@
+# Environment Variables - CRITICAL: Never commit!
+.env
+.env.local
+.env.*.local
+.env.production
+*.env
+
+# Sensitive Files
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+config.local.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+venv/
+env/
+ENV/
+test_env/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+test_*.py
+*_test.py
+tests/
+test-results/
+playwright-report/
+coverage/
+
+# Debug & Temporary Files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+debug.log
+*.debug
+
+# Build Artifacts
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.next/
+out/
+.cache/
+.turbo/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Documentation (auto-generated summaries)
+*_SUMMARY.md
+*_REPORT.md
+*_FIX*.md
+*_TEST*.md
+*_DEBUG*.md
+FIXES_*.txt
+INVESTIGATION_*.md
+VERIFICATION_*.md
+TEST_ANALYSIS_*.md
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+planning_explorer.db
+
+# Elasticsearch
+data/
+elasticsearch_data/
+
+# Docker
+.dockerignore
+
+# Reports
+pipeline_test_report_*.json
+test_report_*.json
+*.report.json

@@ -1,0 +1,247 @@
+{
+  "single_node_optimizations": {
+    "cluster_settings": {
+      "cluster.name": "planning-explorer-single",
+      "node.name": "planning-explorer-node-01",
+      "network.host": "0.0.0.0",
+      "http.port": 9200,
+      "discovery.type": "single-node",
+      "bootstrap.memory_lock": true,
+      "xpack.security.enabled": false,
+      "xpack.monitoring.collection.enabled": true
+    },
+
+    "memory_settings": {
+      "heap_size": "2g",
+      "description": "Recommended 50% of available RAM, max 31GB",
+      "jvm_options": [
+        "-Xms2g",
+        "-Xmx2g",
+        "-XX:+UseG1GC",
+        "-XX:G1HeapRegionSize=32m",
+        "-XX:+UnlockExperimentalVMOptions",
+        "-XX:+UseZGC"
+      ]
+    },
+
+    "storage_optimization": {
+      "path.data": "/var/lib/elasticsearch",
+      "path.logs": "/var/log/elasticsearch",
+      "compression": "best_compression",
+      "store.type": "fs",
+      "store.fs.fs_lock": "simple"
+    }
+  },
+
+  "index_performance_settings": {
+    "planning_applications": {
+      "number_of_shards": 1,
+      "number_of_replicas": 0,
+      "refresh_interval": "5s",
+      "max_result_window": 100000,
+      "mapping.total_fields.limit": 3000,
+      "mapping.depth.limit": 20,
+      "mapping.nested_fields.limit": 100,
+      "mapping.nested_objects.limit": 10000,
+
+      "queries.cache.enabled": true,
+      "requests.cache.enable": true,
+      "warmer.enabled": true,
+      "compound_format": true,
+      "codec": "best_compression",
+
+      "translog.durability": "request",
+      "translog.sync_interval": "5s",
+      "translog.flush_threshold_size": "1gb",
+
+      "merge.policy.max_merge_at_once": 5,
+      "merge.policy.segments_per_tier": 5,
+      "merge.scheduler.max_thread_count": 2
+    }
+  },
+
+  "caching_strategy": {
+    "query_cache": {
+      "enabled": true,
+      "size": "512mb",
+      "description": "Cache frequent filter queries and aggregations"
+    },
+    "request_cache": {
+      "enabled": true,
+      "size": "256mb",
+      "description": "Cache search request results"
+    },
+    "field_data_cache": {
+      "size": "256mb",
+      "description": "Cache field data for aggregations and sorting"
+    },
+    "vector_cache": {
+      "warm_fields": [
+        "description_embedding",
+        "full_content_embedding",
+        "summary_embedding"
+      ],
+      "preload_strategy": "Load popular vectors on startup"
+    }
+  },
+
+  "search_performance_targets": {
+    "standard_search": {
+      "target_response_time": "< 100ms",
+      "query_types": ["term", "range", "bool", "multi_match"],
+      "optimizations": [
+        "Use keyword fields for exact matching",
+        "Implement search templates",
+        "Cache frequent queries"
+      ]
+    },
+    "vector_search": {
+      "target_response_time": "< 200ms",
+      "knn_settings": {
+        "num_candidates": 1000,
+        "k": 100
+      },
+      "optimizations": [
+        "Use approximate kNN",
+        "Pre-filter with cheap queries",
+        "Warm vector caches"
+      ]
+    },
+    "aggregations": {
+      "target_response_time": "< 500ms",
+      "optimization_strategies": [
+        "Use composite aggregations for pagination",
+        "Implement doc_count heuristics",
+        "Cache expensive aggregations"
+      ]
+    }
+  },
+
+  "bulk_indexing_optimization": {
+    "bulk_size": 1000,
+    "refresh_interval_during_bulk": "30s",
+    "number_of_replicas_during_bulk": 0,
+    "max_thread_pool_size": 4,
+    "queue_size": 1000,
+    "timeout": "60s",
+
+    "vector_indexing": {
+      "batch_vector_generation": true,
+      "embedding_batch_size": 100,
+      "async_processing": true,
+      "retry_failed_embeddings": true
+    }
+  },
+
+  "monitoring_and_alerting": {
+    "key_metrics": {
+      "query_performance": {
+        "search_latency_p95": "< 200ms",
+        "search_latency_p99": "< 500ms",
+        "vector_search_latency_p95": "< 300ms"
+      },
+      "indexing_performance": {
+        "indexing_rate": "> 1000 docs/sec",
+        "bulk_indexing_errors": "< 1%"
+      },
+      "resource_utilization": {
+        "heap_usage": "< 80%",
+        "cpu_usage": "< 70%",
+        "disk_usage": "< 85%"
+      },
+      "cache_efficiency": {
+        "query_cache_hit_ratio": "> 85%",
+        "request_cache_hit_ratio": "> 70%"
+      }
+    },
+
+    "alerts": [
+      {
+        "metric": "heap_usage",
+        "threshold": 85,
+        "action": "Alert and consider increasing heap size"
+      },
+      {
+        "metric": "search_latency_p95",
+        "threshold": 300,
+        "action": "Check query performance and caching"
+      },
+      {
+        "metric": "indexing_errors",
+        "threshold": 5,
+        "action": "Check bulk indexing configuration"
+      }
+    ]
+  },
+
+  "backup_and_recovery": {
+    "snapshot_repository": {
+      "type": "fs",
+      "location": "/backup/elasticsearch",
+      "compress": true,
+      "chunk_size": "1gb"
+    },
+    "snapshot_schedule": {
+      "frequency": "daily",
+      "time": "02:00",
+      "retention": "30 days"
+    },
+    "point_in_time_recovery": {
+      "enabled": true,
+      "retention_period": "7 days"
+    }
+  },
+
+  "scaling_considerations": {
+    "vertical_scaling": {
+      "memory_requirements": {
+        "100k_applications": "4GB heap",
+        "500k_applications": "8GB heap",
+        "1M_applications": "16GB heap",
+        "5M_applications": "31GB heap"
+      },
+      "storage_requirements": {
+        "base_data": "1GB per 10k applications",
+        "vector_embeddings": "6MB per 1k applications",
+        "total_with_ai": "2GB per 10k applications"
+      }
+    },
+    "horizontal_scaling_preparation": {
+      "shard_strategy": "Ready to increase shards when scaling",
+      "replica_strategy": "Add replicas for read scaling",
+      "cluster_expansion": "Single-node to multi-node migration path"
+    }
+  },
+
+  "troubleshooting_guide": {
+    "common_issues": {
+      "slow_vector_search": {
+        "symptoms": ["Vector queries > 300ms", "High CPU usage"],
+        "solutions": [
+          "Reduce num_candidates in kNN queries",
+          "Implement query filters before vector search",
+          "Warm vector caches on startup",
+          "Consider reducing vector dimensions"
+        ]
+      },
+      "high_memory_usage": {
+        "symptoms": ["Heap usage > 85%", "GC pressure"],
+        "solutions": [
+          "Increase heap size",
+          "Reduce field data cache size",
+          "Clear unused indexes",
+          "Optimize mapping to reduce memory footprint"
+        ]
+      },
+      "indexing_slowness": {
+        "symptoms": ["Bulk indexing < 500 docs/sec", "High indexing latency"],
+        "solutions": [
+          "Increase refresh interval during bulk operations",
+          "Reduce number of replicas during indexing",
+          "Optimize bulk size",
+          "Use async AI processing"
+        ]
+      }
+    }
+  }
+}

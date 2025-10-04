@@ -1,0 +1,720 @@
+{
+  "mappings": {
+    "properties": {
+      // ======== CORE PLANNING APPLICATION FIELDS ========
+      "application_id": {
+        "type": "keyword",
+        "store": true
+      },
+      "reference": {
+        "type": "keyword",
+        "store": true
+      },
+      "authority": {
+        "type": "keyword",
+        "normalizer": "lowercase",
+        "fields": {
+          "text": {
+            "type": "text",
+            "analyzer": "english"
+          }
+        }
+      },
+      "authority_code": {
+        "type": "keyword"
+      },
+
+      // ======== ADDRESS AND LOCATION FIELDS ========
+      "address": {
+        "type": "text",
+        "analyzer": "address_analyzer",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 512
+          },
+          "suggest": {
+            "type": "completion",
+            "analyzer": "simple",
+            "preserve_separators": true,
+            "preserve_position_increments": true,
+            "max_input_length": 50
+          }
+        }
+      },
+      "postcode": {
+        "type": "keyword",
+        "normalizer": "postcode_normalizer",
+        "fields": {
+          "district": {
+            "type": "keyword",
+            "normalizer": "postcode_district"
+          }
+        }
+      },
+      "location": {
+        "type": "geo_point"
+      },
+      "ward": {
+        "type": "keyword",
+        "fields": {
+          "text": {
+            "type": "text",
+            "analyzer": "english"
+          }
+        }
+      },
+      "parish": {
+        "type": "keyword"
+      },
+
+      // ======== APPLICATION STATUS AND DATES ========
+      "status": {
+        "type": "keyword",
+        "fields": {
+          "text": {
+            "type": "text"
+          }
+        }
+      },
+      "status_category": {
+        "type": "keyword"
+      },
+      "decision": {
+        "type": "keyword"
+      },
+      "submission_date": {
+        "type": "date",
+        "format": "strict_date_optional_time||epoch_millis"
+      },
+      "validation_date": {
+        "type": "date",
+        "format": "strict_date_optional_time||epoch_millis"
+      },
+      "consultation_start_date": {
+        "type": "date",
+        "format": "strict_date_optional_time||epoch_millis"
+      },
+      "consultation_end_date": {
+        "type": "date",
+        "format": "strict_date_optional_time||epoch_millis"
+      },
+      "target_decision_date": {
+        "type": "date",
+        "format": "strict_date_optional_time||epoch_millis"
+      },
+      "decision_date": {
+        "type": "date",
+        "format": "strict_date_optional_time||epoch_millis"
+      },
+      "appeal_date": {
+        "type": "date",
+        "format": "strict_date_optional_time||epoch_millis"
+      },
+
+      // ======== DEVELOPMENT DETAILS ========
+      "development_type": {
+        "type": "keyword",
+        "fields": {
+          "text": {
+            "type": "text",
+            "analyzer": "english"
+          }
+        }
+      },
+      "application_type": {
+        "type": "keyword",
+        "fields": {
+          "text": {
+            "type": "text"
+          }
+        }
+      },
+      "use_class": {
+        "type": "keyword",
+        "fields": {
+          "text": {
+            "type": "text"
+          }
+        }
+      },
+      "description": {
+        "type": "text",
+        "analyzer": "planning_analyzer",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 1024
+          },
+          "suggest": {
+            "type": "completion",
+            "analyzer": "simple"
+          }
+        }
+      },
+      "proposal": {
+        "type": "text",
+        "analyzer": "planning_analyzer"
+      },
+
+      // ======== PROJECT SCALE AND VALUE ========
+      "project_value": {
+        "type": "scaled_float",
+        "scaling_factor": 100
+      },
+      "floor_area": {
+        "type": "integer"
+      },
+      "site_area": {
+        "type": "float"
+      },
+      "num_units": {
+        "type": "integer"
+      },
+      "num_bedrooms": {
+        "type": "integer"
+      },
+      "building_height": {
+        "type": "float"
+      },
+      "parking_spaces": {
+        "type": "integer"
+      },
+
+      // ======== APPLICANT AND AGENT DETAILS ========
+      "applicant": {
+        "properties": {
+          "name": {
+            "type": "text",
+            "analyzer": "name_analyzer",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "type": {
+            "type": "keyword"
+          },
+          "address": {
+            "type": "text",
+            "analyzer": "standard"
+          }
+        }
+      },
+      "agent": {
+        "properties": {
+          "name": {
+            "type": "text",
+            "analyzer": "name_analyzer",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "company": {
+            "type": "text",
+            "analyzer": "name_analyzer",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "contact": {
+            "type": "keyword"
+          }
+        }
+      },
+
+      // ======== PLANNING OFFICER AND COMMITTEE ========
+      "planning_officer": {
+        "type": "keyword",
+        "fields": {
+          "text": {
+            "type": "text",
+            "analyzer": "name_analyzer"
+          }
+        }
+      },
+      "committee_date": {
+        "type": "date",
+        "format": "strict_date_optional_time||epoch_millis"
+      },
+
+      // ======== DOCUMENTS AND ATTACHMENTS ========
+      "documents": {
+        "type": "nested",
+        "properties": {
+          "document_id": {
+            "type": "keyword"
+          },
+          "title": {
+            "type": "text",
+            "analyzer": "planning_analyzer"
+          },
+          "type": {
+            "type": "keyword"
+          },
+          "url": {
+            "type": "keyword",
+            "index": false
+          },
+          "upload_date": {
+            "type": "date"
+          },
+          "file_size": {
+            "type": "integer"
+          },
+          "content_extracted": {
+            "type": "text",
+            "analyzer": "planning_analyzer"
+          }
+        }
+      },
+
+      // ======== CONSULTATION RESPONSES ========
+      "consultations": {
+        "type": "nested",
+        "properties": {
+          "consultee": {
+            "type": "keyword"
+          },
+          "response": {
+            "type": "keyword"
+          },
+          "comment": {
+            "type": "text",
+            "analyzer": "planning_analyzer"
+          },
+          "date": {
+            "type": "date"
+          }
+        }
+      },
+
+      // ======== PUBLIC COMMENTS ========
+      "public_comments": {
+        "properties": {
+          "total_comments": {
+            "type": "integer"
+          },
+          "support_count": {
+            "type": "integer"
+          },
+          "objection_count": {
+            "type": "integer"
+          },
+          "neutral_count": {
+            "type": "integer"
+          }
+        }
+      },
+
+      // ======== AI ENHANCEMENT FIELDS ========
+      "ai_summary": {
+        "type": "text",
+        "analyzer": "english",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 512
+          }
+        }
+      },
+
+      "opportunity_score": {
+        "type": "integer",
+        "index": true
+      },
+
+      "opportunity_breakdown": {
+        "properties": {
+          "approval_probability": {
+            "type": "float"
+          },
+          "market_potential": {
+            "type": "float"
+          },
+          "project_viability": {
+            "type": "float"
+          },
+          "strategic_fit": {
+            "type": "float"
+          },
+          "timeline_score": {
+            "type": "float"
+          },
+          "risk_score": {
+            "type": "float"
+          }
+        }
+      },
+
+      "opportunity_rationale": {
+        "type": "text",
+        "analyzer": "english"
+      },
+
+      "market_insights": {
+        "type": "text",
+        "analyzer": "english"
+      },
+
+      "approval_probability": {
+        "type": "float"
+      },
+
+      "predicted_timeline": {
+        "properties": {
+          "decision_weeks": {
+            "type": "integer"
+          },
+          "completion_months": {
+            "type": "integer"
+          },
+          "confidence": {
+            "type": "float"
+          }
+        }
+      },
+
+      "risk_assessment": {
+        "properties": {
+          "risk_level": {
+            "type": "keyword"
+          },
+          "risk_factors": {
+            "type": "keyword"
+          },
+          "mitigation_suggestions": {
+            "type": "text",
+            "analyzer": "english"
+          }
+        }
+      },
+
+      "risk_flags": {
+        "type": "keyword"
+      },
+
+      "confidence_score": {
+        "type": "float"
+      },
+
+      // ======== VECTOR EMBEDDINGS FOR SEMANTIC SEARCH ========
+      "description_embedding": {
+        "type": "dense_vector",
+        "dims": 1536,
+        "index": true,
+        "similarity": "cosine"
+      },
+
+      "full_content_embedding": {
+        "type": "dense_vector",
+        "dims": 1536,
+        "index": true,
+        "similarity": "cosine"
+      },
+
+      "summary_embedding": {
+        "type": "dense_vector",
+        "dims": 1536,
+        "index": true,
+        "similarity": "cosine"
+      },
+
+      "document_embeddings": {
+        "type": "nested",
+        "properties": {
+          "document_id": {
+            "type": "keyword"
+          },
+          "embedding": {
+            "type": "dense_vector",
+            "dims": 1536,
+            "index": true,
+            "similarity": "cosine"
+          },
+          "content_type": {
+            "type": "keyword"
+          }
+        }
+      },
+
+      // ======== GEOGRAPHIC EMBEDDINGS ========
+      "location_embedding": {
+        "type": "dense_vector",
+        "dims": 256,
+        "index": true,
+        "similarity": "cosine"
+      },
+
+      // ======== SIMILAR APPLICATIONS ========
+      "similar_applications": {
+        "type": "nested",
+        "properties": {
+          "application_id": {
+            "type": "keyword"
+          },
+          "similarity_score": {
+            "type": "float"
+          },
+          "similarity_type": {
+            "type": "keyword"
+          }
+        }
+      },
+
+      // ======== AI PROCESSING METADATA ========
+      "ai_processing": {
+        "properties": {
+          "last_processed": {
+            "type": "date"
+          },
+          "model_version": {
+            "type": "keyword"
+          },
+          "processing_status": {
+            "type": "keyword"
+          },
+          "human_reviewed": {
+            "type": "boolean"
+          },
+          "embedding_model": {
+            "type": "keyword"
+          },
+          "processing_duration": {
+            "type": "float"
+          },
+          "error_message": {
+            "type": "text",
+            "index": false
+          }
+        }
+      },
+
+      // ======== USER ENGAGEMENT METRICS ========
+      "user_metrics": {
+        "properties": {
+          "view_count": {
+            "type": "integer"
+          },
+          "save_count": {
+            "type": "integer"
+          },
+          "share_count": {
+            "type": "integer"
+          },
+          "last_viewed": {
+            "type": "date"
+          },
+          "popularity_score": {
+            "type": "float"
+          }
+        }
+      },
+
+      // ======== PLANNING HISTORY ========
+      "planning_history": {
+        "type": "nested",
+        "properties": {
+          "reference": {
+            "type": "keyword"
+          },
+          "decision": {
+            "type": "keyword"
+          },
+          "decision_date": {
+            "type": "date"
+          },
+          "description": {
+            "type": "text",
+            "analyzer": "planning_analyzer"
+          }
+        }
+      },
+
+      // ======== CONSTRAINTS AND DESIGNATIONS ========
+      "constraints": {
+        "properties": {
+          "conservation_area": {
+            "type": "boolean"
+          },
+          "listed_building": {
+            "type": "keyword"
+          },
+          "green_belt": {
+            "type": "boolean"
+          },
+          "flood_zone": {
+            "type": "keyword"
+          },
+          "tree_preservation": {
+            "type": "boolean"
+          },
+          "article_4_direction": {
+            "type": "boolean"
+          },
+          "other_constraints": {
+            "type": "keyword"
+          }
+        }
+      },
+
+      // ======== TIMESTAMPS ========
+      "created_at": {
+        "type": "date",
+        "format": "strict_date_optional_time||epoch_millis"
+      },
+      "updated_at": {
+        "type": "date",
+        "format": "strict_date_optional_time||epoch_millis"
+      },
+      "indexed_at": {
+        "type": "date",
+        "format": "strict_date_optional_time||epoch_millis"
+      },
+
+      // ======== DATA SOURCE TRACKING ========
+      "data_source": {
+        "properties": {
+          "portal_url": {
+            "type": "keyword",
+            "index": false
+          },
+          "scrape_date": {
+            "type": "date"
+          },
+          "data_quality_score": {
+            "type": "float"
+          },
+          "completeness_score": {
+            "type": "float"
+          }
+        }
+      }
+    }
+  },
+
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 0,
+    "index.refresh_interval": "5s",
+    "index.max_result_window": 100000,
+    "index.mapping.total_fields.limit": 3000,
+    "index.mapping.depth.limit": 20,
+    "index.mapping.nested_fields.limit": 100,
+    "index.mapping.nested_objects.limit": 10000,
+
+    // Performance optimizations for single-node deployment
+    "index.queries.cache.enabled": true,
+    "index.requests.cache.enable": true,
+    "index.warmer.enabled": true,
+    "index.compound_format": true,
+    "index.codec": "best_compression",
+
+    // Vector search optimizations
+    "index.knn.space_type": "cosinesimil",
+    "index.knn.algo_param.ef_construction": 200,
+    "index.knn.algo_param.m": 16,
+
+    "analysis": {
+      "analyzer": {
+        "planning_analyzer": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": [
+            "lowercase",
+            "stop",
+            "planning_synonyms",
+            "stemmer_english",
+            "asciifolding"
+          ]
+        },
+        "address_analyzer": {
+          "type": "custom",
+          "tokenizer": "keyword",
+          "filter": [
+            "lowercase",
+            "address_standardizer",
+            "asciifolding"
+          ]
+        },
+        "name_analyzer": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": [
+            "lowercase",
+            "asciifolding"
+          ]
+        }
+      },
+
+      "normalizer": {
+        "lowercase": {
+          "type": "custom",
+          "filter": ["lowercase", "asciifolding"]
+        },
+        "postcode_normalizer": {
+          "type": "custom",
+          "filter": ["uppercase", "postcode_filter"]
+        },
+        "postcode_district": {
+          "type": "custom",
+          "filter": ["uppercase", "postcode_district_filter"]
+        }
+      },
+
+      "filter": {
+        "planning_synonyms": {
+          "type": "synonym",
+          "synonyms": [
+            "house,dwelling,residence",
+            "flat,apartment,unit",
+            "extension,enlargement,addition",
+            "garage,carport,parking",
+            "conservatory,sunroom,orangery",
+            "office,commercial,business",
+            "retail,shop,store",
+            "industrial,warehouse,factory",
+            "school,education,educational",
+            "hospital,medical,healthcare",
+            "hotel,accommodation,lodging",
+            "restaurant,cafe,food",
+            "pub,bar,drinking",
+            "petrol,fuel,gas",
+            "church,religious,worship",
+            "leisure,recreation,entertainment",
+            "sport,sports,athletic",
+            "residential,housing,homes",
+            "mixed,mixed-use,combination"
+          ]
+        },
+        "stemmer_english": {
+          "type": "stemmer",
+          "language": "english"
+        },
+        "address_standardizer": {
+          "type": "pattern_replace",
+          "pattern": "\\b(st|street|rd|road|ave|avenue|ln|lane|dr|drive|cl|close|ct|court|pl|place|sq|square|way|walk)\\b",
+          "replacement": "$1"
+        },
+        "postcode_filter": {
+          "type": "pattern_replace",
+          "pattern": "([A-Z]{1,2}[0-9]{1,2}[A-Z]?)\\s*([0-9][A-Z]{2})",
+          "replacement": "$1 $2"
+        },
+        "postcode_district_filter": {
+          "type": "pattern_replace",
+          "pattern": "([A-Z]{1,2}[0-9]{1,2}[A-Z]?).*",
+          "replacement": "$1"
+        }
+      }
+    }
+  }
+}

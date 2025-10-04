@@ -1,0 +1,228 @@
+/**
+ * AI Search Animation - Accessibility Styles
+ * Planning Explorer - Enhanced focus indicators and high contrast support
+ */
+
+/* ==================== Enhanced Focus Indicators ==================== */
+
+/* Global focus visible styles for animation components */
+.ai-search-animation button:focus-visible,
+.ai-search-animation a:focus-visible {
+  outline: 2px solid #043F2E;
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+/* Primary action buttons */
+.ai-search-animation button[data-variant='primary']:focus-visible {
+  outline-color: #065940;
+  outline-width: 3px;
+  box-shadow: 0 0 0 4px rgba(4, 63, 46, 0.1);
+}
+
+/* Danger action buttons */
+.ai-search-animation button[data-variant='danger']:focus-visible {
+  outline-color: #EF4444;
+  outline-width: 3px;
+  box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.1);
+}
+
+/* Cancel button enhanced focus */
+.ai-search-animation [data-cancel-button]:focus-visible {
+  outline: 2px solid #6B7280;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(107, 114, 128, 0.15);
+}
+
+/* ==================== High Contrast Mode Support ==================== */
+
+@media (prefers-contrast: high) {
+  /* Strengthen all borders */
+  .ai-search-animation .border {
+    border-width: 2px !important;
+    border-color: currentColor !important;
+  }
+
+  /* Remove gradients, use solid colors */
+  .ai-search-animation [class*='bg-gradient'] {
+    background-image: none !important;
+  }
+
+  /* Enhance text contrast */
+  .ai-search-animation {
+    color: #000000;
+  }
+
+  .ai-search-animation .text-\[\#666666\],
+  .ai-search-animation .text-\[\#6B7280\] {
+    color: #000000 !important;
+  }
+
+  /* Strengthen focus indicators */
+  .ai-search-animation button:focus-visible,
+  .ai-search-animation a:focus-visible {
+    outline-width: 4px !important;
+    outline-offset: 3px !important;
+  }
+
+  /* Solid backgrounds for cards */
+  .ai-search-animation .bg-white {
+    background-color: #FFFFFF !important;
+    border: 2px solid #000000 !important;
+  }
+
+  /* High contrast error colors */
+  .ai-search-animation .text-\[\#EF4444\] {
+    color: #DC2626 !important;
+    font-weight: 600;
+  }
+
+  .ai-search-animation .text-\[\#F59E0B\] {
+    color: #D97706 !important;
+    font-weight: 600;
+  }
+
+  .ai-search-animation .text-\[\#3B82F6\] {
+    color: #2563EB !important;
+    font-weight: 600;
+  }
+
+  /* Strengthen primary green */
+  .ai-search-animation .text-\[\#043F2E\],
+  .ai-search-animation .bg-\[\#043F2E\] {
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+  }
+}
+
+/* ==================== Reduced Motion Support ==================== */
+
+@media (prefers-reduced-motion: reduce) {
+  /* Disable all animations */
+  .ai-search-animation * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  /* Remove transform animations */
+  .ai-search-animation [class*='animate-'],
+  .ai-search-animation [class*='motion-'] {
+    animation: none !important;
+  }
+
+  /* Instant opacity transitions */
+  .ai-search-animation {
+    transition: opacity 0.15s ease !important;
+  }
+
+  /* No shake animation on errors */
+  .ai-search-animation [role='alert'] {
+    animation: none !important;
+  }
+}
+
+/* ==================== Mobile Touch Targets ==================== */
+
+@media (max-width: 768px) {
+  /* Ensure minimum 48px touch targets */
+  .ai-search-animation button {
+    min-height: 48px;
+    min-width: 48px;
+    padding: 12px 16px;
+  }
+
+  /* Larger spacing between buttons */
+  .ai-search-animation button + button {
+    margin-top: 12px;
+  }
+
+  /* Easier tap target for cancel */
+  .ai-search-animation [data-cancel-button] {
+    min-height: 52px;
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+}
+
+/* ==================== Forced Colors Mode (Windows High Contrast) ==================== */
+
+@media (forced-colors: active) {
+  /* Use system colors */
+  .ai-search-animation {
+    forced-color-adjust: auto;
+  }
+
+  /* Ensure borders are visible */
+  .ai-search-animation button,
+  .ai-search-animation .border {
+    border: 1px solid ButtonText !important;
+  }
+
+  /* Active/focus states use system colors */
+  .ai-search-animation button:focus-visible {
+    outline: 2px solid Highlight !important;
+    outline-offset: 2px;
+  }
+
+  .ai-search-animation button:active {
+    background-color: ActiveText !important;
+    color: Canvas !important;
+  }
+}
+
+/* ==================== Screen Reader Only Utilities ==================== */
+
+.ai-search-animation .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.ai-search-animation .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: inherit;
+  margin: inherit;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* ==================== Keyboard Navigation Helpers ==================== */
+
+/* Skip link for power users (if implemented) */
+.ai-search-animation .skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #043F2E;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 0 0 4px 4px;
+  z-index: 100;
+}
+
+.ai-search-animation .skip-link:focus {
+  top: 0;
+}
+
+/* Tab focus ring for modal container */
+.ai-search-animation [role='dialog']:focus {
+  outline: none; /* Let inner elements handle focus */
+}
+
+/* ==================== Print Styles ==================== */
+
+@media print {
+  .ai-search-animation {
+    display: none !important;
+  }
+}

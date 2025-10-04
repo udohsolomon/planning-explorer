@@ -1,0 +1,18 @@
+{
+  "session_id": "emb_20251001_115459",
+  "start_time": 1759316099.1685073,
+  "target_documents": 50000,
+  "batch_size": 500,
+  "processed_count": 0,
+  "successful_embeddings": 0,
+  "failed_embeddings": 0,
+  "skipped_documents": 0,
+  "total_tokens": 0,
+  "total_cost_usd": 0.0,
+  "last_processed_offset": 0,
+  "processed_document_ids": [],
+  "error_count": 0,
+  "batch_times": [],
+  "current_phase": "finalizing",
+  "last_sort_values": null
+}

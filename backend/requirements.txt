@@ -1,0 +1,90 @@
+# FastAPI Core
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+
+# HTTP Client
+httpx==0.25.2
+aiofiles==23.2.1
+
+# Authentication & Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-dotenv==1.0.0
+email-validator>=2.1.0
+
+# Supabase Integration
+supabase==2.0.0
+postgrest==0.11.0
+gotrue==1.1.0
+
+# Elasticsearch
+elasticsearch==8.11.0
+elasticsearch-dsl==8.11.0
+
+# Data Validation & Serialization
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Database & ORM
+asyncpg==0.29.0
+sqlalchemy==2.0.23
+alembic==1.12.1
+
+# AI & ML Libraries
+openai==1.3.7
+anthropic==0.7.7
+sentence-transformers==2.2.2
+numpy==1.24.4
+
+# Date & Time
+python-dateutil==2.8.2
+
+# Logging & Monitoring
+structlog==23.2.0
+loguru==0.7.2
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+httpx==0.25.2
+
+# Development
+black==23.11.0
+isort==5.12.0
+flake8==6.1.0
+mypy==1.7.1
+
+# Performance & Caching
+redis==5.0.1
+python-redis==4.6.0
+cachetools==5.3.2
+
+# Utilities
+click==8.1.7
+rich==13.7.0
+typer==0.9.0
+
+# CORS
+fastapi-cors==0.0.6
+
+# Rate Limiting
+slowapi==0.1.9
+
+# Background Tasks
+celery==5.3.4
+kombu==5.3.4
+
+# File Processing
+PyPDF2==3.0.1
+python-magic==0.4.27
+
+# Async Support
+asyncio==3.4.3
+aiofiles==23.2.1
+aiocache==0.12.2
+
+# Executive Summary Service (NEW)
+# Note: Executive summary service uses existing dependencies above
+# No additional packages required - leverages FastAPI, Pydantic, etc.

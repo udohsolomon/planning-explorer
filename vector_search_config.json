@@ -1,0 +1,323 @@
+{
+  "vector_field_configurations": {
+    "description_embedding": {
+      "type": "dense_vector",
+      "dims": 1536,
+      "index": true,
+      "similarity": "cosine",
+      "purpose": "Semantic search of planning application descriptions",
+      "model": "text-embedding-3-large",
+      "preprocessing": [
+        "Remove common planning terms stopwords",
+        "Normalize UK planning terminology",
+        "Extract key development concepts"
+      ]
+    },
+    "full_content_embedding": {
+      "type": "dense_vector",
+      "dims": 1536,
+      "index": true,
+      "similarity": "cosine",
+      "purpose": "Complete application content semantic search",
+      "model": "text-embedding-3-large",
+      "content_sources": [
+        "description",
+        "proposal",
+        "documents.content_extracted",
+        "consultations.comment",
+        "ai_summary"
+      ]
+    },
+    "summary_embedding": {
+      "type": "dense_vector",
+      "dims": 1536,
+      "index": true,
+      "similarity": "cosine",
+      "purpose": "AI-generated summary semantic search",
+      "model": "text-embedding-3-large",
+      "optimization": "High recall for brief queries"
+    },
+    "location_embedding": {
+      "type": "dense_vector",
+      "dims": 256,
+      "index": true,
+      "similarity": "cosine",
+      "purpose": "Geographic similarity and area-based search",
+      "features": [
+        "postcode_district",
+        "ward",
+        "authority",
+        "nearby_landmarks",
+        "transport_links",
+        "demographic_profile"
+      ]
+    },
+    "document_embeddings": {
+      "type": "nested",
+      "purpose": "Individual document semantic search within applications",
+      "embedding_field": {
+        "type": "dense_vector",
+        "dims": 1536,
+        "index": true,
+        "similarity": "cosine"
+      }
+    }
+  },
+
+  "hybrid_search_templates": {
+    "semantic_search": {
+      "description": "Pure semantic search using vector embeddings",
+      "query": {
+        "script_score": {
+          "query": {
+            "bool": {
+              "filter": "{{filters}}"
+            }
+          },
+          "script": {
+            "source": "cosineSimilarity(params.query_vector, 'full_content_embedding') + 1.0",
+            "params": {
+              "query_vector": "{{query_embedding}}"
+            }
+          }
+        }
+      },
+      "min_score": 1.7,
+      "size": "{{size|20}}"
+    },
+
+    "hybrid_search": {
+      "description": "Combines keyword matching with semantic similarity",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "multi_match": {
+                "query": "{{text_query}}",
+                "fields": [
+                  "description^3",
+                  "proposal^2",
+                  "address^2",
+                  "ai_summary^2",
+                  "applicant.name",
+                  "agent.name",
+                  "agent.company"
+                ],
+                "type": "best_fields",
+                "fuzziness": "AUTO"
+              }
+            }
+          ],
+          "should": [
+            {
+              "script_score": {
+                "query": {"match_all": {}},
+                "script": {
+                  "source": "Math.log(2.0 + cosineSimilarity(params.query_vector, 'description_embedding'))",
+                  "params": {
+                    "query_vector": "{{query_embedding}}"
+                  }
+                },
+                "boost": 2.0
+              }
+            },
+            {
+              "script_score": {
+                "query": {"match_all": {}},
+                "script": {
+                  "source": "Math.log(2.0 + cosineSimilarity(params.query_vector, 'summary_embedding'))",
+                  "params": {
+                    "query_vector": "{{query_embedding}}"
+                  }
+                },
+                "boost": 1.5
+              }
+            }
+          ],
+          "filter": "{{filters}}"
+        }
+      }
+    },
+
+    "similar_applications_search": {
+      "description": "Find applications similar to a given application",
+      "query": {
+        "script_score": {
+          "query": {
+            "bool": {
+              "must_not": [
+                {"term": {"application_id": "{{exclude_id}}"}}
+              ],
+              "filter": "{{filters}}"
+            }
+          },
+          "script": {
+            "source": """
+              double desc_sim = cosineSimilarity(params.desc_vector, 'description_embedding');
+              double content_sim = cosineSimilarity(params.content_vector, 'full_content_embedding');
+              double location_sim = cosineSimilarity(params.location_vector, 'location_embedding');
+              return (desc_sim * 0.5) + (content_sim * 0.3) + (location_sim * 0.2) + 1.0;
+            """,
+            "params": {
+              "desc_vector": "{{description_embedding}}",
+              "content_vector": "{{content_embedding}}",
+              "location_vector": "{{location_embedding}}"
+            }
+          }
+        }
+      },
+      "min_score": 1.6,
+      "size": 10
+    },
+
+    "conversational_search": {
+      "description": "Natural language queries with context understanding",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "script_score": {
+                "query": {"match_all": {}},
+                "script": {
+                  "source": "cosineSimilarity(params.query_vector, 'full_content_embedding') + 1.0",
+                  "params": {
+                    "query_vector": "{{conversation_embedding}}"
+                  }
+                },
+                "boost": 3.0
+              }
+            }
+          ],
+          "should": [
+            {
+              "multi_match": {
+                "query": "{{extracted_keywords}}",
+                "fields": [
+                  "description^2",
+                  "development_type^1.5",
+                  "address",
+                  "use_class"
+                ],
+                "type": "best_fields"
+              }
+            },
+            {
+              "range": {
+                "opportunity_score": {
+                  "gte": "{{min_opportunity_score|60}}"
+                }
+              }
+            }
+          ],
+          "filter": "{{contextual_filters}}"
+        }
+      }
+    },
+
+    "geographic_similarity": {
+      "description": "Find applications in similar geographic contexts",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "script_score": {
+                "query": {"match_all": {}},
+                "script": {
+                  "source": "cosineSimilarity(params.location_vector, 'location_embedding') + 1.0",
+                  "params": {
+                    "location_vector": "{{location_embedding}}"
+                  }
+                }
+              }
+            }
+          ],
+          "should": [
+            {
+              "geo_distance": {
+                "distance": "{{radius|5km}}",
+                "location": "{{center_point}}"
+              }
+            },
+            {
+              "terms": {
+                "ward": "{{similar_wards}}"
+              }
+            },
+            {
+              "term": {
+                "authority": "{{authority}}"
+              }
+            }
+          ],
+          "filter": "{{filters}}"
+        }
+      }
+    }
+  },
+
+  "search_performance_optimizations": {
+    "vector_search": {
+      "num_candidates": 1000,
+      "k": 100,
+      "filter_optimization": "Use filters in the kNN query for better performance",
+      "caching": {
+        "query_cache": true,
+        "request_cache": true,
+        "field_data_cache": "Warm frequently accessed vector fields"
+      }
+    },
+    "hybrid_search": {
+      "rescore": {
+        "window_size": 100,
+        "query_weight": 1.0,
+        "rescore_query_weight": 2.0
+      },
+      "track_total_hits": false,
+      "min_score": 1.5
+    }
+  },
+
+  "embedding_generation_config": {
+    "batch_size": 100,
+    "model_settings": {
+      "text-embedding-3-large": {
+        "dimensions": 1536,
+        "max_tokens": 8191,
+        "encoding_format": "float"
+      }
+    },
+    "preprocessing": {
+      "text_cleaning": [
+        "Remove HTML tags",
+        "Normalize whitespace",
+        "Handle special characters",
+        "Truncate to max tokens"
+      ],
+      "content_extraction": {
+        "description": "Clean description text",
+        "full_content": "Concatenate description + proposal + key documents",
+        "summary": "Use AI-generated summary if available, fallback to description",
+        "location": "Combine postcode + ward + authority + transport links"
+      }
+    }
+  },
+
+  "vector_index_settings": {
+    "refresh_interval": "30s",
+    "merge_policy": {
+      "max_merge_at_once": 5,
+      "segments_per_tier": 5
+    },
+    "compression": {
+      "vector_compression": "best_compression",
+      "stored_fields_compression": "best_compression"
+    },
+    "warming": {
+      "warmer_queries": [
+        "Popular search patterns",
+        "Common vector similarity queries",
+        "Frequent filter combinations"
+      ]
+    }
+  }
+}

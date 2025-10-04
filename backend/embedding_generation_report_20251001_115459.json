@@ -1,0 +1,36 @@
+{
+  "session_id": "emb_20251001_115459",
+  "configuration": {
+    "target_documents": 50000,
+    "batch_size": 500,
+    "rate_limit_delay": 0.5,
+    "dry_run": false
+  },
+  "processing_summary": {
+    "total_time_seconds": 0.26338887214660645,
+    "documents_processed": 0,
+    "successful_embeddings": 0,
+    "failed_embeddings": 0,
+    "skipped_documents": 0,
+    "success_rate_percent": 0.0
+  },
+  "api_performance": {
+    "total_api_calls": 0,
+    "successful_api_calls": 0,
+    "failed_api_calls": 0,
+    "api_success_rate_percent": 0.0,
+    "avg_response_time_seconds": 0.0,
+    "avg_tokens_per_request": 0.0
+  },
+  "cost_analysis": {
+    "total_tokens": 0,
+    "total_cost_usd": 0.0,
+    "cost_per_document_usd": 0.0,
+    "cost_per_1k_tokens_usd": 0
+  },
+  "performance_metrics": {
+    "throughput_docs_per_minute": 0.0,
+    "token_processing_rate_per_minute": 0.0,
+    "rate_limit_delay_seconds": 0.5
+  }
+}

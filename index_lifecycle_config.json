@@ -1,0 +1,351 @@
+{
+  "index_lifecycle_management": {
+    "planning_applications_policy": {
+      "policy": {
+        "phases": {
+          "hot": {
+            "min_age": "0ms",
+            "actions": {
+              "set_priority": {
+                "priority": 100
+              },
+              "rollover": {
+                "max_size": "10gb",
+                "max_age": "30d",
+                "max_docs": 1000000
+              }
+            }
+          },
+          "warm": {
+            "min_age": "30d",
+            "actions": {
+              "set_priority": {
+                "priority": 50
+              },
+              "allocate": {
+                "number_of_replicas": 0
+              },
+              "forcemerge": {
+                "max_num_segments": 1
+              }
+            }
+          },
+          "cold": {
+            "min_age": "90d",
+            "actions": {
+              "set_priority": {
+                "priority": 0
+              },
+              "allocate": {
+                "number_of_replicas": 0
+              }
+            }
+          },
+          "delete": {
+            "min_age": "2y",
+            "actions": {
+              "delete": {}
+            }
+          }
+        }
+      }
+    },
+
+    "index_template": {
+      "name": "planning_applications_template",
+      "index_patterns": ["planning_applications*"],
+      "template": {
+        "settings": {
+          "index.lifecycle.name": "planning_applications_policy",
+          "index.lifecycle.rollover_alias": "planning_applications",
+          "number_of_shards": 1,
+          "number_of_replicas": 0,
+          "refresh_interval": "5s",
+          "codec": "best_compression"
+        }
+      }
+    }
+  },
+
+  "data_retention_strategy": {
+    "active_applications": {
+      "description": "Current and recent applications (last 6 months)",
+      "retention_period": "indefinite",
+      "index_pattern": "planning_applications_active",
+      "optimization": "frequent_access",
+      "settings": {
+        "refresh_interval": "1s",
+        "number_of_replicas": 0,
+        "priority": 100
+      }
+    },
+
+    "historical_applications": {
+      "description": "Historical applications (6 months to 2 years)",
+      "retention_period": "2 years",
+      "index_pattern": "planning_applications_historical",
+      "optimization": "balanced_access",
+      "settings": {
+        "refresh_interval": "30s",
+        "number_of_replicas": 0,
+        "priority": 50,
+        "codec": "best_compression"
+      }
+    },
+
+    "archived_applications": {
+      "description": "Archived applications (2+ years)",
+      "retention_period": "7 years",
+      "index_pattern": "planning_applications_archived",
+      "optimization": "read_only_access",
+      "settings": {
+        "refresh_interval": "5m",
+        "number_of_replicas": 0,
+        "priority": 10,
+        "codec": "best_compression",
+        "index.blocks.write": true
+      }
+    }
+  },
+
+  "vector_embedding_lifecycle": {
+    "embedding_optimization": {
+      "description": "Optimize vector storage for different access patterns",
+      "strategies": {
+        "frequent_vectors": {
+          "age_threshold": "30d",
+          "optimization": "keep_in_memory",
+          "cache_priority": "high"
+        },
+        "occasional_vectors": {
+          "age_threshold": "90d",
+          "optimization": "compress_storage",
+          "cache_priority": "medium"
+        },
+        "archived_vectors": {
+          "age_threshold": "1y",
+          "optimization": "cold_storage",
+          "cache_priority": "low"
+        }
+      }
+    },
+
+    "embedding_cleanup": {
+      "description": "Clean up outdated or low-quality embeddings",
+      "triggers": {
+        "model_update": "regenerate_all_embeddings",
+        "quality_threshold": "remove_embeddings_below_confidence_0.5",
+        "storage_pressure": "remove_oldest_archived_embeddings"
+      }
+    }
+  },
+
+  "performance_optimization_lifecycle": {
+    "index_optimization_schedule": {
+      "daily_tasks": [
+        {
+          "time": "02:00",
+          "action": "force_merge_segments",
+          "target": "indices_older_than_1d",
+          "max_segments": 5
+        },
+        {
+          "time": "03:00",
+          "action": "clear_cache",
+          "target": "field_data_cache"
+        },
+        {
+          "time": "04:00",
+          "action": "warm_cache",
+          "target": "frequent_queries"
+        }
+      ],
+
+      "weekly_tasks": [
+        {
+          "day": "sunday",
+          "time": "01:00",
+          "action": "reindex_fragmented_indices",
+          "threshold": "fragmentation_over_30_percent"
+        },
+        {
+          "day": "sunday",
+          "time": "02:00",
+          "action": "update_index_settings",
+          "target": "optimize_for_current_load"
+        }
+      ],
+
+      "monthly_tasks": [
+        {
+          "day": 1,
+          "time": "00:00",
+          "action": "full_cluster_optimization",
+          "includes": [
+            "rebalance_shards",
+            "optimize_mappings",
+            "cleanup_old_snapshots"
+          ]
+        }
+      ]
+    }
+  },
+
+  "monitoring_and_alerting": {
+    "lifecycle_monitoring": {
+      "metrics_to_track": [
+        "index_size_growth_rate",
+        "document_count_per_phase",
+        "query_performance_by_age",
+        "storage_utilization",
+        "cache_hit_ratios"
+      ],
+
+      "alerts": [
+        {
+          "metric": "hot_phase_size",
+          "threshold": "> 8gb",
+          "action": "trigger_early_rollover"
+        },
+        {
+          "metric": "warm_phase_query_latency",
+          "threshold": "> 500ms",
+          "action": "optimize_warm_indices"
+        },
+        {
+          "metric": "storage_utilization",
+          "threshold": "> 80%",
+          "action": "accelerate_deletion_policy"
+        }
+      ]
+    }
+  },
+
+  "backup_and_disaster_recovery": {
+    "snapshot_lifecycle_policy": {
+      "name": "planning_applications_snapshots",
+      "schedule": {
+        "daily": {
+          "time": "01:00",
+          "retention": "30 days",
+          "indices": ["planning_applications*"]
+        },
+        "weekly": {
+          "time": "sunday 00:00",
+          "retention": "12 weeks",
+          "indices": ["planning_applications*"]
+        },
+        "monthly": {
+          "time": "1st 23:00",
+          "retention": "12 months",
+          "indices": ["planning_applications*"]
+        }
+      },
+
+      "snapshot_settings": {
+        "compress": true,
+        "include_global_state": false,
+        "ignore_unavailable": true,
+        "allow_no_indices": false
+      }
+    },
+
+    "point_in_time_recovery": {
+      "enabled": true,
+      "retention_period": "7 days",
+      "granularity": "1 hour"
+    },
+
+    "disaster_recovery_procedures": {
+      "rto_target": "4 hours",
+      "rpo_target": "1 hour",
+      "recovery_steps": [
+        "restore_cluster_configuration",
+        "restore_latest_snapshots",
+        "rebuild_vector_indices",
+        "warm_caches",
+        "validate_data_integrity"
+      ]
+    }
+  },
+
+  "compliance_and_audit": {
+    "data_governance": {
+      "personal_data_handling": {
+        "retention_policy": "follow_gdpr_requirements",
+        "anonymization": "after_2_years",
+        "deletion_on_request": "within_30_days"
+      },
+
+      "audit_trail": {
+        "track_data_modifications": true,
+        "log_access_patterns": true,
+        "retention_period": "7 years"
+      }
+    },
+
+    "regulatory_compliance": {
+      "planning_data_regulations": {
+        "public_access_requirements": "comply_with_foi_act",
+        "data_accuracy_standards": "maintain_source_traceability"
+      }
+    }
+  },
+
+  "migration_strategies": {
+    "version_upgrades": {
+      "elasticsearch_upgrade": {
+        "strategy": "rolling_restart",
+        "preparation": [
+          "backup_all_data",
+          "test_compatibility",
+          "plan_rollback_strategy"
+        ]
+      },
+
+      "schema_evolution": {
+        "strategy": "reindex_with_new_mapping",
+        "zero_downtime": "use_aliases_for_seamless_transition"
+      }
+    },
+
+    "scaling_migration": {
+      "single_to_multi_node": {
+        "preparation": [
+          "adjust_shard_count",
+          "configure_replica_settings",
+          "update_discovery_settings"
+        ],
+        "execution": [
+          "add_nodes_incrementally",
+          "rebalance_shards",
+          "monitor_performance"
+        ]
+      }
+    }
+  },
+
+  "automation_scripts": {
+    "lifecycle_maintenance": {
+      "script_location": "/scripts/lifecycle_maintenance.py",
+      "schedule": "daily at 01:00",
+      "functions": [
+        "check_lifecycle_phases",
+        "optimize_indices",
+        "clean_old_data",
+        "generate_reports"
+      ]
+    },
+
+    "performance_monitoring": {
+      "script_location": "/scripts/performance_monitor.py",
+      "schedule": "every 5 minutes",
+      "functions": [
+        "collect_metrics",
+        "check_thresholds",
+        "trigger_alerts",
+        "auto_optimize_if_needed"
+      ]
+    }
+  }
+}

@@ -1,0 +1,2749 @@
+{
+  "test_run": {
+    "timestamp": "2025-10-01T12:14:00.805751",
+    "duration_seconds": 99.214345,
+    "total_tests": 64,
+    "passed": 46,
+    "failed": 18,
+    "pass_rate": "71.9%"
+  },
+  "categories": {
+    "status_filters": {
+      "tests": 10
+    },
+    "date_filters": {
+      "tests": 12
+    },
+    "location_filters": {
+      "tests": 20
+    },
+    "dev_type_filters": {
+      "tests": 10
+    },
+    "combined_filters": {
+      "tests": 5
+    },
+    "edge_cases": {
+      "tests": 7
+    }
+  },
+  "results": [
+    {
+      "test_name": "rejected_applications_basic",
+      "query": "rejected applications",
+      "extracted_filters": "{'statuses': [<ApplicationStatus.REJECTED: 'rejected'>]}",
+      "expected_filters": {
+        "statuses": [
+          "rejected"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 49566,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "3/07/23/010",
+          "authority": "West Somerset",
+          "status": "Rejected",
+          "date": "2023-07-31 00:00:00",
+          "type": "Full",
+          "score": 31.342735
+        },
+        {
+          "reference": "3/07/23/010",
+          "authority": "West Somerset",
+          "status": "Rejected",
+          "date": "2023-07-31 00:00:00",
+          "type": "Full",
+          "score": 31.342735
+        },
+        {
+          "reference": "70680",
+          "authority": "Bury",
+          "status": "Rejected",
+          "date": "2024-04-22 00:00:00",
+          "type": "Full",
+          "score": 27.557568
+        }
+      ]
+    },
+    {
+      "test_name": "approved_applications_basic",
+      "query": "approved applications",
+      "extracted_filters": "{'statuses': [<ApplicationStatus.APPROVED: 'approved'>]}",
+      "expected_filters": {
+        "statuses": [
+          "approved"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 15,
+      "failed_count": 5,
+      "failed_results_sample": [
+        {
+          "reference": "22/01432/HOUS",
+          "errors": [
+            "status mismatch: expected ['approved'], got Conditions"
+          ]
+        },
+        {
+          "reference": "24/01169/HOU",
+          "errors": [
+            "status mismatch: expected ['approved'], got Conditions"
+          ]
+        },
+        {
+          "reference": "24/01169/HOU",
+          "errors": [
+            "status mismatch: expected ['approved'], got Conditions"
+          ]
+        },
+        {
+          "reference": "15879/23",
+          "errors": [
+            "status mismatch: expected ['approved'], got Conditions"
+          ]
+        },
+        {
+          "reference": "221898",
+          "errors": [
+            "status mismatch: expected ['approved'], got Conditions"
+          ]
+        }
+      ],
+      "execution_time_ms": 791,
+      "passed": false,
+      "error": "5 results failed validation",
+      "sample_results": [
+        {
+          "reference": "23/00441/HHPD",
+          "authority": "Tameside",
+          "status": "Permitted",
+          "date": "2023-05-11 00:00:00",
+          "type": "Outline",
+          "score": 40.62986
+        },
+        {
+          "reference": "22/01432/HOUS",
+          "authority": "Rochdale",
+          "status": "Conditions",
+          "date": "2022-11-07 00:00:00",
+          "type": "Full",
+          "score": 40.62986
+        },
+        {
+          "reference": "23/00274/FUL",
+          "authority": "Sunderland",
+          "status": "Permitted",
+          "date": "2023-02-05 00:00:00",
+          "type": "Full",
+          "score": 35.049156
+        }
+      ]
+    },
+    {
+      "test_name": "refused_synonym",
+      "query": "refused planning applications",
+      "extracted_filters": "{'statuses': [<ApplicationStatus.REJECTED: 'rejected'>]}",
+      "expected_filters": {
+        "statuses": [
+          "rejected"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 645,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "3/07/23/010",
+          "authority": "West Somerset",
+          "status": "Rejected",
+          "date": "2023-07-31 00:00:00",
+          "type": "Full",
+          "score": 38.09822
+        },
+        {
+          "reference": "3/07/23/010",
+          "authority": "West Somerset",
+          "status": "Rejected",
+          "date": "2023-07-31 00:00:00",
+          "type": "Full",
+          "score": 38.09822
+        },
+        {
+          "reference": "70680",
+          "authority": "Bury",
+          "status": "Rejected",
+          "date": "2024-04-22 00:00:00",
+          "type": "Full",
+          "score": 33.49722
+        }
+      ]
+    },
+    {
+      "test_name": "granted_synonym",
+      "query": "granted permits",
+      "extracted_filters": "{'statuses': [<ApplicationStatus.APPROVED: 'approved'>]}",
+      "expected_filters": {
+        "statuses": [
+          "approved"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 16,
+      "failed_count": 4,
+      "failed_results_sample": [
+        {
+          "reference": "23/01224/FUL",
+          "errors": [
+            "status mismatch: expected ['approved'], got Conditions"
+          ]
+        },
+        {
+          "reference": "22/02497/FP",
+          "errors": [
+            "status mismatch: expected ['approved'], got Conditions"
+          ]
+        },
+        {
+          "reference": "23/00032/DOC",
+          "errors": [
+            "status mismatch: expected ['approved'], got Conditions"
+          ]
+        },
+        {
+          "reference": "22/02497/FP",
+          "errors": [
+            "status mismatch: expected ['approved'], got Conditions"
+          ]
+        }
+      ],
+      "execution_time_ms": 526,
+      "passed": false,
+      "error": "4 results failed validation",
+      "sample_results": [
+        {
+          "reference": "23/01224/FUL",
+          "authority": "Portsmouth",
+          "status": "Conditions",
+          "date": "2023-09-29 00:00:00",
+          "type": "Full",
+          "score": 27.974741
+        },
+        {
+          "reference": "23/01412/SCR",
+          "authority": "Cotswold",
+          "status": "Permitted",
+          "date": "2023-04-25 00:00:00",
+          "type": "Outline",
+          "score": 25.200493
+        },
+        {
+          "reference": "22/01139/FULHH",
+          "authority": "Chorley",
+          "status": "Permitted",
+          "date": "2022-10-28 00:00:00",
+          "type": "Full",
+          "score": 25.200493
+        }
+      ]
+    },
+    {
+      "test_name": "pending_applications",
+      "query": "pending applications",
+      "extracted_filters": "{'statuses': [<ApplicationStatus.UNDER_CONSIDERATION: 'under_consideration'>]}",
+      "expected_filters": {
+        "statuses": [
+          "under_consideration"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 0,
+      "failed_count": 20,
+      "failed_results_sample": [
+        {
+          "reference": "24/501806/COUNTY",
+          "errors": [
+            "status mismatch: expected ['under_consideration'], got Undecided"
+          ]
+        },
+        {
+          "reference": "24/501806/COUNTY",
+          "errors": [
+            "status mismatch: expected ['under_consideration'], got Undecided"
+          ]
+        },
+        {
+          "reference": "16260/23",
+          "errors": [
+            "status mismatch: expected ['under_consideration'], got Undecided"
+          ]
+        },
+        {
+          "reference": "3/39/24/022",
+          "errors": [
+            "status mismatch: expected ['under_consideration'], got Undecided"
+          ]
+        },
+        {
+          "reference": "3/39/24/022",
+          "errors": [
+            "status mismatch: expected ['under_consideration'], got Undecided"
+          ]
+        }
+      ],
+      "execution_time_ms": 560,
+      "passed": false,
+      "error": "20 results failed validation",
+      "sample_results": [
+        {
+          "reference": "24/501806/COUNTY",
+          "authority": "Mid Kent",
+          "status": "Undecided",
+          "date": "2024-04-25 00:00:00",
+          "type": "Other",
+          "score": 31.342758
+        },
+        {
+          "reference": "24/501806/COUNTY",
+          "authority": "Mid Kent",
+          "status": "Undecided",
+          "date": "2024-04-25 00:00:00",
+          "type": "Other",
+          "score": 31.342758
+        },
+        {
+          "reference": "16260/23",
+          "authority": "Bolton",
+          "status": "Undecided",
+          "date": "2023-06-23 00:00:00",
+          "type": "Full",
+          "score": 31.342758
+        }
+      ]
+    },
+    {
+      "test_name": "withdrawn_applications",
+      "query": "withdrawn applications",
+      "extracted_filters": "{'statuses': [<ApplicationStatus.WITHDRAWN: 'withdrawn'>]}",
+      "expected_filters": {
+        "statuses": [
+          "withdrawn"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 828,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "70286",
+          "authority": "Bury",
+          "status": "Withdrawn",
+          "date": "2023-11-28 00:00:00",
+          "type": "Full",
+          "score": 31.342758
+        },
+        {
+          "reference": "P/23/2165/2",
+          "authority": "Charnwood",
+          "status": "Withdrawn",
+          "date": "2023-11-28 00:00:00",
+          "type": "Trees",
+          "score": 27.987022
+        },
+        {
+          "reference": "P/23/2165/2",
+          "authority": "Charnwood",
+          "status": "Withdrawn",
+          "date": "2023-11-28 00:00:00",
+          "type": "Trees",
+          "score": 27.987022
+        }
+      ]
+    },
+    {
+      "test_name": "permitted_synonym",
+      "query": "permitted developments",
+      "extracted_filters": "{'statuses': [<ApplicationStatus.APPROVED: 'approved'>]}",
+      "expected_filters": {
+        "statuses": [
+          "approved"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 17,
+      "failed_count": 3,
+      "failed_results_sample": [
+        {
+          "reference": "22/4511/RCU",
+          "errors": [
+            "status mismatch: expected ['approved'], got Conditions"
+          ]
+        },
+        {
+          "reference": "PA/2023/0934",
+          "errors": [
+            "status mismatch: expected ['approved'], got Conditions"
+          ]
+        },
+        {
+          "reference": "PA/2023/0934",
+          "errors": [
+            "status mismatch: expected ['approved'], got Conditions"
+          ]
+        }
+      ],
+      "execution_time_ms": 745,
+      "passed": false,
+      "error": "3 results failed validation",
+      "sample_results": [
+        {
+          "reference": "24/00495/CLPUD",
+          "authority": "Cheltenham",
+          "status": "Permitted",
+          "date": "2024-03-19 00:00:00",
+          "type": "Outline",
+          "score": 49.011814
+        },
+        {
+          "reference": "24/00495/CLPUD",
+          "authority": "Cheltenham",
+          "status": "Permitted",
+          "date": "2024-03-19 00:00:00",
+          "type": "Outline",
+          "score": 49.011814
+        },
+        {
+          "reference": "22/4511/RCU",
+          "authority": "Barnet",
+          "status": "Conditions",
+          "date": "2022-09-07 00:00:00",
+          "type": "Amendment",
+          "score": 43.195473
+        }
+      ]
+    },
+    {
+      "test_name": "under_consideration",
+      "query": "applications under consideration",
+      "extracted_filters": "{'statuses': [<ApplicationStatus.UNDER_CONSIDERATION: 'under_consideration'>]}",
+      "expected_filters": {
+        "statuses": [
+          "under_consideration"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 0,
+      "failed_count": 20,
+      "failed_results_sample": [
+        {
+          "reference": "24/501806/COUNTY",
+          "errors": [
+            "status mismatch: expected ['under_consideration'], got Undecided"
+          ]
+        },
+        {
+          "reference": "24/501806/COUNTY",
+          "errors": [
+            "status mismatch: expected ['under_consideration'], got Undecided"
+          ]
+        },
+        {
+          "reference": "16260/23",
+          "errors": [
+            "status mismatch: expected ['under_consideration'], got Undecided"
+          ]
+        },
+        {
+          "reference": "3/39/24/022",
+          "errors": [
+            "status mismatch: expected ['under_consideration'], got Undecided"
+          ]
+        },
+        {
+          "reference": "3/39/24/022",
+          "errors": [
+            "status mismatch: expected ['under_consideration'], got Undecided"
+          ]
+        }
+      ],
+      "execution_time_ms": 725,
+      "passed": false,
+      "error": "20 results failed validation",
+      "sample_results": [
+        {
+          "reference": "24/501806/COUNTY",
+          "authority": "Mid Kent",
+          "status": "Undecided",
+          "date": "2024-04-25 00:00:00",
+          "type": "Other",
+          "score": 31.342758
+        },
+        {
+          "reference": "24/501806/COUNTY",
+          "authority": "Mid Kent",
+          "status": "Undecided",
+          "date": "2024-04-25 00:00:00",
+          "type": "Other",
+          "score": 31.342758
+        },
+        {
+          "reference": "16260/23",
+          "authority": "Bolton",
+          "status": "Undecided",
+          "date": "2023-06-23 00:00:00",
+          "type": "Full",
+          "score": 31.342758
+        }
+      ]
+    },
+    {
+      "test_name": "submitted_applications",
+      "query": "submitted applications",
+      "extracted_filters": "{'statuses': [<ApplicationStatus.SUBMITTED: 'submitted'>]}",
+      "expected_filters": {
+        "statuses": [
+          "submitted"
+        ]
+      },
+      "total_results": 0,
+      "validated_results": 0,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 742,
+      "passed": false,
+      "error": "No results returned",
+      "sample_results": []
+    },
+    {
+      "test_name": "validated_applications",
+      "query": "validated applications",
+      "extracted_filters": "{'statuses': [<ApplicationStatus.VALIDATED: 'validated'>]}",
+      "expected_filters": {
+        "statuses": [
+          "validated"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 0,
+      "failed_count": 20,
+      "failed_results_sample": [
+        {
+          "reference": "64878/APP/2024/2394",
+          "errors": [
+            "status mismatch: expected ['validated'], got Undecided"
+          ]
+        },
+        {
+          "reference": "22/04060/FUL",
+          "errors": [
+            "status mismatch: expected ['validated'], got Rejected"
+          ]
+        },
+        {
+          "reference": "23/01160/TCA",
+          "errors": [
+            "status mismatch: expected ['validated'], got Permitted"
+          ]
+        },
+        {
+          "reference": "23/01160/TCA",
+          "errors": [
+            "status mismatch: expected ['validated'], got Permitted"
+          ]
+        },
+        {
+          "reference": "482/APP/2023/1515",
+          "errors": [
+            "status mismatch: expected ['validated'], got Withdrawn"
+          ]
+        }
+      ],
+      "execution_time_ms": 676,
+      "passed": false,
+      "error": "20 results failed validation",
+      "sample_results": [
+        {
+          "reference": "64878/APP/2024/2394",
+          "authority": "Hillingdon",
+          "status": "Undecided",
+          "date": "2024-09-04 00:00:00",
+          "type": "Full",
+          "score": null
+        },
+        {
+          "reference": "22/04060/FUL",
+          "authority": "Northumberland (County)",
+          "status": "Rejected",
+          "date": "2022-11-02 00:00:00",
+          "type": "Full",
+          "score": null
+        },
+        {
+          "reference": "23/01160/TCA",
+          "authority": "Norwich",
+          "status": "Permitted",
+          "date": "2023-09-20 00:00:00",
+          "type": "Trees",
+          "score": null
+        }
+      ]
+    },
+    {
+      "test_name": "year_2025",
+      "query": "applications in 2025",
+      "extracted_filters": "{'submission_date_from': datetime.datetime(2025, 1, 1, 0, 0), 'submission_date_to': datetime.datetime(2025, 12, 31, 23, 59, 59)}",
+      "expected_filters": {
+        "year": 2025
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 545,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "RU.25/0974",
+          "authority": "Runnymede",
+          "status": "Undecided",
+          "date": "2025-07-18 00:00:00",
+          "type": "Conditions",
+          "score": 22.138607
+        },
+        {
+          "reference": "RU.25/0974",
+          "authority": "Runnymede",
+          "status": "Undecided",
+          "date": "2025-07-18 00:00:00",
+          "type": "Conditions",
+          "score": 22.138607
+        },
+        {
+          "reference": "HGY/2025/1858",
+          "authority": "Haringey",
+          "status": "Undecided",
+          "date": "2025-08-08 00:00:00",
+          "type": "Conditions",
+          "score": 20.891079
+        }
+      ]
+    },
+    {
+      "test_name": "year_2024",
+      "query": "developments from 2024",
+      "extracted_filters": "{'submission_date_from': datetime.datetime(2024, 1, 1, 0, 0), 'submission_date_to': datetime.datetime(2024, 12, 31, 23, 59, 59)}",
+      "expected_filters": {
+        "year": 2024
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 756,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "24/00541/FULL",
+          "authority": "Windsor",
+          "status": "Undecided",
+          "date": "2024-03-05 00:00:00",
+          "type": "Full",
+          "score": 37.117523
+        },
+        {
+          "reference": "2024/0398",
+          "authority": "South Norfolk Broadland",
+          "status": "Withdrawn",
+          "date": "2024-02-07 00:00:00",
+          "type": "Full",
+          "score": 29.083118
+        },
+        {
+          "reference": "PU/24/0753",
+          "authority": "North Norfolk",
+          "status": "Rejected",
+          "date": "2024-04-10 00:00:00",
+          "type": "Outline",
+          "score": 29.083118
+        }
+      ]
+    },
+    {
+      "test_name": "year_2023",
+      "query": "applications 2023",
+      "extracted_filters": "{'submission_date_from': datetime.datetime(2023, 1, 1, 0, 0), 'submission_date_to': datetime.datetime(2023, 12, 31, 23, 59, 59)}",
+      "expected_filters": {
+        "year": 2023
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 732,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "23/0105",
+          "authority": "Brent",
+          "status": "Permitted",
+          "date": "2023-01-12 00:00:00",
+          "type": "Full",
+          "score": 32.72295
+        },
+        {
+          "reference": "3/37/23/032",
+          "authority": "West Somerset",
+          "status": "Permitted",
+          "date": "2023-11-06 00:00:00",
+          "type": "Full",
+          "score": 31.34277
+        },
+        {
+          "reference": "23/03766/CEU",
+          "authority": "Enfield",
+          "status": "Permitted",
+          "date": "2023-11-20 00:00:00",
+          "type": "Amendment",
+          "score": 31.34277
+        }
+      ]
+    },
+    {
+      "test_name": "year_2022",
+      "query": "2022 planning applications",
+      "extracted_filters": "{'submission_date_from': datetime.datetime(2022, 1, 1, 0, 0), 'submission_date_to': datetime.datetime(2022, 12, 31, 23, 59, 59)}",
+      "expected_filters": {
+        "year": 2022
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 719,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "22/06098/ADFULL",
+          "authority": "Westminster",
+          "status": "Undecided",
+          "date": "2022-09-07 00:00:00",
+          "type": "Conditions",
+          "score": 33.55683
+        },
+        {
+          "reference": "22/80310/FUL",
+          "authority": "Salford",
+          "status": "Permitted",
+          "date": "2022-07-30 00:00:00",
+          "type": "Full",
+          "score": 33.497063
+        },
+        {
+          "reference": "22/01054/FUL",
+          "authority": "Dartford",
+          "status": "Permitted",
+          "date": "2022-09-05 00:00:00",
+          "type": "Full",
+          "score": 28.048477
+        }
+      ]
+    },
+    {
+      "test_name": "year_2021",
+      "query": "show me 2021 applications",
+      "extracted_filters": "{'submission_date_from': datetime.datetime(2021, 1, 1, 0, 0), 'submission_date_to': datetime.datetime(2021, 12, 31, 23, 59, 59)}",
+      "expected_filters": {
+        "year": 2021
+      },
+      "total_results": 0,
+      "validated_results": 0,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 381,
+      "passed": false,
+      "error": "No results returned",
+      "sample_results": []
+    },
+    {
+      "test_name": "year_2020",
+      "query": "2020 developments",
+      "extracted_filters": "{'submission_date_from': datetime.datetime(2020, 1, 1, 0, 0), 'submission_date_to': datetime.datetime(2020, 12, 31, 23, 59, 59)}",
+      "expected_filters": {
+        "year": 2020
+      },
+      "total_results": 0,
+      "validated_results": 0,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 360,
+      "passed": false,
+      "error": "No results returned",
+      "sample_results": []
+    },
+    {
+      "test_name": "last_year",
+      "query": "applications from last year",
+      "extracted_filters": "{'submission_date_from': datetime.datetime(2024, 1, 1, 0, 0), 'submission_date_to': datetime.datetime(2024, 12, 31, 23, 59, 59)}",
+      "expected_filters": {
+        "year": 2024
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 657,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "24/501806/COUNTY",
+          "authority": "Mid Kent",
+          "status": "Undecided",
+          "date": "2024-04-25 00:00:00",
+          "type": "Other",
+          "score": 31.34277
+        },
+        {
+          "reference": "139754/FH/2024",
+          "authority": "Manchester",
+          "status": "Permitted",
+          "date": "2024-05-23 00:00:00",
+          "type": "Full",
+          "score": 31.34277
+        },
+        {
+          "reference": "24/01169/HOU",
+          "authority": "South Somerset",
+          "status": "Conditions",
+          "date": "2024-05-16 00:00:00",
+          "type": "Full",
+          "score": 31.34277
+        }
+      ]
+    },
+    {
+      "test_name": "this_year",
+      "query": "this year developments",
+      "extracted_filters": "{'submission_date_from': datetime.datetime(2025, 1, 1, 0, 0), 'submission_date_to': datetime.datetime(2025, 10, 1, 12, 15, 0, 773762)}",
+      "expected_filters": {
+        "year": 2025
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 844,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "25/01662/TCA",
+          "authority": "North Hertfordshire",
+          "status": "Undecided",
+          "date": "2025-06-26 00:00:00",
+          "type": "Trees",
+          "score": 15.262165
+        },
+        {
+          "reference": "25/01662/TCA",
+          "authority": "North Hertfordshire",
+          "status": "Undecided",
+          "date": "2025-06-26 00:00:00",
+          "type": "Trees",
+          "score": 15.262165
+        },
+        {
+          "reference": "LA10/2025/0250/DC",
+          "authority": "Fermanagh and Omagh",
+          "status": "Undecided",
+          "date": "2025-03-10 00:00:00",
+          "type": "Conditions",
+          "score": 14.938887
+        }
+      ]
+    },
+    {
+      "test_name": "past_year_synonym",
+      "query": "past year applications",
+      "extracted_filters": "{'submission_date_from': datetime.datetime(2024, 1, 1, 0, 0), 'submission_date_to': datetime.datetime(2024, 12, 31, 23, 59, 59)}",
+      "expected_filters": {
+        "year": 2024
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 829,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "24/501806/COUNTY",
+          "authority": "Mid Kent",
+          "status": "Undecided",
+          "date": "2024-04-25 00:00:00",
+          "type": "Other",
+          "score": 31.34277
+        },
+        {
+          "reference": "139754/FH/2024",
+          "authority": "Manchester",
+          "status": "Permitted",
+          "date": "2024-05-23 00:00:00",
+          "type": "Full",
+          "score": 31.34277
+        },
+        {
+          "reference": "24/01169/HOU",
+          "authority": "South Somerset",
+          "status": "Conditions",
+          "date": "2024-05-16 00:00:00",
+          "type": "Full",
+          "score": 31.34277
+        }
+      ]
+    },
+    {
+      "test_name": "current_year_synonym",
+      "query": "current year applications",
+      "extracted_filters": "{'submission_date_from': datetime.datetime(2025, 1, 1, 0, 0), 'submission_date_to': datetime.datetime(2025, 10, 1, 12, 15, 2, 447387)}",
+      "expected_filters": {
+        "year": 2025
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 792,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "250036",
+          "authority": "Eastbourne",
+          "status": "Withdrawn",
+          "date": "2025-01-24 00:00:00",
+          "type": "Heritage",
+          "score": 23.802092
+        },
+        {
+          "reference": "250036",
+          "authority": "Eastbourne",
+          "status": "Withdrawn",
+          "date": "2025-01-24 00:00:00",
+          "type": "Heritage",
+          "score": 23.802092
+        },
+        {
+          "reference": "2025/0588",
+          "authority": "South Norfolk Broadland",
+          "status": "Undecided",
+          "date": "2025-02-26 00:00:00",
+          "type": "Trees",
+          "score": 21.758074
+        }
+      ]
+    },
+    {
+      "test_name": "last_month",
+      "query": "applications from last month",
+      "extracted_filters": "{'submission_date_from': datetime.datetime(2025, 9, 1, 12, 15, 3, 240559), 'submission_date_to': datetime.datetime(2025, 9, 30, 23, 59, 59, 240559)}",
+      "expected_filters": {
+        "relative_date": "last_month"
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 943,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "P1178/25/TCA",
+          "authority": "Forest of Dean",
+          "status": "Undecided",
+          "date": "2025-09-22 00:00:00",
+          "type": "Trees",
+          "score": 16.47575
+        },
+        {
+          "reference": "P1178/25/TCA",
+          "authority": "Forest of Dean",
+          "status": "Undecided",
+          "date": "2025-09-22 00:00:00",
+          "type": "Trees",
+          "score": 16.47575
+        },
+        {
+          "reference": "2025/3101",
+          "authority": "Wandsworth",
+          "status": "Undecided",
+          "date": "2025-09-04 00:00:00",
+          "type": "Trees",
+          "score": 13.525952
+        }
+      ]
+    },
+    {
+      "test_name": "past_month_synonym",
+      "query": "past month applications",
+      "extracted_filters": "{'submission_date_from': datetime.datetime(2025, 9, 1, 12, 15, 4, 183828), 'submission_date_to': datetime.datetime(2025, 9, 30, 23, 59, 59, 183828)}",
+      "expected_filters": {
+        "relative_date": "last_month"
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 848,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "P1178/25/TCA",
+          "authority": "Forest of Dean",
+          "status": "Undecided",
+          "date": "2025-09-22 00:00:00",
+          "type": "Trees",
+          "score": 10.839253
+        },
+        {
+          "reference": "P1178/25/TCA",
+          "authority": "Forest of Dean",
+          "status": "Undecided",
+          "date": "2025-09-22 00:00:00",
+          "type": "Trees",
+          "score": 10.839253
+        },
+        {
+          "reference": "20250970",
+          "authority": "Gravesham",
+          "status": "Undecided",
+          "date": "2025-09-26 00:00:00",
+          "type": null,
+          "score": 8.960743
+        }
+      ]
+    },
+    {
+      "test_name": "london_expands_to_all_boroughs",
+      "query": "applications in London",
+      "extracted_filters": "{'authorities': ['City of London', 'Westminster', 'Camden', 'Islington', 'Hackney', 'Tower Hamlets', 'Greenwich', 'Lewisham', 'Southwark', 'Lambeth', 'Wandsworth', 'Hammersmith and Fulham', 'Kensington and Chelsea', 'Brent', 'Ealing', 'Hounslow', 'Richmond upon Thames', 'Kingston upon Thames', 'Merton', 'Sutton', 'Croydon', 'Bromley', 'Bexley', 'Havering', 'Barking and Dagenham', 'Redbridge', 'Newham', 'Waltham Forest', 'Haringey', 'Enfield', 'Barnet', 'Harrow', 'Hillingdon']}",
+      "expected_filters": {
+        "authorities": "33 Greater London boroughs"
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 1636,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "23/03766/CEU",
+          "authority": "Enfield",
+          "status": "Permitted",
+          "date": "2023-11-20 00:00:00",
+          "type": "Amendment",
+          "score": 31.342758
+        },
+        {
+          "reference": "DC/24/136862",
+          "authority": "Lewisham",
+          "status": "Undecided",
+          "date": "2024-07-23 00:00:00",
+          "type": "Trees",
+          "score": 29.301453
+        },
+        {
+          "reference": "DC/24/136862",
+          "authority": "Lewisham",
+          "status": "Undecided",
+          "date": "2024-07-23 00:00:00",
+          "type": "Trees",
+          "score": 29.301453
+        }
+      ]
+    },
+    {
+      "test_name": "city_of_london_specific",
+      "query": "applications in City of London",
+      "extracted_filters": "{'authorities': ['City of London']}",
+      "expected_filters": {
+        "authorities": [
+          "City of London"
+        ]
+      },
+      "total_results": 0,
+      "validated_results": 0,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 630,
+      "passed": false,
+      "error": "No results returned",
+      "sample_results": []
+    },
+    {
+      "test_name": "manchester",
+      "query": "developments in Manchester",
+      "extracted_filters": "{'authorities': ['Manchester']}",
+      "expected_filters": {
+        "authorities": [
+          "Manchester"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 2103,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "134973/FO/2022",
+          "authority": "Manchester",
+          "status": "Permitted",
+          "date": "2022-10-17 00:00:00",
+          "type": "Full",
+          "score": 32.337334
+        },
+        {
+          "reference": "CDN/22/0733",
+          "authority": "Manchester",
+          "status": "Permitted",
+          "date": "2022-10-12 00:00:00",
+          "type": "Conditions",
+          "score": 32.337334
+        },
+        {
+          "reference": "CDN/23/0323",
+          "authority": "Manchester",
+          "status": "Permitted",
+          "date": "2023-05-23 00:00:00",
+          "type": "Conditions",
+          "score": 32.337334
+        }
+      ]
+    },
+    {
+      "test_name": "sefton",
+      "query": "applications in Sefton",
+      "extracted_filters": "{'authorities': ['Sefton']}",
+      "expected_filters": {
+        "authorities": [
+          "Sefton"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 772,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "DC/2024/00913",
+          "authority": "Sefton",
+          "status": "Conditions",
+          "date": "2024-05-28 00:00:00",
+          "type": "Full",
+          "score": 25.470625
+        },
+        {
+          "reference": "DC/2024/00993",
+          "authority": "Sefton",
+          "status": "Conditions",
+          "date": "2024-05-28 00:00:00",
+          "type": "Full",
+          "score": 25.470625
+        },
+        {
+          "reference": "DC/2023/01930",
+          "authority": "Sefton",
+          "status": "Conditions",
+          "date": "2023-11-22 00:00:00",
+          "type": "Other",
+          "score": 25.470625
+        }
+      ]
+    },
+    {
+      "test_name": "birmingham",
+      "query": "Birmingham applications",
+      "extracted_filters": "{'authorities': ['Birmingham']}",
+      "expected_filters": {
+        "authorities": [
+          "Birmingham"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 818,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "2023/00025/PA",
+          "authority": "Birmingham",
+          "status": "Withdrawn",
+          "date": "2023-01-03 00:00:00",
+          "type": "Other",
+          "score": 29.492163
+        },
+        {
+          "reference": "2024/02162/PA",
+          "authority": "Birmingham",
+          "status": "Conditions",
+          "date": "2024-04-04 00:00:00",
+          "type": "Other",
+          "score": 28.737255
+        },
+        {
+          "reference": "2023/02816/PA",
+          "authority": "Birmingham",
+          "status": "Permitted",
+          "date": "2023-04-25 00:00:00",
+          "type": "Outline",
+          "score": 28.083506
+        }
+      ]
+    },
+    {
+      "test_name": "leeds",
+      "query": "Leeds planning applications",
+      "extracted_filters": "{'authorities': ['Leeds']}",
+      "expected_filters": {
+        "authorities": [
+          "Leeds"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 607,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "23/02108/FU",
+          "authority": "Leeds",
+          "status": "Permitted",
+          "date": "2023-05-02 00:00:00",
+          "type": "Full",
+          "score": 24.697107
+        },
+        {
+          "reference": "22/07322/LI",
+          "authority": "Leeds",
+          "status": "Permitted",
+          "date": "2022-11-10 00:00:00",
+          "type": "Heritage",
+          "score": 18.426271
+        },
+        {
+          "reference": "22/07322/LI",
+          "authority": "Leeds",
+          "status": "Permitted",
+          "date": "2022-11-10 00:00:00",
+          "type": "Heritage",
+          "score": 18.426271
+        }
+      ]
+    },
+    {
+      "test_name": "liverpool",
+      "query": "applications near Liverpool",
+      "extracted_filters": "{'authorities': ['Liverpool']}",
+      "expected_filters": {
+        "authorities": [
+          "Liverpool"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 690,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "23F/2560",
+          "authority": "Liverpool",
+          "status": "Withdrawn",
+          "date": "2023-10-03 00:00:00",
+          "type": "Full",
+          "score": 25.487293
+        },
+        {
+          "reference": "23LE/2663",
+          "authority": "Liverpool",
+          "status": "Permitted",
+          "date": "2023-10-23 00:00:00",
+          "type": "Outline",
+          "score": 21.528048
+        },
+        {
+          "reference": "24F/0347",
+          "authority": "Liverpool",
+          "status": null,
+          "date": "2024-02-02 00:00:00",
+          "type": "Full",
+          "score": 20.744347
+        }
+      ]
+    },
+    {
+      "test_name": "westminster",
+      "query": "Westminster developments",
+      "extracted_filters": "{'authorities': ['Westminster']}",
+      "expected_filters": {
+        "authorities": [
+          "Westminster"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 848,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "23/00022/TPO",
+          "authority": "Westminster",
+          "status": "Permitted",
+          "date": "2023-01-03 00:00:00",
+          "type": "Trees",
+          "score": 33.605125
+        },
+        {
+          "reference": "23/05646/TDD",
+          "authority": "Westminster",
+          "status": "Permitted",
+          "date": "2023-08-11 00:00:00",
+          "type": "Trees",
+          "score": 28.989296
+        },
+        {
+          "reference": "22/07949/COADV",
+          "authority": "Westminster",
+          "status": "Permitted",
+          "date": "2022-11-22 00:00:00",
+          "type": "Advertising",
+          "score": 28.989296
+        }
+      ]
+    },
+    {
+      "test_name": "greater_manchester",
+      "query": "Greater Manchester region applications",
+      "extracted_filters": "{'authorities': ['Manchester', 'Salford', 'Bolton', 'Bury', 'Oldham', 'Rochdale', 'Stockport', 'Tameside', 'Trafford', 'Wigan']}",
+      "expected_filters": {
+        "authorities": "10 GM authorities"
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 927,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "23/00241/FUL",
+          "authority": "Tameside",
+          "status": "Permitted",
+          "date": "2023-03-16 00:00:00",
+          "type": "Full",
+          "score": 44.449047
+        },
+        {
+          "reference": "136992/FO/2023",
+          "authority": "Manchester",
+          "status": "Permitted",
+          "date": "2023-05-16 00:00:00",
+          "type": "Full",
+          "score": 44.449047
+        },
+        {
+          "reference": "137894/FO/2023",
+          "authority": "Manchester",
+          "status": "Permitted",
+          "date": "2023-10-16 00:00:00",
+          "type": "Full",
+          "score": 39.08107
+        }
+      ]
+    },
+    {
+      "test_name": "hull",
+      "query": "applications in Hull",
+      "extracted_filters": "{'authorities': ['Kingston upon Hull']}",
+      "expected_filters": {
+        "authorities": [
+          "Kingston upon Hull"
+        ]
+      },
+      "total_results": 0,
+      "validated_results": 0,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 416,
+      "passed": false,
+      "error": "No results returned",
+      "sample_results": []
+    },
+    {
+      "test_name": "postcode_sw1a",
+      "query": "near SW1A postcode",
+      "extracted_filters": "{'postcode': 'SW1A'}",
+      "expected_filters": {
+        "postcode": "SW1A"
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 731,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "24/01498/ADV",
+          "authority": "Westminster",
+          "status": "Permitted",
+          "date": "2024-02-03 00:00:00",
+          "type": "Advertising",
+          "score": 7.545524
+        },
+        {
+          "reference": "24/00699/ADV",
+          "authority": "Westminster",
+          "status": "Undecided",
+          "date": "2024-02-03 00:00:00",
+          "type": "Advertising",
+          "score": 7.545524
+        },
+        {
+          "reference": "23/00892/LBC",
+          "authority": "Westminster",
+          "status": "Permitted",
+          "date": "2023-02-10 00:00:00",
+          "type": "Heritage",
+          "score": 7.545524
+        }
+      ]
+    },
+    {
+      "test_name": "postcode_m1",
+      "query": "applications M1 area",
+      "extracted_filters": "{'postcode': 'M1'}",
+      "expected_filters": {
+        "postcode": "M1"
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 645,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "139754/FH/2024",
+          "authority": "Manchester",
+          "status": "Permitted",
+          "date": "2024-05-23 00:00:00",
+          "type": "Full",
+          "score": 31.342758
+        },
+        {
+          "reference": "137804/FH/2023",
+          "authority": "Manchester",
+          "status": "Withdrawn",
+          "date": "2023-08-08 00:00:00",
+          "type": "Full",
+          "score": 27.850212
+        },
+        {
+          "reference": "138357/PDE/2023",
+          "authority": "Manchester",
+          "status": "Conditions",
+          "date": "2023-10-19 00:00:00",
+          "type": "Outline",
+          "score": 27.850212
+        }
+      ]
+    },
+    {
+      "test_name": "postcode_pr8",
+      "query": "PR8 developments",
+      "extracted_filters": "{'postcode': 'PR8'}",
+      "expected_filters": {
+        "postcode": "PR8"
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 558,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "DC/2022/01669",
+          "authority": "Sefton",
+          "status": "Conditions",
+          "date": "2022-08-30 00:00:00",
+          "type": "Full",
+          "score": 14.938885
+        },
+        {
+          "reference": "DC/2023/00324",
+          "authority": "Sefton",
+          "status": "Conditions",
+          "date": "2023-03-07 00:00:00",
+          "type": "Full",
+          "score": 14.938885
+        },
+        {
+          "reference": "DC/2023/01609",
+          "authority": "Sefton",
+          "status": "Conditions",
+          "date": "2023-10-02 00:00:00",
+          "type": "Full",
+          "score": 14.938885
+        }
+      ]
+    },
+    {
+      "test_name": "ward_mention",
+      "query": "Westminster ward applications",
+      "extracted_filters": "{'authorities': ['Westminster'], 'ward': 'applications'}",
+      "expected_filters": {
+        "ward": "Westminster"
+      },
+      "total_results": 0,
+      "validated_results": 0,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 293,
+      "passed": false,
+      "error": "No results returned",
+      "sample_results": []
+    },
+    {
+      "test_name": "bristol",
+      "query": "Bristol City applications",
+      "extracted_filters": "{'authorities': ['City of London', 'Bristol']}",
+      "expected_filters": {
+        "authorities": [
+          "Bristol"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 1046,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "25/11975/K",
+          "authority": "Bristol",
+          "status": "Undecided",
+          "date": "2025-05-02 00:00:00",
+          "type": null,
+          "score": 34.325314
+        },
+        {
+          "reference": "23/03425/K",
+          "authority": "Bristol",
+          "status": "Undecided",
+          "date": "2023-08-31 00:00:00",
+          "type": null,
+          "score": 33.90992
+        },
+        {
+          "reference": "23/02260/K",
+          "authority": "Bristol",
+          "status": "Undecided",
+          "date": "2023-06-06 00:00:00",
+          "type": null,
+          "score": 32.365585
+        }
+      ]
+    },
+    {
+      "test_name": "edinburgh",
+      "query": "Edinburgh developments",
+      "extracted_filters": "{'authorities': ['Edinburgh']}",
+      "expected_filters": {
+        "authorities": [
+          "City of Edinburgh"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 0,
+      "failed_count": 20,
+      "failed_results_sample": [
+        {
+          "reference": "23/06778/TPO",
+          "errors": [
+            "authority mismatch: expected one of ['City of Edinburgh'], got Edinburgh"
+          ]
+        },
+        {
+          "reference": "23/03417/LBC",
+          "errors": [
+            "authority mismatch: expected one of ['City of Edinburgh'], got Edinburgh"
+          ]
+        },
+        {
+          "reference": "24/03541/ADV",
+          "errors": [
+            "authority mismatch: expected one of ['City of Edinburgh'], got Edinburgh"
+          ]
+        },
+        {
+          "reference": "24/03541/ADV",
+          "errors": [
+            "authority mismatch: expected one of ['City of Edinburgh'], got Edinburgh"
+          ]
+        },
+        {
+          "reference": "24/02417/OBL",
+          "errors": [
+            "authority mismatch: expected one of ['City of Edinburgh'], got Edinburgh"
+          ]
+        }
+      ],
+      "execution_time_ms": 998,
+      "passed": false,
+      "error": "20 results failed validation",
+      "sample_results": [
+        {
+          "reference": "23/06778/TPO",
+          "authority": "Edinburgh",
+          "status": "Permitted",
+          "date": "2023-11-13 00:00:00",
+          "type": "Trees",
+          "score": 28.187912
+        },
+        {
+          "reference": "23/03417/LBC",
+          "authority": "Edinburgh",
+          "status": "Permitted",
+          "date": "2023-08-01 00:00:00",
+          "type": "Heritage",
+          "score": 27.499802
+        },
+        {
+          "reference": "24/03541/ADV",
+          "authority": "Edinburgh",
+          "status": "Undecided",
+          "date": "2024-07-25 00:00:00",
+          "type": "Advertising",
+          "score": 26.903221
+        }
+      ]
+    },
+    {
+      "test_name": "cardiff",
+      "query": "Cardiff applications",
+      "extracted_filters": "{'authorities': ['Cardiff']}",
+      "expected_filters": {
+        "authorities": [
+          "Cardiff"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 2132,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "24/01523/SCR",
+          "authority": "Cardiff",
+          "status": "Undecided",
+          "date": "2024-06-25 00:00:00",
+          "type": "Outline",
+          "score": 34.730595
+        },
+        {
+          "reference": "22/01606/DCH",
+          "authority": "Cardiff",
+          "status": "Permitted",
+          "date": "2022-07-28 00:00:00",
+          "type": "Full",
+          "score": 32.009552
+        },
+        {
+          "reference": "LISV/TP/22/00112",
+          "authority": "Cardiff",
+          "status": "Permitted",
+          "date": "2022-07-22 00:00:00",
+          "type": "Trees",
+          "score": 32.009552
+        }
+      ]
+    },
+    {
+      "test_name": "glasgow",
+      "query": "Glasgow planning",
+      "extracted_filters": "{'authorities': ['Glasgow']}",
+      "expected_filters": {
+        "authorities": [
+          "Glasgow City"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 0,
+      "failed_count": 20,
+      "failed_results_sample": [
+        {
+          "reference": "24/00378/PPP",
+          "errors": [
+            "authority mismatch: expected one of ['Glasgow City'], got Glasgow"
+          ]
+        },
+        {
+          "reference": "23/02010/FUL",
+          "errors": [
+            "authority mismatch: expected one of ['Glasgow City'], got Glasgow"
+          ]
+        },
+        {
+          "reference": "24/01034/ADV",
+          "errors": [
+            "authority mismatch: expected one of ['Glasgow City'], got Glasgow"
+          ]
+        },
+        {
+          "reference": "23/02011/FUL",
+          "errors": [
+            "authority mismatch: expected one of ['Glasgow City'], got Glasgow"
+          ]
+        },
+        {
+          "reference": "23/02661/ADV",
+          "errors": [
+            "authority mismatch: expected one of ['Glasgow City'], got Glasgow"
+          ]
+        }
+      ],
+      "execution_time_ms": 786,
+      "passed": false,
+      "error": "20 results failed validation",
+      "sample_results": [
+        {
+          "reference": "24/00378/PPP",
+          "authority": "Glasgow",
+          "status": "Rejected",
+          "date": "2024-02-13 00:00:00",
+          "type": "Outline",
+          "score": 16.367374
+        },
+        {
+          "reference": "23/02010/FUL",
+          "authority": "Glasgow",
+          "status": "Conditions",
+          "date": "2023-08-11 00:00:00",
+          "type": "Full",
+          "score": 9.340073
+        },
+        {
+          "reference": "24/01034/ADV",
+          "authority": "Glasgow",
+          "status": "Conditions",
+          "date": "2024-04-11 00:00:00",
+          "type": "Advertising",
+          "score": 9.340073
+        }
+      ]
+    },
+    {
+      "test_name": "multiple_locations_or",
+      "query": "London or Manchester",
+      "extracted_filters": "{'authorities': ['Manchester', 'City of London', 'Westminster', 'Camden', 'Islington', 'Hackney', 'Tower Hamlets', 'Greenwich', 'Lewisham', 'Southwark', 'Lambeth', 'Wandsworth', 'Hammersmith and Fulham', 'Kensington and Chelsea', 'Brent', 'Ealing', 'Hounslow', 'Richmond upon Thames', 'Kingston upon Thames', 'Merton', 'Sutton', 'Croydon', 'Bromley', 'Bexley', 'Havering', 'Barking and Dagenham', 'Redbridge', 'Newham', 'Waltham Forest', 'Haringey', 'Enfield', 'Barnet', 'Harrow', 'Hillingdon']}",
+      "expected_filters": {
+        "authorities": "London boroughs + Manchester"
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 790,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "22/03730/TCA",
+          "authority": "Lambeth",
+          "status": "Withdrawn",
+          "date": "2022-10-18 00:00:00",
+          "type": "Trees",
+          "score": 27.012207
+        },
+        {
+          "reference": "138967/FO/2024",
+          "authority": "Manchester",
+          "status": "Permitted",
+          "date": "2024-01-24 00:00:00",
+          "type": "Full",
+          "score": 26.891972
+        },
+        {
+          "reference": "140708/NMC/2024",
+          "authority": "Manchester",
+          "status": "Undecided",
+          "date": "2024-08-06 00:00:00",
+          "type": "Amendment",
+          "score": 26.891972
+        }
+      ]
+    },
+    {
+      "test_name": "multiple_locations_and",
+      "query": "Birmingham and Leeds",
+      "extracted_filters": "{'authorities': ['Birmingham', 'Leeds']}",
+      "expected_filters": {
+        "authorities": [
+          "Birmingham",
+          "Leeds"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 526,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "2023/00025/PA",
+          "authority": "Birmingham",
+          "status": "Withdrawn",
+          "date": "2023-01-03 00:00:00",
+          "type": "Other",
+          "score": 29.49217
+        },
+        {
+          "reference": "2023/02816/PA",
+          "authority": "Birmingham",
+          "status": "Permitted",
+          "date": "2023-04-25 00:00:00",
+          "type": "Outline",
+          "score": 28.08351
+        },
+        {
+          "reference": "2023/07238/PA",
+          "authority": "Birmingham",
+          "status": "Permitted",
+          "date": "2023-10-23 00:00:00",
+          "type": "Outline",
+          "score": 27.428465
+        }
+      ]
+    },
+    {
+      "test_name": "residential_basic",
+      "query": "residential applications",
+      "extracted_filters": "{'development_types': [<DevelopmentType.RESIDENTIAL: 'residential'>]}",
+      "expected_filters": {
+        "dev_type": [
+          "residential"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 690,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "3/37/23/032",
+          "authority": "West Somerset",
+          "status": "Permitted",
+          "date": "2023-11-06 00:00:00",
+          "type": "Full",
+          "score": 31.342754
+        },
+        {
+          "reference": "139754/FH/2024",
+          "authority": "Manchester",
+          "status": "Permitted",
+          "date": "2024-05-23 00:00:00",
+          "type": "Full",
+          "score": 31.342754
+        },
+        {
+          "reference": "24/01169/HOU",
+          "authority": "South Somerset",
+          "status": "Conditions",
+          "date": "2024-05-16 00:00:00",
+          "type": "Full",
+          "score": 31.342754
+        }
+      ]
+    },
+    {
+      "test_name": "housing_synonym",
+      "query": "housing developments",
+      "extracted_filters": "{'development_types': [<DevelopmentType.RESIDENTIAL: 'residential'>]}",
+      "expected_filters": {
+        "dev_type": [
+          "residential"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 724,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "24/01214/AGRREQ",
+          "authority": "Tunbridge Wells",
+          "status": "Rejected",
+          "date": "2024-04-03 00:00:00",
+          "type": "Outline",
+          "score": 26.285467
+        },
+        {
+          "reference": "AWDM/1490/23",
+          "authority": "Adur and Worthing",
+          "status": "Permitted",
+          "date": "2023-10-25 00:00:00",
+          "type": "Full",
+          "score": 26.285467
+        },
+        {
+          "reference": "22/02249/FUL",
+          "authority": "Teignbridge",
+          "status": "Permitted",
+          "date": "2022-12-01 00:00:00",
+          "type": "Full",
+          "score": 26.285467
+        }
+      ]
+    },
+    {
+      "test_name": "commercial_basic",
+      "query": "commercial projects",
+      "extracted_filters": "{'development_types': [<DevelopmentType.COMMERCIAL: 'commercial'>]}",
+      "expected_filters": {
+        "dev_type": [
+          "commercial"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 831,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "23/00510/APP",
+          "authority": "Moray",
+          "status": "Permitted",
+          "date": "2023-03-27 00:00:00",
+          "type": "Full",
+          "score": 31.948517
+        },
+        {
+          "reference": "23/00215/ADV",
+          "authority": "Newark and Sherwood",
+          "status": "Permitted",
+          "date": "2023-02-03 00:00:00",
+          "type": "Advertising",
+          "score": 30.026709
+        },
+        {
+          "reference": "23/00215/ADV",
+          "authority": "Newark and Sherwood",
+          "status": "Permitted",
+          "date": "2023-02-03 00:00:00",
+          "type": "Advertising",
+          "score": 30.026709
+        }
+      ]
+    },
+    {
+      "test_name": "office_synonym",
+      "query": "office buildings",
+      "extracted_filters": "{'development_types': [<DevelopmentType.COMMERCIAL: 'commercial'>]}",
+      "expected_filters": {
+        "dev_type": [
+          "commercial"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 767,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "23/02804/FULL6",
+          "authority": "Bromley",
+          "status": "Permitted",
+          "date": "2023-07-19 00:00:00",
+          "type": "Full",
+          "score": 33.42601
+        },
+        {
+          "reference": "24/1208/HD",
+          "authority": "Greenwich",
+          "status": "Permitted",
+          "date": "2024-04-11 00:00:00",
+          "type": "Full",
+          "score": 33.42601
+        },
+        {
+          "reference": "23/03304/FULL6",
+          "authority": "Bromley",
+          "status": "Permitted",
+          "date": "2023-08-29 00:00:00",
+          "type": "Full",
+          "score": 33.42601
+        }
+      ]
+    },
+    {
+      "test_name": "industrial_basic",
+      "query": "industrial developments",
+      "extracted_filters": "{'development_types': [<DevelopmentType.INDUSTRIAL: 'industrial'>]}",
+      "expected_filters": {
+        "dev_type": [
+          "industrial"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 769,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "23/00897/PRNO",
+          "authority": "Cardiff",
+          "status": "Permitted",
+          "date": "2023-04-20 00:00:00",
+          "type": "Outline",
+          "score": 26.646812
+        },
+        {
+          "reference": "23/0007/CWMAJM",
+          "authority": "Gloucestershire",
+          "status": "Undecided",
+          "date": "2023-03-06 00:00:00",
+          "type": "Full",
+          "score": 24.711731
+        },
+        {
+          "reference": "22/0898",
+          "authority": "Westmorland and Furness",
+          "status": "Conditions",
+          "date": "2022-11-21 00:00:00",
+          "type": "Full",
+          "score": 23.046534
+        }
+      ]
+    },
+    {
+      "test_name": "warehouse_synonym",
+      "query": "warehouse applications",
+      "extracted_filters": "{'development_types': [<DevelopmentType.INDUSTRIAL: 'industrial'>]}",
+      "expected_filters": {
+        "dev_type": [
+          "industrial"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 744,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "133932/FH/2022",
+          "authority": "Manchester",
+          "status": "Permitted",
+          "date": "2023-01-30 00:00:00",
+          "type": "Full",
+          "score": 33.346127
+        },
+        {
+          "reference": "110045/HHA/23",
+          "authority": "Trafford",
+          "status": "Permitted",
+          "date": "2023-01-16 00:00:00",
+          "type": "Full",
+          "score": 33.346127
+        },
+        {
+          "reference": "3/37/23/032",
+          "authority": "West Somerset",
+          "status": "Permitted",
+          "date": "2023-11-06 00:00:00",
+          "type": "Full",
+          "score": 31.342758
+        }
+      ]
+    },
+    {
+      "test_name": "mixed_use",
+      "query": "mixed use developments",
+      "extracted_filters": "{'development_types': [<DevelopmentType.MIXED_USE: 'mixed_use'>]}",
+      "expected_filters": {
+        "dev_type": [
+          "mixed_use"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 557,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "23/01723/FUL",
+          "authority": "Cheltenham",
+          "status": "Permitted",
+          "date": "2023-10-09 00:00:00",
+          "type": "Full",
+          "score": 29.063969
+        },
+        {
+          "reference": "23/01723/FUL",
+          "authority": "Cheltenham",
+          "status": "Permitted",
+          "date": "2023-10-09 00:00:00",
+          "type": "Full",
+          "score": 29.063969
+        },
+        {
+          "reference": "23/22028/SO",
+          "authority": "Brecon Beacons",
+          "status": "Permitted",
+          "date": "2023-05-24 00:00:00",
+          "type": "Outline",
+          "score": 28.335049
+        }
+      ]
+    },
+    {
+      "test_name": "extension",
+      "query": "extension applications",
+      "extracted_filters": "{'development_types': [<DevelopmentType.EXTENSION: 'extension'>]}",
+      "expected_filters": {
+        "dev_type": [
+          "extension"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 708,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "23/03766/CEU",
+          "authority": "Enfield",
+          "status": "Permitted",
+          "date": "2023-11-20 00:00:00",
+          "type": "Amendment",
+          "score": 31.342758
+        },
+        {
+          "reference": "22/02886/LDCE",
+          "authority": "Lambeth",
+          "status": "Permitted",
+          "date": "2022-08-10 00:00:00",
+          "type": "Amendment",
+          "score": 21.544952
+        },
+        {
+          "reference": "23/11072",
+          "authority": "New Forest (District)",
+          "status": "Conditions",
+          "date": "2023-10-10 00:00:00",
+          "type": "Conditions",
+          "score": 21.544952
+        }
+      ]
+    },
+    {
+      "test_name": "change_of_use",
+      "query": "change of use applications",
+      "extracted_filters": "{'development_types': [<DevelopmentType.CHANGE_OF_USE: 'change_of_use'>]}",
+      "expected_filters": {
+        "dev_type": [
+          "change_of_use"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 792,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "3/37/23/032",
+          "authority": "West Somerset",
+          "status": "Permitted",
+          "date": "2023-11-06 00:00:00",
+          "type": "Full",
+          "score": 31.342766
+        },
+        {
+          "reference": "139754/FH/2024",
+          "authority": "Manchester",
+          "status": "Permitted",
+          "date": "2024-05-23 00:00:00",
+          "type": "Full",
+          "score": 31.342766
+        },
+        {
+          "reference": "24/01169/HOU",
+          "authority": "South Somerset",
+          "status": "Conditions",
+          "date": "2024-05-16 00:00:00",
+          "type": "Full",
+          "score": 31.342766
+        }
+      ]
+    },
+    {
+      "test_name": "new_build",
+      "query": "new build projects",
+      "extracted_filters": "{'development_types': [<DevelopmentType.NEW_BUILD: 'new_build'>]}",
+      "expected_filters": {
+        "dev_type": [
+          "new_build"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 702,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "P241890/F",
+          "authority": "Herefordshire",
+          "status": "Undecided",
+          "date": "2024-07-25 00:00:00",
+          "type": "Full",
+          "score": 35.25556
+        },
+        {
+          "reference": "2023/01196/FUL",
+          "authority": "Glamorgan",
+          "status": "Permitted",
+          "date": "2023-12-06 00:00:00",
+          "type": "Full",
+          "score": 34.46988
+        },
+        {
+          "reference": "24/00699/FUL",
+          "authority": "Hart",
+          "status": "Undecided",
+          "date": "2024-04-05 00:00:00",
+          "type": "Full",
+          "score": 33.417076
+        }
+      ]
+    },
+    {
+      "test_name": "rejected_housing_london_2025",
+      "query": "rejected housing in London 2025",
+      "extracted_filters": "{'authorities': ['City of London', 'Westminster', 'Camden', 'Islington', 'Hackney', 'Tower Hamlets', 'Greenwich', 'Lewisham', 'Southwark', 'Lambeth', 'Wandsworth', 'Hammersmith and Fulham', 'Kensington and Chelsea', 'Brent', 'Ealing', 'Hounslow', 'Richmond upon Thames', 'Kingston upon Thames', 'Merton', 'Sutton', 'Croydon', 'Bromley', 'Bexley', 'Havering', 'Barking and Dagenham', 'Redbridge', 'Newham', 'Waltham Forest', 'Haringey', 'Enfield', 'Barnet', 'Harrow', 'Hillingdon'], 'statuses': [<ApplicationStatus.REJECTED: 'rejected'>], 'development_types': [<DevelopmentType.RESIDENTIAL: 'residential'>], 'submission_date_from': datetime.datetime(2025, 1, 1, 0, 0), 'submission_date_to': datetime.datetime(2025, 12, 31, 23, 59, 59)}",
+      "expected_filters": {
+        "statuses": [
+          "rejected"
+        ],
+        "dev_type": [
+          "residential"
+        ],
+        "authorities": "London boroughs",
+        "year": 2025
+      },
+      "total_results": 0,
+      "validated_results": 0,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 514,
+      "passed": false,
+      "error": "No results returned",
+      "sample_results": []
+    },
+    {
+      "test_name": "approved_commercial_manchester_2024",
+      "query": "approved commercial in Manchester last year",
+      "extracted_filters": "{'authorities': ['Manchester'], 'statuses': [<ApplicationStatus.APPROVED: 'approved'>], 'development_types': [<DevelopmentType.COMMERCIAL: 'commercial'>], 'submission_date_from': datetime.datetime(2024, 1, 1, 0, 0), 'submission_date_to': datetime.datetime(2024, 12, 31, 23, 59, 59)}",
+      "expected_filters": {
+        "statuses": [
+          "approved"
+        ],
+        "dev_type": [
+          "commercial"
+        ],
+        "authorities": [
+          "Manchester"
+        ],
+        "year": 2024
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 1254,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "138967/FO/2024",
+          "authority": "Manchester",
+          "status": "Permitted",
+          "date": "2024-01-24 00:00:00",
+          "type": "Full",
+          "score": 26.892008
+        },
+        {
+          "reference": "139303/FH/2024",
+          "authority": "Manchester",
+          "status": "Permitted",
+          "date": "2024-02-19 00:00:00",
+          "type": "Full",
+          "score": 24.886526
+        },
+        {
+          "reference": "139194/FH/2024",
+          "authority": "Manchester",
+          "status": "Permitted",
+          "date": "2024-02-06 00:00:00",
+          "type": "Full",
+          "score": 23.198257
+        }
+      ]
+    },
+    {
+      "test_name": "pending_residential_birmingham",
+      "query": "pending residential applications in Birmingham",
+      "extracted_filters": "{'authorities': ['Birmingham'], 'statuses': [<ApplicationStatus.UNDER_CONSIDERATION: 'under_consideration'>], 'development_types': [<DevelopmentType.RESIDENTIAL: 'residential'>]}",
+      "expected_filters": {
+        "statuses": [
+          "under_consideration"
+        ],
+        "dev_type": [
+          "residential"
+        ],
+        "authorities": [
+          "Birmingham"
+        ]
+      },
+      "total_results": 0,
+      "validated_results": 0,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 565,
+      "passed": false,
+      "error": "No results returned",
+      "sample_results": []
+    },
+    {
+      "test_name": "withdrawn_extensions_2023",
+      "query": "withdrawn extensions from 2023",
+      "extracted_filters": "{'statuses': [<ApplicationStatus.WITHDRAWN: 'withdrawn'>], 'development_types': [<DevelopmentType.EXTENSION: 'extension'>], 'submission_date_from': datetime.datetime(2023, 1, 1, 0, 0), 'submission_date_to': datetime.datetime(2023, 12, 31, 23, 59, 59)}",
+      "expected_filters": {
+        "statuses": [
+          "withdrawn"
+        ],
+        "dev_type": [
+          "extension"
+        ],
+        "year": 2023
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 826,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "23/01921/NMA",
+          "authority": "Croydon",
+          "status": "Withdrawn",
+          "date": "2023-05-17 00:00:00",
+          "type": "Amendment",
+          "score": 28.03623
+        },
+        {
+          "reference": "2023/1002",
+          "authority": "Hackney",
+          "status": "Withdrawn",
+          "date": "2023-05-01 00:00:00",
+          "type": "Conditions",
+          "score": 22.065092
+        },
+        {
+          "reference": "P/0640/23",
+          "authority": "Harrow",
+          "status": "Withdrawn",
+          "date": "2023-03-01 00:00:00",
+          "type": "Amendment",
+          "score": 22.00021
+        }
+      ]
+    },
+    {
+      "test_name": "approved_industrial_leeds_this_year",
+      "query": "approved industrial developments Leeds this year",
+      "extracted_filters": "{'authorities': ['Leeds'], 'statuses': [<ApplicationStatus.APPROVED: 'approved'>], 'development_types': [<DevelopmentType.INDUSTRIAL: 'industrial'>], 'submission_date_from': datetime.datetime(2025, 1, 1, 0, 0), 'submission_date_to': datetime.datetime(2025, 10, 1, 12, 15, 33, 449569)}",
+      "expected_filters": {
+        "statuses": [
+          "approved"
+        ],
+        "dev_type": [
+          "industrial"
+        ],
+        "authorities": [
+          "Leeds"
+        ],
+        "year": 2025
+      },
+      "total_results": 0,
+      "validated_results": 0,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 607,
+      "passed": false,
+      "error": "No results returned",
+      "sample_results": []
+    },
+    {
+      "test_name": "no_filters",
+      "query": "show applications",
+      "extracted_filters": null,
+      "expected_filters": {},
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 719,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "3/37/23/032",
+          "authority": "West Somerset",
+          "status": "Permitted",
+          "date": "2023-11-06 00:00:00",
+          "type": "Full",
+          "score": 31.342793
+        },
+        {
+          "reference": "24/501806/COUNTY",
+          "authority": "Mid Kent",
+          "status": "Undecided",
+          "date": "2024-04-25 00:00:00",
+          "type": "Other",
+          "score": 31.342793
+        },
+        {
+          "reference": "139754/FH/2024",
+          "authority": "Manchester",
+          "status": "Permitted",
+          "date": "2024-05-23 00:00:00",
+          "type": "Full",
+          "score": 31.342793
+        }
+      ]
+    },
+    {
+      "test_name": "nonexistent_authority",
+      "query": "applications in Atlantis Council",
+      "extracted_filters": "{'authorities': ['Atlantis']}",
+      "expected_filters": {
+        "authorities": []
+      },
+      "total_results": 0,
+      "validated_results": 0,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 569,
+      "passed": true,
+      "error": null,
+      "sample_results": []
+    },
+    {
+      "test_name": "future_year",
+      "query": "applications in 2099",
+      "extracted_filters": "{'submission_date_from': datetime.datetime(2099, 1, 1, 0, 0), 'submission_date_to': datetime.datetime(2099, 12, 31, 23, 59, 59)}",
+      "expected_filters": {
+        "year": 2099
+      },
+      "total_results": 0,
+      "validated_results": 0,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 532,
+      "passed": true,
+      "error": null,
+      "sample_results": []
+    },
+    {
+      "test_name": "very_old_year",
+      "query": "applications from 1990",
+      "extracted_filters": null,
+      "expected_filters": {
+        "year": 1990
+      },
+      "total_results": 20,
+      "validated_results": 0,
+      "failed_count": 20,
+      "failed_results_sample": [
+        {
+          "reference": "22/04785/NMA1",
+          "errors": [
+            "year mismatch: expected 1990, got 2023"
+          ]
+        },
+        {
+          "reference": "22/04785/NMA1",
+          "errors": [
+            "year mismatch: expected 1990, got 2023"
+          ]
+        },
+        {
+          "reference": "3/37/23/032",
+          "errors": [
+            "year mismatch: expected 1990, got 2023"
+          ]
+        },
+        {
+          "reference": "24/501806/COUNTY",
+          "errors": [
+            "year mismatch: expected 1990, got 2024"
+          ]
+        },
+        {
+          "reference": "139754/FH/2024",
+          "errors": [
+            "year mismatch: expected 1990, got 2024"
+          ]
+        }
+      ],
+      "execution_time_ms": 611,
+      "passed": false,
+      "error": "20 results failed validation",
+      "sample_results": [
+        {
+          "reference": "22/04785/NMA1",
+          "authority": "South Cambridgeshire",
+          "status": "Withdrawn",
+          "date": "2023-10-11 00:00:00",
+          "type": "Amendment",
+          "score": 39.03959
+        },
+        {
+          "reference": "22/04785/NMA1",
+          "authority": "South Cambridgeshire",
+          "status": "Withdrawn",
+          "date": "2023-10-11 00:00:00",
+          "type": "Amendment",
+          "score": 39.03959
+        },
+        {
+          "reference": "3/37/23/032",
+          "authority": "West Somerset",
+          "status": "Permitted",
+          "date": "2023-11-06 00:00:00",
+          "type": "Full",
+          "score": 31.342793
+        }
+      ]
+    },
+    {
+      "test_name": "ambiguous_location",
+      "query": "applications near the bridge",
+      "extracted_filters": null,
+      "expected_filters": {},
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 876,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "LA06/2022/0862/LBC",
+          "authority": "Ards and North Down",
+          "status": "Undecided",
+          "date": "2022-08-25 00:00:00",
+          "type": "Heritage",
+          "score": 34.89374
+        },
+        {
+          "reference": "LA07/2022/1652/F",
+          "authority": "Newry Mourne Down",
+          "status": "Permitted",
+          "date": "2022-10-19 00:00:00",
+          "type": "Full",
+          "score": 34.89374
+        },
+        {
+          "reference": "3/37/23/032",
+          "authority": "West Somerset",
+          "status": "Permitted",
+          "date": "2023-11-06 00:00:00",
+          "type": "Full",
+          "score": 31.342804
+        }
+      ]
+    },
+    {
+      "test_name": "mixed_case_query",
+      "query": "REJECTED APPLICATIONS IN LONDON",
+      "extracted_filters": "{'authorities': ['City of London', 'Westminster', 'Camden', 'Islington', 'Hackney', 'Tower Hamlets', 'Greenwich', 'Lewisham', 'Southwark', 'Lambeth', 'Wandsworth', 'Hammersmith and Fulham', 'Kensington and Chelsea', 'Brent', 'Ealing', 'Hounslow', 'Richmond upon Thames', 'Kingston upon Thames', 'Merton', 'Sutton', 'Croydon', 'Bromley', 'Bexley', 'Havering', 'Barking and Dagenham', 'Redbridge', 'Newham', 'Waltham Forest', 'Haringey', 'Enfield', 'Barnet', 'Harrow', 'Hillingdon'], 'statuses': [<ApplicationStatus.REJECTED: 'rejected'>]}",
+      "expected_filters": {
+        "statuses": [
+          "rejected"
+        ],
+        "authorities": "London boroughs"
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 894,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "DM2023/01579",
+          "authority": "Sutton",
+          "status": "Rejected",
+          "date": "2023-10-17 00:00:00",
+          "type": "Full",
+          "score": 20.472782
+        },
+        {
+          "reference": "DM2023/01031",
+          "authority": "Sutton",
+          "status": "Rejected",
+          "date": "2023-06-26 00:00:00",
+          "type": "Outline",
+          "score": 20.472782
+        },
+        {
+          "reference": "234815HH",
+          "authority": "Ealing",
+          "status": "Rejected",
+          "date": "2023-12-04 00:00:00",
+          "type": "Full",
+          "score": 20.472782
+        }
+      ]
+    },
+    {
+      "test_name": "special_characters",
+      "query": "applications in Manchester (city)",
+      "extracted_filters": "{'authorities': ['City of London', 'Manchester']}",
+      "expected_filters": {
+        "authorities": [
+          "Manchester"
+        ]
+      },
+      "total_results": 20,
+      "validated_results": 20,
+      "failed_count": 0,
+      "failed_results_sample": [],
+      "execution_time_ms": 1758,
+      "passed": true,
+      "error": null,
+      "sample_results": [
+        {
+          "reference": "139194/FH/2024",
+          "authority": "Manchester",
+          "status": "Permitted",
+          "date": "2024-02-06 00:00:00",
+          "type": "Full",
+          "score": 43.289696
+        },
+        {
+          "reference": "139213/FH/2024",
+          "authority": "Manchester",
+          "status": "Permitted",
+          "date": "2024-03-04 00:00:00",
+          "type": "Full",
+          "score": 43.289696
+        },
+        {
+          "reference": "139435/FH/2024",
+          "authority": "Manchester",
+          "status": "Permitted",
+          "date": "2024-03-04 00:00:00",
+          "type": "Full",
+          "score": 43.289696
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "sample_planning_application": {
+    "application_id": "APP/2024/0001",
+    "reference": "24/00001/FUL",
+    "authority": "Camden Council",
+    "authority_code": "CAM",
+
+    "address": "123 High Street, Camden, London",
+    "postcode": "NW1 7AB",
+    "location": {
+      "lat": 51.5374,
+      "lon": -0.1424
+    },
+    "ward": "Bloomsbury",
+    "parish": null,
+
+    "status": "Under Consideration",
+    "status_category": "pending",
+    "decision": null,
+    "submission_date": "2024-03-15T09:00:00Z",
+    "validation_date": "2024-03-18T14:30:00Z",
+    "consultation_start_date": "2024-03-20T00:00:00Z",
+    "consultation_end_date": "2024-04-10T23:59:59Z",
+    "target_decision_date": "2024-05-15T00:00:00Z",
+    "decision_date": null,
+    "appeal_date": null,
+
+    "development_type": "Residential",
+    "application_type": "Full Application",
+    "use_class": "C3 - Dwelling houses",
+    "description": "Erection of a two-storey rear extension to existing Victorian terrace house to create additional living space including new kitchen/dining area and master bedroom with en-suite bathroom",
+    "proposal": "The proposal involves the construction of a sympathetic two-storey extension that respects the character of the existing Victorian terrace while providing modern family accommodation. The extension will use matching London stock brick and slate roof materials.",
+
+    "project_value": 85000.00,
+    "floor_area": 45,
+    "site_area": 12.5,
+    "num_units": 0,
+    "num_bedrooms": 1,
+    "building_height": 6.2,
+    "parking_spaces": 0,
+
+    "applicant": {
+      "name": "Mr. John Smith",
+      "type": "Individual",
+      "address": "123 High Street, Camden, London NW1 7AB"
+    },
+    "agent": {
+      "name": "Sarah Johnson",
+      "company": "Camden Planning Consultants Ltd",
+      "contact": "sarah@camdenplanning.co.uk"
+    },
+
+    "planning_officer": "Michael Brown",
+    "committee_date": null,
+
+    "documents": [
+      {
+        "document_id": "DOC001",
+        "title": "Location Plan",
+        "type": "Plan",
+        "url": "https://planning.camden.gov.uk/docs/24-00001-location.pdf",
+        "upload_date": "2024-03-15T10:00:00Z",
+        "file_size": 245760,
+        "content_extracted": "Site location plan showing the property outlined in red within the context of surrounding Victorian terrace houses"
+      },
+      {
+        "document_id": "DOC002",
+        "title": "Proposed Plans and Elevations",
+        "type": "Plan",
+        "url": "https://planning.camden.gov.uk/docs/24-00001-proposed.pdf",
+        "upload_date": "2024-03-15T10:05:00Z",
+        "file_size": 512000,
+        "content_extracted": "Detailed architectural drawings showing proposed two-storey rear extension with ground floor kitchen/dining area and first floor bedroom with en-suite"
+      },
+      {
+        "document_id": "DOC003",
+        "title": "Design and Access Statement",
+        "type": "Statement",
+        "url": "https://planning.camden.gov.uk/docs/24-00001-design.pdf",
+        "upload_date": "2024-03-15T10:10:00Z",
+        "file_size": 1048576,
+        "content_extracted": "Comprehensive design statement explaining how the proposal respects the character of the conservation area through use of appropriate materials and proportionate scale"
+      }
+    ],
+
+    "consultations": [
+      {
+        "consultee": "Camden Conservation Officer",
+        "response": "No Objection",
+        "comment": "The proposed extension is of appropriate scale and uses suitable materials that complement the existing Victorian architecture",
+        "date": "2024-03-25T14:00:00Z"
+      },
+      {
+        "consultee": "Highways Department",
+        "response": "No Comment",
+        "comment": "No highway implications",
+        "date": "2024-03-23T11:30:00Z"
+      }
+    ],
+
+    "public_comments": {
+      "total_comments": 3,
+      "support_count": 2,
+      "objection_count": 1,
+      "neutral_count": 0
+    },
+
+    "ai_summary": "A well-designed two-storey rear extension to a Victorian terrace house in Camden. The proposal shows good architectural sensitivity with appropriate materials and scale. Strong support from conservation officer and neighbours, with only minor objections regarding potential overshadowing. High likelihood of approval given compliance with local design guidelines.",
+
+    "opportunity_score": 78,
+    "opportunity_breakdown": {
+      "approval_probability": 0.85,
+      "market_potential": 0.72,
+      "project_viability": 0.81,
+      "strategic_fit": 0.75,
+      "timeline_score": 0.88,
+      "risk_score": 0.23
+    },
+    "opportunity_rationale": "Strong opportunity based on: (1) High approval probability due to conservation officer support and appropriate design, (2) Camden market shows strong demand for extended family homes, (3) Relatively straightforward project with low technical risk, (4) Clear planning precedent in the area",
+
+    "market_insights": "Camden residential extensions typically add 15-20% to property value. This area shows consistent approval rates for similar proposals. Recent comparable extensions in the ward have been approved within 8-10 weeks.",
+
+    "approval_probability": 0.85,
+    "predicted_timeline": {
+      "decision_weeks": 8,
+      "completion_months": 4,
+      "confidence": 0.78
+    },
+
+    "risk_assessment": {
+      "risk_level": "Low",
+      "risk_factors": ["neighbour_objection"],
+      "mitigation_suggestions": "Consider minor design modifications to address overshadowing concerns raised by neighbour at No. 121"
+    },
+    "risk_flags": ["neighbour_objection"],
+    "confidence_score": 0.82,
+
+    "description_embedding": null,
+    "full_content_embedding": null,
+    "summary_embedding": null,
+    "location_embedding": null,
+    "document_embeddings": [],
+
+    "similar_applications": [
+      {
+        "application_id": "APP/2023/0892",
+        "similarity_score": 0.87,
+        "similarity_type": "design_and_location"
+      },
+      {
+        "application_id": "APP/2023/1245",
+        "similarity_score": 0.74,
+        "similarity_type": "development_type"
+      }
+    ],
+
+    "ai_processing": {
+      "last_processed": "2024-03-20T15:30:00Z",
+      "model_version": "gpt-4-turbo",
+      "processing_status": "completed",
+      "human_reviewed": false,
+      "embedding_model": "text-embedding-3-large",
+      "processing_duration": 2.3,
+      "error_message": null
+    },
+
+    "user_metrics": {
+      "view_count": 24,
+      "save_count": 3,
+      "share_count": 1,
+      "last_viewed": "2024-03-22T16:45:00Z",
+      "popularity_score": 0.65
+    },
+
+    "planning_history": [
+      {
+        "reference": "98/01234/FUL",
+        "decision": "Approved",
+        "decision_date": "1998-08-15T00:00:00Z",
+        "description": "Single storey rear extension"
+      }
+    ],
+
+    "constraints": {
+      "conservation_area": true,
+      "listed_building": null,
+      "green_belt": false,
+      "flood_zone": "Zone 1",
+      "tree_preservation": false,
+      "article_4_direction": false,
+      "other_constraints": []
+    },
+
+    "created_at": "2024-03-15T09:00:00Z",
+    "updated_at": "2024-03-22T16:45:00Z",
+    "indexed_at": "2024-03-22T17:00:00Z",
+
+    "data_source": {
+      "portal_url": "https://planning.camden.gov.uk",
+      "scrape_date": "2024-03-15T08:00:00Z",
+      "data_quality_score": 0.92,
+      "completeness_score": 0.88
+    }
+  },
+
+  "bulk_indexing_template": {
+    "index_operation": {
+      "_index": "planning_applications",
+      "_id": "{{application_id}}"
+    },
+    "document_template": {
+      "application_id": "{{application_id}}",
+      "reference": "{{reference}}",
+      "authority": "{{authority}}",
+      "address": "{{address}}",
+      "postcode": "{{postcode}}",
+      "location": {
+        "lat": "{{latitude}}",
+        "lon": "{{longitude}}"
+      },
+      "status": "{{status}}",
+      "submission_date": "{{submission_date}}",
+      "decision_date": "{{decision_date}}",
+      "development_type": "{{development_type}}",
+      "description": "{{description}}",
+      "project_value": "{{project_value}}",
+      "opportunity_score": "{{ai_opportunity_score|0}}",
+      "ai_summary": "{{ai_summary|}}",
+      "description_embedding": "{{description_embedding|[]}}",
+      "created_at": "{{current_timestamp}}",
+      "indexed_at": "{{current_timestamp}}"
+    }
+  },
+
+  "sample_commercial_application": {
+    "application_id": "APP/2024/0002",
+    "reference": "24/00002/FUL",
+    "authority": "Westminster City Council",
+    "authority_code": "WCC",
+
+    "address": "45-47 Oxford Street, Westminster, London",
+    "postcode": "W1D 2DZ",
+    "location": {
+      "lat": 51.5154,
+      "lon": -0.1350
+    },
+    "ward": "West End",
+
+    "development_type": "Commercial",
+    "application_type": "Full Application",
+    "use_class": "E - Commercial, business and service",
+    "description": "Change of use from retail (Class E) to restaurant (Class E) with installation of new kitchen extraction system and external seating area",
+
+    "project_value": 150000.00,
+    "floor_area": 120,
+
+    "opportunity_score": 65,
+    "opportunity_breakdown": {
+      "approval_probability": 0.68,
+      "market_potential": 0.89,
+      "project_viability": 0.71,
+      "strategic_fit": 0.82
+    },
+
+    "ai_summary": "Restaurant change of use application in prime West End location. Good market potential but moderate planning risk due to licensing and noise considerations. Westminster generally supportive of food and beverage uses in this area.",
+
+    "constraints": {
+      "conservation_area": true,
+      "listed_building": "Grade II",
+      "green_belt": false
+    },
+
+    "risk_flags": ["noise_impact", "licensing_required", "listed_building"],
+    "approval_probability": 0.68
+  },
+
+  "sample_major_development": {
+    "application_id": "APP/2024/0003",
+    "reference": "24/00003/OUT",
+    "authority": "Southwark Council",
+    "authority_code": "STH",
+
+    "address": "Former Industrial Site, Bermondsey Street, London",
+    "postcode": "SE1 3UW",
+    "location": {
+      "lat": 51.4994,
+      "lon": -0.0784
+    },
+
+    "development_type": "Mixed Use",
+    "application_type": "Outline Application",
+    "use_class": "Mixed C3/E/B8",
+    "description": "Outline application for mixed-use development comprising 150 residential units, 2,000 sqm commercial floorspace, and public realm improvements",
+
+    "project_value": 45000000.00,
+    "floor_area": 8500,
+    "num_units": 150,
+    "building_height": 45.0,
+
+    "opportunity_score": 42,
+    "opportunity_breakdown": {
+      "approval_probability": 0.35,
+      "market_potential": 0.91,
+      "project_viability": 0.78,
+      "strategic_fit": 0.65
+    },
+
+    "ai_summary": "Major mixed-use development in regeneration area. High market demand but significant planning challenges including height concerns, affordable housing requirements, and infrastructure contributions. Likely to require extensive negotiations.",
+
+    "risk_flags": ["height_concerns", "affordable_housing", "infrastructure_requirements", "viability_assessment"],
+    "approval_probability": 0.35,
+
+    "predicted_timeline": {
+      "decision_weeks": 26,
+      "completion_months": 36,
+      "confidence": 0.45
+    }
+  }
+}

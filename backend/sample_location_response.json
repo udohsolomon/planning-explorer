@@ -1,0 +1,133 @@
+{
+  "success": true,
+  "data": {
+    "location_name": "London",
+    "location_slug": "london",
+    "center_coords": {
+      "lat": 51.5074,
+      "lng": -0.1278
+    },
+    "radius_km": 10,
+    "total_applications": 2456,
+    "total_applications_all_time": 15789,
+    "active_applications": 342,
+    "approval_rate": 68.5,
+    "avg_decision_days": 87,
+    "top_sector": {
+      "name": "Full Planning Permission",
+      "count": 892,
+      "percentage": 36.3
+    },
+    "top_authority": {
+      "name": "Westminster",
+      "count": 456,
+      "percentage": 18.6
+    },
+    "monthly_trend": [
+      {
+        "month": "2023-11",
+        "total": 198,
+        "approved": 134,
+        "rejected": 45,
+        "pending": 19
+      },
+      {
+        "month": "2023-12",
+        "total": 215,
+        "approved": 148,
+        "rejected": 52,
+        "pending": 15
+      },
+      {
+        "month": "2024-01",
+        "total": 203,
+        "approved": 142,
+        "rejected": 48,
+        "pending": 13
+      },
+      {
+        "month": "2024-02",
+        "total": 189,
+        "approved": 129,
+        "rejected": 43,
+        "pending": 17
+      },
+      {
+        "month": "2024-03",
+        "total": 221,
+        "approved": 156,
+        "rejected": 51,
+        "pending": 14
+      },
+      {
+        "month": "2024-04",
+        "total": 207,
+        "approved": 141,
+        "rejected": 49,
+        "pending": 17
+      },
+      {
+        "month": "2024-05",
+        "total": 195,
+        "approved": 133,
+        "rejected": 47,
+        "pending": 15
+      },
+      {
+        "month": "2024-06",
+        "total": 212,
+        "approved": 145,
+        "rejected": 50,
+        "pending": 17
+      },
+      {
+        "month": "2024-07",
+        "total": 204,
+        "approved": 138,
+        "rejected": 48,
+        "pending": 18
+      },
+      {
+        "month": "2024-08",
+        "total": 198,
+        "approved": 136,
+        "rejected": 46,
+        "pending": 16
+      },
+      {
+        "month": "2024-09",
+        "total": 210,
+        "approved": 144,
+        "rejected": 49,
+        "pending": 17
+      },
+      {
+        "month": "2024-10",
+        "total": 204,
+        "approved": 140,
+        "rejected": 47,
+        "pending": 17
+      }
+    ],
+    "status_breakdown": {
+      "Permitted": 1245,
+      "Rejected": 567,
+      "Undecided": 342,
+      "Withdrawn": 189,
+      "Conditions": 113
+    },
+    "recent_applications": [
+      "APP-2024-012345",
+      "APP-2024-012344",
+      "APP-2024-012343",
+      "APP-2024-012342",
+      "APP-2024-012341",
+      "APP-2024-012340",
+      "APP-2024-012339",
+      "APP-2024-012338",
+      "APP-2024-012337",
+      "APP-2024-012336"
+    ]
+  },
+  "cached": false
+}

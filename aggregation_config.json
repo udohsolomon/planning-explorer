@@ -1,0 +1,526 @@
+{
+  "analytics_aggregations": {
+    "market_overview": {
+      "description": "High-level market statistics and trends",
+      "aggregations": {
+        "total_applications": {
+          "value_count": {
+            "field": "application_id"
+          }
+        },
+        "avg_opportunity_score": {
+          "avg": {
+            "field": "opportunity_score"
+          }
+        },
+        "decision_breakdown": {
+          "terms": {
+            "field": "decision",
+            "size": 10
+          },
+          "aggs": {
+            "avg_timeline": {
+              "avg": {
+                "script": {
+                  "source": "if (doc['decision_date'].size() > 0 && doc['submission_date'].size() > 0) { return (doc['decision_date'].value.millis - doc['submission_date'].value.millis) / (1000 * 60 * 60 * 24 * 7) } else { return null }"
+                }
+              }
+            }
+          }
+        },
+        "monthly_trends": {
+          "date_histogram": {
+            "field": "submission_date",
+            "calendar_interval": "month",
+            "min_doc_count": 1
+          },
+          "aggs": {
+            "total_value": {
+              "sum": {
+                "field": "project_value"
+              }
+            },
+            "avg_opportunity": {
+              "avg": {
+                "field": "opportunity_score"
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "authority_performance": {
+      "description": "Performance metrics by planning authority",
+      "aggregations": {
+        "by_authority": {
+          "terms": {
+            "field": "authority",
+            "size": 50,
+            "order": {
+              "total_applications": "desc"
+            }
+          },
+          "aggs": {
+            "total_applications": {
+              "value_count": {
+                "field": "application_id"
+              }
+            },
+            "approval_rate": {
+              "filter": {
+                "terms": {
+                  "decision": ["approved", "granted", "permission granted"]
+                }
+              },
+              "aggs": {
+                "approved_count": {
+                  "value_count": {
+                    "field": "application_id"
+                  }
+                }
+              }
+            },
+            "avg_decision_time": {
+              "avg": {
+                "script": {
+                  "source": "if (doc['decision_date'].size() > 0 && doc['submission_date'].size() > 0) { return (doc['decision_date'].value.millis - doc['submission_date'].value.millis) / (1000 * 60 * 60 * 24) } else { return null }"
+                }
+              }
+            },
+            "avg_opportunity_score": {
+              "avg": {
+                "field": "opportunity_score"
+              }
+            },
+            "value_approved": {
+              "filter": {
+                "terms": {
+                  "decision": ["approved", "granted", "permission granted"]
+                }
+              },
+              "aggs": {
+                "total_value": {
+                  "sum": {
+                    "field": "project_value"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "geographic_hotspots": {
+      "description": "Geographic analysis of planning activity",
+      "aggregations": {
+        "hotspot_grid": {
+          "geohash_grid": {
+            "field": "location",
+            "precision": 6
+          },
+          "aggs": {
+            "avg_opportunity": {
+              "avg": {
+                "field": "opportunity_score"
+              }
+            },
+            "total_value": {
+              "sum": {
+                "field": "project_value"
+              }
+            },
+            "top_applications": {
+              "top_hits": {
+                "size": 3,
+                "sort": [
+                  {
+                    "opportunity_score": {
+                      "order": "desc"
+                    }
+                  }
+                ],
+                "_source": {
+                  "includes": [
+                    "application_id",
+                    "address",
+                    "opportunity_score",
+                    "description"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "by_postcode_district": {
+          "terms": {
+            "field": "postcode.district",
+            "size": 100
+          },
+          "aggs": {
+            "avg_opportunity": {
+              "avg": {
+                "field": "opportunity_score"
+              }
+            },
+            "application_density": {
+              "value_count": {
+                "field": "application_id"
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "opportunity_analysis": {
+      "description": "AI-powered opportunity insights",
+      "aggregations": {
+        "opportunity_distribution": {
+          "histogram": {
+            "field": "opportunity_score",
+            "interval": 10,
+            "min_doc_count": 1,
+            "extended_bounds": {
+              "min": 0,
+              "max": 100
+            }
+          }
+        },
+        "high_opportunity_sectors": {
+          "filter": {
+            "range": {
+              "opportunity_score": {
+                "gte": 75
+              }
+            }
+          },
+          "aggs": {
+            "by_development_type": {
+              "terms": {
+                "field": "development_type",
+                "size": 10
+              },
+              "aggs": {
+                "avg_score": {
+                  "avg": {
+                    "field": "opportunity_score"
+                  }
+                },
+                "avg_value": {
+                  "avg": {
+                    "field": "project_value"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "risk_assessment": {
+          "terms": {
+            "field": "risk_assessment.risk_level",
+            "size": 5
+          },
+          "aggs": {
+            "avg_opportunity": {
+              "avg": {
+                "field": "opportunity_score"
+              }
+            },
+            "common_risk_factors": {
+              "terms": {
+                "field": "risk_flags",
+                "size": 10
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "development_trends": {
+      "description": "Development type and size trends",
+      "aggregations": {
+        "by_development_type": {
+          "terms": {
+            "field": "development_type",
+            "size": 20
+          },
+          "aggs": {
+            "monthly_trend": {
+              "date_histogram": {
+                "field": "submission_date",
+                "calendar_interval": "month",
+                "min_doc_count": 1
+              }
+            },
+            "avg_project_value": {
+              "avg": {
+                "field": "project_value"
+              }
+            },
+            "size_distribution": {
+              "terms": {
+                "script": {
+                  "source": "if (doc['project_value'].size() > 0) { double value = doc['project_value'].value; if (value < 50000) return 'Small'; else if (value < 250000) return 'Medium'; else if (value < 1000000) return 'Large'; else return 'Major'; } else return 'Unknown';"
+                }
+              }
+            }
+          }
+        },
+        "use_class_trends": {
+          "terms": {
+            "field": "use_class",
+            "size": 15
+          },
+          "aggs": {
+            "approval_rate": {
+              "terms": {
+                "field": "decision",
+                "size": 5
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "filtering_aggregations": {
+    "filter_options": {
+      "description": "Dynamic filter options for search interface",
+      "aggregations": {
+        "authorities": {
+          "terms": {
+            "field": "authority",
+            "size": 100,
+            "order": {
+              "_count": "desc"
+            }
+          }
+        },
+        "development_types": {
+          "terms": {
+            "field": "development_type",
+            "size": 50
+          }
+        },
+        "use_classes": {
+          "terms": {
+            "field": "use_class",
+            "size": 30
+          }
+        },
+        "application_types": {
+          "terms": {
+            "field": "application_type",
+            "size": 25
+          }
+        },
+        "status_options": {
+          "terms": {
+            "field": "status",
+            "size": 20
+          }
+        },
+        "decision_options": {
+          "terms": {
+            "field": "decision",
+            "size": 15
+          }
+        },
+        "project_value_ranges": {
+          "range": {
+            "field": "project_value",
+            "ranges": [
+              {"to": 50000, "key": "Under £50k"},
+              {"from": 50000, "to": 100000, "key": "£50k - £100k"},
+              {"from": 100000, "to": 250000, "key": "£100k - £250k"},
+              {"from": 250000, "to": 500000, "key": "£250k - £500k"},
+              {"from": 500000, "to": 1000000, "key": "£500k - £1M"},
+              {"from": 1000000, "to": 5000000, "key": "£1M - £5M"},
+              {"from": 5000000, "key": "Over £5M"}
+            ]
+          }
+        },
+        "opportunity_score_ranges": {
+          "range": {
+            "field": "opportunity_score",
+            "ranges": [
+              {"to": 25, "key": "Low (0-25)"},
+              {"from": 25, "to": 50, "key": "Medium (25-50)"},
+              {"from": 50, "to": 75, "key": "High (50-75)"},
+              {"from": 75, "key": "Excellent (75+)"}
+            ]
+          }
+        },
+        "submission_date_ranges": {
+          "date_range": {
+            "field": "submission_date",
+            "ranges": [
+              {"from": "now-1M", "key": "Last month"},
+              {"from": "now-3M", "key": "Last 3 months"},
+              {"from": "now-6M", "key": "Last 6 months"},
+              {"from": "now-1y", "key": "Last year"},
+              {"from": "now-2y", "key": "Last 2 years"}
+            ]
+          }
+        }
+      }
+    },
+
+    "faceted_search": {
+      "description": "Multi-faceted search aggregations",
+      "aggregations": {
+        "filtered_authorities": {
+          "filter": "{{global_filters_excluding_authority}}",
+          "aggs": {
+            "authorities": {
+              "terms": {
+                "field": "authority",
+                "size": 20
+              }
+            }
+          }
+        },
+        "filtered_types": {
+          "filter": "{{global_filters_excluding_type}}",
+          "aggs": {
+            "development_types": {
+              "terms": {
+                "field": "development_type",
+                "size": 15
+              }
+            }
+          }
+        },
+        "filtered_status": {
+          "filter": "{{global_filters_excluding_status}}",
+          "aggs": {
+            "statuses": {
+              "terms": {
+                "field": "status",
+                "size": 10
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "user_dashboard_aggregations": {
+    "personal_insights": {
+      "description": "Personalized dashboard aggregations",
+      "aggregations": {
+        "saved_searches_stats": {
+          "filter": {
+            "terms": {
+              "application_id": "{{user_saved_applications}}"
+            }
+          },
+          "aggs": {
+            "avg_opportunity": {
+              "avg": {
+                "field": "opportunity_score"
+              }
+            },
+            "total_value": {
+              "sum": {
+                "field": "project_value"
+              }
+            },
+            "by_authority": {
+              "terms": {
+                "field": "authority",
+                "size": 10
+              }
+            }
+          }
+        },
+        "recommendation_candidates": {
+          "filter": {
+            "bool": {
+              "must": [
+                {"range": {"opportunity_score": {"gte": "{{user_min_score|60}}"}}},
+                {"terms": {"development_type": "{{user_preferred_types}}"}}
+              ]
+            }
+          },
+          "aggs": {
+            "by_location": {
+              "geohash_grid": {
+                "field": "location",
+                "precision": 7
+              },
+              "aggs": {
+                "top_opportunities": {
+                  "top_hits": {
+                    "size": 3,
+                    "sort": [{"opportunity_score": "desc"}]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "performance_optimizations": {
+    "aggregation_caching": {
+      "cache_frequent_aggs": true,
+      "cache_duration": "5m",
+      "cached_aggregations": [
+        "filter_options",
+        "market_overview.decision_breakdown",
+        "authority_performance.by_authority"
+      ]
+    },
+    "composite_aggregations": {
+      "use_for_pagination": true,
+      "bucket_size": 1000,
+      "applications": [
+        "Large authority listings",
+        "Date range pagination",
+        "Geographic area browsing"
+      ]
+    },
+    "script_optimization": {
+      "compile_scripts": true,
+      "cache_compiled_scripts": true,
+      "script_cache_size": "100mb"
+    }
+  },
+
+  "aggregation_templates": {
+    "market_analysis_template": {
+      "template": {
+        "aggs": {
+          "market_overview": "{{market_overview_agg}}",
+          "geographic_analysis": "{{geographic_hotspots_agg}}",
+          "opportunity_insights": "{{opportunity_analysis_agg}}"
+        }
+      },
+      "parameters": {
+        "date_range": "Last 12 months",
+        "min_opportunity_score": 50,
+        "geographic_precision": 6
+      }
+    },
+    "authority_report_template": {
+      "template": {
+        "aggs": {
+          "authority_stats": "{{authority_performance_agg}}",
+          "development_breakdown": "{{development_trends_agg}}"
+        }
+      },
+      "parameters": {
+        "authority_filter": "{{target_authority}}",
+        "comparison_period": "12 months"
+      }
+    }
+  }
+}

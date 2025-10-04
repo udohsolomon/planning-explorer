@@ -1,0 +1,2113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Bank-Grade Planning Report - Canary Wharf Development</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            background: #f8fafc;
+        }
+
+        .report-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border: 1px solid #e5e7eb;
+        }
+
+        /* Cover Page */
+        .cover-page {
+            position: relative;
+            height: 100vh;
+            background: #1e293b;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cover-image {
+            flex: 1;
+            background: white url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDgwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjZmZmZmZmIi8+CjxwYXRoIGQ9Ik0xMDAgMzAwaDEwMHYtNTBoLTEwMHY1MHoiIGZpbGw9IiNlNGU0ZTciLz4KPHA+YXRoIGQ9Ik0yNTAgMjgwaDEyMHYtNDAKaC0xMjB2NDB6IiBmaWxsPSIjZjNmNGY2Ii8+CjxwYXRoIGQ9Ik00MDA+MzIwaDgwdi0zMGgtODB2MzB6IiBmaWxsPSIjZjlmOWZiIi8+CjxwYXRoIGQ9Ik01MjAgMjkwaDkwdi0yNWgtOTB2MjV6IiBmaWxsPSIjZjFmNWY5Ii8+CjxwYXRoIGQ9Ik0xNTAgMjIwaDYwdi0yMGgtNjB2MjB6IiBmaWxsPSIjZWRmM2Y4Ii8+CjxwYXRoIGQ9Ik0zMjAgMjQwaDcwdi0zNWgtNzB2MzV6IiBmaWxsPSIjZGNmY2U3Ii8+CjxwYXRoIGQ9Ik01MDAgMjAwaDQwdi0xNWgtNDB2MTV6IiBmaWxsPSIjZmVmY2U4Ii8+CjxjaXJjbGUgY3g9IjQwMCIgY3k9IjIwMCIgcj0iOCIgZmlsbD0iIzdDQjM0MiIvPgo8Y2lyY2xlIGN4PSI0MDAiIGN5PSIyMDAiIHI9IjIwIiBmaWxsPSJub25lIiBzdHJva2U9IiM3Q0IzNDIiIHN0cm9rZS13aWR0aD0iMiIgb3BhY2l0eT0iMC4zIi8+CjxjaXJjbGUgY3g9IjQwMCIgY3k9IjIwMCIgcj0iNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzdDQjM0MiIgc3Ryb2tlLXdpZHRoPSIxIiBvcGFjaXR5PSIwLjEiLz4KPHBhdGggZD0iTTAgMzUwaDgwMCIgc3Ryb2tlPSIjZTRlNGU3IiBzdHJva2Utd2lkdGg9IjEiLz4KPHA+YXRoIGQ9Ik0wIDMwMGg4MDAiIHN0cm9rZT0iI2Y5ZmFmYiIgc3Ryb2tlLXdpZHRoPSIxIi8+CjxwYXRoIGQ9Ik0wIDI1MGg4MDAiIHN0cm9rZT0iI2ZhZmJmYyIgc3Ryb2tlLXdpZHRoPSIxIi8+Cjwvc3ZnPg==') center/cover;
+            position: relative;
+        }
+
+        .cover-content {
+            padding: 60px;
+            background: rgba(30, 41, 59, 0.95);
+        }
+
+        .cover-title {
+            font-size: 48px;
+            font-weight: 900;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+
+        .cover-subtitle {
+            font-size: 24px;
+            opacity: 0.9;
+            margin-bottom: 40px;
+        }
+
+        .cover-meta {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .meta-item {
+            text-align: center;
+        }
+
+        .meta-label {
+            font-size: 12px;
+            opacity: 0.7;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .meta-value {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        /* Content Pages */
+        .content-page {
+            padding: 40px 60px;
+            min-height: 100vh;
+            page-break-before: always;
+        }
+
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 48px;
+            padding-bottom: 24px;
+            border-bottom: none;
+            position: relative;
+        }
+
+        .page-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #7CB342;
+            border-radius: 2px;
+        }
+
+        .page-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .page-logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: #7CB342;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: #d1d5db;
+        }
+
+        .highlight-card {
+            background: #f5f5f5;
+            border: 1px solid #d1d5db;
+            border-radius: 16px;
+            padding: 32px;
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-2px);
+            border-color: #9ca3af;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .info-item {
+            background: #ffffff;
+            padding: 24px;
+            border-radius: 12px;
+            border: none;
+            border: 1px solid #e5e7eb;
+            transition: all 0.2s ease;
+        }
+
+        .info-item:hover {
+            border-color: #d1d5db;
+            transform: translateY(-1px);
+        }
+
+        .info-label {
+            font-size: 12px;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .info-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .info-subvalue {
+            font-size: 14px;
+            color: #64748b;
+            margin-top: 4px;
+        }
+
+        .score-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .score-item {
+            text-align: center;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            position: relative;
+            border: 1px solid #d1d5db;
+            transition: all 0.3s ease;
+        }
+
+        .score-circle:hover {
+            transform: scale(1.05);
+            border-color: #9ca3af;
+        }
+
+        .score-circle.excellent {
+            background: #10b981;
+        }
+
+        .score-circle.good {
+            background: #3b82f6;
+        }
+
+        .score-circle.moderate {
+            background: #f59e0b;
+        }
+
+        .score-value {
+            font-size: 36px;
+            font-weight: 800;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .score-label {
+            font-size: 14px;
+            color: #64748b;
+            line-height: 1.4;
+        }
+
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .status-approved {
+            background: #dcfce7;
+            color: #166534;
+            border: 1px solid #bbf7d0;
+        }
+
+        .chart-container {
+            background: #ffffff;
+            padding: 32px;
+            border-radius: 16px;
+            margin: 24px 0;
+            border: none;
+            border: 1px solid #e5e7eb;
+        }
+
+        .chart-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 20px;
+        }
+
+        .bar-chart {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .bar-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .bar-label {
+            width: 120px;
+            font-size: 12px;
+            color: #64748b;
+        }
+
+        .bar-track {
+            flex: 1;
+            height: 20px;
+            background: #e2e8f0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 100%;
+            background: #7CB342;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .bar-value {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 11px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+        }
+
+        .data-table th {
+            background: #1e293b;
+            color: white;
+            padding: 20px 16px;
+            text-align: left;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+
+        .data-table td {
+            padding: 18px 16px;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 14px;
+            background: white;
+        }
+
+        .data-table tr:hover td {
+            background: #f8fafc;
+        }
+
+        .data-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .risk-matrix {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .risk-item {
+            padding: 24px;
+            border-radius: 12px;
+            text-align: center;
+            border: none;
+            transition: all 0.2s ease;
+        }
+
+        .risk-low {
+            background: #dcfce7;
+            border: 1px solid #86efac;
+        }
+
+        .risk-low:hover {
+            border-color: #65da84;
+            transform: translateY(-1px);
+        }
+
+        .risk-medium {
+            background: #fef3c7;
+            border: 1px solid #fcd34d;
+        }
+
+        .risk-medium:hover {
+            border-color: #fbbf24;
+            transform: translateY(-1px);
+        }
+
+        .timeline {
+            position: relative;
+            padding: 32px 0;
+            background: #ffffff;
+            border-radius: 16px;
+            border: 1px solid #e5e7eb;
+            margin: 24px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 40px;
+            top: 60px;
+            bottom: 60px;
+            width: 3px;
+            background: #7CB342;
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding: 20px 32px 20px 80px;
+            margin-bottom: 24px;
+            background: #ffffff;
+            border-radius: 12px;
+            transition: all 0.2s ease;
+        }
+
+        .timeline-item:hover {
+            background: #f8fffe;
+            transform: translateX(4px);
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: 28px;
+            top: 28px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #ffffff;
+            border: 3px solid #7CB342;
+            border-width: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+
+        .timeline-marker::after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: #7CB342;
+            border-radius: 50%;
+        }
+
+        .timeline-marker.pending {
+            background: #f1f5f9;
+            border-color: #64748b;
+            border-width: 2px;
+        }
+
+        .timeline-marker.pending::after {
+            background: #64748b;
+        }
+
+        .timeline-marker.in-progress {
+            background: #fef3c7;
+            border-color: #f59e0b;
+            border-width: 2px;
+        }
+
+        .timeline-marker.in-progress::after {
+            background: #f59e0b;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .timeline-content h4 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 8px;
+            letter-spacing: -0.01em;
+        }
+
+        .timeline-content p {
+            font-size: 15px;
+            color: #64748b;
+            line-height: 1.5;
+        }
+
+        .timeline-status {
+            display: inline-flex;
+            align-items: center;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 8px;
+        }
+
+        .timeline-status.completed {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .timeline-status.in-progress {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .timeline-status.pending {
+            background: #f1f5f9;
+            color: #475569;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: 20px 60px;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            color: #64748b;
+        }
+
+        .qr-code {
+            position: absolute;
+            bottom: 60px;
+            right: 60px;
+            width: 80px;
+            height: 80px;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        @media print {
+            .content-page {
+                page-break-before: always;
+            }
+        }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            /* Container adjustments */
+            .report-container {
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            /* Cover page mobile */
+            .cover-page {
+                height: auto;
+                min-height: 100vh;
+            }
+
+            .cover-content {
+                padding: 40px 24px;
+            }
+
+            .cover-title {
+                font-size: 32px;
+                line-height: 1.2;
+            }
+
+            .cover-subtitle {
+                font-size: 18px;
+                margin-bottom: 24px;
+            }
+
+            .cover-meta {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                text-align: left;
+            }
+
+            /* Content pages mobile */
+            .content-page {
+                padding: 24px 16px;
+                min-height: auto;
+            }
+
+            .page-header {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 32px;
+                gap: 16px;
+            }
+
+            .page-title {
+                font-size: 24px;
+            }
+
+            .page-number {
+                align-self: flex-end;
+                padding: 8px 16px;
+                font-size: 12px;
+            }
+
+            /* Section titles */
+            .section-title {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+
+            .section {
+                margin-bottom: 32px;
+            }
+
+            /* Cards mobile responsiveness */
+            .card {
+                padding: 16px;
+                margin-bottom: 20px;
+                border-radius: 12px;
+            }
+
+            /* Fix all grid layouts */
+            .info-grid {
+                grid-template-columns: 1fr !important;
+                gap: 16px !important;
+            }
+
+            /* All inline grid styles to single column */
+            div[style*="display: grid"],
+            div[style*="grid-template-columns"] {
+                display: grid !important;
+                grid-template-columns: 1fr !important;
+                gap: 16px !important;
+            }
+
+            /* Card content mobile - more specific targeting */
+            div[style*="padding: 24px"]:not(.cover-content),
+            div[style*="padding: 20px"]:not(.cover-content) {
+                padding: 16px !important;
+            }
+
+            /* Tables mobile - better overflow handling */
+            .data-table {
+                font-size: 12px;
+                overflow-x: auto;
+                display: block;
+                white-space: nowrap;
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            .data-table thead,
+            .data-table tbody,
+            .data-table tr {
+                display: block;
+                width: 100%;
+            }
+
+            .data-table tr {
+                display: flex;
+                flex-wrap: nowrap;
+                border-bottom: 1px solid #e2e8f0;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 8px 6px;
+                min-width: 100px;
+                flex: 1;
+                text-align: left;
+                border-right: 1px solid #e2e8f0;
+            }
+
+            /* Info items mobile */
+            .info-item {
+                padding: 12px;
+                text-align: center;
+                min-height: auto;
+            }
+
+            .info-value {
+                font-size: 18px;
+            }
+
+            .info-label {
+                font-size: 11px;
+            }
+
+            /* Status badges mobile */
+            .status-badge {
+                padding: 4px 8px;
+                font-size: 11px;
+                display: inline-block;
+            }
+
+            /* Timeline mobile improvements */
+            .timeline-item {
+                padding: 12px;
+                margin-bottom: 12px;
+            }
+
+            .timeline-content h4 {
+                font-size: 16px !important;
+                margin-bottom: 6px;
+            }
+
+            .timeline-content p {
+                font-size: 13px !important;
+                margin-bottom: 8px;
+            }
+
+            .timeline-status {
+                padding: 4px 8px;
+                font-size: 11px;
+            }
+
+            /* Flex containers mobile */
+            div[style*="display: flex"] {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                gap: 12px !important;
+            }
+
+            /* Specific Investment recommendation fixes */
+            div[style*="width: 60px; height: 60px"] {
+                width: 40px !important;
+                height: 40px !important;
+                margin-right: 0 !important;
+                margin-bottom: 12px !important;
+            }
+
+            div[style*="width: 60px; height: 60px"] span {
+                font-size: 16px !important;
+            }
+
+            /* Text adjustments - more comprehensive */
+            h1, h2, h3, h4, h5, h6 {
+                word-wrap: break-word;
+                hyphens: auto;
+            }
+
+            h1 { font-size: 24px !important; }
+            h2 { font-size: 20px !important; }
+            h3 { font-size: 18px !important; }
+            h4 { font-size: 16px !important; }
+
+            /* Paragraph and text size overrides */
+            p, div, span, li {
+                font-size: 14px !important;
+                line-height: 1.5 !important;
+                word-wrap: break-word;
+            }
+
+            /* List improvements */
+            ul, ol {
+                padding-left: 20px;
+            }
+
+            li {
+                margin-bottom: 8px;
+                padding: 8px 0;
+            }
+
+            /* Footer mobile */
+            .footer {
+                padding: 16px;
+                font-size: 12px;
+                text-align: center;
+            }
+
+            /* Prevent horizontal scroll */
+            * {
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+
+            /* Image and media handling */
+            img, svg {
+                max-width: 100%;
+                height: auto;
+            }
+
+            /* Timeline section mobile fixes */
+            .timeline-item {
+                display: flex !important;
+                width: 100% !important;
+                margin-bottom: 20px !important;
+                align-items: flex-start !important;
+                padding: 16px !important;
+                border: 1px solid #e5e7eb !important;
+                border-radius: 8px !important;
+                background: white !important;
+            }
+
+            .timeline-indicator {
+                flex-shrink: 0 !important;
+                margin-right: 16px !important;
+                margin-top: 4px !important;
+            }
+
+            .timeline-content {
+                flex: 1 !important;
+                padding: 0 !important;
+                margin-left: 0 !important;
+            }
+
+            .timeline-content h4 {
+                font-size: 14px !important;
+                margin-bottom: 8px !important;
+                line-height: 1.3 !important;
+                font-weight: 600 !important;
+            }
+
+            .timeline-content p {
+                font-size: 12px !important;
+                line-height: 1.4 !important;
+                margin-bottom: 12px !important;
+                color: #64748b !important;
+            }
+
+            .timeline-status {
+                display: inline-block !important;
+                margin-top: 8px !important;
+            }
+
+            /* Intelligence Metrics mobile fixes - keep 2 columns on larger mobile */
+            .score-grid {
+                display: grid !important;
+                grid-template-columns: 1fr 1fr !important;
+                gap: 16px !important;
+                text-align: center;
+            }
+
+            .score-item {
+                width: 100% !important;
+                margin-bottom: 20px;
+            }
+
+            .score-circle {
+                width: 100px !important;
+                height: 100px !important;
+                margin: 0 auto 16px !important;
+            }
+
+            .score-value {
+                font-size: 24px !important;
+            }
+
+            .score-label {
+                font-size: 12px !important;
+                text-align: center;
+                line-height: 1.3;
+            }
+
+            /* Market Performance Analysis mobile fixes */
+            .chart-container {
+                width: 100% !important;
+                overflow-x: hidden !important;
+                padding: 0 !important;
+            }
+
+            .chart-title {
+                font-size: 16px !important;
+                margin-bottom: 20px !important;
+                text-align: center;
+            }
+
+            .bar-chart {
+                width: 100% !important;
+                padding: 0 !important;
+            }
+
+            .bar-item {
+                margin-bottom: 16px !important;
+                width: 100% !important;
+                display: block !important;
+            }
+
+            .bar-label {
+                font-size: 12px !important;
+                margin-bottom: 8px !important;
+                display: block !important;
+                text-align: left !important;
+            }
+
+            .bar-track {
+                width: 100% !important;
+                height: 24px !important;
+                background: #f1f5f9 !important;
+                border-radius: 12px !important;
+                position: relative !important;
+            }
+
+            .bar-fill {
+                height: 100% !important;
+                border-radius: 12px !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: flex-end !important;
+                padding-right: 8px !important;
+            }
+
+            .bar-value {
+                font-size: 11px !important;
+                font-weight: 600 !important;
+                color: white !important;
+            }
+
+            /* Info grid mobile improvements */
+            .info-grid {
+                display: grid !important;
+                grid-template-columns: 1fr !important;
+                gap: 12px !important;
+            }
+
+            /* Page headers mobile */
+            .page-header h1 {
+                font-size: 20px !important;
+                line-height: 1.2 !important;
+                margin-bottom: 8px !important;
+            }
+
+            .page-logo {
+                font-size: 12px !important;
+                padding: 4px 8px !important;
+            }
+        }
+
+        /* Small mobile devices */
+        @media (max-width: 480px) {
+            .report-container {
+                margin: 0;
+                padding: 0;
+            }
+
+            .cover-content {
+                padding: 20px 12px;
+            }
+
+            .cover-title {
+                font-size: 24px;
+            }
+
+            .cover-subtitle {
+                font-size: 14px;
+            }
+
+            .content-page {
+                padding: 16px 12px;
+            }
+
+            .page-title {
+                font-size: 20px;
+            }
+
+            .section-title {
+                font-size: 18px;
+            }
+
+            .section {
+                margin-bottom: 24px;
+            }
+
+            .card {
+                padding: 12px 8px;
+                margin-bottom: 16px;
+            }
+
+            /* All card content smaller */
+            div[style*="padding"] {
+                padding: 12px !important;
+            }
+
+            /* Comprehensive text sizing */
+            h1 { font-size: 20px !important; }
+            h2 { font-size: 18px !important; }
+            h3 { font-size: 16px !important; }
+            h4 { font-size: 14px !important; }
+
+            p, div, span, li {
+                font-size: 12px !important;
+                line-height: 1.4 !important;
+            }
+
+            /* Table improvements */
+            .data-table {
+                font-size: 10px;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 4px 3px;
+                min-width: 60px;
+            }
+
+            /* Info items smaller */
+            .info-item {
+                padding: 8px;
+            }
+
+            .info-value {
+                font-size: 16px !important;
+            }
+
+            .info-label {
+                font-size: 10px !important;
+            }
+
+            /* Timeline items compact */
+            .timeline-item {
+                padding: 8px;
+                margin-bottom: 8px;
+            }
+
+            /* Status badges */
+            .status-badge {
+                padding: 2px 6px;
+                font-size: 10px;
+            }
+
+            /* Smaller gaps everywhere */
+            div[style*="gap: 24px"],
+            div[style*="gap: 20px"],
+            div[style*="gap: 16px"] {
+                gap: 8px !important;
+            }
+
+            /* Meta items */
+            .meta-item {
+                padding: 8px;
+            }
+
+            .meta-value {
+                font-size: 14px !important;
+            }
+
+            .meta-label {
+                font-size: 9px !important;
+            }
+
+            /* Footer extra small */
+            .footer {
+                padding: 12px;
+                font-size: 10px;
+            }
+
+            /* Investment recommendation adjustments */
+            div[style*="width: 60px; height: 60px"] {
+                width: 32px !important;
+                height: 32px !important;
+            }
+
+            div[style*="width: 60px; height: 60px"] span {
+                font-size: 14px !important;
+            }
+
+            /* Additional small mobile fixes for problematic sections */
+            .score-grid {
+                grid-template-columns: 1fr !important;
+                gap: 20px !important;
+            }
+
+            .score-circle {
+                width: 80px !important;
+                height: 80px !important;
+            }
+
+            .score-value {
+                font-size: 20px !important;
+            }
+
+            .score-label {
+                font-size: 11px !important;
+            }
+
+            .timeline-content h4 {
+                font-size: 13px !important;
+            }
+
+            .timeline-content p {
+                font-size: 11px !important;
+            }
+
+            .bar-track {
+                height: 20px !important;
+            }
+
+            .bar-value {
+                font-size: 10px !important;
+            }
+
+            .chart-title {
+                font-size: 14px !important;
+            }
+
+            .bar-label {
+                font-size: 11px !important;
+            }
+        }
+
+        /* Landscape mobile */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .cover-page {
+                height: auto;
+                min-height: 80vh;
+            }
+
+            .cover-meta {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cover Page -->
+    <div class="report-container">
+        <div class="cover-page">
+            <div class="cover-image"></div>
+            <div class="cover-content">
+                <h1 class="cover-title">PLANNING APPLICATION REPORT</h1>
+                <p class="cover-subtitle">Created on 29 September 2025</p>
+
+                <div style="margin: 30px 0;">
+                    <h2 style="font-size: 20px; margin-bottom: 10px;">4 Elms Avenue, Lytham St. Annes</h2>
+                    <p style="font-size: 16px; opacity: 0.8;">FY8 5PW</p>
+                    <p style="font-size: 14px; line-height: 1.5; margin-top: 15px; opacity: 0.9;">Welcome to your AI-Powered Planning Application Report from Planning Explorer! Customise your report with a personal message tailored to the recipient, whether it's a property developer, a planning consultant, a building supplier, a local authority or anyone else.</p>
+                </div>
+
+                <div class="cover-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Reference</div>
+                        <div class="meta-value">APP/2024/3847</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Authority</div>
+                        <div class="meta-value">Fylde Council</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Status</div>
+                        <div class="meta-value">Approved</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Executive Summary Page - MOVED TO FIRST CONTENT PAGE -->
+    <div class="report-container">
+        <div class="content-page">
+            <div class="page-header">
+                <h1 class="page-title">EXECUTIVE SUMMARY</h1>
+                <div class="page-number">Planning Explorer | Page 1</div>
+            </div>
+
+            <div class="section">
+                <div class="card">
+                    <p style="font-size: 16px; line-height: 1.8; color: #1e293b; margin-bottom: 24px;">
+                        <strong>This planning application presents an exceptional investment opportunity with a 92% confidence level and 87% approval probability.</strong> Located in a high-performing development area, this residential extension is subject to Manchester City Council's standard 8.2-week average processing time and moderate 73% overall approval rate. With property values rising 3.2% in target areas and development activity surging 15% quarter-over-quarter, market conditions support strategic planning applications. Our AI intelligence analysis shows this property type performing strongly, with residential extensions achieving 78% approval rate across 23 recent applications.
+                    </p>
+
+                    <p style="font-size: 16px; line-height: 1.8; color: #1e293b;">
+                        <strong>The financial projections indicate moderate value enhancement potential, with an expected £35,000 property enhancement and favorable scenarios reaching £45,000.</strong> Risk analysis shows low planning risk assessment with clear approval pathway visibility. Current market intelligence reveals HMO conversions leading performance at 87% approval rates, while Northern Quarter and Ancoats show strong performance with 89% and 85% success rates respectively. With 23 pre-application enquiries showing high conversion probability and policy updates creating new opportunities in affordable housing requirements, this application aligns perfectly with current market momentum and regulatory trends.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div>© 2024 Planning Explorer. All rights reserved.</div>
+                <div>AI-Generated Planning Application Report | Confidence Level: 94% | Report ID: PE-EA-125847</div>
+                <div>Page 1 of 8</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Key Planning Application Information Page -->
+    <div class="report-container">
+        <div class="content-page">
+            <div class="page-header">
+                <h1 class="page-title">KEY PLANNING APPLICATION INFORMATION</h1>
+                <div class="page-number">Planning Explorer | Page 2</div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Planning Application Overview</h2>
+                <div class="card highlight-card">
+                    <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 15px;">4 Elms Avenue, Lytham St. Annes, FY8 5PW</h3>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <div class="info-label">Reference Number</div>
+                            <div class="info-value">APP/2024/3847</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Application Type</div>
+                            <div class="info-value">Residential Extension</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Submission Date</div>
+                            <div class="info-value">15-Mar-2024</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Current Status</div>
+                            <div class="status-badge status-approved">✓ Approved</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Intelligence Metrics</h2>
+                <div class="score-grid">
+                    <div class="score-item">
+                        <div class="score-circle excellent">
+                            <div class="score-value">94</div>
+                        </div>
+                        <div class="score-label">Opportunity<br>Score</div>
+                    </div>
+                    <div class="score-item">
+                        <div class="score-circle good">
+                            <div class="score-value">87%</div>
+                        </div>
+                        <div class="score-label">Approval<br>Probability</div>
+                    </div>
+                    <div class="score-item">
+                        <div class="score-circle good">
+                            <div class="score-value">92%</div>
+                        </div>
+                        <div class="score-label">Confidence<br>Level</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Market Performance Analysis</h2>
+                <div class="chart-container">
+                    <h3 class="chart-title">Planning Application Success Rates by Type</h3>
+                    <div class="bar-chart">
+                        <div class="bar-item">
+                            <div class="bar-label">Major Development</div>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="width: 87%;">
+                                    <div class="bar-value">87%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label">Office Conversion</div>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="width: 92%;">
+                                    <div class="bar-value">92%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label">Residential</div>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="width: 78%;">
+                                    <div class="bar-value">78%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label">Mixed Use</div>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="width: 84%;">
+                                    <div class="bar-value">84%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Intelligence Analysis Page -->
+    <div class="report-container">
+        <div class="content-page">
+            <div class="page-header">
+                <h1 class="page-title">AI INTELLIGENCE ANALYSIS</h1>
+                <div class="page-number">Planning Explorer | Page 3</div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Predictive Analysis</h2>
+                <div class="card highlight-card">
+                    <h3 style="font-size: 16px; font-weight: 600; margin-bottom: 15px; color: #1e293b;">🧠 AI Prediction</h3>
+                    <p style="font-size: 14px; line-height: 1.6; color: #374151;">
+                        Based on comprehensive analysis of 15,000+ similar applications and current market conditions,
+                        this residential extension application shows excellent alignment with Fylde Council's local planning
+                        policies. The application demonstrates strong compliance with residential development guidelines,
+                        maintains neighbourhood character, and includes appropriate design considerations for the local
+                        area while enhancing the property's functionality and value.
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Risk Assessment Analysis</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 32px;">
+                    <div style="background: #e0f2fe; border-radius: 12px; padding: 24px; position: relative;">
+                        <div style="position: absolute; top: 20px; left: 24px; width: 6px; height: 6px; background: #ef4444; border-radius: 50%;"></div>
+                        <h4 style="font-size: 18px; font-weight: 700; margin-bottom: 16px; color: #1e293b;">
+                            Low Risk
+                        </h4>
+                        <p style="font-size: 14px; line-height: 1.6; color: #475569;">
+                            Planning Policy Compliance: 96%<br>
+                            Community Support: High<br>
+                            Environmental Impact: Minimal
+                        </p>
+                    </div>
+                    <div style="background: #fed7aa; border-radius: 12px; padding: 24px; position: relative;">
+                        <div style="position: absolute; top: 20px; left: 24px; width: 6px; height: 6px; background: #ef4444; border-radius: 50%;"></div>
+                        <h4 style="font-size: 18px; font-weight: 700; margin-bottom: 16px; color: #1e293b;">
+                            Medium Risk
+                        </h4>
+                        <p style="font-size: 14px; line-height: 1.6; color: #475569;">
+                            Construction Timeline: 36 months<br>
+                            Market Conditions: Variable<br>
+                            Regulatory Changes: Possible
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Identified Opportunities</h2>
+                <div class="card">
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 10px 0; border-bottom: 1px solid #e2e8f0; display: flex; align-items: center;">
+                            <span style="color: #10b981; margin-right: 10px; font-weight: bold;">✓</span>
+                            Strategic location within established residential area providing excellent neighbourhood amenities
+                        </li>
+                        <li style="padding: 10px 0; border-bottom: 1px solid #e2e8f0; display: flex; align-items: center;">
+                            <span style="color: #10b981; margin-right: 10px; font-weight: bold;">✓</span>
+                            Excellent transport connectivity with direct rail links to Manchester and Preston
+                        </li>
+                        <li style="padding: 10px 0; border-bottom: 1px solid #e2e8f0; display: flex; align-items: center;">
+                            <span style="color: #10b981; margin-right: 10px; font-weight: bold;">✓</span>
+                            Strong market demand for enhanced residential properties in desirable coastal location
+                        </li>
+                        <li style="padding: 10px 0; display: flex; align-items: center;">
+                            <span style="color: #10b981; margin-right: 10px; font-weight: bold;">✓</span>
+                            Potential for enhanced energy efficiency ratings improving long-term property value
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Financial Impact Assessment</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">Estimated Project Value</div>
+                        <div class="info-value">£125K</div>
+                        <div class="info-subvalue">Including construction and fees</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Value at Risk (95% CI)</div>
+                        <div class="info-value">£5K</div>
+                        <div class="info-subvalue">4.0% of total project value</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Expected ROI</div>
+                        <div class="info-value">15.2%</div>
+                        <div class="info-subvalue">Property value enhancement</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">IRR (Leveraged)</div>
+                        <div class="info-value">22.3%</div>
+                        <div class="info-subvalue">Including financing benefits</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Market Intelligence Page -->
+    <div class="report-container">
+        <div class="content-page">
+            <div class="page-header">
+                <h1 class="page-title">MARKET INTELLIGENCE</h1>
+                <div class="page-number">Planning Explorer | Page 4</div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Fylde Council Authority Performance</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">Approval Rate (Major)</div>
+                        <div class="info-value">84%</div>
+                        <div class="info-subvalue">↑ 7% vs. Lancashire average</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Average Decision Time</div>
+                        <div class="info-value">89 days</div>
+                        <div class="info-subvalue">↓ 12 days vs. last year</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Committee Success Rate</div>
+                        <div class="info-value">91%</div>
+                        <div class="info-subvalue">For delegated applications</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Appeals Success</div>
+                        <div class="info-value">23%</div>
+                        <div class="info-subvalue">Well below national average</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Comparable Applications Analysis</h2>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Reference</th>
+                            <th>Description</th>
+                            <th>Value</th>
+                            <th>Status</th>
+                            <th>Decision Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>APP/2024/2156</td>
+                            <td>25 Bank Street - Commercial Tower</td>
+                            <td>£324M</td>
+                            <td style="color: #10b981; font-weight: 600;">Approved</td>
+                            <td>12-Aug-2024</td>
+                        </tr>
+                        <tr>
+                            <td>APP/2023/4789</td>
+                            <td>Wood Wharf Phase 2</td>
+                            <td>£567M</td>
+                            <td style="color: #10b981; font-weight: 600;">Approved</td>
+                            <td>23-Nov-2023</td>
+                        </tr>
+                        <tr>
+                            <td>APP/2024/1033</td>
+                            <td>Landmark Pinnacle Extension</td>
+                            <td>£189M</td>
+                            <td style="color: #f59e0b; font-weight: 600;">Pending</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>APP/2023/8901</td>
+                            <td>South Quay Plaza</td>
+                            <td>£425M</td>
+                            <td style="color: #10b981; font-weight: 600;">Approved</td>
+                            <td>07-Mar-2024</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Market Recommendations</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 32px;">
+                    <div style="background: #e0f2fe; border-radius: 12px; padding: 24px; position: relative;">
+                        <div style="position: absolute; top: 20px; left: 24px; width: 6px; height: 6px; background: #ef4444; border-radius: 50%;"></div>
+                        <h4 style="font-size: 18px; font-weight: 700; margin-bottom: 16px; color: #1e293b;">
+                            Strategic Timing
+                        </h4>
+                        <p style="font-size: 14px; line-height: 1.6; color: #475569;">
+                            Submit before Q2 2025 to benefit from current favorable policy environment and avoid potential regulatory changes.
+                        </p>
+                    </div>
+                    <div style="background: #fed7aa; border-radius: 12px; padding: 24px; position: relative;">
+                        <div style="position: absolute; top: 20px; left: 24px; width: 6px; height: 6px; background: #ef4444; border-radius: 50%;"></div>
+                        <h4 style="font-size: 18px; font-weight: 700; margin-bottom: 16px; color: #1e293b;">
+                            Community Engagement
+                        </h4>
+                        <p style="font-size: 14px; line-height: 1.6; color: #475569;">
+                            Proactive consultation with local groups has shown 73% higher approval rates for similar scale developments.
+                        </p>
+                    </div>
+                    <div style="background: #d4f4dd; border-radius: 12px; padding: 24px; position: relative;">
+                        <div style="position: absolute; top: 20px; left: 24px; width: 6px; height: 6px; background: #ef4444; border-radius: 50%;"></div>
+                        <h4 style="font-size: 18px; font-weight: 700; margin-bottom: 16px; color: #1e293b;">
+                            Risk Mitigation
+                        </h4>
+                        <p style="font-size: 14px; line-height: 1.6; color: #475569;">
+                            Consider pre-application advice and environmental impact assessment to address potential concerns early.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Investment Timeline Page -->
+    <div class="report-container">
+        <div class="content-page">
+            <div class="page-header">
+                <h1 class="page-title">INVESTMENT TIMELINE & PROJECTIONS</h1>
+                <div class="page-number">Planning Explorer | Page 5</div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Project Timeline & Milestones</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Application Submitted</h4>
+                            <p>15-Mar-2024 • Documentation and initial submission completed</p>
+                            <div class="timeline-status completed">✓ Completed</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Validation & Initial Review</h4>
+                            <p>22-Mar-2024 • Technical validation and compliance check (7 days)</p>
+                            <div class="timeline-status completed">✓ Completed</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Public Consultation Period</h4>
+                            <p>05-Apr-2024 • Community engagement and feedback collection (21 days)</p>
+                            <div class="timeline-status completed">✓ Completed</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Committee Review & Decision</h4>
+                            <p>18-Jun-2024 • Final assessment and approval decision (89 days total)</p>
+                            <div class="timeline-status completed">✓ Approved</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker in-progress"></div>
+                        <div class="timeline-content">
+                            <h4>S106 Agreement Completion</h4>
+                            <p>Expected: 15-Oct-2024 • Legal agreements and community obligations</p>
+                            <div class="timeline-status in-progress">⏳ In Progress</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker pending"></div>
+                        <div class="timeline-content">
+                            <h4>Planning Permission Issued</h4>
+                            <p>Expected: 30-Oct-2024 • Final permission documentation and commencement</p>
+                            <div class="timeline-status pending">◦ Pending</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Financial Projections & Risk Analysis</h2>
+                <div class="card highlight-card">
+                    <h3 style="font-size: 16px; margin-bottom: 20px;">Planning Risk Analysis & Value Assessment</h3>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <div class="info-label">Property Value Enhancement</div>
+                            <div class="info-value">£35K</div>
+                            <div class="info-subvalue">Expected added value</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Conservative Estimate</div>
+                            <div class="info-value">£25K</div>
+                            <div class="info-subvalue">Minimum expected enhancement</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Optimistic Scenario</div>
+                            <div class="info-value">£45K</div>
+                            <div class="info-subvalue">Strong market conditions</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Planning Risk Assessment</div>
+                            <div class="info-value">Low</div>
+                            <div class="info-subvalue">Favourable approval outlook</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Investment Recommendation</h2>
+                <div style="background: #f5f5f5; border-radius: 12px; padding: 24px; position: relative; margin-top: 32px; border: 1px solid #e5e7eb;">
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div style="width: 60px; height: 60px; background: #1e293b; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+                            <span style="font-size: 24px; color: white; font-weight: bold;">A+</span>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 24px; font-weight: 700; color: #1e293b; margin-bottom: 5px;">RECOMMENDED</h3>
+                            <p style="font-size: 16px; color: #64748b;">Excellent planning application prospects</p>
+                        </div>
+                    </div>
+                    <p style="font-size: 14px; line-height: 1.6; color: #64748b;">
+                        This residential extension presents an excellent opportunity with strong fundamentals,
+                        prime location within an established neighbourhood, and positive impact projections. The planning
+                        approval pathway appears clear based on compliance analysis, offering good value enhancement potential.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div>© 2024 Planning Explorer. All rights reserved.</div>
+                <div>AI-Generated Planning Application Report | Confidence Level: 94% | Report ID: PE-EA-125847</div>
+                <div>Page 2 of 8</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Authority Performance & Policy Updates Page -->
+    <div class="report-container">
+        <div class="content-page">
+            <div class="page-header">
+                <h1 class="page-title">AUTHORITY PERFORMANCE & POLICY</h1>
+                <div class="page-number">Planning Explorer | Page 6</div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">AUTHORITY PERFORMANCE</h2>
+                <div class="card" style="background: #f8fafc;">
+                    <h3 style="font-size: 18px; font-weight: 700; color: #1e293b; margin-bottom: 20px;">Manchester City Council</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                        <div style="text-align: center; padding: 16px; background: #f5f5f5; border-radius: 8px; border: 1px solid #e5e7eb;">
+                            <div style="font-size: 24px; font-weight: 800; color: #1e293b; margin-bottom: 8px;">8.2</div>
+                            <div style="font-size: 12px; color: #64748b;">Average Decision Time (weeks)</div>
+                        </div>
+                        <div style="text-align: center; padding: 16px; background: #f5f5f5; border-radius: 8px; border: 1px solid #e5e7eb;">
+                            <div style="font-size: 24px; font-weight: 800; color: #1e293b; margin-bottom: 8px;">73%</div>
+                            <div style="font-size: 12px; color: #64748b;">Overall Approval Rate</div>
+                        </div>
+                        <div style="text-align: center; padding: 16px; background: #f5f5f5; border-radius: 8px; border: 1px solid #e5e7eb;">
+                            <div style="font-size: 24px; font-weight: 800; color: #1e293b; margin-bottom: 8px;">6.1</div>
+                            <div style="font-size: 12px; color: #64748b;">Fastest: HMO Apps (weeks)</div>
+                        </div>
+                        <div style="text-align: center; padding: 16px; background: #f5f5f5; border-radius: 8px; border: 1px solid #e5e7eb;">
+                            <div style="font-size: 24px; font-weight: 800; color: #1e293b; margin-bottom: 8px;">12.3</div>
+                            <div style="font-size: 12px; color: #64748b;">Slowest: Major Devs (weeks)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Weekly Overview</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                    <div style="background: #f5f5f5; border-radius: 12px; padding: 20px; text-align: center; border: 1px solid #e5e7eb;">
+                        <div style="font-size: 32px; font-weight: 800; color: #1e293b; margin-bottom: 8px;">47</div>
+                        <div style="font-size: 14px; color: #64748b;">New Applications</div>
+                        <div style="font-size: 12px; color: #64748b; margin-top: 4px;">+12% vs last week</div>
+                    </div>
+                    <div style="background: #f5f5f5; border-radius: 12px; padding: 20px; text-align: center; border: 1px solid #e5e7eb;">
+                        <div style="font-size: 32px; font-weight: 800; color: #1e293b; margin-bottom: 8px;">34</div>
+                        <div style="font-size: 14px; color: #64748b;">Approvals Granted</div>
+                        <div style="font-size: 12px; color: #64748b; margin-top: 4px;">72% approval rate</div>
+                    </div>
+                    <div style="background: #f5f5f5; border-radius: 12px; padding: 20px; text-align: center; border: 1px solid #e5e7eb;">
+                        <div style="font-size: 32px; font-weight: 800; color: #1e293b; margin-bottom: 8px;">8</div>
+                        <div style="font-size: 14px; color: #64748b;">High-Value Opportunities</div>
+                        <div style="font-size: 12px; color: #64748b; margin-top: 4px;">Identified this week</div>
+                    </div>
+                    <div style="background: #f5f5f5; border-radius: 12px; padding: 20px; text-align: center; border: 1px solid #e5e7eb;">
+                        <div style="font-size: 32px; font-weight: 800; color: #1e293b; margin-bottom: 8px;">3</div>
+                        <div style="font-size: 14px; color: #64748b;">Development Hotspots</div>
+                        <div style="font-size: 12px; color: #64748b; margin-top: 4px;">Emerging areas</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">TOP PERFORMING AREAS</h2>
+                <div class="card">
+                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px; background: #f8fafc; border-radius: 8px;">
+                            <div>
+                                <div style="font-size: 16px; font-weight: 600; color: #1e293b;">1. Northern Quarter</div>
+                                <div style="font-size: 12px; color: #64748b;">High approval rate area</div>
+                            </div>
+                            <div style="font-size: 18px; font-weight: 700; color: #16a34a;">89%</div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px; background: #f8fafc; border-radius: 8px;">
+                            <div>
+                                <div style="font-size: 16px; font-weight: 600; color: #1e293b;">2. Ancoats</div>
+                                <div style="font-size: 12px; color: #64748b;">Growing development area</div>
+                            </div>
+                            <div style="font-size: 18px; font-weight: 700; color: #16a34a;">85%</div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px; background: #f8fafc; border-radius: 8px;">
+                            <div>
+                                <div style="font-size: 16px; font-weight: 600; color: #1e293b;">3. Salford Quays</div>
+                                <div style="font-size: 12px; color: #64748b;">Waterfront development zone</div>
+                            </div>
+                            <div style="font-size: 18px; font-weight: 700; color: #16a34a;">82%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">HOTTEST OPPORTUNITIES</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                    <div style="background: #f5f5f5; border-radius: 12px; padding: 20px; border: 1px solid #e5e7eb;">
+                        <h4 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 8px;">HMO Conversions</h4>
+                        <div style="font-size: 14px; color: #64748b; margin-bottom: 12px;">15 applications this week</div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 12px; color: #64748b;">Approval rate:</span>
+                            <span style="font-size: 16px; font-weight: 700; color: #1e293b;">87%</span>
+                        </div>
+                    </div>
+                    <div style="background: #f5f5f5; border-radius: 12px; padding: 20px; border: 1px solid #e5e7eb;">
+                        <h4 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 8px;">Residential Extensions</h4>
+                        <div style="font-size: 14px; color: #64748b; margin-bottom: 12px;">23 applications this week</div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 12px; color: #64748b;">Approval rate:</span>
+                            <span style="font-size: 16px; font-weight: 700; color: #1e293b;">71%</span>
+                        </div>
+                    </div>
+                    <div style="background: #f5f5f5; border-radius: 12px; padding: 20px; border: 1px solid #e5e7eb;">
+                        <h4 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 8px;">Commercial to Residential</h4>
+                        <div style="font-size: 14px; color: #64748b; margin-bottom: 12px;">9 applications this week</div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 12px; color: #64748b;">Approval rate:</span>
+                            <span style="font-size: 16px; font-weight: 700; color: #1e293b;">78%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">POLICY UPDATES</h2>
+                <div class="card">
+                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                        <div style="padding: 16px; background: #f5f5f5; border-radius: 8px; border: 1px solid #e5e7eb;">
+                            <h4 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 8px;">New HMO Licensing Requirements</h4>
+                            <p style="font-size: 14px; color: #64748b; margin-bottom: 4px;">Effective March 1st - Additional licensing requirements for HMO conversions</p>
+                            <span style="font-size: 12px; color: #64748b; font-weight: 600;">IMMEDIATE ACTION REQUIRED</span>
+                        </div>
+                        <div style="padding: 16px; background: #f5f5f5; border-radius: 8px; border: 1px solid #e5e7eb;">
+                            <h4 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 8px;">Updated Parking Standards</h4>
+                            <p style="font-size: 14px; color: #64748b; margin-bottom: 4px;">Revised parking requirements for residential developments</p>
+                            <span style="font-size: 12px; color: #64748b; font-weight: 600;">REVIEW REQUIRED</span>
+                        </div>
+                        <div style="padding: 16px; background: #f5f5f5; border-radius: 8px; border: 1px solid #e5e7eb;">
+                            <h4 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 8px;">Affordable Housing Requirements</h4>
+                            <p style="font-size: 14px; color: #64748b; margin-bottom: 4px;">Revised affordable housing minimum increased to 25%</p>
+                            <span style="font-size: 12px; color: #64748b; font-weight: 600;">NEW OPPORTUNITY</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">INVESTMENT RECOMMENDATIONS</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
+                    <div style="background: #f5f5f5; border-radius: 12px; padding: 20px; border: 1px solid #e5e7eb;">
+                        <h4 style="font-size: 16px; font-weight: 700; margin-bottom: 16px; color: #1e293b;">
+                            High Priority
+                        </h4>
+                        <p style="font-size: 14px; line-height: 1.6; color: #64748b;">
+                            Focus on HMO conversions in Northern Quarter - highest approval rates and fastest processing
+                        </p>
+                    </div>
+                    <div style="background: #f5f5f5; border-radius: 12px; padding: 20px; border: 1px solid #e5e7eb;">
+                        <h4 style="font-size: 16px; font-weight: 700; margin-bottom: 16px; color: #1e293b;">
+                            Avoid Temporarily
+                        </h4>
+                        <p style="font-size: 14px; line-height: 1.6; color: #64748b;">
+                            Major developments until policy clarification - extended processing times expected
+                        </p>
+                    </div>
+                    <div style="background: #f5f5f5; border-radius: 12px; padding: 20px; border: 1px solid #e5e7eb;">
+                        <h4 style="font-size: 16px; font-weight: 700; margin-bottom: 16px; color: #1e293b;">
+                            Consider Now
+                        </h4>
+                        <p style="font-size: 14px; line-height: 1.6; color: #64748b;">
+                            Commercial-to-residential conversions - 78% approval rate with good processing times
+                        </p>
+                    </div>
+                    <div style="background: #f5f5f5; border-radius: 12px; padding: 20px; border: 1px solid #e5e7eb;">
+                        <h4 style="font-size: 16px; font-weight: 700; margin-bottom: 16px; color: #1e293b;">
+                            Location Strategy
+                        </h4>
+                        <p style="font-size: 14px; line-height: 1.6; color: #64748b;">
+                            Target properties within 0.5 miles of transport hubs - 23% higher approval rates
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div>© 2024 Planning Explorer. All rights reserved.</div>
+                <div>AI-Generated Planning Application Report | Confidence Level: 94% | Report ID: PE-EA-125847</div>
+                <div>Page 6 of 8</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Market Trends & Competition Page -->
+    <div class="report-container">
+        <div class="content-page">
+            <div class="page-header">
+                <h1 class="page-title">MARKET TRENDS & COMPETITION</h1>
+                <div class="page-number">Planning Explorer | Page 7</div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">MARKET TRENDS</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                    <div style="background: #f5f5f5; border-radius: 12px; padding: 20px; text-align: center; border: 1px solid #e5e7eb;">
+                        <div style="font-size: 28px; font-weight: 800; color: #1e293b; margin-bottom: 8px;">+3.2%</div>
+                        <div style="font-size: 14px; color: #64748b;">Property Prices</div>
+                        <div style="font-size: 12px; color: #64748b; margin-top: 4px;">In target areas</div>
+                    </div>
+                    <div style="background: #f5f5f5; border-radius: 12px; padding: 20px; text-align: center; border: 1px solid #e5e7eb;">
+                        <div style="font-size: 28px; font-weight: 800; color: #1e293b; margin-bottom: 8px;">6.1%</div>
+                        <div style="font-size: 14px; color: #64748b;">Rental Yields</div>
+                        <div style="font-size: 12px; color: #64748b; margin-top: 4px;">Stable rate</div>
+                    </div>
+                    <div style="background: #f5f5f5; border-radius: 12px; padding: 20px; text-align: center; border: 1px solid #e5e7eb;">
+                        <div style="font-size: 28px; font-weight: 800; color: #1e293b; margin-bottom: 8px;">+15%</div>
+                        <div style="font-size: 14px; color: #64748b;">Development Activity</div>
+                        <div style="font-size: 12px; color: #64748b; margin-top: 4px;">vs last quarter</div>
+                    </div>
+                    <div style="background: #f5f5f5; border-radius: 12px; padding: 20px; text-align: center; border: 1px solid #e5e7eb;">
+                        <div style="font-size: 28px; font-weight: 800; color: #1e293b; margin-bottom: 8px;">+5%</div>
+                        <div style="font-size: 14px; color: #64748b;">Application Fees</div>
+                        <div style="font-size: 12px; color: #64748b; margin-top: 4px;">Increased cost</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">COMPETITOR ANALYSIS</h2>
+                <div class="card">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 24px;">
+                        <div style="text-align: center; padding: 20px; background: #f5f5f5; border-radius: 8px; border: 1px solid #e5e7eb;">
+                            <div style="font-size: 32px; font-weight: 800; color: #1e293b; margin-bottom: 8px;">3</div>
+                            <div style="font-size: 14px; color: #64748b;">Major Developers</div>
+                            <div style="font-size: 12px; color: #64748b; margin-top: 4px;">Active in area</div>
+                        </div>
+                        <div style="text-align: center; padding: 20px; background: #f5f5f5; border-radius: 8px; border: 1px solid #e5e7eb;">
+                            <div style="font-size: 32px; font-weight: 800; color: #1e293b; margin-bottom: 8px;">12</div>
+                            <div style="font-size: 14px; color: #64748b;">Individual Investors</div>
+                            <div style="font-size: 12px; color: #64748b; margin-top: 4px;">Submitting applications</div>
+                        </div>
+                        <div style="text-align: center; padding: 20px; background: #f5f5f5; border-radius: 8px; border: 1px solid #e5e7eb;">
+                            <div style="font-size: 32px; font-weight: 800; color: #1e293b; margin-bottom: 8px;">8.2</div>
+                            <div style="font-size: 14px; color: #64748b;">Avg Processing Time</div>
+                            <div style="font-size: 12px; color: #64748b; margin-top: 4px;">Weeks</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 style="font-size: 16px; font-weight: 600; color: #1e293b; margin-bottom: 12px;">Most Successful Application Types:</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span style="background: #f5f5f5; color: #1e293b; padding: 6px 12px; border-radius: 16px; font-size: 12px; font-weight: 600; border: 1px solid #e5e7eb;">HMO Conversions</span>
+                            <span style="background: #f5f5f5; color: #1e293b; padding: 6px 12px; border-radius: 16px; font-size: 12px; font-weight: 600; border: 1px solid #e5e7eb;">Extensions</span>
+                            <span style="background: #f5f5f5; color: #1e293b; padding: 6px 12px; border-radius: 16px; font-size: 12px; font-weight: 600; border: 1px solid #e5e7eb;">Commercial Conversions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">UPCOMING OPPORTUNITIES</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                    <div style="background: #f5f5f5; border-radius: 12px; padding: 20px; border: 1px solid #e5e7eb;">
+                        <h4 style="font-size: 16px; font-weight: 700; margin-bottom: 16px; color: #1e293b;">
+                            Pre-Application Enquiries
+                        </h4>
+                        <div style="font-size: 24px; font-weight: 800; color: #1e293b; margin-bottom: 8px;">23</div>
+                        <p style="font-size: 14px; line-height: 1.6; color: #64748b;">
+                            Properties with active pre-application discussions. High conversion probability.
+                        </p>
+                    </div>
+                    <div style="background: #f5f5f5; border-radius: 12px; padding: 20px; border: 1px solid #e5e7eb;">
+                        <h4 style="font-size: 16px; font-weight: 700; margin-bottom: 16px; color: #1e293b;">
+                            Expected Next Week
+                        </h4>
+                        <div style="font-size: 24px; font-weight: 800; color: #1e293b; margin-bottom: 8px;">8</div>
+                        <p style="font-size: 14px; line-height: 1.6; color: #64748b;">
+                            Properties likely to submit applications next week based on consultation activity.
+                        </p>
+                    </div>
+                    <div style="background: #f5f5f5; border-radius: 12px; padding: 20px; border: 1px solid #e5e7eb;">
+                        <h4 style="font-size: 16px; font-weight: 700; margin-bottom: 16px; color: #1e293b;">
+                            Re-submission Likely
+                        </h4>
+                        <div style="font-size: 24px; font-weight: 800; color: #1e293b; margin-bottom: 8px;">5</div>
+                        <p style="font-size: 14px; line-height: 1.6; color: #64748b;">
+                            Properties with expired applications showing renewed activity. Monitor for re-submissions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div>© 2024 Planning Explorer. All rights reserved.</div>
+                <div>AI-Generated Planning Application Report | Confidence Level: 94% | Report ID: PE-EA-125847</div>
+                <div>Page 7 of 8</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final Summary Page -->
+    <div class="report-container">
+        <div class="content-page">
+            <div class="page-header">
+                <h1 class="page-title">SUMMARY & NEXT STEPS</h1>
+                <div class="page-number">Planning Explorer | Page 8</div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">KEY TAKEAWAYS</h2>
+                <div class="card" style="background: #f8fafc;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                        <div style="padding: 20px; background: #f5f5f5; border-radius: 8px; border: 1px solid #e5e7eb;">
+                            <h4 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 12px;">Highest Success Rate</h4>
+                            <p style="font-size: 14px; color: #64748b;">HMO conversions in Northern Quarter show 87% approval rate with 6.1 week processing time.</p>
+                        </div>
+                        <div style="padding: 20px; background: #f5f5f5; border-radius: 8px; border: 1px solid #e5e7eb;">
+                            <h4 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 12px;">Market Growth</h4>
+                            <p style="font-size: 14px; color: #64748b;">Development activity up 15% with property prices rising 3.2% in target areas.</p>
+                        </div>
+                        <div style="padding: 20px; background: #f5f5f5; border-radius: 8px; border: 1px solid #e5e7eb;">
+                            <h4 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 12px;">Policy Changes</h4>
+                            <p style="font-size: 14px; color: #64748b;">New HMO licensing requirements effective March 1st - immediate action required.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">NEXT STEPS</h2>
+                <div class="card">
+                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                        <div style="display: flex; align-items: center; padding: 16px; background: #f5f5f5; border-radius: 8px; border: 1px solid #e5e7eb;">
+                            <div style="width: 32px; height: 32px; background: #1e293b; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 16px;">
+                                <span style="color: white; font-weight: bold; font-size: 14px;">1</span>
+                            </div>
+                            <div>
+                                <div style="font-size: 16px; font-weight: 600; color: #1e293b;">Schedule HMO Property Viewings</div>
+                                <div style="font-size: 14px; color: #64748b;">Focus on Northern Quarter properties within next 7 days</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; padding: 16px; background: #f5f5f5; border-radius: 8px; border: 1px solid #e5e7eb;">
+                            <div style="width: 32px; height: 32px; background: #1e293b; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 16px;">
+                                <span style="color: white; font-weight: bold; font-size: 14px;">2</span>
+                            </div>
+                            <div>
+                                <div style="font-size: 16px; font-weight: 600; color: #1e293b;">Update Licensing Documentation</div>
+                                <div style="font-size: 14px; color: #64748b;">Prepare for March 1st HMO licensing changes</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; padding: 16px; background: #f5f5f5; border-radius: 8px; border: 1px solid #e5e7eb;">
+                            <div style="width: 32px; height: 32px; background: #1e293b; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 16px;">
+                                <span style="color: white; font-weight: bold; font-size: 14px;">3</span>
+                            </div>
+                            <div>
+                                <div style="font-size: 16px; font-weight: 600; color: #1e293b;">Monitor Pre-Application Properties</div>
+                                <div style="font-size: 14px; color: #64748b;">Track 23 properties with active enquiries for submission timing</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer">
+                <div>© 2024 Planning Explorer. All rights reserved.</div>
+                <div>AI-Generated Planning Application Report | Confidence Level: 94% | Report ID: PE-EA-125847</div>
+                <div>Page 8 of 9</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us Page -->
+    <div class="report-container">
+        <div class="content-page">
+            <div class="page-header">
+                <h1 class="page-title">Contact Us</h1>
+                <div style="display: flex; align-items: center;">
+                    <div class="page-logo">Planning Explorer</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Contact Information</h2>
+                <div class="card">
+                    <div style="display: flex; align-items: center; margin-bottom: 24px;">
+                        <div style="background: #7CB342; color: white; padding: 12px 20px; border-radius: 8px; font-size: 20px; font-weight: 700; margin-right: 16px;">
+                            Planning Explorer
+                        </div>
+                    </div>
+
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <div class="info-label">Address</div>
+                            <div class="info-value" style="font-size: 16px;">Planning Intelligence Centre</div>
+                            <div class="info-subvalue">Manchester, United Kingdom</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Email</div>
+                            <div class="info-value" style="font-size: 16px;">hello@planningexplorer.co.uk</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Website</div>
+                            <div class="info-value" style="font-size: 16px;">www.planningexplorer.co.uk</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Follow Us</div>
+                            <div style="display: flex; gap: 12px; align-items: center; margin-top: 8px; flex-wrap: wrap;">
+                                <!-- Facebook -->
+                                <div style="width: 32px; height: 32px; background: #000000; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.2s;">
+                                    <span style="color: white; font-weight: bold; font-size: 18px; font-family: Arial, sans-serif;">f</span>
+                                </div>
+                                <!-- X/Twitter -->
+                                <div style="width: 32px; height: 32px; background: #000000; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.2s;">
+                                    <span style="color: white; font-weight: bold; font-size: 16px; font-family: Arial, sans-serif;">X</span>
+                                </div>
+                                <!-- Instagram -->
+                                <div style="width: 32px; height: 32px; background: #000000; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.2s;">
+                                    <div style="width: 18px; height: 18px; border: 2px solid white; border-radius: 4px; position: relative; display: flex; align-items: center; justify-content: center;">
+                                        <div style="width: 6px; height: 6px; background: white; border-radius: 50%;"></div>
+                                        <div style="width: 3px; height: 3px; border: 1px solid white; border-radius: 50%; position: absolute; top: 2px; right: 2px;"></div>
+                                    </div>
+                                </div>
+                                <!-- YouTube -->
+                                <div style="width: 32px; height: 32px; background: #000000; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.2s;">
+                                    <div style="width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 10px solid white; transform: rotate(90deg);"></div>
+                                </div>
+                                <!-- TikTok -->
+                                <div style="width: 32px; height: 32px; background: #000000; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.2s;">
+                                    <div style="position: relative; width: 16px; height: 16px;">
+                                        <div style="width: 12px; height: 14px; background: white; border-radius: 3px; position: relative;">
+                                            <div style="width: 3px; height: 3px; background: black; border-radius: 50%; position: absolute; top: 3px; left: 4px;"></div>
+                                            <div style="width: 6px; height: 2px; background: black; border-radius: 1px; position: absolute; bottom: 3px; left: 3px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-subvalue">Follow us for planning insights</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Important Disclaimers</h2>
+                <div class="card" style="background: #f8fafc; border: 1px solid #e2e8f0;">
+                    <div style="margin-bottom: 24px;">
+                        <h3 style="font-size: 16px; font-weight: 600; color: #1e293b; margin-bottom: 12px;">Accuracy and Completeness</h3>
+                        <p style="font-size: 14px; line-height: 1.6; color: #475569; margin-bottom: 16px;">
+                            All reasonable efforts have been made by Planning Explorer to ensure the accuracy, validity and completeness of the enclosed planning information, with accuracy, validity and completeness neither warranted nor guaranteed. Planning Explorer accepts zero liability for any and all losses or damages resulting from the data and information contained within this document.
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 24px;">
+                        <h3 style="font-size: 16px; font-weight: 600; color: #1e293b; margin-bottom: 12px;">Data Sources and Currency</h3>
+                        <p style="font-size: 14px; line-height: 1.6; color: #475569; margin-bottom: 16px;">
+                            Data and information displayed in the above Planning Application Report has been aggregated from a number of data points by the Planning Explorer AI Intelligence Service and the Planning Explorer Automated Analysis Model. The data and information contained is up-to-date as of the date of publication.
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 24px;">
+                        <h3 style="font-size: 16px; font-weight: 600; color: #1e293b; margin-bottom: 12px;">Professional Advice</h3>
+                        <p style="font-size: 14px; line-height: 1.6; color: #475569; margin-bottom: 16px;">
+                            Data and information displayed within the Planning Application Report does not constitute professional planning or legal advice. Thoroughly discuss your options with a trained planning expert or solicitor before taking action. For more information and planning intelligence services, please contact Planning Explorer at hello@planningexplorer.co.uk or visit https://www.planningexplorer.co.uk. To opt out of future communication, contact Planning Explorer directly.
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 16px;">
+                        <h3 style="font-size: 16px; font-weight: 600; color: #1e293b; margin-bottom: 12px;">Copyright and Database Rights</h3>
+                        <p style="font-size: 12px; line-height: 1.5; color: #64748b; margin-bottom: 8px;">
+                            Planning application information produced by Local Planning Authorities. © Crown copyright and database rights 2025.
+                        </p>
+                        <p style="font-size: 12px; line-height: 1.5; color: #64748b; margin-bottom: 8px;">
+                            The polygons (including the associated geometry, namely x, y co-ordinates) and UPRNs are subject to Crown and GeoPlace LLP copyright and database rights 2025 Ordnance Survey 100026316.
+                        </p>
+                        <p style="font-size: 12px; line-height: 1.5; color: #64748b;">
+                            AI analysis and predictive modelling © 2025 Planning Explorer. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div>© 2025 Planning Explorer. All rights reserved.</div>
+                <div>AI-Generated Planning Application Report | Confidence Level: 94% | Report ID: PE-EA-125847</div>
+                <div>Page 9 of 9</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
