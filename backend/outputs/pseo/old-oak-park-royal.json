@@ -1,0 +1,30 @@
+{
+  "authority_id": "old-oak-park-royal",
+  "authority_name": "Old Oak Park Royal",
+  "url_slug": "old-oak-park-royal",
+  "generated_at": "2025-10-07T16:24:48.950873",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:24:48.950875"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:24:48.951195"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:25:03.963520"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:25:03.998759"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072325115725615c90c547a0'}",
+  "status": "failed"
+}

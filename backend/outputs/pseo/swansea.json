@@ -1,0 +1,30 @@
+{
+  "authority_id": "swansea",
+  "authority_name": "Swansea",
+  "url_slug": "swansea",
+  "generated_at": "2025-10-07T15:47:37.770404",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T15:47:37.770410"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T15:47:37.770638"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T15:48:35.725432"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T15:48:35.827453"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072248422e4250b02a4741df'}",
+  "status": "failed"
+}

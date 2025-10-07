@@ -1,0 +1,30 @@
+{
+  "authority_id": "staffordshire",
+  "authority_name": "Staffordshire",
+  "url_slug": "staffordshire",
+  "generated_at": "2025-10-07T16:25:03.932440",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:25:03.932442"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:25:03.932807"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:25:31.466103"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:25:31.501906"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007232537e2d39ed5a4e24e5c'}",
+  "status": "failed"
+}

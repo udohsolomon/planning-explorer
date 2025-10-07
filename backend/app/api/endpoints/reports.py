@@ -10,6 +10,8 @@ from app.services.search import search_service
 from app.services.ai_processor import ai_processor, ProcessingMode
 from app.middleware.auth import get_optional_user, log_api_request, require_subscription
 from app.models.planning import PlanningApplicationResponse
+from app.services.cache_service import get_cache_service
+from app.agents.enrichment.applicant_agent import enrich_applicant_data
 
 logger = logging.getLogger(__name__)
 
@@ -70,6 +72,88 @@ async def generate_bank_grade_report(
 
         logger.info(f"[REPORT] Found application: {application.reference}")
 
+        # Debug: Log what fields are available
+        logger.info(f"[REPORT] Application fields: ward_name={getattr(application, 'ward_name', 'NOT_SET')}, "
+                    f"n_documents={getattr(application, 'n_documents', 'NOT_SET')}, "
+                    f"n_statutory_days={getattr(application, 'n_statutory_days', 'NOT_SET')}, "
+                    f"docs_url={getattr(application, 'docs_url', 'NOT_SET')}, "
+                    f"decided_date={getattr(application, 'decided_date', 'NOT_SET')}, "
+                    f"decision_date={getattr(application, 'decision_date', 'NOT_SET')}")
+
+        # Enrich applicant and agent data if URL available
+        enriched_applicant_name = None
+        enriched_agent_name = None
+        enriched_ward_name = None
+        enriched_decided_date = None
+        enriched_n_documents = None
+        enriched_n_statutory_days = None
+        enriched_docs_url = None
+
+        if hasattr(application, 'url') and application.url:
+            try:
+                logger.info(f"[REPORT] Starting data enrichment for {application_id}")
+
+                # Check cache first
+                cache_service = get_cache_service()
+                if cache_service and cache_service.available:
+                    cached_enrichment = await cache_service.get_enrichment(application_id)
+                    if cached_enrichment:
+                        enriched_applicant_name = cached_enrichment.get("applicant_name")
+                        enriched_agent_name = cached_enrichment.get("agent_name")
+                        enriched_ward_name = cached_enrichment.get("ward_name")
+                        enriched_decided_date = cached_enrichment.get("decided_date")
+                        enriched_n_documents = cached_enrichment.get("n_documents")
+                        enriched_n_statutory_days = cached_enrichment.get("n_statutory_days")
+                        enriched_docs_url = cached_enrichment.get("docs_url")
+                        logger.info(f"[REPORT] Using cached enrichment data")
+
+                # If not cached, run enrichment agent
+                if not enriched_applicant_name:
+                    enrichment_result = await enrich_applicant_data(
+                        url=application.url,
+                        application_id=application_id
+                    )
+
+                    if enrichment_result.get("success"):
+                        enriched_applicant_name = enrichment_result["data"].get("applicant_name")
+                        enriched_agent_name = enrichment_result["data"].get("agent_name")
+                        enriched_ward_name = enrichment_result["data"].get("ward_name")
+                        enriched_decided_date = enrichment_result["data"].get("decided_date")
+                        enriched_n_documents = enrichment_result["data"].get("n_documents")
+                        enriched_n_statutory_days = enrichment_result["data"].get("n_statutory_days")
+                        enriched_docs_url = enrichment_result["data"].get("docs_url")
+
+                        logger.info(
+                            f"[REPORT] Enrichment completed: "
+                            f"applicant={enriched_applicant_name}, "
+                            f"agent={enriched_agent_name}, "
+                            f"ward={enriched_ward_name}, "
+                            f"docs={enriched_n_documents}, "
+                            f"method={enrichment_result['metadata']['extraction_method']}, "
+                            f"time={enrichment_result['metadata']['processing_time_ms']}ms"
+                        )
+
+                        # Cache the result
+                        if cache_service and cache_service.available:
+                            await cache_service.set_enrichment(
+                                application_id,
+                                {
+                                    "applicant_name": enriched_applicant_name,
+                                    "agent_name": enriched_agent_name,
+                                    "ward_name": enriched_ward_name,
+                                    "decided_date": enriched_decided_date,
+                                    "n_documents": enriched_n_documents,
+                                    "n_statutory_days": enriched_n_statutory_days,
+                                    "docs_url": enriched_docs_url
+                                }
+                            )
+                    else:
+                        logger.warning(f"[REPORT] Enrichment failed: {enrichment_result.get('error', 'Unknown error')}")
+
+            except Exception as enrichment_error:
+                logger.error(f"[REPORT] Enrichment error: {enrichment_error}", exc_info=True)
+                # Continue with report generation even if enrichment fails
+
         # Initialize report sections
         report = {
             "report_metadata": {
@@ -97,11 +181,19 @@ async def generate_bank_grade_report(
             'location_embedding', 'document_embeddings'
         })
 
+        # Use enriched data if available, otherwise fall back to index data
+        ward_name_value = enriched_ward_name or getattr(application, 'ward_name', None) or application.ward
+        decided_date_value = enriched_decided_date or getattr(application, 'decided_date', None) or application.decision_date
+        n_documents_value = enriched_n_documents if enriched_n_documents is not None else (getattr(application, 'n_documents', None) or len(application.documents) if application.documents else 0)
+        n_statutory_days_value = enriched_n_statutory_days or getattr(application, 'n_statutory_days', None)
+        docs_url_value = enriched_docs_url or getattr(application, 'docs_url', None)
+
         report["application_details"] = {
             "reference": application.reference,
             "address": application.address,
             "postcode": application.postcode,
             "authority": application.authority,
+            "area_name": getattr(application, 'area_name', None) or application.authority,
             "status": application.status,
             "decision": application.decision,
             "application_type": application.application_type,
@@ -109,14 +201,24 @@ async def generate_bank_grade_report(
             "description": application.description,
             "submission_date": application.submission_date.isoformat() if application.submission_date else None,
             "decision_date": application.decision_date.isoformat() if application.decision_date else None,
+            "decided_date": decided_date_value.isoformat() if decided_date_value and hasattr(decided_date_value, 'isoformat') else decided_date_value,
             "target_decision_date": application.target_decision_date.isoformat() if application.target_decision_date else None,
             "location": application.location,
             "ward": application.ward,
+            "ward_name": ward_name_value,
             "parish": application.parish,
             "applicant": application.applicant.dict() if application.applicant else None,
             "agent": application.agent.dict() if application.agent else None,
+            "applicant_name": enriched_applicant_name or getattr(application, 'applicant_name', None),  # Enriched or index data
+            "agent_name": enriched_agent_name or getattr(application, 'agent_name', None),              # Enriched or index data
             "documents_count": len(application.documents) if application.documents else 0,
-            "consultations_count": len(application.consultations) if application.consultations else 0
+            "n_documents": n_documents_value,
+            "n_statutory_days": n_statutory_days_value,
+            "statutory_days": n_statutory_days_value,
+            "consultations_count": len(application.consultations) if application.consultations else 0,
+            "url": getattr(application, 'url', None) or getattr(application, 'link', None),
+            "docs_url": docs_url_value,
+            "documents_url": docs_url_value
         }
 
         # Section 2 & 3: AI Intelligence Analysis with Opportunity Assessment

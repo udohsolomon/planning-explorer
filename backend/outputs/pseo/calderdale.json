@@ -1,0 +1,30 @@
+{
+  "authority_id": "calderdale",
+  "authority_name": "Calderdale",
+  "url_slug": "calderdale",
+  "generated_at": "2025-10-07T15:56:10.907669",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T15:56:10.907670"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T15:56:10.908246"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T15:57:10.574163"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T15:57:10.771837"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072257196815d8856a86441b'}",
+  "status": "failed"
+}

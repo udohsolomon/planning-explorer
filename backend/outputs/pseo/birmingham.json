@@ -1,0 +1,45 @@
+{
+  "authority_id": "birmingham",
+  "authority_name": "Birmingham",
+  "url_slug": "birmingham",
+  "generated_at": "2025-10-07T04:53:34.365520",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T04:53:34.365528"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T04:53:34.365657"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T04:53:34.365988"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T04:53:34.396864"
+    },
+    {
+      "step": 5,
+      "action": "SEO optimization",
+      "timestamp": "2025-10-07T04:54:52.059491"
+    },
+    {
+      "step": 6,
+      "action": "Page assembly",
+      "timestamp": "2025-10-07T04:54:52.059516"
+    },
+    {
+      "step": 7,
+      "action": "Save page",
+      "timestamp": "2025-10-07T04:54:52.059743"
+    }
+  ],
+  "error": "'NoneType' object has no attribute 'index'",
+  "status": "failed"
+}

@@ -1,0 +1,30 @@
+{
+  "authority_id": "stoke-on-trent",
+  "authority_name": "Stoke on Trent",
+  "url_slug": "stoke-on-trent",
+  "generated_at": "2025-10-07T16:18:48.215713",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:18:48.215717"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:18:48.231823"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:18:48.231928"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:18:48.263775"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007231856aea4e24ac2824454'}",
+  "status": "failed"
+}

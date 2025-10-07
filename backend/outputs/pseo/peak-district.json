@@ -1,0 +1,30 @@
+{
+  "authority_id": "peak-district",
+  "authority_name": "Peak District",
+  "url_slug": "peak-district",
+  "generated_at": "2025-10-07T16:02:02.318517",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:02:02.318525"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:02:02.319247"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:02:30.662267"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:02:30.694603"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '2025100723023870f5861484074fd2'}",
+  "status": "failed"
+}

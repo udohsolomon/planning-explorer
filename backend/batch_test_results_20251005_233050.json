@@ -1,0 +1,93 @@
+{
+  "test_date": "2025-10-05T23:30:50.125301",
+  "total_authorities": 10,
+  "successful": 10,
+  "failed": 0,
+  "success_rate": 100.0,
+  "avg_words": 5493.0,
+  "avg_cost": 0.6329433000000001,
+  "total_cost": 6.329433000000001,
+  "duration_seconds": 971.91445,
+  "results": [
+    {
+      "authority_id": "hillingdon",
+      "authority_name": "Hillingdon Council",
+      "status": "success",
+      "words": 5023,
+      "cost": 0.111798,
+      "scraper": "Firecrawl"
+    },
+    {
+      "authority_id": "westminster",
+      "authority_name": "Westminster City Council",
+      "status": "success",
+      "words": 4911,
+      "cost": 0.21432,
+      "scraper": "Firecrawl"
+    },
+    {
+      "authority_id": "manchester",
+      "authority_name": "Manchester City Council",
+      "status": "success",
+      "words": 5782,
+      "cost": 0.33065100000000003,
+      "scraper": "Firecrawl"
+    },
+    {
+      "authority_id": "birmingham",
+      "authority_name": "Birmingham City Council",
+      "status": "success",
+      "words": 5103,
+      "cost": 0.45576900000000004,
+      "scraper": "Firecrawl"
+    },
+    {
+      "authority_id": "leeds",
+      "authority_name": "Leeds City Council",
+      "status": "success",
+      "words": 5832,
+      "cost": 0.573513,
+      "scraper": "Firecrawl"
+    },
+    {
+      "authority_id": "bristol",
+      "authority_name": "Bristol City Council",
+      "status": "success",
+      "words": 5782,
+      "cost": 0.6905010000000001,
+      "scraper": "Firecrawl"
+    },
+    {
+      "authority_id": "brighton-and-hove",
+      "authority_name": "Brighton and Hove City Council",
+      "status": "success",
+      "words": 5539,
+      "cost": 0.8017680000000001,
+      "scraper": "Playwright"
+    },
+    {
+      "authority_id": "cambridge",
+      "authority_name": "Cambridge City Council",
+      "status": "success",
+      "words": 5631,
+      "cost": 0.9267930000000002,
+      "scraper": "Firecrawl"
+    },
+    {
+      "authority_id": "oxford",
+      "authority_name": "Oxford City Council",
+      "status": "success",
+      "words": 5710,
+      "cost": 1.0559640000000001,
+      "scraper": "Firecrawl"
+    },
+    {
+      "authority_id": "york",
+      "authority_name": "York City Council",
+      "status": "success",
+      "words": 5617,
+      "cost": 1.168356,
+      "scraper": "Firecrawl"
+    }
+  ]
+}

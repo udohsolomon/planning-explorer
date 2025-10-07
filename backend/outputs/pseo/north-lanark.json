@@ -1,0 +1,30 @@
+{
+  "authority_id": "north-lanark",
+  "authority_name": "North Lanark",
+  "url_slug": "north-lanark",
+  "generated_at": "2025-10-07T16:14:07.864453",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:14:07.864458"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:14:07.877973"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:14:26.897149"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:14:26.924779"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072314337a606775cf3945a7'}",
+  "status": "failed"
+}

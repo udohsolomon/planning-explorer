@@ -1,0 +1,30 @@
+{
+  "authority_id": "luton",
+  "authority_name": "Luton",
+  "url_slug": "luton",
+  "generated_at": "2025-10-07T16:06:57.872191",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:06:57.872194"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:06:57.879210"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:08:00.673579"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:08:00.703168"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072308099b894eec138a490d'}",
+  "status": "failed"
+}

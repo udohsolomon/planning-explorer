@@ -1,0 +1,30 @@
+{
+  "authority_id": "south-holland",
+  "authority_name": "South Holland",
+  "url_slug": "south-holland",
+  "generated_at": "2025-10-07T15:47:44.577634",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T15:47:44.577638"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T15:47:44.583292"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T15:47:48.216615"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T15:47:48.259674"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '2025100722475555317ab83a3049cf'}",
+  "status": "failed"
+}

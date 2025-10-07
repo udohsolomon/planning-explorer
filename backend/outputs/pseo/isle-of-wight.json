@@ -1,0 +1,30 @@
+{
+  "authority_id": "isle-of-wight",
+  "authority_name": "Isle of Wight",
+  "url_slug": "isle-of-wight",
+  "generated_at": "2025-10-07T15:50:00.898478",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T15:50:00.898483"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T15:50:00.899292"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T15:50:28.373866"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T15:50:28.402063"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007225035fb491751f66e45ca'}",
+  "status": "failed"
+}

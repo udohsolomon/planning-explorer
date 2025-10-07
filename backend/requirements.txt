@@ -32,10 +32,14 @@ sqlalchemy==2.0.23
 alembic==1.12.1
 
 # AI & ML Libraries
-openai==1.3.7
-anthropic==0.7.7
-sentence-transformers==2.2.2
-numpy==1.24.4
+openai>=1.3.7
+anthropic>=0.18.0  # Updated for Agent SDK support
+sentence-transformers>=2.2.2
+numpy>=1.24.4
+
+# Agent Framework & Evaluation
+tiktoken>=0.5.2  # Token counting for agent context management
+jsonschema>=4.20.0  # Schema validation for agent tools
 
 # Date & Time
 python-dateutil==2.8.2
@@ -57,9 +61,9 @@ flake8==6.1.0
 mypy==1.7.1
 
 # Performance & Caching
-redis==5.0.1
-python-redis==4.6.0
-cachetools==5.3.2
+redis>=5.0.1
+# python-redis package doesn't exist - use redis instead
+cachetools>=5.3.2
 
 # Utilities
 click==8.1.7
@@ -81,9 +85,23 @@ PyPDF2==3.0.1
 python-magic==0.4.27
 
 # Async Support
-asyncio==3.4.3
+# asyncio is built-in, no separate package needed
 aiofiles==23.2.1
 aiocache==0.12.2
+
+# Web Scraping & HTML Parsing (for enrichment agent)
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+playwright>=1.40.0
+
+# pSEO Web Scraping (NEW)
+firecrawl-py>=0.0.8
+aiohttp>=3.9.0
+feedparser>=6.0.11
+
+# pSEO Utilities (NEW)
+python-slugify>=8.0.0
+markdownify>=0.11.6
 
 # Executive Summary Service (NEW)
 # Note: Executive summary service uses existing dependencies above

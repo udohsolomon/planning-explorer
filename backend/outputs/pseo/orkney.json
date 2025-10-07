@@ -1,0 +1,30 @@
+{
+  "authority_id": "orkney",
+  "authority_name": "Orkney",
+  "url_slug": "orkney",
+  "generated_at": "2025-10-07T16:23:04.085755",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:23:04.085759"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:23:04.126391"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:24:08.361946"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:24:08.385276"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '2025100723241609babdab36074732'}",
+  "status": "failed"
+}

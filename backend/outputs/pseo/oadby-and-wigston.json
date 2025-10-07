@@ -1,0 +1,30 @@
+{
+  "authority_id": "oadby-and-wigston",
+  "authority_name": "Oadby and Wigston",
+  "url_slug": "oadby-and-wigston",
+  "generated_at": "2025-10-07T16:16:45.647580",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:16:45.647581"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:16:45.648401"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:17:12.070701"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:17:12.096428"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072317205f559520f050488c'}",
+  "status": "failed"
+}

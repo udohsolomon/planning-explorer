@@ -1,0 +1,30 @@
+{
+  "authority_id": "north-yorkshire",
+  "authority_name": "North Yorkshire",
+  "url_slug": "north-yorkshire",
+  "generated_at": "2025-10-07T16:26:45.954215",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:26:45.954217"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:26:45.954565"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:27:04.568295"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:27:04.594988"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '2025100723271169505bf923e34eee'}",
+  "status": "failed"
+}

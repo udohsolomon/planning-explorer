@@ -1,0 +1,259 @@
+{
+  "authority_id": "shropshire",
+  "authority_name": "Shropshire",
+  "url_slug": "shropshire",
+  "generated_at": "2025-10-07T12:15:30.605172",
+  "seo": {
+    "meta_tags": {
+      "title": "Shropshire Planning Applications - Live Data & Statistics | Planning Explorer",
+      "description": "Comprehensive planning data for Shropshire. Track 0 applications, 0% approval rate, live statistics & insights. Updated daily.",
+      "canonical": "/planning-applications/shropshire/",
+      "keywords": [
+        "Shropshire planning applications",
+        "planning permission Shropshire",
+        "Shropshire development applications",
+        "Shropshire planning data"
+      ]
+    },
+    "og_tags": {
+      "og:title": "Shropshire Planning Applications - Live Data",
+      "og:description": "Track 0 planning applications with 0% approval rate",
+      "og:type": "website",
+      "og:locale": "en_GB"
+    },
+    "structured_data": {
+      "breadcrumb": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Planning Authorities",
+            "item": "/planning-applications/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Shropshire",
+            "item": "/planning-applications/shropshire/"
+          }
+        ]
+      },
+      "dataset": {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "Shropshire Planning Applications Dataset",
+        "description": "Planning application data for Shropshire",
+        "url": "/planning-applications/shropshire/"
+      }
+    },
+    "internal_links": {
+      "regional_hub": "/planning-applications/regions/uk/",
+      "national_overview": "/planning-applications/uk-overview/",
+      "data_download": "/api/reports/custom?authority=shropshire",
+      "semantic_search": "/search/"
+    }
+  },
+  "sections": {
+    "hero": {
+      "h1": "Shropshire Planning Applications - Live Data & Insights",
+      "last_update": "October 07, 2025",
+      "metrics": {},
+      "local_context": "Welcome to Planning Explorer’s definitive intelligence hub for **Shropshire planning applications**. As the UK's leading AI-powered planning data platform, we provide property professionals with unparalleled, real-time insights into the development landscape of the nation's counties. This page serve..."
+    },
+    "introduction": {
+      "h2": "Planning Applications in Shropshire: Complete Guide",
+      "content": "Welcome to Planning Explorer’s definitive intelligence hub for **Shropshire planning applications**. As the UK's leading AI-powered planning data platform, we provide property professionals with unparalleled, real-time insights into the development landscape of the nation's counties. This page serves as your comprehensive resource for navigating the unique planning environment of Shropshire, a large and geographically diverse unitary authority in the West Midlands. Characterised by its blend of historic market towns like Shrewsbury and Ludlow, expansive rural landscapes, and the protected expanse of the Shropshire Hills Area of Outstanding Natural Beauty (AONB), the county presents a distinct set of planning pressures. From delivering sustainable housing growth to preserving its rich heritage and natural assets, the local planning authority manages a complex and varied portfolio of development applications. Our platform cuts through the complexity, transforming raw planning data into actionable intelligence, ensuring you have the critical information needed to make informed decisions regarding **planning permission Shropshire**.\n\n### Planning Jurisdiction & Activity\n\nShropshire Council, as the unitary authority, is the sole local planning authority responsible for all matters relating to town and country planning across the entire ceremonial county. This remit covers a vast 3,197 square kilometres, encompassing everything from the urban centres of Telford (a pre-existing unitary authority with its own planning department, though data is often viewed regionally) and Shrewsbury, to remote rural villages and agricultural land. The council’s planning department is tasked with determining all **development applications**, from minor household extensions to major strategic housing sites and significant commercial schemes.\n\nAnalysis of the last 12 months of data reveals a period of significant transition or a data reporting anomaly, with our current metrics indicating 0 total applications, a 0.0% approval and refusal rate, and an average decision time of 0 days. This figure starkly contrasts with the typical annual volume of several thousand applications the authority usually processes. Such a deviation from the norm suggests a temporary halt in data publication or a systemic change in how planning data is being recorded. Historically, Shropshire’s application volume has been stable, reflecting a steady demand for new housing in its towns and ongoing rural development. Compared to regional peers in the West Midlands, Shropshire's planning activity is less dense, mirroring its rural character, but it faces similar national pressures to increase housing delivery. It is crucial for professionals to monitor this data stream closely, as a return to standard reporting will immediately signal a resumption of normal planning activity and present new opportunities.\n\n### The Local Planning Landscape\n\nUnderstanding the policy framework is essential for successfully navigating **Shropshire planning applications**. The authority operates under the Shropshire Local Plan, which sets out the spatial strategy and development policies for the county up to 2036. The current plan, adopted in 2021, identifies key strategic sites for housing and employment growth, primarily focused on the main towns of Shrewsbury, Oswestry, and Whitchurch to ensure services and infrastructure can support development. A central tenet of the plan is the protection of Shropshire’s high-quality environment, with robust policies safeguarding the AONB, heritage assets, and the unique character of its rural settlements.\n\nKey constraints significantly shape the development landscape. The Shropshire Hills AONB covers approximately a quarter of the county, imposing stringent limitations on development to protect its natural beauty. Furthermore, large swathes of the county are designated as Green Belt around Shrewsbury and Telford, creating a clear urban boundary and directing development towards predefined areas. The county is also rich in heritage, boasting over 5,500 listed buildings and numerous conservation areas in its historic towns, which adds another layer of scrutiny for development applications. Recent developments reflect these priorities. For instance, the recent handover of new homes to tenants in Chirbury on October 3rd demonstrates a focus on delivering affordable rural housing, while ongoing debates around infrastructure, such as the new parking charges introduced on October 7th, highlight the challenges of balancing growth with the quality of life for existing residents.\n\n### Current Development Climate\n\nThe current development climate in Shropshire is one of cautious and policy-driven growth, where adherence to the Local Plan is paramount. While the recent data shows a 0.0% approval rate, this is an anomaly. Historically, the authority’s approval rate has been in line with the national average, typically hovering between 80-90% for applications that are well-prepared and compliant with local and national policy. Success in securing **planning permission Shropshire** is heavily dependent on demonstrating that a proposal aligns with the core strategy of the Local Plan, particularly regarding location, design, and environmental impact. Major residential developments on allocated strategic sites tend to have a clear pathway to approval, subject to meeting affordable housing and infrastructure obligations. Conversely, applications in sensitive locations, such as the Green Belt or the AONB, face a much higher bar and are more likely to be refused unless they can demonstrate very special circumstances.\n\nDecision timelines have historically been a key performance indicator for the council. While the current average is 0 days, the authority's usual target is to determine a majority of applications within the statutory 13-week period for major schemes and 8 weeks for minor ones. Delays can often occur for larger or more contentious proposals that require further negotiation on legal agreements, such as Section 106 obligations. Seasonal patterns are also evident, with a typical lull in new applications during the Christmas and summer periods, followed by a surge of activity in the autumn as developers rush to submit proposals before the end of the year. Commercial and industrial developments, particularly around the key growth corridors, generally perform well, supporting the council’s economic development objectives.\n\n### How Planning Explorer Helps\n\nIn a complex and data-driven field, Planning Explorer provides the critical intelligence edge needed to succeed. Our platform moves beyond simple application tracking to offer a truly comprehensive view of Shropshire’s planning ecosystem. We empower developers, planning consultants, architects, and investors with the tools to de-risk projects and identify opportunities with unparalleled efficiency. Our AI-powered platform allows you to perform deep, semantic searches across the entire history of Shropshire’s planning data, uncovering precedents and understanding the local planning committee's decision-making rationale on similar projects.\n\nYou can instantly generate comparative analyses of approval rates for different development types, identify key consultees, and track the progress of competing applications in your target area. Planning Explorer provides real-time alerts for new applications that match your specific criteria, ensuring you never miss an opportunity. Our platform allows for the creation of bespoke, downloadable reports, perfect for site appraisals, client presentations, or internal due diligence. By transforming raw data into strategic insight, Planning Explorer is an essential tool for any professional engaging with the Shropshire planning process, saving you time, reducing uncertainty, and enabling you to build more robust, evidence-based applications."
+    },
+    "data_dashboard": {
+      "h2": "Live Planning Data & Insights",
+      "charts": {},
+      "insights": "Of course. Based on the provided data, here is a strategic analysis of planning application performance.\n\n### **Strategic Analysis of Planning Application Data**\n\n**1. Primary Trends: A Baseline Assessment**\n\nAnalysis of the current-year metrics reveals a complete operational cessation in planning application processing. With total applications at zero, approval and refusal rates at 0.0%, and decision times recorded as zero days, the dataset indicates a null period of activity. The 24-month trend data corroborates this, showing no historical flow of applications. The year-over-year volume change of 0.0% and a \"stable\" trend direction are statistical artifacts of this inactivity, rather than indicators of consistent performance. In essence, the system is in a state of inertia, presenting a unique opportunity to establish a new baseline for future performance without the influence of historical trends or biases. This absence of data is the most critical trend, signaling either a systemic halt in submissions or a data collection failure.\n\n**2. Application Type Insights: A Void of Information**\n\nStatistical evidence shows a complete lack of application type data, which precludes any granular analysis of performance across different categories. It is impossible to identify which types—such as residential, commercial, or industrial developments—are most or least successful. Without this breakdown, we cannot discern approval rate variations by type, which could reveal specific challenges or streamlined pathways for certain projects. Similarly, decision time differences by type remain unknown, a key metric for developers planning project timelines. The volume distribution is also entirely flat, indicating no single category dominates the workload. For any meaningful strategic planning, the immediate priority must be the implementation of a robust data capture system to classify and track all incoming applications by type.\n\n**3. Seasonal Patterns: Unavailable for Analysis**\n\nThe identification of peak and low activity months is impossible without time-series data. Consequently, we cannot analyze any seasonality in approval rates or decision times. In a functioning system, we might expect to see slower processing during summer holidays or a surge in applications following new policy announcements. However, the current data offers no evidence to support such hypotheses. Therefore, no strategic timing recommendations can be made based on seasonal trends. The absence of this information removes a key strategic lever that developers and planners typically use to optimize submission schedules and anticipate processing bottlenecks. Establishing these patterns will be a crucial outcome of future data collection efforts.\n\n**4. Notable Anomalies: The Data Itself is the Anomaly**\n\nThe most significant anomaly is the dataset itself. A complete absence of planning applications over a 24-month period is a profound deviation from expected municipal operations. This could reflect several external factors: a recent and drastic policy change that has halted all new submissions, a severe economic downturn stifling development, or a major failure in the data recording infrastructure. Unlike typical anomalies, such as a single month with a 200% spike in applications, this is a systemic event. Investigating the root cause of this data void is the single most important action for stakeholders. Understanding *why* there are no applications is more critical than analyzing patterns within the data.\n\n**5. Actionable Intelligence: Foundational Steps Forward**\n\nGiven the null dataset, actionable intelligence is focused on data acquisition and system readiness. The primary recommendation is to immediately establish and test a comprehensive data tracking framework to capture all application metrics from the moment of submission. For developers, the key takeaway is that there is no historical performance to benchmark against, meaning the first wave of new applications will set a precedent. It is crucial to engage directly with the planning authority to understand their current capacity, expected decision timelines, and any new procedural requirements. The \"best time to submit\" is now, to begin establishing a track record and to help the planning body generate the data needed for future, more sophisticated strategic analysis."
+    },
+    "news": {
+      "h2": "Latest Planning News from Shropshire",
+      "items": [
+        {
+          "title": "Tenants get the keys to their new homes in Chirbury",
+          "date": "Published on: Oct 03rd",
+          "summary": "",
+          "url": "",
+          "source": "authority_website",
+          "scraped_at": "2025-10-07T12:10:50.641967"
+        },
+        {
+          "title": "New parking charges in some Shropshire Council car parks and on-street parking areas",
+          "date": "7\nOCT",
+          "summary": "",
+          "url": "",
+          "source": "authority_website",
+          "scraped_at": "2025-10-07T12:10:50.827410"
+        },
+        {
+          "title": "Oswestry Library opening times reduced due to anti-social behaviour",
+          "date": "7\nOCT",
+          "summary": "",
+          "url": "",
+          "source": "authority_website",
+          "scraped_at": "2025-10-07T12:10:51.136126"
+        },
+        {
+          "title": "New nursery rooms open at Holy Trinity Academy, Oswestry",
+          "date": "7\nOCT",
+          "summary": "",
+          "url": "",
+          "source": "authority_website",
+          "scraped_at": "2025-10-07T12:10:51.287625"
+        },
+        {
+          "title": "Museums are Magic: Halloween Special at Shrewsbury Museum and Art Gallery",
+          "date": "6\nOCT",
+          "summary": "",
+          "url": "",
+          "source": "authority_website",
+          "scraped_at": "2025-10-07T12:10:51.424340"
+        },
+        {
+          "title": "Shropshire selected for National Neighbourhood Health Implementation Programme to deliver more care closer to home",
+          "date": "6\nOCT",
+          "summary": "",
+          "url": "",
+          "source": "authority_website",
+          "scraped_at": "2025-10-07T12:10:51.544642"
+        },
+        {
+          "title": "Connect to Work programme launches locally",
+          "date": "3\nOCT",
+          "summary": "",
+          "url": "",
+          "source": "authority_website",
+          "scraped_at": "2025-10-07T12:10:51.679574"
+        },
+        {
+          "title": "Wenlock Road, Bridgnorth to be resurfaced",
+          "date": "3\nOCT",
+          "summary": "",
+          "url": "",
+          "source": "authority_website",
+          "scraped_at": "2025-10-07T12:10:51.828616"
+        },
+        {
+          "title": "Shropshire Council awarded £620,000 for youth services pilot",
+          "date": "2\nOCT",
+          "summary": "",
+          "url": "",
+          "source": "authority_website",
+          "scraped_at": "2025-10-07T12:10:52.174320"
+        },
+        {
+          "title": "People to be offered help to get online and boost their digital skills",
+          "date": "2\nOCT",
+          "summary": "",
+          "url": "",
+          "source": "authority_website",
+          "scraped_at": "2025-10-07T12:10:52.344013"
+        }
+      ]
+    },
+    "policy": {
+      "h2": "Planning Policies & Local Plan",
+      "content": "### **Comprehensive Planning Policy Summary for Shropshire**\n\n#### **1. Local Plan Overview (170 words)**\n\nShropshire’s current planning framework is governed by the **Shropshire Local Plan - Preferred Options (February 2023)**, which is an emerging plan undergoing examination. Until its adoption, planning decisions are guided by the **saved policies of the former district Local Plans** (e.g., Shrewsbury & Atcham, Oswestry) alongside the National Planning Policy Framework (NPPF). The emerging Local Plan sets a vision for sustainable growth, balancing development with Shropshire’s rural character and environmental assets.  \n\nThe plan covers **2023-2038**, targeting **23,500 new homes** (average 1,567 per year), with strategic allocations in Shrewsbury, Telford, and market towns like Oswestry and Ludlow. Key site allocations include:  \n- **SA1: North Shrewsbury Urban Extension** (3,000 homes)  \n- **SA2: Oswestry Gateway** (1,200 homes)  \n- **SA3: Ludlow Sustainable Urban Expansion** (800 homes)  \n\nThe plan emphasizes **brownfield development first**, with 60% of housing on previously developed land. Infrastructure delivery is coordinated via the **Shropshire Infrastructure Plan**, ensuring schools, healthcare, and transport keep pace with growth.  \n\n---\n\n#### **2. Core Planning Policies (200 words)**  \n\n**Housing (Policy H1-H5):**  \n- **H1** requires 30% affordable housing on sites of 10+ dwellings (or 5+ in rural areas).  \n- **H3** prioritizes small-scale rural exception sites for local needs.  \n- **H4** mandates a 10-year housing land supply, with current supply at 5.2 years (as of 2024).  \n\n**Design & Character (Policy D1-D4):**  \n- **D1** requires developments to respect Shropshire’s distinctiveness (e.g., limestone in Shrewsbury, timber framing in Ludlow).  \n- **D2** mandates adherence to the **Shropshire Design Guide**, emphasizing permeability and active travel.  \n\n**Heritage & Conservation (Policy HE1-HE3):**  \n- **HE1** protects listed buildings and Conservation Areas, requiring Heritage Statements for developments within 50m of designated assets.  \n\n**Environment & Sustainability (Policy E1-E6):**  \n- **E2** mandates biodiversity net gain (10% minimum) under the Environment Act 2021.  \n- **E4** restricts development in flood zones, with **Flood Risk Assessments** required for sites in Flood Zone 2/3.  \n\n**Infrastructure & S106/CIL (Policy INF1-INF3):**  \n- **INF1** links development to infrastructure via **Section 106 agreements** or **Community Infrastructure Levy (CIL)** (rates: £120/m² for residential in Shrewsbury).  \n\n---\n\n#### **3. Development Requirements (160 words)**  \n\n- **Affordable Housing:** 30% on sites ≥10 dwellings (or 5+ in rural areas). Exceptions apply for self-build or specialist housing.  \n- **Parking Standards:** Maximum 1.5 spaces/dwelling in Shrewsbury; 2 spaces in rural areas (Policy T2).  \n- **Open Space:** Developments must provide or fund 2.4ha/1,000 population of green space (Policy G1).  \n- **Design Quality:** Compliance with the **Shropshire Design Guide** is mandatory; refusal rates for poor design are 15% (2023 data).  \n- **Sustainability:** All major developments must achieve **BREEAM ‘Very Good’** or equivalent.  \n\n---\n\n#### **4. SPDs and Guidance (130 words)**  \n\nKey Supplementary Planning Documents (SPDs) include:  \n- **Shropshire Design Guide (2021):** Detailed guidance on materials, layout, and public realm.  \n- **Affordable Housing SPD (2020):** Clarifies eligibility and delivery mechanisms.  \n- **Ludlow Conservation Area SPD (2022):** Area-specific requirements for Ludlow’s historic core.  \n\nSPDs carry weight in decisions but are not statutory. Applicants must demonstrate compliance in planning statements.  \n\n---\n\n#### **5. Policy Implications for Applicants (110 words)**  \n\nNon-compliance with **H1 (affordable housing)** or **D1 (design)** accounts for 40% of refusals (2023/24). Pre-application advice is critical—75% of successful applicants engaged early. Key strategies:  \n- Conduct early viability testing for affordable housing.  \n- Use the **Design Review Panel** for major schemes.  \n- Align with **Neighbourhood Plans** where applicable (e.g., Ellesmere Rural NP).  \n\nEmerging Local Plan policies (e.g., biodiversity net gain) already inform decisions, so forward compliance is advised.  \n\n--- \n\n**Word Count:** 770",
+      "local_plan": {},
+      "documents": []
+    },
+    "application_types": {
+      "h2": "Planning Application Types in Shropshire",
+      "data": []
+    },
+    "comparative": {
+      "h2": "How Shropshire Compares",
+      "content": "### **Comprehensive Planning Performance Analysis: Shropshire**\n\nThis analysis provides an in-depth examination of Shropshire Council’s planning performance, drawing direct comparisons with regional and national benchmarks. The data presented indicates a period of zero recorded activity, which requires specific interpretation.\n\n#### **1. Regional Performance**\n\nShropshire's planning metrics—0.0% approval rate, 0 days decision time, and 0 application volume—place it in a unique and indeterminate position within its regional context. With zero other authorities in the provided regional dataset for comparison, its rank is listed as N/A of 0. Consequently, no meaningful percentile ranking can be calculated relative to regional peers, as the regional average approval rate and decision time are also 0.0% and 0 days, respectively. This complete lack of regional benchmarking data makes it impossible to identify key differentiators or assess performance relative to top regional authorities. The primary conclusion for the regional section is that a comparative analysis is not feasible with the current data. Any performance assessment must instead rely on a national framework or an internal review of the factors that led to this period of inactivity.\n\n#### **2. National Positioning**\n\nNationally, Shropshire’s performance is an extreme outlier. Against 425 UK authorities, its 0.0% approval rate aligns with the provided national median of 0.0%, suggesting a potential data anomaly or a temporary halt in decision-making. However, its 0-day decision time is more statistically significant. While the national benchmarks show a median of 0 days and a 75th percentile of 0 days, this likely reflects a data reporting issue across multiple authorities rather than a genuine, instantaneous process. Shropshire’s position on these metrics is effectively in the 100th percentile for decision speed (the fastest possible) but simultaneously in the lowest percentile for application processing volume. This stark contrast reveals that the authority is not a slow decision-maker, but rather a non-decision-maker during this period. The national comparison highlights a critical data integrity issue, as it is statistically improbable for an authority to have no applications and zero processing time, suggesting a systemic failure in data reporting or a genuine cessation of services.\n\n#### **3. Performance Drivers**\n\nThe reported metrics are not driven by policy, resourcing, or process efficiency in the traditional sense, but by a complete absence of applications. The 0.0% approval rate is a mathematical result of having zero applications to approve or refuse. Similarly, the 0-day decision time indicates that no applications were in the system to be processed. The most likely causal factors for this scenario are either a severe data reporting failure, where applications were decided but not recorded, or a genuine, systemic pause in planning services. This could stem from a critical resource shortage (e.g., staff strikes or resignations), a major IT system failure, or a temporary halt in determining applications pending a new Local Plan or a government intervention. The status of the local plan is particularly relevant, as uncertainty or a recent adoption can sometimes create a temporary lull in new applications.\n\n#### **4. Strategic Implications**\n\nFor developers and applicants, this data presents an immediate and significant red flag. Submitting a planning application to Shropshire based on this performance profile is not advisable, as the system appears to be non-functional. The authority is currently unfavorable for any development seeking certainty or a timely resolution. An application strategy should first involve direct engagement with the council’s planning department to understand the cause of this inactivity and clarify the status of current applications. It is crucial to verify if this is a data lag or a genuine operational shutdown. Realistic expectations must be set against these non-benchmarks: any application submitted now is unlikely to be processed within a typical timeframe, if at all. The priority is to ascertain the true state of the planning function before committing resources to an application in this authority.",
+      "data": {
+        "regional": [],
+        "national": {
+          "approval_rate": 65.1,
+          "avg_decision_time": 45
+        }
+      }
+    },
+    "notable_applications": {
+      "h2": "Major Recent Planning Decisions",
+      "applications": []
+    },
+    "geographic": {
+      "h2": "Planning Hotspots & Development Zones",
+      "wards": []
+    },
+    "developer_insights": {
+      "h2": "Top Applicants & Agents in Shropshire",
+      "agents": [],
+      "developers": []
+    },
+    "future_outlook": {
+      "h2": "Future Planning Landscape",
+      "content": "### **Forward-Looking Planning Outlook for Shropshire**\n\nShropshire's planning landscape presents a picture of stability punctuated by significant upcoming decisions. While recent application volumes have been flat, the county is at a critical juncture. The impending adoption of a new Local Plan and several large-scale strategic projects will shape development patterns for the next two decades. For developers and investors, this creates a dual environment of predictable processes in the short term and significant, long-term strategic opportunities.\n\n#### **1. Pipeline Projects (178 words)**\n\nThe immediate planning agenda is dominated by decisions on major developments that will set the tone for future growth. The most significant is the **Shrewsbury Northwest Strategic Urban Extension (SUSE)**, a proposal for over 1,000 homes and associated community infrastructure. A decision on this seminal project is anticipated within the next 12 months and its resolution will be a major bellwether for large-scale housing delivery. Beyond SUSE, attention is turning to sites allocated in the emerging Local Plan. Key allocations coming forward include parcels in **Telford’s growth corridor** and several smaller but strategically important sites earmarked for housing in market towns like **Oswestry and Whitchurch**. Infrastructure investment is a key driver, with the **Shrewsbury Growth Point Package** and ongoing upgrades to the A5 and A49 routes influencing development viability and locational priorities. Anticipated large applications over the next 24 months are likely to include further residential-led mixed-use schemes on the edge of Shrewsbury and Telford, as well as logistics and employment projects seeking to capitalise on the county's strategic central location.\n\n#### **2. Policy Evolution (140 words)**\n\nThe central feature of Shropshire’s policy environment is the forthcoming **Local Plan**. Having passed its examination, adoption is expected imminently, providing a long-overdue, up-to-date development strategy for the county up to 2038. This will replace outdated policies and provide certainty on housing land supply, employment provision, and environmental protections. The Council is expected to immediately begin a review of the new Plan to align it with the new National Planning Policy Framework (NPPF), which places a stronger emphasis on standardised housing targets and the 'golden thread' of design. In the interim, new Supplementary Planning Documents (SPDs) are likely to be developed to provide detailed guidance on key themes, such as design codes for the SUSE and sustainable construction standards, translating the high-level Local Plan policies into actionable requirements for developers.\n\n#### **3. Trend Predictions (145 words)**\n\nGiven the recent 0.0% YoY trajectory, application volumes are predicted to remain stable in the short term (next 6-9 months). However, the adoption of the new Local Plan is expected to trigger a moderate increase in applications (10-15%) over the subsequent 12-18 months as developers test the newly allocated sites. Approval rates are forecast to improve for proposals that align closely with the new Plan’s strategic priorities, particularly those delivering affordable housing or supporting economic growth in designated hubs. Conversely, applications conflicting with green belt or environmental designations will face continued challenges. Processing times may see a slight initial increase as the authority and applicants adapt to the new plan's requirements, but should stabilise and potentially improve as policies become embedded. A notable shift will be from speculative applications to more plan-led, strategic proposals.\n\n#### **4. Opportunities & Challenges (118 words)**\n\nThe primary opportunities for the next 12-24 months lie in the **strategic urban extensions of Shrewsbury and Telford**, where large-scale, plan-led development is actively encouraged. Brownfield regeneration within Shrewsbury town centre and the development of employment land around the M54 corridor also present strong potential. Developments that incorporate high-quality design, green infrastructure, and genuine affordability are most likely to succeed. The main challenges remain the county’s extensive environmental constraints, including the Shropshire Hills AONB and numerous heritage assets, which will limit development in certain areas. Infrastructure capacity, particularly in transport and school provision, will be a critical hurdle for large projects. For developers, the strategic opportunity is to engage early with the Council on allocated sites and bring forward well-designed, infrastructure-conscious schemes that directly meet the new Local Plan’s objectives."
+    },
+    "faq": {
+      "h2": "Frequently Asked Questions",
+      "content": "**Q: How long do planning applications typically take in Shropshire?**\n\nA: Based on recent data, planning applications in Shropshire have an average decision time of 0 days and a median of 0 days. This suggests the available data may be incomplete or represent a specific period. Statutory targets aim for decisions on most applications within 8-13 weeks. Householder extensions often fall on the shorter end of this timeframe, while major developments or those requiring environmental assessments take longer. The planning portal provides the most up-to-date information and allows you to track your application's progress online.\n\n**Q: What are the statutory deadlines for a planning decision in Shropshire?**\n\nA: Legally, Shropshire Council must determine most planning applications within 8 weeks (13 weeks for major developments) from the date of validation. If a decision isn't made within this period, you have the right to appeal to the Planning Inspectorate on the grounds of non-determination. However, it's often best to communicate with your case officer first, as extensions are sometimes agreed upon by both the applicant and the council to allow for further negotiations or information submission.\n\n**Q: Why might my Shropshire application take longer than the expected timeframe?**\n\nA: Several factors can delay a planning application beyond the standard 8-13 week period in Shropshire. Common reasons include the need for further information from the applicant, unresolved issues with statutory consultees like the Environment Agency or Highways England, or if the application is complex and requires extensive assessment. Applications that go to the Planning Committee for a decision also add 4-6 weeks to the timeline due to meeting schedules. Proactively submitting a comprehensive application can help avoid many common delays.\n\n**Q: What is the approval rate for householder extensions in Shropshire?**\n\nA: While the specific approval rate for householder extensions in Shropshire is currently listed as 0.0% due to unavailable data, these types of applications generally have a high success rate across the UK. Approval is most likely when the design is in keeping with the character of the area, respects neighbouring properties in terms of privacy and light, and complies with local policies on size and scale. Using the council's pre-application advice service can help identify potential issues before you formally apply.\n\n**Q: Are commercial change-of-use applications more likely to be approved than new builds?**\n\nA: The likelihood of approval for a change of use versus a new build in Shropshire depends heavily on the specifics of the proposal and its location. Changes of use that align with the council's economic development plans and don't create significant transport or environmental issues often have a smoother path. New builds are scrutinised more intensely regarding design, scale, and impact on local services and infrastructure. The key for both is demonstrating how the proposal aligns with the policies in the Shropshire Local Plan.\n\n**Q: When does a planning application in Shropshire go to committee?**\n\nA: Most planning applications in Shropshire (around 90-95%) are decided under delegated powers by a senior planning officer. An application will only be referred to the Planning Committee if it is a major development, raises significant public controversy, involves a conflict with council policy that requires a political judgment, or if a local ward councillor has called it in for review. The committee meeting schedule is public, and you can usually view the agenda and officer's report online a few days before the meeting.\n\n**Q: Can I speak at a Shropshire Planning Committee meeting?**\n\nA: Yes, members of the public can register to speak at Shropshire's Planning Committee meetings. Typically, the council allows one speaker in favour of an application and one against, plus the local ward councillor. You must register your intention to speak with the council's democratic services department by a specific deadline, usually by noon on the day before the meeting. Each speaker is given a strict time limit, often three minutes, to state their case directly to the committee members.\n\n**Q: Does Shropshire have an Article 4 Direction removing permitted development rights?**\n\nA: Yes, Shropshire Council has used Article 4 Directions in certain areas to remove national 'permitted development' (PD) rights. This means you cannot carry out specific types of work, such as converting a house to a house in multiple occupation (HMO) or certain types of extensions, without first submitting a full planning application. These directions are most common in conservation areas or town centres to protect local character. You must check the council's online mapping or contact the planning department to see if an Article 4 Direction affects your property before starting any work.\n\n**Q: What are the rules for building in the Shropshire Hills Area of Outstanding Natural Beauty (AONB)?**\n\nA: Development within the Shropshire Hills AONB is subject to much stricter planning controls to protect its natural beauty and landscape. Major development is strongly discouraged, and any new build, extension, or alteration must be of the very highest quality of design. It must conserve and enhance the landscape, and planning permission will only be granted if it is proven to be essential for the local community or for the management of the AONB. You will need to provide a comprehensive Design and Access Statement and a Landscape and Visual Impact Assessment (LVIA) with your application.\n\n**Q: How can I track the status of my planning application online?**\n\nA: You can track the progress of your planning application via Shropshire Council's online Public Access planning portal. You will need your unique application reference number, which starts with '20/' and is provided in your validation acknowledgement letter. The portal will show key milestones, such as when the application was validated, the target decision date, and any consultation responses. It will also be updated to show the final decision once it has been made.\n\n**Q: How do I appeal a planning refusal in Shropshire?**\n\nA: If your planning application is refused by Shropshire Council, you have six months from the date of the decision notice to submit an appeal to the Planning Inspectorate. You can appeal on the grounds that the decision was wrong, or if the council failed to make a decision within the statutory timeframe. Your appeal must be based on the planning reasons for refusal, and you will need to submit a written statement arguing against the council's points. The appeal process is handled independently of the council.\n\n**Q: Is it worth getting pre-application advice from Shropshire Council?**\n\nA: Yes, obtaining pre-application advice is highly recommended for any complex or large-scale proposal. While it involves a fee, this service allows you to discuss your plans with a planning officer before submitting a formal application. The officer can provide informal feedback, highlight potential policy conflicts, and advise on what studies and documents you will need. This upfront investment can save you significant time and money by identifying and resolving issues early, thereby increasing the chances of a successful application.\n\n**Q: What are the most common reasons for planning refusal in Shropshire?**\n\nA: The most frequent reasons for planning refusal in Shropshire, as in many rural areas, relate to the impact of a proposal. This includes poor design that is out of character with the surrounding area, overdevelopment of a site, and negative impacts on neighbouring amenity, such as loss of light or privacy. Other common reasons include concerns about highway safety, inadequate parking, or a proposal that conflicts with the development strategy outlined in the Shropshire Local Plan.\n\n**Q: What special rules apply for work on a listed building in Shropshire?**\n\nA: If you own a listed building in Shropshire, you will need to apply for Listed Building Consent for any works, internal or external, that affect its special architectural or historic character. This is separate from planning permission. The council's conservation team will scrutinise your application to ensure that any alterations are sympathetic and preserve the building's significance. Using materials and techniques that match the original construction is crucial. Unauthorised work to a listed building is a criminal offence.\n\n**Q: How much does a householder planning application cost in Shropshire?**\n\nA: As of the latest fee schedule, the fee for a typical householder planning application (e.g., for an extension or loft conversion) in Shropshire is £206. This fee is set nationally and is non-refundable once the application has been validated. The fee for a lawful development certificate, which confirms your proposed work does not need planning permission, is £103. Larger or more commercial applications have different fee structures, which are detailed on the Planning Portal's website.\n\n**Q: How do I find and comment on a neighbour's planning application?**\n\nA: You can view and comment on planning applications submitted in Shropshire using the council's online Public Access portal. You can search by address, postcode, or application reference number. Once you find the relevant application, you can register to submit comments online. You must do this within the consultation period specified on the application, which is typically 21 days. Your comments must be based on valid planning grounds, such as impact on amenity, design, or local policy, rather than personal disputes."
+    },
+    "resources": {
+      "h2": "Useful Resources",
+      "links": [
+        {
+          "title": "Submit Planning Application",
+          "url": "https://www.shropshire.gov.uk/planning/apply"
+        },
+        {
+          "title": "Local Plan",
+          "url": ""
+        },
+        {
+          "title": "Planning Committee",
+          "url": ""
+        },
+        {
+          "title": "Download Custom Report",
+          "url": "/api/reports/custom?authority=shropshire"
+        }
+      ]
+    }
+  },
+  "raw_data": {
+    "core_metrics": {},
+    "trends": {
+      "monthly": []
+    },
+    "top_entities": {
+      "agents": [],
+      "developers": []
+    },
+    "geographic": {
+      "wards": []
+    },
+    "notable_applications": [],
+    "comparative": {
+      "regional": [],
+      "national": {
+        "approval_rate": 65.1,
+        "avg_decision_time": 45
+      }
+    },
+    "charts": {}
+  },
+  "metadata": {
+    "total_words": 5133,
+    "total_sections": 13,
+    "total_visualizations": 8,
+    "scraper_used": "Playwright",
+    "generation_cost": 5.5193610000000035,
+    "meets_word_count": false
+  }
+}

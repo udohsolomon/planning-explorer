@@ -1,0 +1,30 @@
+{
+  "authority_id": "mansfield",
+  "authority_name": "Mansfield",
+  "url_slug": "mansfield",
+  "generated_at": "2025-10-07T16:07:11.313001",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:07:11.313006"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:07:11.313579"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:07:50.407954"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:07:50.486114"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '2025100723075803d7523162154606'}",
+  "status": "failed"
+}

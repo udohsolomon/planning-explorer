@@ -1,0 +1,30 @@
+{
+  "authority_id": "jersey",
+  "authority_name": "Jersey",
+  "url_slug": "jersey",
+  "generated_at": "2025-10-07T16:06:44.907581",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:06:44.907583"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:06:44.908530"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:07:11.998159"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:07:12.026649"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '2025100723072177a5f57fa84a451d'}",
+  "status": "failed"
+}

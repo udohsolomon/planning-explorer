@@ -1,0 +1,30 @@
+{
+  "authority_id": "conwy",
+  "authority_name": "Conwy",
+  "url_slug": "conwy",
+  "generated_at": "2025-10-07T16:15:03.780930",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:15:03.780938"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:15:03.781828"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:16:02.357881"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:16:02.386102"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '2025100723161144828c3acd9247b4'}",
+  "status": "failed"
+}

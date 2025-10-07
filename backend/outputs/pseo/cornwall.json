@@ -1,0 +1,45 @@
+{
+  "authority_id": "cornwall",
+  "authority_name": "Cornwall",
+  "url_slug": "cornwall",
+  "generated_at": "2025-10-07T04:48:47.792197",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T04:48:47.792204"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T04:48:47.792353"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T04:49:02.030215"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T04:49:02.075455"
+    },
+    {
+      "step": 5,
+      "action": "SEO optimization",
+      "timestamp": "2025-10-07T04:51:33.175189"
+    },
+    {
+      "step": 6,
+      "action": "Page assembly",
+      "timestamp": "2025-10-07T04:51:33.175256"
+    },
+    {
+      "step": 7,
+      "action": "Save page",
+      "timestamp": "2025-10-07T04:51:33.175496"
+    }
+  ],
+  "error": "'NoneType' object has no attribute 'index'",
+  "status": "failed"
+}

@@ -28,32 +28,7 @@ function formatYoY(percent: number): string {
 }
 
 export function PlanningStatsBar() {
-  const [stats, setStats] = useState<StatItem[]>([
-    {
-      value: '+336K',
-      line1: 'Planning Applications Received',
-      line2: '',
-      subtext: '(Year to Sept \'25) ↓ 9% YoY'
-    },
-    {
-      value: '+321K',
-      line1: 'Planning Application Decisions',
-      line2: '',
-      subtext: 'Made 321,400 ↓ 9% YoY'
-    },
-    {
-      value: '+69K',
-      line1: 'Planning Permission Granted',
-      line2: '',
-      subtext: '69,200 - 87% granted'
-    },
-    {
-      value: '+239K',
-      line1: 'New Housing Units with Planning',
-      line2: '',
-      subtext: 'Permission 239,000 ↓ 6% YoY'
-    }
-  ])
+  const [stats, setStats] = useState<StatItem[]>([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -93,7 +68,8 @@ export function PlanningStatsBar() {
         }
       } catch (error) {
         console.error('Failed to fetch planning stats:', error)
-        // Keep default values on error
+        // Set empty stats on error to avoid showing stale data
+        setStats([])
       } finally {
         setLoading(false)
       }
@@ -101,6 +77,31 @@ export function PlanningStatsBar() {
 
     fetchStats()
   }, [])
+
+  if (loading) {
+    return (
+      <div className="bg-gradient-to-r from-[#065940] via-[#087952] to-[#0A9963] py-8 relative z-10">
+        <Container>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[1, 2, 3, 4].map((i) => (
+              <div key={i} className="text-center">
+                <div className="text-5xl lg:text-6xl font-bold text-white mb-2 animate-pulse">
+                  ---
+                </div>
+                <div className="text-sm lg:text-base font-semibold text-white mb-1 leading-tight animate-pulse">
+                  Loading...
+                </div>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </div>
+    )
+  }
+
+  if (stats.length === 0) {
+    return null // Don't show anything if no stats available
+  }
 
   return (
     <div className="bg-gradient-to-r from-[#065940] via-[#087952] to-[#0A9963] py-8 relative z-10">
@@ -113,7 +114,7 @@ export function PlanningStatsBar() {
                 className="text-center"
               >
                 {/* Large Value */}
-                <div className={`text-5xl lg:text-6xl font-bold text-white mb-2 ${loading ? 'animate-pulse' : ''}`}>
+                <div className="text-5xl lg:text-6xl font-bold text-white mb-2">
                   {stat.value}
                 </div>
 

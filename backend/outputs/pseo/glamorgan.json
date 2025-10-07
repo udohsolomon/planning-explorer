@@ -1,0 +1,30 @@
+{
+  "authority_id": "glamorgan",
+  "authority_name": "Glamorgan",
+  "url_slug": "glamorgan",
+  "generated_at": "2025-10-07T16:06:44.907481",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:06:44.907482"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:06:44.908493"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:07:04.706055"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:07:04.732972"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007230710ea8729efb09842bc'}",
+  "status": "failed"
+}

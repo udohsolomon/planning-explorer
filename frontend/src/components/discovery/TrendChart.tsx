@@ -88,6 +88,99 @@ export function TrendChart({
     }
   }
 
+  // Validate that we have the necessary data
+  const hasValidData = data && data.length > 0
+  const hasValidYAxis = type !== 'line' && type !== 'bar' || (dataKeys.yAxis && dataKeys.yAxis.length > 0)
+
+  const renderChart = () => {
+    // Validation checks moved outside ResponsiveContainer
+    if (!hasValidData) {
+      return (
+        <div className="flex items-center justify-center" style={{ height }}>
+          <p className="text-gray-500 text-sm">No data available</p>
+        </div>
+      )
+    }
+
+    if ((type === 'line' || type === 'bar') && !hasValidYAxis) {
+      return (
+        <div className="flex items-center justify-center" style={{ height }}>
+          <p className="text-gray-500 text-sm">Invalid chart configuration</p>
+        </div>
+      )
+    }
+
+    // ResponsiveContainer wraps valid charts
+    return (
+      <ResponsiveContainer width="100%" height={height}>
+        {type === 'line' ? (
+          <LineChart data={data}>
+            <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
+            <XAxis
+              dataKey={dataKeys.xAxis || 'name'}
+              stroke="#666"
+              tick={{ fill: '#666', fontSize: 12 }}
+            />
+            <YAxis stroke="#666" tick={{ fill: '#666', fontSize: 12 }} />
+            <Tooltip content={<CustomTooltip />} />
+            <Legend />
+            {dataKeys.yAxis?.map((key, index) => (
+              <Line
+                key={key}
+                type="monotone"
+                dataKey={key}
+                stroke={colors[index % colors.length]}
+                strokeWidth={2}
+                name={formatLabel(key)}
+              />
+            ))}
+          </LineChart>
+        ) : type === 'bar' ? (
+          <BarChart data={data}>
+            <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
+            <XAxis
+              dataKey={dataKeys.xAxis || 'name'}
+              stroke="#666"
+              tick={{ fill: '#666', fontSize: 12 }}
+            />
+            <YAxis stroke="#666" tick={{ fill: '#666', fontSize: 12 }} />
+            <Tooltip content={<CustomTooltip />} />
+            <Legend />
+            {dataKeys.yAxis?.map((key, index) => (
+              <Bar
+                key={key}
+                dataKey={key}
+                fill={colors[index % colors.length]}
+                name={formatLabel(key)}
+              />
+            ))}
+          </BarChart>
+        ) : type === 'pie' ? (
+          <PieChart>
+            <Pie
+              data={data}
+              cx="50%"
+              cy="50%"
+              labelLine={false}
+              label={({ name, percent }: any) => `${name} (${(percent * 100).toFixed(0)}%)`}
+              outerRadius={120}
+              fill="#8884d8"
+              dataKey={dataKeys.valueKey || 'value'}
+              nameKey={dataKeys.nameKey || 'name'}
+            >
+              {data.map((entry, index) => (
+                <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />
+              ))}
+            </Pie>
+            <Tooltip content={<CustomTooltip />} />
+          </PieChart>
+        ) : (
+          <></>
+        )}
+      </ResponsiveContainer>
+    )
+  }
+
   return (
     <Card className={className}>
       <CardHeader>
@@ -105,76 +198,7 @@ export function TrendChart({
         </div>
       </CardHeader>
       <CardContent>
-        {children || (
-          <ResponsiveContainer width="100%" height={height}>
-            {type === 'line' && (
-              <LineChart data={data}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
-                <XAxis
-                  dataKey={dataKeys.xAxis || 'name'}
-                  stroke="#666"
-                  tick={{ fill: '#666', fontSize: 12 }}
-                />
-                <YAxis stroke="#666" tick={{ fill: '#666', fontSize: 12 }} />
-                <Tooltip content={<CustomTooltip />} />
-                <Legend />
-                {dataKeys.yAxis?.map((key, index) => (
-                  <Line
-                    key={key}
-                    type="monotone"
-                    dataKey={key}
-                    stroke={colors[index % colors.length]}
-                    strokeWidth={2}
-                    name={formatLabel(key)}
-                  />
-                ))}
-              </LineChart>
-            )}
-
-            {type === 'bar' && (
-              <BarChart data={data}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
-                <XAxis
-                  dataKey={dataKeys.xAxis || 'name'}
-                  stroke="#666"
-                  tick={{ fill: '#666', fontSize: 12 }}
-                />
-                <YAxis stroke="#666" tick={{ fill: '#666', fontSize: 12 }} />
-                <Tooltip content={<CustomTooltip />} />
-                <Legend />
-                {dataKeys.yAxis?.map((key, index) => (
-                  <Bar
-                    key={key}
-                    dataKey={key}
-                    fill={colors[index % colors.length]}
-                    name={formatLabel(key)}
-                  />
-                ))}
-              </BarChart>
-            )}
-
-            {type === 'pie' && (
-              <PieChart>
-                <Pie
-                  data={data}
-                  cx="50%"
-                  cy="50%"
-                  labelLine={false}
-                  label={({ name, percent }: any) => `${name} (${(percent * 100).toFixed(0)}%)`}
-                  outerRadius={120}
-                  fill="#8884d8"
-                  dataKey={dataKeys.valueKey || 'value'}
-                  nameKey={dataKeys.nameKey || 'name'}
-                >
-                  {data.map((entry, index) => (
-                    <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />
-                  ))}
-                </Pie>
-                <Tooltip content={<CustomTooltip />} />
-              </PieChart>
-            )}
-          </ResponsiveContainer>
-        )}
+        {children || renderChart()}
       </CardContent>
     </Card>
   )

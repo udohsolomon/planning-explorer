@@ -45,6 +45,17 @@ class Settings(BaseSettings):
     openai_api_key: Optional[str] = Field(default=None, alias="OPENAI_API_KEY")
     anthropic_api_key: Optional[str] = Field(default=None, alias="ANTHROPIC_API_KEY")
 
+    # pSEO Configuration
+    context7_api_key: Optional[str] = Field(default=None, alias="CONTEXT7_API_KEY")
+    firecrawl_api_key: Optional[str] = Field(default=None, alias="FIRECRAWL_API_KEY")
+    anthropic_base_url: Optional[str] = Field(default=None, alias="ANTHROPIC_BASE_URL")
+    anthropic_auth_token: Optional[str] = Field(default=None, alias="ANTHROPIC_AUTH_TOKEN")
+    pseo_max_concurrent: int = Field(default=3, alias="PSEO_MAX_CONCURRENT")
+    pseo_batch_size: int = Field(default=10, alias="PSEO_BATCH_SIZE")
+    pseo_output_dir: str = Field(default="./outputs/pseo", alias="PSEO_OUTPUT_DIR")
+    pseo_min_word_count: int = Field(default=2500, alias="PSEO_MIN_WORD_COUNT")
+    pseo_max_word_count: int = Field(default=3500, alias="PSEO_MAX_WORD_COUNT")
+
     # Performance Configuration
     max_connections: int = 100
     request_timeout: int = 30

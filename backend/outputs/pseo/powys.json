@@ -1,0 +1,30 @@
+{
+  "authority_id": "powys",
+  "authority_name": "Powys",
+  "url_slug": "powys",
+  "generated_at": "2025-10-07T16:02:29.423603",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:02:29.423605"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:02:29.532282"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:03:09.310250"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:03:09.342040"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007230317fb578e1cb3684531'}",
+  "status": "failed"
+}

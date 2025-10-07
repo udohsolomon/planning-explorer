@@ -1,0 +1,30 @@
+{
+  "authority_id": "west-dunbarton",
+  "authority_name": "West Dunbarton",
+  "url_slug": "west-dunbarton",
+  "generated_at": "2025-10-07T16:23:11.498906",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:23:11.498911"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:23:11.499235"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:23:56.631574"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:23:56.659870"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '2025100723240565c60743844e42d2'}",
+  "status": "failed"
+}

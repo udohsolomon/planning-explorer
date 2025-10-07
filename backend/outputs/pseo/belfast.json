@@ -1,0 +1,30 @@
+{
+  "authority_id": "belfast",
+  "authority_name": "Belfast",
+  "url_slug": "belfast",
+  "generated_at": "2025-10-07T15:56:19.177601",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T15:56:19.177606"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T15:56:19.177770"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T15:56:19.177821"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T15:56:19.207684"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '2025100722562826d9e93c76564cf1'}",
+  "status": "failed"
+}

@@ -1,0 +1,30 @@
+{
+  "authority_id": "ribble-valley",
+  "authority_name": "Ribble Valley",
+  "url_slug": "ribble-valley",
+  "generated_at": "2025-10-07T15:49:38.120628",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T15:49:38.120629"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T15:49:38.131592"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T15:50:10.961126"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T15:50:10.993510"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007225018e2e6e05ff6134a33'}",
+  "status": "failed"
+}

@@ -1,0 +1,30 @@
+{
+  "authority_id": "slough",
+  "authority_name": "Slough",
+  "url_slug": "slough",
+  "generated_at": "2025-10-07T16:05:08.979086",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:05:08.979088"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:05:19.170840"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:06:18.431132"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:06:18.453618"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '2025100723062605c35b9bd9084732'}",
+  "status": "failed"
+}

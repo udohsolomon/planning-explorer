@@ -1,0 +1,30 @@
+{
+  "authority_id": "newry-mourne-down",
+  "authority_name": "Newry Mourne Down",
+  "url_slug": "newry-mourne-down",
+  "generated_at": "2025-10-07T16:03:40.141796",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:03:40.141798"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:03:40.142260"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:04:20.509242"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:04:20.534470"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '2025100723042703815541f9fb4a86'}",
+  "status": "failed"
+}

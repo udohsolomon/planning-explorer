@@ -1,0 +1,30 @@
+{
+  "authority_id": "mid-east-antrim",
+  "authority_name": "Mid East Antrim",
+  "url_slug": "mid-east-antrim",
+  "generated_at": "2025-10-07T16:17:04.067962",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:17:04.067965"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:17:04.072863"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:17:29.851150"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:17:29.882383"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007231735e03d66799d304e3a'}",
+  "status": "failed"
+}

@@ -224,6 +224,7 @@ class PlanningApplication(BaseModel):
     postcode: Optional[str] = Field(None, description="Site postcode")
     location: Optional[GeoPoint] = Field(None, description="Geographic coordinates")
     ward: Optional[str] = Field(None, description="Electoral ward")
+    ward_name: Optional[str] = Field(None, description="Ward name from other_fields")
     parish: Optional[str] = Field(None, description="Parish")
 
     # Status and dates
@@ -236,7 +237,9 @@ class PlanningApplication(BaseModel):
     consultation_end_date: Optional[datetime] = Field(None, description="Consultation end")
     target_decision_date: Optional[datetime] = Field(None, description="Target decision date")
     decision_date: Optional[datetime] = Field(None, description="Actual decision date")
+    decided_date: Optional[datetime] = Field(None, description="Decided date from other_fields")
     appeal_date: Optional[datetime] = Field(None, description="Appeal date")
+    n_statutory_days: Optional[int] = Field(None, description="Number of statutory days")
 
     # Development details
     development_type: Optional[DevelopmentType] = Field(None, description="Type of development")
@@ -260,8 +263,15 @@ class PlanningApplication(BaseModel):
     planning_officer: Optional[str] = Field(None, description="Planning officer")
     committee_date: Optional[datetime] = Field(None, description="Committee date")
 
+    # URLs (for enrichment)
+    url: Optional[str] = Field(None, description="Planning portal application URL")
+    link: Optional[str] = Field(None, description="Alternative link/URL")
+    source_url: Optional[str] = Field(None, description="Source portal URL")
+    docs_url: Optional[str] = Field(None, description="Documents URL from other_fields")
+
     # Documents and consultations
     documents: List[Document] = Field(default_factory=list, description="Application documents")
+    n_documents: Optional[int] = Field(None, description="Number of documents from other_fields")
     consultations: List[Consultation] = Field(default_factory=list, description="Consultation responses")
     public_comments: Optional[PublicComments] = Field(None, description="Public comment statistics")
 
@@ -413,6 +423,9 @@ class PlanningApplicationSummary(BaseModel):
     lng: Optional[float] = Field(None, description="Longitude from other_fields")
     map_url: Optional[str] = Field(None, description="Map URL")
     n_documents: Optional[int] = Field(None, description="Number of documents")
+    n_statutory_days: Optional[int] = Field(None, description="Number of statutory days")
+    docs_url: Optional[str] = Field(None, description="Documents URL")
+    ward_name: Optional[str] = Field(None, description="Ward name")
     source_url: Optional[str] = Field(None, description="Source portal URL")
     status_other_fields: Optional[str] = Field(None, description="Status from other_fields")
 

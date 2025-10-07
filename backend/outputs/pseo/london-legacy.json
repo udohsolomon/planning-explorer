@@ -1,0 +1,30 @@
+{
+  "authority_id": "london-legacy",
+  "authority_name": "London Legacy",
+  "url_slug": "london-legacy",
+  "generated_at": "2025-10-07T16:22:50.706968",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:22:50.706975"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:22:50.707200"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:23:12.076262"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:23:12.103256"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007232320c4b2395958804957'}",
+  "status": "failed"
+}

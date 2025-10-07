@@ -1,0 +1,30 @@
+{
+  "authority_id": "copeland",
+  "authority_name": "Copeland",
+  "url_slug": "copeland",
+  "generated_at": "2025-10-07T16:15:54.316267",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:15:54.316291"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:15:54.338938"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:16:34.867646"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:16:34.888733"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007231642c7aacaf8a1774c68'}",
+  "status": "failed"
+}

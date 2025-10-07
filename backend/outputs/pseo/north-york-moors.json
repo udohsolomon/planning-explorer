@@ -1,0 +1,30 @@
+{
+  "authority_id": "north-york-moors",
+  "authority_name": "North York Moors",
+  "url_slug": "north-york-moors",
+  "generated_at": "2025-10-07T16:18:40.128521",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:18:40.128523"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:18:40.137781"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:18:57.298037"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:18:57.368722"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072319052b3b5498a74f4cee'}",
+  "status": "failed"
+}

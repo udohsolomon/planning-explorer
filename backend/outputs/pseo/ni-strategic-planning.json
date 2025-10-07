@@ -1,0 +1,30 @@
+{
+  "authority_id": "ni-strategic-planning",
+  "authority_name": "NI Strategic Planning",
+  "url_slug": "ni-strategic-planning",
+  "generated_at": "2025-10-07T16:29:17.353150",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:29:17.353157"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:29:17.355442"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:29:24.573596"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:29:24.636791"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007232931832b2548717c4221'}",
+  "status": "failed"
+}

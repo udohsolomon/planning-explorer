@@ -1,0 +1,30 @@
+{
+  "authority_id": "hyndburn",
+  "authority_name": "Hyndburn",
+  "url_slug": "hyndburn",
+  "generated_at": "2025-10-07T16:09:54.296016",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:09:54.296017"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:10:02.442816"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:13:19.283846"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:13:19.306839"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072313251640bd55f0164a7d'}",
+  "status": "failed"
+}

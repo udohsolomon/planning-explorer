@@ -1,0 +1,30 @@
+{
+  "authority_id": "torbay",
+  "authority_name": "Torbay",
+  "url_slug": "torbay",
+  "generated_at": "2025-10-07T16:09:01.390235",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:09:01.390242"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:09:01.411207"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:09:42.421088"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:09:42.448391"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072309502a40300dca044319'}",
+  "status": "failed"
+}

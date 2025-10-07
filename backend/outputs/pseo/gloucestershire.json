@@ -1,0 +1,30 @@
+{
+  "authority_id": "gloucestershire",
+  "authority_name": "Gloucestershire",
+  "url_slug": "gloucestershire",
+  "generated_at": "2025-10-07T16:27:30.852926",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:27:30.852927"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:27:30.856219"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:27:54.610964"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:27:54.635805"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '2025100723280271401773b9884105'}",
+  "status": "failed"
+}

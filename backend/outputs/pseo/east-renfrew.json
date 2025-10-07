@@ -1,0 +1,30 @@
+{
+  "authority_id": "east-renfrew",
+  "authority_name": "East Renfrew",
+  "url_slug": "east-renfrew",
+  "generated_at": "2025-10-07T16:21:14.596866",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:21:14.596867"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:21:14.597508"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:21:29.855258"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:21:29.887722"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '2025100723213764e305d9333349d5'}",
+  "status": "failed"
+}

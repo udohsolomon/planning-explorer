@@ -16,7 +16,7 @@ const mission = [
   {
     icon: Lightbulb,
     title: 'Our Vision',
-    description: 'To become the UK's most trusted AI-powered planning intelligence platform, transforming how property professionals discover, analyze, and act on development opportunities.',
+    description: 'To become the UK\'s most trusted AI-powered planning intelligence platform, transforming how property professionals discover, analyze, and act on development opportunities.',
     color: 'bg-orange-50'
   },
   {

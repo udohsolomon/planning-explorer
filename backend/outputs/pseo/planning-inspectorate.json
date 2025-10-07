@@ -1,0 +1,30 @@
+{
+  "authority_id": "planning-inspectorate",
+  "authority_name": "Planning Inspectorate",
+  "url_slug": "planning-inspectorate",
+  "generated_at": "2025-10-07T16:29:17.355302",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:29:17.355305"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:29:17.355558"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:29:33.692971"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:29:33.720876"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '2025100723293900892ebadeb6410a'}",
+  "status": "failed"
+}

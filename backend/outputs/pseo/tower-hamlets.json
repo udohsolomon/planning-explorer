@@ -1,0 +1,30 @@
+{
+  "authority_id": "tower-hamlets",
+  "authority_name": "Tower Hamlets",
+  "url_slug": "tower-hamlets",
+  "generated_at": "2025-10-07T15:46:00.780694",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T15:46:00.780695"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T15:46:00.781767"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T15:46:00.781835"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T15:46:00.802821"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072246071e185bc4fe65489b'}",
+  "status": "failed"
+}

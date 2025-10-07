@@ -1,0 +1,30 @@
+{
+  "authority_id": "norwich",
+  "authority_name": "Norwich",
+  "url_slug": "norwich",
+  "generated_at": "2025-10-07T15:45:02.364411",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T15:45:02.364413"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T15:45:02.369272"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T15:45:02.369321"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T15:45:02.398606"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072245102e93198366154cbe'}",
+  "status": "failed"
+}

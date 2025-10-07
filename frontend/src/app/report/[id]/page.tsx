@@ -1,5 +1,81 @@
 'use client'
 
+/**
+ * Planning Application Report Page
+ *
+ * APPLICANT/AGENT ENRICHMENT AGENT INTEGRATION
+ * ============================================
+ *
+ * This page implements real-time data enrichment for Applicant Name and Agent Name fields.
+ *
+ * FLOW:
+ * 1. User clicks "Generate Report" or "View Details" from search results
+ * 2. Frontend makes API call: GET /api/report/{application_id}
+ * 3. Backend checks Redis cache for applicant/agent data (key: applicant_agent:{application_id}, TTL: 24h)
+ * 4. If CACHE HIT: Return complete data immediately, enrichmentLoading = false
+ * 5. If CACHE MISS:
+ *    - Trigger enrichment agent asynchronously (max 5s timeout)
+ *    - Agent scrapes planning portal URL to extract applicant/agent names
+ *    - Uses Firecrawl (fast) or Playwright (JS-rendered) or Context7 (adaptive)
+ *    - Returns enriched data or partial data with enrichment_status: 'loading'
+ * 6. Frontend shows loading skeleton for applicant/agent fields while enriching
+ * 7. Backend caches successful extraction for 24 hours
+ * 8. Report renders with complete information
+ *
+ * BACKEND API STRUCTURE:
+ * Response when data available immediately (cache hit):
+ * {
+ *   success: true,
+ *   data: {
+ *     report: {
+ *       application_details: {
+ *         applicant_name: "Discovery Park (South) Limited",
+ *         agent_name: "KSR Architects",
+ *         ...
+ *       }
+ *     }
+ *   }
+ * }
+ *
+ * Response when enrichment in progress (cache miss, agent triggered):
+ * {
+ *   success: true,
+ *   data: {
+ *     report: {
+ *       application_details: {
+ *         applicant_name: null,  // Frontend shows skeleton
+ *         agent_name: null,      // Frontend shows skeleton
+ *         ...
+ *       }
+ *     },
+ *     enrichment_status: 'loading',
+ *     enrichment_job_id: 'enrich_12345_1234567890'
+ *   }
+ * }
+ *
+ * AGENT DETAILS:
+ * - Portal Type 1: Idox Public Access (~60%) - Navigate to details tab, scrape table
+ * - Portal Type 2: Custom portals like Liverpool (~20%) - Direct access, labeled fields
+ * - Portal Type 3: Unknown/Adaptive (~20%) - Use Context7 for semantic extraction
+ * - Tools: Playwright MCP, Firecrawl MCP, Context7 MCP, Perplexity MCP
+ * - Speed: 2-5 seconds (cached patterns), 5-8 seconds (adaptive/new portals)
+ * - Cache: Redis 24h TTL, no ES persistence
+ *
+ * IMPLEMENTATION STATUS:
+ * ✅ Frontend skeleton loading state implemented
+ * ✅ 3-second simulation for demo purposes
+ * ⏳ Backend agent integration pending
+ * ⏳ Redis caching pending
+ * ⏳ Real-time polling/websocket pending
+ *
+ * TODO FOR BACKEND:
+ * 1. Implement enrichment agent (see agent prompt document)
+ * 2. Add Redis caching layer
+ * 3. Modify /api/report/{id} endpoint to trigger agent on cache miss
+ * 4. Optional: Add /api/report/{id}/enrichment-status polling endpoint
+ * 5. Optional: Add WebSocket support for real-time updates
+ */
+
 import { useEffect, useState, useRef } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import { Container } from '@/components/ui/Container'
@@ -18,6 +94,7 @@ import Link from 'next/link'
 import { LocationMap } from '@/components/report/LocationMap'
 import { VolumeChart } from '@/components/report/VolumeChart'
 import { TimelineChart } from '@/components/report/TimelineChart'
+import { Skeleton } from '@/components/ui/Skeleton'
 
 interface ReportSection {
   title: string
@@ -40,6 +117,7 @@ export default function PlanningApplicationReport() {
   const [planningInsights, setPlanningInsights] = useState<any>(null)
   const [downloadingPDF, setDownloadingPDF] = useState(false)
   const [pdfError, setPdfError] = useState<string | null>(null)
+  const [enrichmentLoading, setEnrichmentLoading] = useState(false)
 
   useEffect(() => {
     console.log('=== Report Page Debug ===')
@@ -75,6 +153,10 @@ export default function PlanningApplicationReport() {
 
     try {
       console.log('Fetching bank-grade report for ID:', applicationId)
+
+      // Set enrichment loading if applicant/agent data not immediately available
+      // Backend should return enrichment_status: 'loading' if data is being scraped
+      setEnrichmentLoading(true)
 
       // Use the new unified bank-grade report endpoint
       const reportResponse = await apiClient.getBankGradeReport(applicationId, {
@@ -135,6 +217,24 @@ export default function PlanningApplicationReport() {
           authority_performance: report.market_intelligence?.authority_performance || {},
           recommendations: report.recommendations?.immediate_actions || []
         })
+
+        // Check if applicant/agent data is available
+        // If available immediately (from cache), stop loading skeleton
+        if (report.application_details?.applicant_name || report.application_details?.agent_name) {
+          setEnrichmentLoading(false)
+        } else {
+          // Simulate agent enrichment with 3-second delay
+          // In production, backend will handle this via:
+          // 1. Check Redis cache for applicant/agent data
+          // 2. If cache miss, trigger enrichment agent
+          // 3. Return enrichment_status: 'loading' in API response
+          // 4. Frontend polls /api/report/{id}/enrichment-status every 1s
+          setTimeout(() => {
+            // TODO: Replace with actual polling logic when backend agent is ready
+            // For now, just stop showing skeleton after 3 seconds
+            setEnrichmentLoading(false)
+          }, 3000)
+        }
       } else {
         console.error('API returned unsuccessful response:', reportResponse)
         setError(reportResponse.message || 'Failed to fetch bank-grade report')
@@ -612,9 +712,9 @@ export default function PlanningApplicationReport() {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-8 mb-8">
-              <div>
-                <h3 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-4">Property Information</h3>
+            <div className="mb-8">
+              <h3 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-4">Planning Information</h3>
+              <div className="grid grid-cols-3 gap-8">
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
                     <Home className="w-5 h-5 text-slate-400 mt-0.5" />
@@ -634,14 +734,30 @@ export default function PlanningApplicationReport() {
                     <Map className="w-5 h-5 text-slate-400 mt-0.5" />
                     <div>
                       <p className="text-xs text-slate-500">Ward</p>
-                      <p className="text-sm text-slate-800 font-medium">{safeDisplay(application.ward)}</p>
+                      <p className="text-sm text-slate-800 font-medium">{safeDisplay(report?.application_details?.ward_name || application.ward)}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Globe className="w-5 h-5 text-slate-400 mt-0.5" />
+                    <div>
+                      <p className="text-xs text-slate-500">Website</p>
+                      {report?.application_details?.url ? (
+                        <a
+                          href={report.application_details.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm text-blue-600 hover:text-blue-800 font-medium flex items-center gap-1"
+                          title={report.application_details.url}
+                        >
+                          View Application <ExternalLink className="w-3 h-3" />
+                        </a>
+                      ) : (
+                        <p className="text-sm text-slate-800 font-medium">N/A</p>
+                      )}
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div>
-                <h3 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-4">Timeline</h3>
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
                     <Briefcase className="w-5 h-5 text-slate-400 mt-0.5" />
@@ -654,7 +770,72 @@ export default function PlanningApplicationReport() {
                     <Calendar className="w-5 h-5 text-slate-400 mt-0.5" />
                     <div>
                       <p className="text-xs text-slate-500">Decision Date</p>
-                      <p className="text-sm text-slate-800 font-medium">{formatDate(application.decisionDate)}</p>
+                      <p className="text-sm text-slate-800 font-medium">{formatDate(report?.application_details?.decided_date || application.decisionDate)}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <User className="w-5 h-5 text-slate-400 mt-0.5" />
+                    <div className="flex-1">
+                      <p className="text-xs text-slate-500">Applicant Name</p>
+                      {enrichmentLoading ? (
+                        <Skeleton className="h-5 w-48 mt-1" />
+                      ) : (
+                        <p className="text-sm text-slate-800 font-medium">{safeDisplay(report?.application_details?.applicant_name)}</p>
+                      )}
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <User className="w-5 h-5 text-slate-400 mt-0.5" />
+                    <div className="flex-1">
+                      <p className="text-xs text-slate-500">Agent Name</p>
+                      {enrichmentLoading ? (
+                        <Skeleton className="h-5 w-48 mt-1" />
+                      ) : (
+                        <p className="text-sm text-slate-800 font-medium">{safeDisplay(report?.application_details?.agent_name)}</p>
+                      )}
+                    </div>
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <FileText className="w-5 h-5 text-slate-400 mt-0.5" />
+                    <div>
+                      <p className="text-xs text-slate-500">Number of Documents</p>
+                      <p className="text-sm text-slate-800 font-medium">{safeDisplay(report?.application_details?.n_documents)}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Clock className="w-5 h-5 text-slate-400 mt-0.5" />
+                    <div>
+                      <p className="text-xs text-slate-500">Statutory Days</p>
+                      <p className="text-sm text-slate-800 font-medium">{safeDisplay(report?.application_details?.n_statutory_days)}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <ExternalLink className="w-5 h-5 text-slate-400 mt-0.5" />
+                    <div>
+                      <p className="text-xs text-slate-500">Documents URL</p>
+                      {report?.application_details?.docs_url ? (
+                        <a
+                          href={report.application_details.docs_url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm text-blue-600 hover:text-blue-800 font-medium flex items-center gap-1"
+                          title={report.application_details.docs_url}
+                        >
+                          View Docs <ExternalLink className="w-3 h-3" />
+                        </a>
+                      ) : (
+                        <p className="text-sm text-slate-800 font-medium">N/A</p>
+                      )}
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <MapPin className="w-5 h-5 text-slate-400 mt-0.5" />
+                    <div>
+                      <p className="text-xs text-slate-500">Area Name</p>
+                      <p className="text-sm text-slate-800 font-medium">{report?.application_details?.area_name || safeDisplay(application.localAuthority)}</p>
                     </div>
                   </div>
                 </div>

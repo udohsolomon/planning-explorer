@@ -16,6 +16,7 @@ from app.middleware.rate_limit import setup_rate_limiting
 from app.middleware.performance import setup_performance_middleware
 from app.api.v1.api import api_router
 from app.api.endpoints.monitoring import router as monitoring_router
+from app.services.cache_service import init_cache_service, shutdown_cache_service
 
 
 # Configure logging first
@@ -31,6 +32,10 @@ async def lifespan(app: FastAPI):
         app.state.ai_initialization = initialization_results
         app.state.startup_manager = startup_manager
 
+        # Initialize Redis cache service for enrichment
+        redis_url = getattr(settings, 'redis_url', 'redis://localhost:6379/0')
+        await init_cache_service(redis_url)
+
         # Warm cache for Content Discovery stats
         from app.services.cache_warmer import warm_cache_on_startup
         await warm_cache_on_startup()
@@ -38,8 +43,9 @@ async def lifespan(app: FastAPI):
         try:
             yield
         finally:
-            # Shutdown AI services
+            # Shutdown services
             await startup_manager.shutdown_all()
+            await shutdown_cache_service()
 
 
 # Create FastAPI application

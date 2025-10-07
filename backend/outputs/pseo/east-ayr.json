@@ -1,0 +1,30 @@
+{
+  "authority_id": "east-ayr",
+  "authority_name": "East Ayr",
+  "url_slug": "east-ayr",
+  "generated_at": "2025-10-07T16:18:11.101473",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:18:11.101476"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:18:11.102790"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:18:14.957811"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:18:15.013446"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007231823a16032b400f64955'}",
+  "status": "failed"
+}

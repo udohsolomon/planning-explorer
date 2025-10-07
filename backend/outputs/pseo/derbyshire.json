@@ -1,0 +1,30 @@
+{
+  "authority_id": "derbyshire",
+  "authority_name": "Derbyshire",
+  "url_slug": "derbyshire",
+  "generated_at": "2025-10-07T16:28:13.941574",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:28:13.941580"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:28:13.959273"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:28:24.413066"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:28:24.433772"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '2025100723283218b2703cc440471e'}",
+  "status": "failed"
+}

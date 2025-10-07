@@ -1,0 +1,30 @@
+{
+  "authority_id": "rugby",
+  "authority_name": "Rugby",
+  "url_slug": "rugby",
+  "generated_at": "2025-10-07T15:48:21.687604",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T15:48:21.687607"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T15:48:21.702802"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T15:49:12.264138"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T15:49:12.289146"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007224918075e18ce7c6f4f81'}",
+  "status": "failed"
+}

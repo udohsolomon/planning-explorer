@@ -1,0 +1,30 @@
+{
+  "authority_id": "derry-and-strabane",
+  "authority_name": "Derry and Strabane",
+  "url_slug": "derry-and-strabane",
+  "generated_at": "2025-10-07T16:16:45.647524",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:16:45.647526"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:16:45.648337"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:16:57.474012"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:16:57.501449"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007231704e3701f6db9314693'}",
+  "status": "failed"
+}

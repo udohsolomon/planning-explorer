@@ -1,0 +1,30 @@
+{
+  "authority_id": "north-somerset",
+  "authority_name": "North Somerset",
+  "url_slug": "north-somerset",
+  "generated_at": "2025-10-07T15:42:03.812991",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T15:42:03.812997"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T15:42:03.813627"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T15:43:27.193559"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T15:43:27.222096"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007224334c5fce934e5894991'}",
+  "status": "failed"
+}

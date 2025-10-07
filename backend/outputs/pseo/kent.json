@@ -1,0 +1,30 @@
+{
+  "authority_id": "kent",
+  "authority_name": "Kent",
+  "url_slug": "kent",
+  "generated_at": "2025-10-07T16:25:58.129563",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:25:58.129564"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:25:58.130121"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:27:21.390463"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:27:21.419446"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '2025100723272870f4726bc4aa45e6'}",
+  "status": "failed"
+}

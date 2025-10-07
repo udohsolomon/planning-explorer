@@ -1,0 +1,30 @@
+{
+  "authority_id": "watford",
+  "authority_name": "Watford",
+  "url_slug": "watford",
+  "generated_at": "2025-10-07T15:47:37.770439",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T15:47:37.770440"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T15:47:37.770690"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T15:48:21.799292"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T15:48:21.824593"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072248319d2278e609f744f6'}",
+  "status": "failed"
+}

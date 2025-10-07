@@ -1,0 +1,30 @@
+{
+  "authority_id": "leicestershire",
+  "authority_name": "Leicestershire",
+  "url_slug": "leicestershire",
+  "generated_at": "2025-10-07T16:24:55.742140",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:24:55.742145"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:24:55.742646"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:25:37.678290"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:25:37.700473"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072325455d890025f2434386'}",
+  "status": "failed"
+}

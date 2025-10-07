@@ -101,25 +101,38 @@ export interface StructuredDataProps {
   schema: SchemaInput | SchemaInput[]
 }
 
-export function StructuredData({ schema }: StructuredDataProps): ReactElement {
+export function StructuredData({ schema }: StructuredDataProps): ReactElement | null {
+  // Handle null/undefined schema
+  if (!schema) {
+    return null
+  }
+
   const schemas = Array.isArray(schema) ? schema : [schema]
 
-  const jsonLdObjects = schemas.map((s) => {
-    switch (s.type) {
-      case 'GovernmentOrganization':
-        return buildGovernmentOrganization(s)
-      case 'Place':
-        return buildPlace(s)
-      case 'Dataset':
-        return buildDataset(s)
-      case 'Article':
-        return buildArticle(s)
-      case 'BreadcrumbList':
-        return buildBreadcrumb(s)
-      default:
-        return null
-    }
-  }).filter(Boolean)
+  const jsonLdObjects = schemas
+    .filter((s) => s && s.type) // Filter out undefined/null schemas
+    .map((s) => {
+      switch (s.type) {
+        case 'GovernmentOrganization':
+          return buildGovernmentOrganization(s)
+        case 'Place':
+          return buildPlace(s)
+        case 'Dataset':
+          return buildDataset(s)
+        case 'Article':
+          return buildArticle(s)
+        case 'BreadcrumbList':
+          return buildBreadcrumb(s)
+        default:
+          return null
+      }
+    })
+    .filter(Boolean)
+
+  // If no valid schemas, return null
+  if (jsonLdObjects.length === 0) {
+    return null
+  }
 
   return (
     <>

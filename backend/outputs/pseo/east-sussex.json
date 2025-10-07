@@ -1,0 +1,30 @@
+{
+  "authority_id": "east-sussex",
+  "authority_name": "East Sussex",
+  "url_slug": "east-sussex",
+  "generated_at": "2025-10-07T16:28:01.945406",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:28:01.945408"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:28:01.946023"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:28:14.671465"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:28:14.710353"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '2025100723282184ddc96bc6af4bb1'}",
+  "status": "failed"
+}

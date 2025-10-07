@@ -1,0 +1,30 @@
+{
+  "authority_id": "tameside",
+  "authority_name": "Tameside",
+  "url_slug": "tameside",
+  "generated_at": "2025-10-07T16:09:54.288677",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:09:54.288683"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:09:54.296348"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:09:54.296417"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:09:54.322281"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007231001479a85d70cee442d'}",
+  "status": "failed"
+}

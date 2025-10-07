@@ -133,7 +133,7 @@ const hiringProcess = [
   {
     step: '1',
     title: 'Apply',
-    description: 'Submit your CV and cover letter. Tell us why you're excited about Planning Explorer.',
+    description: 'Submit your CV and cover letter. Tell us why you\'re excited about Planning Explorer.',
     color: 'bg-cyan-50'
   },
   {
@@ -157,7 +157,7 @@ const hiringProcess = [
   {
     step: '5',
     title: 'Offer',
-    description: 'Receive your offer! We'll discuss compensation, start date, and answer any questions.',
+    description: 'Receive your offer! We\'ll discuss compensation, start date, and answer any questions.',
     color: 'bg-yellow-50'
   }
 ]

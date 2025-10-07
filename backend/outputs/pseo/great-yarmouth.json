@@ -1,0 +1,30 @@
+{
+  "authority_id": "great-yarmouth",
+  "authority_name": "Great Yarmouth",
+  "url_slug": "great-yarmouth",
+  "generated_at": "2025-10-07T16:04:20.474204",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:04:20.474209"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:04:20.476698"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:04:50.045410"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:04:50.131866"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007230456f5f66370faaf46e7'}",
+  "status": "failed"
+}

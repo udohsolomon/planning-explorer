@@ -1,0 +1,30 @@
+{
+  "authority_id": "westminster",
+  "authority_name": "Westminster",
+  "url_slug": "westminster",
+  "generated_at": "2025-10-07T04:53:07.336500",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T04:53:07.336505"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T04:53:07.336608"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T04:53:07.336675"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T04:53:07.363660"
+    }
+  ],
+  "error": "Error code: 400 - {'type': 'error', 'error': {'type': '1301', 'message': 'System detected potentially unsafe or sensitive content in input or generation. Please avoid using prompts that may generate sensitive content. Thank you for your cooperation.'}, 'request_id': '20251007115330a94a219a2811492d'}",
+  "status": "failed"
+}

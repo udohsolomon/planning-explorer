@@ -1,0 +1,30 @@
+{
+  "authority_id": "barnsley",
+  "authority_name": "Barnsley",
+  "url_slug": "barnsley",
+  "generated_at": "2025-10-07T16:14:15.276918",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:14:15.276922"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:14:15.277868"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:14:52.239363"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:14:52.266617"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '2025100723145988f9727743da438d'}",
+  "status": "failed"
+}

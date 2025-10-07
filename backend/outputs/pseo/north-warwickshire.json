@@ -1,0 +1,30 @@
+{
+  "authority_id": "north-warwickshire",
+  "authority_name": "North Warwickshire",
+  "url_slug": "north-warwickshire",
+  "generated_at": "2025-10-07T16:04:04.707453",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:04:04.707456"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:04:04.707821"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:04:39.290789"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:04:39.330932"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072304457f61edecdfbb44c8'}",
+  "status": "failed"
+}

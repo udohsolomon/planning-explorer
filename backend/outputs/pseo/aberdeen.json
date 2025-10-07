@@ -1,0 +1,30 @@
+{
+  "authority_id": "aberdeen",
+  "authority_name": "Aberdeen",
+  "url_slug": "aberdeen",
+  "generated_at": "2025-10-07T16:05:08.979124",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:05:08.979126"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:05:19.170917"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:05:27.979687"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:05:28.006789"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '2025100723053570a9a73c57ac4779'}",
+  "status": "failed"
+}

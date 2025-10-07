@@ -939,6 +939,8 @@ class SearchService:
             parsed_date = self._parse_date(source.get('decided_date'))
             if parsed_date:
                 mapped_data['decided_date'] = parsed_date
+                mapped_data['decision_date'] = parsed_date  # Alias for compatibility
+                logger.debug(f"[MAP] Mapped decided_date: {parsed_date}")
 
         if source.get('consulted_date'):
             parsed_date = self._parse_date(source.get('consulted_date'))
@@ -1018,6 +1020,13 @@ class SearchService:
                 mapped_data['lng'] = other_fields.get('lng')
             if other_fields.get('n_documents') is not None:
                 mapped_data['n_documents'] = other_fields.get('n_documents')
+                logger.debug(f"[MAP] Mapped n_documents from other_fields: {other_fields.get('n_documents')}")
+            if other_fields.get('n_statutory_days') is not None:
+                mapped_data['n_statutory_days'] = other_fields.get('n_statutory_days')
+            if other_fields.get('ward_name'):
+                mapped_data['ward_name'] = other_fields.get('ward_name')
+            if other_fields.get('docs_url'):
+                mapped_data['docs_url'] = other_fields.get('docs_url')
 
             # ===== DECISION MAPPING FROM OTHER_FIELDS =====
             decision = other_fields.get('decision')

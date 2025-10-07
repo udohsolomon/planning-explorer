@@ -1,0 +1,30 @@
+{
+  "authority_id": "christchurch",
+  "authority_name": "Christchurch",
+  "url_slug": "christchurch",
+  "generated_at": "2025-10-07T16:16:45.647554",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:16:45.647554"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:16:45.648373"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:17:04.104673"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:17:04.150402"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072317116369dba023714025'}",
+  "status": "failed"
+}

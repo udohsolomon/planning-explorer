@@ -735,7 +735,7 @@ export function ProfessionalReportPDF({
           <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 10, paddingHorizontal: 5 }}>
             <View style={{ flex: 1 }}>
               <Text style={{ fontSize: 9, color: colors.lightText, marginBottom: 2 }}>Ward</Text>
-              <Text style={{ fontSize: 10, color: colors.text }}>{application.ward || 'N/A'}</Text>
+              <Text style={{ fontSize: 10, color: colors.text }}>{application.ward_name || application.ward || 'N/A'}</Text>
             </View>
             <View style={{ flex: 1 }}>
               <Text style={{ fontSize: 9, color: colors.lightText, marginBottom: 2 }}>Postcode</Text>
@@ -809,6 +809,71 @@ export function ProfessionalReportPDF({
                 <Text style={[styles.tableCell, { color: colors.success }]}>Final</Text>
               </View>
             )}
+          </View>
+
+          {/* Applicant and Agent Information */}
+          <View style={{ marginTop: 12, gap: 8 }}>
+            <View style={{ flexDirection: 'row', gap: 8 }}>
+              <Text style={{ fontSize: 10, color: colors.textLight, width: 100 }}>Applicant Name:</Text>
+              <Text style={{ fontSize: 10, color: colors.text, flex: 1, fontWeight: 600 }}>
+                {application.applicant_name || 'N/A'}
+              </Text>
+            </View>
+            <View style={{ flexDirection: 'row', gap: 8 }}>
+              <Text style={{ fontSize: 10, color: colors.textLight, width: 100 }}>Agent Name:</Text>
+              <Text style={{ fontSize: 10, color: colors.text, flex: 1, fontWeight: 600 }}>
+                {application.agent_name || 'N/A'}
+              </Text>
+            </View>
+          </View>
+        </View>
+
+        {/* Planning Details Section */}
+        <View style={styles.section}>
+          <Text style={styles.sectionTitle}>Planning Details</Text>
+          <View style={styles.card}>
+            <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 12 }}>
+              <View style={{ width: '48%' }}>
+                <Text style={{ fontSize: 9, color: colors.lightText, marginBottom: 4 }}>Ward</Text>
+                <Text style={{ fontSize: 10, color: colors.text, fontWeight: 600 }}>
+                  {application.ward_name || application.ward || 'N/A'}
+                </Text>
+              </View>
+              <View style={{ width: '48%' }}>
+                <Text style={{ fontSize: 9, color: colors.lightText, marginBottom: 4 }}>Decision Date</Text>
+                <Text style={{ fontSize: 10, color: colors.text, fontWeight: 600 }}>
+                  {application.decided_date ? formatDate(application.decided_date) : application.decisionDate ? formatDate(application.decisionDate) : 'N/A'}
+                </Text>
+              </View>
+              <View style={{ width: '48%' }}>
+                <Text style={{ fontSize: 9, color: colors.lightText, marginBottom: 4 }}>Number of Documents</Text>
+                <Text style={{ fontSize: 10, color: colors.text, fontWeight: 600 }}>
+                  {application.n_documents || 'N/A'}
+                </Text>
+              </View>
+              <View style={{ width: '48%' }}>
+                <Text style={{ fontSize: 9, color: colors.lightText, marginBottom: 4 }}>Statutory Days</Text>
+                <Text style={{ fontSize: 10, color: colors.text, fontWeight: 600 }}>
+                  {application.n_statutory_days || 'N/A'}
+                </Text>
+              </View>
+              {application.url && (
+                <View style={{ width: '48%' }}>
+                  <Text style={{ fontSize: 9, color: colors.lightText, marginBottom: 4 }}>Website</Text>
+                  <Link src={application.url} style={{ fontSize: 9, color: colors.info, textDecoration: 'underline' }}>
+                    View Application
+                  </Link>
+                </View>
+              )}
+              {application.docs_url && (
+                <View style={{ width: '48%' }}>
+                  <Text style={{ fontSize: 9, color: colors.lightText, marginBottom: 4 }}>Documents URL</Text>
+                  <Link src={application.docs_url} style={{ fontSize: 9, color: colors.info, textDecoration: 'underline' }}>
+                    View Documents
+                  </Link>
+                </View>
+              )}
+            </View>
           </View>
         </View>
 

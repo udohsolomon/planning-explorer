@@ -1,0 +1,30 @@
+{
+  "authority_id": "shepway",
+  "authority_name": "Shepway",
+  "url_slug": "shepway",
+  "generated_at": "2025-10-07T14:40:11.446653",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T14:40:11.446654"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T14:41:29.568547"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T14:55:17.732709"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T14:55:17.755606"
+    }
+  ],
+  "error": "Error code: 400 - {'type': 'error', 'error': {'type': '1301', 'message': 'System detected potentially unsafe or sensitive content in input or generation. Please avoid using prompts that may generate sensitive content. Thank you for your cooperation.'}, 'request_id': '20251007215546201c1b93e14442d7'}",
+  "status": "failed"
+}

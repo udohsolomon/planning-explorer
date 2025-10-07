@@ -1,0 +1,30 @@
+{
+  "authority_id": "shetlands",
+  "authority_name": "Shetlands",
+  "url_slug": "shetlands",
+  "generated_at": "2025-10-07T16:22:50.707067",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:22:50.707067"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:22:50.707337"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:22:54.205904"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:22:54.230761"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072323025d2d0fc5085a48e6'}",
+  "status": "failed"
+}

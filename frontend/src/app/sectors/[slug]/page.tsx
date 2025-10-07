@@ -717,7 +717,7 @@ export default function SectorDetailPage() {
                     {stats.top_authorities.slice(0, 5).map((auth) => (
                       <a
                         key={auth.authority_name}
-                        href={`/authorities/${auth.authority_name.toLowerCase().replace(/\s+/g, '-')}`}
+                        href={`/planning-applications/${auth.authority_name.toLowerCase().replace(/\s+/g, '-')}`}
                         className="flex items-center justify-between p-2 rounded hover:bg-gray-50 transition-colors group"
                       >
                         <div>

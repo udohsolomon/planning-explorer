@@ -1,0 +1,30 @@
+{
+  "authority_id": "renfrewshire",
+  "authority_name": "Renfrewshire",
+  "url_slug": "renfrewshire",
+  "generated_at": "2025-10-07T16:29:47.084414",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:29:47.084416"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:29:47.118263"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:30:22.271020"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:30:22.293693"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072330311a40d7e1bd5f4728'}",
+  "status": "failed"
+}

@@ -1,0 +1,30 @@
+{
+  "authority_id": "rochford",
+  "authority_name": "Rochford",
+  "url_slug": "rochford",
+  "generated_at": "2025-10-07T15:53:12.402177",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T15:53:12.402178"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T15:53:26.078388"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T15:54:27.589537"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T15:54:27.616807"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072254345801db049c314cee'}",
+  "status": "failed"
+}

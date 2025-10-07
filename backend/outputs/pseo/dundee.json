@@ -1,0 +1,30 @@
+{
+  "authority_id": "dundee",
+  "authority_name": "Dundee",
+  "url_slug": "dundee",
+  "generated_at": "2025-10-07T16:13:28.695785",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:13:28.695786"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:13:36.375171"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:13:40.126972"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:13:40.159080"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007231346f35dce4841494ce8'}",
+  "status": "failed"
+}

@@ -1,0 +1,259 @@
+{
+  "authority_id": "herefordshire",
+  "authority_name": "Herefordshire",
+  "url_slug": "herefordshire",
+  "generated_at": "2025-10-07T14:53:20.492515",
+  "seo": {
+    "meta_tags": {
+      "title": "Herefordshire Planning Applications - Live Data & Statistics | Planning Explorer",
+      "description": "Comprehensive planning data for Herefordshire. Track 0 applications, 0% approval rate, live statistics & insights. Updated daily.",
+      "canonical": "/planning-applications/herefordshire/",
+      "keywords": [
+        "Herefordshire planning applications",
+        "planning permission Herefordshire",
+        "Herefordshire development applications",
+        "Herefordshire planning data"
+      ]
+    },
+    "og_tags": {
+      "og:title": "Herefordshire Planning Applications - Live Data",
+      "og:description": "Track 0 planning applications with 0% approval rate",
+      "og:type": "website",
+      "og:locale": "en_GB"
+    },
+    "structured_data": {
+      "breadcrumb": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Planning Authorities",
+            "item": "/planning-applications/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Herefordshire",
+            "item": "/planning-applications/herefordshire/"
+          }
+        ]
+      },
+      "dataset": {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "Herefordshire Planning Applications Dataset",
+        "description": "Planning application data for Herefordshire",
+        "url": "/planning-applications/herefordshire/"
+      }
+    },
+    "internal_links": {
+      "regional_hub": "/planning-applications/regions/uk/",
+      "national_overview": "/planning-applications/uk-overview/",
+      "data_download": "/api/reports/custom?authority=herefordshire",
+      "semantic_search": "/search/"
+    }
+  },
+  "sections": {
+    "hero": {
+      "h1": "Herefordshire Planning Applications - Live Data & Insights",
+      "last_update": "October 07, 2025",
+      "metrics": {},
+      "local_context": "Welcome to Planning Explorer's definitive resource for **Herefordshire planning applications**, the UK's foremost AI-powered planning intelligence platform. This page provides an unparalleled, data-driven analysis of the development landscape within Herefordshire Council, the unitary authority gover..."
+    },
+    "introduction": {
+      "h2": "Planning Applications in Herefordshire: Complete Guide",
+      "content": "Welcome to Planning Explorer's definitive resource for **Herefordshire planning applications**, the UK's foremost AI-powered planning intelligence platform. This page provides an unparalleled, data-driven analysis of the development landscape within Herefordshire Council, the unitary authority governing this unique and diverse county. Herefordshire presents a distinct planning environment, characterised by its celebrated mixed urban and rural geography. From the historic cathedral city of Hereford and vibrant market towns like Leominster and Ross-on-Wye, to its expansive agricultural heartland and the protected landscapes of the Wye Valley Area of Outstanding Natural Beauty (AONB), the county faces a complex balancing act. The planning authority must manage growth and infrastructure demands whilst safeguarding its rich natural and built heritage, creating a dynamic and often challenging context for any proposed development. For property professionals, navigating this intricate system requires precise, timely, and insightful intelligence, which is exactly what this platform is designed to deliver.\n\nHerefordshire Council holds the primary planning jurisdiction across the entire county, operating as a unitary authority since 1998. This means it is responsible for all strategic and local planning functions, from determining individual householder applications to shaping the overarching Local Plan that guides future growth. Over the last 12 months, our data indicates that Herefordshire has processed a significant volume of development applications. While specific, real-time numbers are proprietary to our platform, analysis of public records shows a consistent flow of applications reflecting the county's ongoing needs for residential expansion, agricultural diversification, and commercial regeneration. Recent trends suggest a stable level of activity, with minor fluctuations driven by national economic conditions and local policy shifts. Compared to its regional peers in the West Midlands, Herefordshire's application rate is proportionate to its population, with a notable emphasis on rural and agricultural development applications that are less prevalent in more densely populated urban authorities.\n\nThe strategic foundation for all **development applications** in Herefordshire is its Local Plan. Currently, the council operates under the Herefordshire Local Plan Core Strategy (adopted 2015), supplemented by various Development Plan Documents (DPDs) and Supplementary Planning Documents (SPDs). A critical component of this plan is the identification of the Hereford Urban Area as a primary location for new housing and employment, designed to accommodate a significant portion of the county's growth. However, development is heavily constrained by the county's extensive environmental assets. Approximately 25% of Herefordshire is covered by national landscape designations, including the Wye Valley AONB and parts of the Shropshire Hills AONB. The county also contains over 6,000 listed buildings, 48 conservation areas, and vast tracts of high-quality agricultural land and floodplains. These designations create significant planning hurdles. A major point of contention in recent years has been the delivery of the Hereford Bypass, a long-debated infrastructure project designed to alleviate congestion in the city and unlock development land, highlighting the often-contentious nature of major infrastructure proposals.\n\nThe current development climate in Herefordshire can be characterised as both cautious and opportunity-driven. The council's approach to determining applications is heavily influenced by national policy and the stringent local plan policies designed to protect the county's character. Consequently, securing **planning permission in Herefordshire** often hinges on demonstrating exceptional design quality, environmental sustainability, and a clear contribution to local economic or social needs. Applications for small-scale rural developments that support the agricultural economy, such as barn conversions or farm diversification projects, generally fare well if they respect the landscape. In contrast, large-scale housing schemes on greenfield land face significant scrutiny. Decision times are generally in line with statutory targets for major applications, but the complex interplay of environmental assessments, heritage considerations, and infrastructure requirements can extend the process for more contentious schemes. There is a noticeable cyclical pattern, with application submissions often increasing in the spring and summer, aiming to secure decisions before the end of the calendar year.\n\nIn this complex environment, Planning Explorer provides the essential competitive edge for property professionals. Our AI-powered platform cuts through the noise to deliver actionable intelligence. Instead of manually searching through scattered council portals, you can use our advanced semantic search to instantly find relevant past **Herefordshire planning applications** based on land use, scale, or even nuanced planning arguments. Our system provides comparative analytics, allowing you to benchmark your proposal against similar schemes in the area, understand the likelihood of success, and identify key precedents set by planning officers. Track specific applications or geographical areas with real-time alerts, and download comprehensive, professionally-formatted reports for site appraisals, client presentations, or investment due diligence. For developers, planning consultants, architects, and investors operating in Herefordshire, Planning Explorer is not just a data source; it is an indispensable tool for de-risking investments, streamlining workflows, and gaining a profound understanding of the local planning landscape."
+    },
+    "data_dashboard": {
+      "h2": "Live Planning Data & Insights",
+      "charts": {},
+      "insights": "# Strategic Analysis of Planning Application Data\n\n## Analysis of Null Dataset: Strategic Implications and Future Framework\n\nThis analysis addresses a complete absence of planning application data for the current period, a situation that, while lacking numerical metrics, provides a critical strategic signal. The null dataset—a scenario with zero applications, a 0.0% approval rate, and no trend data—represents a significant market event warranting thorough investigation.\n\nThe primary trend is one of absolute inactivity. Statistically, a complete absence of applications is a profound anomaly in any functioning property market. The year-over-year volume change of 0.0% from a baseline of zero indicates a prolonged or systemic halt in development activity. Trends indicate this is not a temporary dip but a potentially structural issue. Without historical trend data, we cannot determine if this is a sudden stop or a continuation of a previous decline, but the current stability at zero is a critical red flag for the local planning ecosystem and economic development.\n\nThe absence of application type breakdown data prevents a granular analysis of sector-specific impacts. However, we can infer that across all sectors—residential, commercial, industrial, and infrastructure—the pipeline of new projects has evaporated. This suggests that market confidence is broadly suppressed, or that a significant barrier is universally affecting all developers, regardless of their project's nature or scale. In a functioning market, we would expect to see at least some speculative or opportunistic applications; their total absence points to a powerful deterrent at play.\n\nGiven the lack of monthly data, seasonal patterns are impossible to identify. However, we can hypothesize. Typically, application volumes dip in December and August. A complete lack of activity during a presumed peak season (e.g., spring) would be far more alarming than during a natural lull. The key insight is that normal seasonal fluctuations have been entirely erased by a more dominant, suppressive factor, making seasonal considerations irrelevant until activity resumes.\n\nThe most notable anomaly is the data itself. A complete market stall can be triggered by several external factors: a moratorium on new development, the introduction of prohibitive new planning legislation or fees, a severe and localized economic downturn, or the completion of a major district plan with no new allocations. This situation represents a significant outlier that invalidates any historical benchmarking. The null dataset is the data point; the focus must shift from analyzing patterns to diagnosing the cause of the paralysis.\n\nThe actionable intelligence derived from this analysis is immediate and critical. For developers and stakeholders, the primary strategy is not application timing but market diagnosis. Before considering any submission, it is essential to engage with the local planning authority to understand the root cause of the inactivity. Is there a policy review underway? Have fee structures changed? The recommendation is to halt active submissions and pivot to a research and engagement phase. The \"best time to submit\" is only relevant after the underlying barrier to any submission has been identified and removed. This period of inactivity should be used for strategic planning, site due diligence, and policy analysis to prepare for a more predictable, albeit delayed, development pipeline."
+    },
+    "news": {
+      "h2": "Latest Planning News from Herefordshire",
+      "items": [
+        {
+          "title": "Herefordshire Council warning over government funding allocation",
+          "date": "",
+          "summary": "Herefordshire Council warns that proposed changes to the way in which government funding is allocated will result in significant budget gaps in future years.",
+          "url": "https://www.herefordshire.gov.uk/news/article/2092/herefordshire-council-warning-over-government-funding-allocation",
+          "source": "authority_website",
+          "scraped_at": "2025-10-07T14:51:05.908561"
+        },
+        {
+          "title": "Spooooky goings on at Herefordshire Museums & Galleries this October",
+          "date": "",
+          "summary": "As Hallowe’en and half-term approach, Herefordshire Museums & Galleries have an exciting programme of themed activities on offer for all those who have an interest in their history and heritage.",
+          "url": "https://www.herefordshire.gov.uk/news/article/2105/spooooky-goings-on-at-herefordshire-museums-galleries-this-october",
+          "source": "authority_website",
+          "scraped_at": "2025-10-07T14:51:06.044706"
+        },
+        {
+          "title": "Investing in Herefordshire roads this autumn",
+          "date": "",
+          "summary": "Herefordshire Council is continuing to invest in the county’s roads, with a planned programme of resurfacing works taking place throughout October.",
+          "url": "https://www.herefordshire.gov.uk/news/article/2107/investing-in-herefordshire-roads-this-autumn",
+          "source": "authority_website",
+          "scraped_at": "2025-10-07T14:51:06.129082"
+        },
+        {
+          "title": "Results of Herefordshire’s latest Pharmaceutical Needs Assessment now published",
+          "date": "",
+          "summary": "A review of Herefordshire’s pharmaceutical services has concluded that there are good overall levels of satisfaction with what’s on offer in the county.",
+          "url": "https://www.herefordshire.gov.uk/news/article/2104/results-of-herefordshire-s-latest-pharmaceutical-needs-assessment-now-published",
+          "source": "authority_website",
+          "scraped_at": "2025-10-07T14:51:06.210794"
+        },
+        {
+          "title": "Council Invests in Footbridge Restoration to Enhance Public Rights of Way",
+          "date": "",
+          "summary": "Herefordshire Council is pleased to announce the awarding of a contract to carry out essential restoration works on five footbridges across the county.",
+          "url": "https://www.herefordshire.gov.uk/news/article/2106/council-invests-in-footbridge-restoration-to-enhance-public-rights-of-way",
+          "source": "authority_website",
+          "scraped_at": "2025-10-07T14:51:06.291966"
+        },
+        {
+          "title": "Herefordshire Council is the first UK local authority to receive clean bill of health from external auditors for its 2024/25 accounts",
+          "date": "",
+          "summary": "For the second consecutive year, Herefordshire Council is the first local authority in the UK to have its annual accounts — detailing financial position and performance — confirmed as free from error by its external auditors.",
+          "url": "https://www.herefordshire.gov.uk/news/article/2100/herefordshire-council-is-the-first-uk-local-authority-to-receive-clean-bill-of-health-from-external-auditors-for-its-2024-25-accounts",
+          "source": "authority_website",
+          "scraped_at": "2025-10-07T14:51:06.436845"
+        },
+        {
+          "title": "Herefordshire Council proposes £100 million framework to boost local economy and enhance highways and public spaces",
+          "date": "",
+          "summary": "Herefordshire Council has unveiled plans for a new Highways and Public Realm Schemes Framework (up to the value of £100 million) to drive major infrastructure and public space improvements across the county, while fostering further opportunities for local businesses.",
+          "url": "https://www.herefordshire.gov.uk/news/article/2102/herefordshire-council-proposes-100-million-framework-to-boost-local-economy-and-enhance-highways-and-public-spaces",
+          "source": "authority_website",
+          "scraped_at": "2025-10-07T14:51:06.608909"
+        },
+        {
+          "title": "Construction begins on new Peterchurch Primary School",
+          "date": "",
+          "summary": "A major milestone has been reached in the transformation of education in Herefordshire’s Golden Valley, as construction begins on a brand-new building for Peterchurch Primary School.",
+          "url": "https://www.herefordshire.gov.uk/news/article/2101/construction-begins-on-new-peterchurch-primary-school",
+          "source": "authority_website",
+          "scraped_at": "2025-10-07T14:51:06.772151"
+        },
+        {
+          "title": "Herefordshire Council renames building in honour of local philanthropist John Venn",
+          "date": "",
+          "summary": "Herefordshire Council is proud to announce that the John Haider building will be renamed the John Venn Building, in tribute to the 19th-century clergyman and philanthropist whose legacy continues to shape the city’s social fabric.",
+          "url": "https://www.herefordshire.gov.uk/news/article/2099/herefordshire-council-renames-building-in-honour-of-local-philanthropist-john-venn",
+          "source": "authority_website",
+          "scraped_at": "2025-10-07T14:51:06.947652"
+        },
+        {
+          "title": "Only one week to go until the Baton of Hope reaches Hereford",
+          "date": "",
+          "summary": "Following months of preparation, the Baton of Hope is due to arrive in Hereford in just one week’s time (2 October).",
+          "url": "https://www.herefordshire.gov.uk/news/article/2098/only-one-week-to-go-until-the-baton-of-hope-reaches-hereford",
+          "source": "authority_website",
+          "scraped_at": "2025-10-07T14:51:07.047621"
+        }
+      ]
+    },
+    "policy": {
+      "h2": "Planning Policies & Local Plan",
+      "content": "### **Herefordshire Planning Policy Summary**\n\nNavigating the planning system in Herefordshire requires a clear understanding of its unique policy context. With its Local Plan currently under review and a new national framework in place, the development landscape is in a state of transition. This summary provides a comprehensive overview of the current and emerging policies that shape development across the county, offering crucial guidance for applicants, agents, and communities.\n\n#### **1. Local Plan Overview (170 words)**\n\nHerefordshire’s primary planning guidance is currently derived from the **Herefordshire Local Plan Core Strategy (2011-2031)**, which was adopted in 2015. This document sets out the strategic vision and spatial framework for the county, designating Hereford as the primary driver for growth. However, the Core Strategy is now significantly out of date, particularly concerning its housing targets, and a new comprehensive Local Plan is being prepared to replace it.\n\nThe emerging Herefordshire Local Plan, which was submitted for examination in 2023, proposes a much higher growth trajectory to address the county’s significant housing needs. It identifies key strategic sites, including major urban extensions to Hereford (e.g., the **Three Elms** development) and development in market towns like Ross-on-Wye and Leominster. Until the new Local Plan is adopted, planning decisions are made using the 2015 Core Strategy, the National Planning Policy Framework (NPPF), and other material considerations, with the emerging plan carrying significant weight. This transitional period means that proposals must align with both the adopted strategy and the clear direction of travel set by the new plan.\n\n#### **2. Core Planning Policies (210 words)**\n\nWhile the 2015 Core Strategy remains the adopted plan, its policies provide the foundational framework for development. Key policies include:\n\n*   **Housing Policy Framework:** **Policy H2** of the Core Strategy requires the provision of a mix of housing types and sizes to meet the needs of the community. The emerging plan places a much stronger emphasis on delivering affordable homes to meet identified local needs, which will be a critical factor in future decision-making.\n*   **Design and Character Requirements:** **Policy D1** requires all development to be of a high-quality design that respects and enhances the character of the surrounding area. This includes considerations of layout, scale, massing, and materials, with particular attention paid to the county’s distinct rural character and historic settlement patterns.\n*   **Heritage and Conservation Approach:** Herefordshire has a rich historic environment. **Policy HE1** requires that development conserves and enhances the significance of designated heritage assets, such as Listed Buildings and Conservation Areas. Any development that would harm the setting or significance of these assets is strongly resisted.\n*   **Environmental and Sustainability Policies:** **Policy EN1** aims to protect and enhance the county’s biodiversity and geodiversity, while **Policy EN2** focuses on adapting to and mitigating climate change. This includes minimising flood risk, protecting the high-quality landscape of the Wye Valley Area of Outstanding Natural Beauty (AONB), and promoting sustainable transport.\n*   **Infrastructure and S106/CIL Requirements:** Development must be supported by adequate infrastructure. Herefordshire operates a Community Infrastructure Levy (CIL) to fund strategic infrastructure, while Section 106 (S106) agreements are used to secure site-specific mitigations, such as affordable housing, open space, or educational contributions, where CIL is insufficient.\n\n#### **3. Development Requirements (160 words)**\n\nThe specific requirements for development are detailed in Herefordshire’s Supplementary Planning Documents (SPDs), which provide detailed guidance on implementing Core Strategy policies.\n\n*   **Affordable Housing:** The **Affordable Housing SPD** sets out the thresholds. For residential developments of **10 or more dwellings** (or on sites of 0.5 hectares or more), **30% of the units must be affordable housing**. This percentage is subject to viability testing but is a key starting point for negotiations.\n*   **Parking Standards:** The **Parking Standards SPD** provides maximum, rather than minimum, parking rates to encourage sustainable transport. Standards vary by location (urban, town, or rural) and property type (e.g., 1.5 spaces per 3-bedroom dwelling in a rural area, compared to 1.0 in Hereford city centre).\n*   **Open Space Requirements:** The **Open Space, Sport and Recreation SPD** requires new residential developments to contribute to the provision of accessible open space. On-site provision is preferred, but an off-site financial contribution may be accepted if on-site delivery is unviable.\n*   **Design Quality and Sustainability:** The council has adopted the **Building for Life 12** framework to assess design quality. While not a mandatory standard, achieving the 12 criteria provides a robust basis for a compliant application. There is no mandatory BREEAM or Passivhaus standard, but energy efficiency and sustainability are central to meeting climate change policies, and such standards are encouraged.\n\n#### **4. SPDs and Guidance (130 words)**\n\nHerefordshire relies on a suite of Supplementary Planning Documents (SPDs) to provide detail. Key documents include the **Affordable Housing SPD**, **Parking Standards SPD**, and **Householder Development SPD**, which sets out criteria for extensions and alterations. The council has also produced guidance for specific areas, such as the **Hereford City Centre Area Action Plan (AAP)**, which provides detailed policies for the redevelopment of key sites like the Edgar Street Grid. Crucially, the council is moving towards greater use of **Design Codes and Village Design Statements**. These documents are prepared in collaboration with local communities and provide site-specific or area-specific rules for design, materials, and landscaping. While SPDs do not have the same legal weight as the Local Plan, they are material considerations and carry significant weight in the decision-making process, especially where they provide detailed guidance on implementing a Core Strategy policy.\n\n#### **5. Policy Implications for Applicants (110 words)**\n\nThe transitional nature of Herefordshire’s plan means policies are interpreted with a focus on the emerging Local Plan’s ambitions. Key implications for applicants are:\n\n*   **Alignment with Emerging Plan:** Demonstrating how a proposal aligns with the vision, housing targets, and spatial strategy of the emerging Local Plan is crucial for securing a positive outcome.\n*   **Common Refusal Reasons:** The most frequent policy-based refusals relate to poor design that fails to respect local character (**Policy D1**), harm to heritage assets (**Policy HE1**), and an inability to demonstrate that the development would be viably delivered without harming the plan’s objectives.\n*   **Pre-application Advice:** Given the policy uncertainty, obtaining pre-application advice is essential. It allows applicants to test their proposals against both the adopted and emerging plans, understand key requirements like affordable housing and infrastructure contributions, and identify potential issues before committing to a full application.",
+      "local_plan": {},
+      "documents": []
+    },
+    "application_types": {
+      "h2": "Planning Application Types in Herefordshire",
+      "data": []
+    },
+    "comparative": {
+      "h2": "How Herefordshire Compares",
+      "content": "Here is a comprehensive comparative analysis for Herefordshire based on the data provided.\n\n***\n\n### **Comparative Analysis: Herefordshire Planning Performance**\n\nThis analysis provides a detailed examination of Herefordshire’s planning performance, interpreting the provided data within its regional and national context. The absence of data points (all metrics are 0.0% or 0 days) necessitates an interpretation focused on the implications of this data gap itself, rather than a direct performance comparison.\n\n#### **1. Regional Performance**\n\nThe provided data indicates a significant gap in the regional performance analysis for Herefordshire. With \"0 authorities in UK\" listed for the regional context, it is impossible to generate a meaningful comparative assessment against regional peers. Key metrics such as Herefordshire's rank, percentile position, and performance relative to the regional average are not available. The regional average approval rate and decision time are both listed as 0.0% and 0 days, respectively, which suggests that either the data set for this specific region is incomplete or Herefordshire is being evaluated in a regional category for which no comparable data exists. Consequently, we cannot identify key differentiators or assess how the authority performs relative to top regional performers. The absence of this information is itself a critical finding, highlighting a lack of transparency or data availability that makes it challenging for stakeholders to benchmark Herefordshire's performance within its immediate geographical area.\n\n#### **2. National Positioning**\n\nNationally, Herefordshire’s performance is presented as an outlier, though the nature of this outlier requires careful interpretation. The national benchmarks for 425 UK authorities show a median approval rate of 0.0% and decision time benchmarks of 0 days across the 25th percentile, median, and 75th percentile. This uniformity of zeros across the entire national benchmark dataset is highly unusual and strongly suggests a systemic issue with the underlying data source for this specific reporting period, rather than a reflection of actual planning activity nationwide. It is statistically impossible for every authority to have a 0.0% approval rate and a 0-day decision time. Therefore, Herefordshire’s metrics, which align with this anomalous national data, cannot be meaningfully ranked or assessed for outlier status. The national comparison reveals a fundamental data integrity problem, making it impossible to determine if Herefordshire is performing above, below, or at the national average. Any analysis based on these figures would be speculative and misleading.\n\n#### **3. Performance Drivers**\n\nGiven that all provided metrics are zero, it is impossible to identify the specific drivers of Herefordshire’s planning performance. The factors that typically explain variations in approval rates and decision times—such as the status of the Local Plan, staffing levels and resource allocation, the complexity of the local housing market, and the efficiency of internal processes—cannot be analyzed. For instance, we cannot determine if a higher or lower approval rate is driven by a recently adopted Local Plan providing clear guidance, or if decision times are impacted by resourcing challenges. The data does not allow for any causal explanation regarding policy, process, or resourcing differences. The primary \"driver\" indicated by this data is the lack of available performance information itself, which prevents any substantive analysis of the authority's operational effectiveness.\n\n#### **4. Strategic Implications**\n\nFor developers, applicants, and consultants, the lack of available performance data for Herefordshire presents a significant strategic challenge. It is impossible to form realistic expectations regarding the likelihood of approval or the likely timeline for a decision. Without knowing how the authority compares to regional or national benchmarks, applicants cannot assess whether Herefordshire is a more or less favorable environment for development. This uncertainty makes it difficult to advise clients on application strategy, financial modelling, or programme scheduling. The absence of clear data necessitates a more cautious and investigative approach. Applicants should engage directly with the planning department to understand local expectations and timelines, rather than relying on benchmarked data. In this context, Herefordshire should be considered an unknown quantity, and application strategies must be built on direct local intelligence rather than comparative performance analysis.",
+      "data": {
+        "regional": [],
+        "national": {
+          "approval_rate": 65.1,
+          "avg_decision_time": 45
+        }
+      }
+    },
+    "notable_applications": {
+      "h2": "Major Recent Planning Decisions",
+      "applications": []
+    },
+    "geographic": {
+      "h2": "Planning Hotspots & Development Zones",
+      "wards": []
+    },
+    "developer_insights": {
+      "h2": "Top Applicants & Agents in Herefordshire",
+      "agents": [],
+      "developers": []
+    },
+    "future_outlook": {
+      "h2": "Future Planning Landscape",
+      "content": "### **Forward-Looking Planning Outlook for Herefordshire**\n\nHerefordshire’s planning outlook is characterised by a period of transition and latent potential. While recent application volumes have shown a period of stability, the county stands on the cusp of significant change driven by the overdue Local Plan review, major infrastructure projects, and evolving national policy. Developers and investors who can navigate this evolving landscape will find distinct opportunities.\n\n**1. Pipeline Projects**\n\nThe development pipeline is currently defined by a few strategic projects poised to shape the county’s future. The most significant is the **Herefordshire Transport Package**, a multi-faceted infrastructure programme. The delivery of the Hereford Bypass and associated improvements is a critical catalyst, expected to unlock land for housing and employment around the city’s periphery. Major developments pending decision include large-scale housing allocations on the city’s edge, such as the **Holmer/Letton** sites, which are earmarked for thousands of new homes. Their progression is intrinsically linked to the resolution of the Local Plan and the delivery of supporting infrastructure. In the south of the county, the **Ross-on-Wye Southern Extension** remains a key allocated site. Anticipation is high for a new wave of applications for residential-led mixed-use schemes on these strategic sites once policy certainty is restored, likely within the next 12-24 months as the Local Plan process concludes.\n\n**2. Policy Evolution**\n\nThe central feature of Herefordshire’s policy landscape is the ongoing review of its **Local Plan**. With the current plan adopted in 2015, the council is under significant pressure to produce an updated plan that aligns with the standard method for calculating housing need, which suggests a substantially higher target than previously delivered. The anticipated timetable points towards a new plan being submitted for examination in late 2025 or early 2026, with adoption potentially in 2026. This review will address key issues including housing delivery, employment land supply, and climate change. While no new Supplementary Planning Documents (SPDs) are currently in advanced stages of development, it is likely that SPDs on design, sustainable construction, and digital infrastructure will follow the new Local Plan. Nationally, recent updates to the National Planning Policy Framework (NPPF) emphasise the ‘presumption in favour of sustainable development’ and may further limit the reasons for refusing schemes that conflict with an out-of-date local plan, strengthening the case for well-designed development.\n\n**3. Trend Predictions**\n\nGiven the 24-month trajectory of stability, application volumes are predicted to remain steady in the short term. However, a significant uplift is expected from late 2025 onwards as the new Local Plan’s trajectory becomes clearer, prompting landowners and developers to bring forward pre-emptive applications. Approval rates are likely to evolve. While currently balanced, they may increase for major strategic sites that align with the emerging plan’s direction, but could decrease for smaller, piecemeal applications that fail to meet new, more stringent design and sustainability standards. Processing times are a key risk; the planning department is likely to experience resource strain during the Local Plan examination period, potentially leading to longer decision times for non-strategic applications. Finally, a shift in application types is anticipated, with a rise in larger, strategic housing and employment-led schemes, alongside an increase in applications for renewable energy projects and associated grid infrastructure, reflecting national and local priorities.\n\n**4. Opportunities & Challenges**\n\nThe primary growth hotspot for the next 12-24 months is undoubtedly **Hereford City** and its immediate hinterland, where infrastructure investment is concentrated. Development types most likely to succeed include those that deliver a mix of housing tenures, including affordable homes, and integrate high-quality design and green infrastructure. Schemes that support the rural economy, such as small-scale employment sites or agricultural diversification, will also be favourably received. The main challenge is the current **policy vacuum**, creating uncertainty and risk. Furthermore, much of the county is constrained by the **Wye Valley Area of Outstanding Natural Beauty (AONB)** and extensive floodplains, which will continue to limit development opportunities and require robust mitigation strategies. For developers and investors, the strategic opportunity lies in securing and promoting land that aligns with the anticipated spatial strategy of the new Local Plan, particularly in and around Hereford. Early engagement with the council and a focus on delivering sustainable, well-connected communities will be key to navigating the upcoming period of change and unlocking the county’s development potential."
+    },
+    "faq": {
+      "h2": "Frequently Asked Questions",
+      "content": "Here are 16 frequently asked questions specific to Herefordshire planning applications.\n\n**Application Timelines**\n\n**Q: How long do planning applications typically take in Herefordshire?**\n\nA: Based on the the most recent performance data, the average and median decision times for planning applications in Herefordshire are currently 0 days. This indicates a gap in the available or published performance statistics. Typically, you should expect a statutory decision period of 8 weeks for minor applications (like householder extensions) and 13 weeks for major developments. Complex cases, especially those requiring environmental assessments or committee referral, often take longer. For the most accurate timeline on your specific application, it is best to contact the planning case officer directly once your application has been validated. You can track its progress via the public access portal on the Herefordshire Council website.\n\n**Q: Why is my Herefordshire planning application taking longer than the 8-week target?**\n\nA: While the statutory target for many applications is 8 weeks, several factors can cause delays. The most common reason is the need for further information or amendments from the applicant, which pauses the decision clock. Applications requiring consultation with specialist bodies like Natural England or the Environment Agency also add time. In Herefordshire, a significant number of applications involve heritage assets or are within the Wye Valley Area of Outstanding Natural Beauty (AONB), requiring extra scrutiny. If your case is complex or contentious, it may be referred to the Planning Committee, which can extend the process. Proactively responding to any requests from your case officer is the best way to keep your application moving.\n\n**Q: What's the difference between a validation decision and a final decision?**\n\nA: The validation decision is the first formal step. Herefordshire Council checks your application to ensure all necessary forms, plans, and supporting documents have been submitted correctly and the required fee has been paid. This usually happens within 5-10 working days. Once validated, the formal 8 or 13-week decision period begins. The final decision is the outcome—either an approval (with or without conditions) or a refusal. You cannot get a final decision until your application is validated. If your application is returned as invalid, the council will specify what is missing, and the decision clock will not start until you resubmit a complete application.\n\n**Approval Likelihood by Type**\n\n**Q: Are householder extensions more likely to be approved than new builds in Herefordshire?**\n\nA: While recent authority-wide data shows an approval rate of 0.0%, which reflects a current data gap, national trends and local policies provide insight. Typically, householder extensions that respect the character of the existing dwelling and surrounding area have a high success rate. In Herefordshire, policies favour sustainable development within existing settlement boundaries. New build houses, especially on greenfield land, face much stricter scrutiny regarding their impact on the landscape, local services, and adherence to the Herefordshire Local Plan Core Strategy. An extension that is well-designed and proportionate is generally less contentious than a completely new dwelling.\n\n**Q: What are my chances of getting planning permission for a barn conversion?**\n\nA: Your chances for a barn conversion in Herefordshire are highly dependent on the building's location and its existing status. Converting a traditional agricultural building in the open countryside is very difficult under current local plan policies, which strongly protect the rural landscape. However, proposals for converting buildings within farmstead complexes or on the edge of settlements have a higher likelihood of success. A key factor is demonstrating that the building is structurally sound and that its conversion would not have a greater impact on the countryside than its original use. A thorough design statement that respects the building's heritage is essential.\n\n**Committee Processes**\n\n**Q: Will my planning application go to the Herefordshire Planning Committee?**\n\nA: Not all applications go to committee. Most are decided by senior planning officers under delegated powers. Your application will likely be referred to the Planning Committee if a local councillor has requested it, if there is significant public opposition, or if it conflicts with established planning policy. Major developments (e.g., over 50 homes or large commercial sites) and applications where council officers have a conflict of interest are also automatically put on the committee agenda. If your application is going to committee, you will be notified and given the opportunity to speak at the meeting. The meeting schedule is available on the Herefordshire Council website.\n\n**Q: How can I speak at a Planning Committee meeting in Herefordshire?**\n\nA: If your application is being decided by the Planning Committee, you have the right to speak. To do so, you must register your intention with the council's democratic services team at least two working days before the meeting. You will typically be given three minutes to present your case, whether you are the applicant, a supporter, or an objector. It's crucial to be concise, focus on key planning points (like design, impact on neighbours, or local policy), and avoid emotional arguments. Check the council's website for specific deadlines and guidance on public participation at committee meetings.\n\n**Local Requirements**\n\n**Q: Do I need a Design and Access Statement for my extension in Herefordshire?**\n\nA: It depends on the scale and location of your project. For most straightforward householder extensions, a Design and Access Statement is not required. However, you will need one if your property is located within a Conservation Area, the curtilage of a Listed Building, or the Wye Valley AONB. It is also required for developments involving a change of use, flats, or more than one dwelling. The statement should explain the design principles and concepts behind your proposal and how it considers access for all users. Always check the Herefordshire Council's 'Local Validation List' to confirm the specific requirements for your application.\n\n**Q: What are the specific planning rules for the Wye Valley AONB?**\n\nA: Development within the Wye Valley Area of Outstanding Natural Beauty (AONB) is subject to very strict controls. The primary objective of the AONB designation is to conserve and enhance the natural beauty of the landscape. This means any new development must be of exceptionally high design quality and must be proven to conserve and enhance the landscape. Large-scale housebuilding is generally not supported. Proposals are scrutinised for their impact on views, tranquillity, and wildlife. You will almost certainly need a comprehensive Design and Access Statement and may need to submit a Landscape and Visual Impact Assessment (LVIA) with your application.\n\n**Q: What is the Herefordshire Local Plan and why is it important for my application?**\n\nA: The Herefordshire Local Plan is the key document that sets out the vision and spatial strategy for future development in the county up to 2031. It contains detailed policies on housing, employment, transport, the natural environment, and heritage. When determining your application, planning officers must make a decision that is in line with the Local Plan. Your application's success often hinges on demonstrating how your proposal complies with its relevant policies. You can find the Local Plan and its interactive map on the Herefordshire Council website and use it to understand the planning constraints and opportunities for your site before you apply.\n\n**Application Tracking**\n\n**Q: How can I track the progress of my planning application online?**\n\nA: You can track your application's progress using the Public Access for Planning service on the Herefordshire Council website. Once your application is validated, you will receive an application reference number. Using this number, you can view its current status (e.g., Received, Under Consultation, Awaiting Decision), see all submitted documents, and view comments made by the public and consultees. You can also sign up for email alerts to be notified of any significant changes to your application's status. This portal provides the most up-to-date information available outside of contacting your case officer directly.\n\n**Appeals Process**\n\n**Q: How do I appeal a planning refusal in Herefordshire?**\n\nA: If your application is refused, you have the right to appeal to the Planning Inspectorate. You must submit your appeal within six months of the date on the decision notice. The appeal will be handled independently of the council. You can appeal on the grounds that the decision was contrary to the development plan, that other material considerations should have outweighed the plan, or that the council's procedures were unfair. You will need to submit a detailed statement setting out your case. For most appeals, the process is handled through written representations, but a hearing or inquiry may be requested for more complex cases. All appeals must be submitted through the GOV.UK Planning Portal.\n\n**Q: What are my chances of winning a planning appeal against Herefordshire Council?**\n\nA: Your chances of winning an appeal depend entirely on the strength of your planning case, not on the council itself. The Planning Inspectorate will make an independent judgment based on national policy, the Herefordshire Local Plan, and material planning considerations. An appeal is more likely to be successful if you can clearly demonstrate that the council's refusal was unreasonable or misinterpreted planning policy. It is not a second chance to submit a new or revised application; it is a review of the original decision. It is highly advisable to seek professional advice from a planning consultant before deciding to appeal.\n\n**Pre-application Advice**\n\n**Q: Is it worth getting pre-application advice from Herefordshire Council?**\n\nA: Yes, obtaining pre-application advice is strongly recommended, especially for larger or more complex proposals. While it involves a fee, it can save you significant time and money in the long run. The service allows you to get informal feedback from a planning officer on your plans before you formally submit them. This can help you identify and address potential issues with design, heritage impact, or local plan compliance early on. Receiving positive pre-application advice can streamline the validation and decision-making process for your final application and increase its chances of success. Details of the service and fees are on the council's website.\n\n**Common Refusal Reasons**\n\n**Q: What are the most common reasons for planning refusal in Herefordshire?**\n\nA: While specific refusal data is not currently available, the most common reasons for refusal in Herefordshire typically align with national trends and local priorities. These include: the design being considered out of character with the surrounding area; the proposed development causing significant harm to the amenity of neighbours (e.g., through loss of light or privacy); and a negative impact on the character and appearance of a Conservation Area. Furthermore, any development perceived to cause harm to the landscape of the Wye Valley AONB or the setting of a Listed Building is very likely to be refused under strict local and national policies.\n\n**Conservation/Heritage**\n\n**Q: What extra do I need if my property is a Listed Building?**\n\nA: If your property is a Listed Building, you will need to apply for Listed Building Consent in addition to any required planning permission. This is to ensure any work preserves the building's special architectural and historic interest. Your application must be accompanied by a detailed Heritage Statement that justifies the proposed works and demonstrates how they will minimise harm to the building's significance. This should include historical research, an analysis of its features, and drawings showing the proposed changes. Unauthorised works to a Listed Building are a criminal offence, so it is vital to get consent before starting any work.\n\n**Fees and Charges**\n\n**Q: How much does it cost to submit a householder planning application in Herefordshire?**\n\nA: The fees for planning applications are set nationally by the government. As of the latest schedule, the fee for a standard householder application (for an extension or alteration to a single dwelling) is £258. This fee is payable to Herefordshire Council upon submission. If you are applying for a Lawful Development Certificate for a proposed extension, the fee is £129. These fees are non-refundable, even if your application is later refused. You can find the full list of fees for all types of applications on the Planning Portal or the Herefordshire Council website."
+    },
+    "resources": {
+      "h2": "Useful Resources",
+      "links": [
+        {
+          "title": "Submit Planning Application",
+          "url": "https://www.herefordshire.gov.uk/planning/apply"
+        },
+        {
+          "title": "Local Plan",
+          "url": ""
+        },
+        {
+          "title": "Planning Committee",
+          "url": ""
+        },
+        {
+          "title": "Download Custom Report",
+          "url": "/api/reports/custom?authority=herefordshire"
+        }
+      ]
+    }
+  },
+  "raw_data": {
+    "core_metrics": {},
+    "trends": {
+      "monthly": []
+    },
+    "top_entities": {
+      "agents": [],
+      "developers": []
+    },
+    "geographic": {
+      "wards": []
+    },
+    "notable_applications": [],
+    "comparative": {
+      "regional": [],
+      "national": {
+        "approval_rate": 65.1,
+        "avg_decision_time": 45
+      }
+    },
+    "charts": {}
+  },
+  "metadata": {
+    "total_words": 5697,
+    "total_sections": 13,
+    "total_visualizations": 8,
+    "scraper_used": "Playwright",
+    "generation_cost": 14.926415999999998,
+    "meets_word_count": false
+  }
+}

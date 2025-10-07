@@ -1,0 +1,30 @@
+{
+  "authority_id": "north-tyneside",
+  "authority_name": "North Tyneside",
+  "url_slug": "north-tyneside",
+  "generated_at": "2025-10-07T16:03:40.141925",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:03:40.141928"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:03:47.025254"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:04:13.044240"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:04:13.083380"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007230418e8cd76fbbed34d28'}",
+  "status": "failed"
+}

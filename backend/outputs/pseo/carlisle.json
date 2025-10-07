@@ -1,0 +1,30 @@
+{
+  "authority_id": "carlisle",
+  "authority_name": "Carlisle",
+  "url_slug": "carlisle",
+  "generated_at": "2025-10-07T15:51:33.406353",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T15:51:33.406354"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T15:51:33.406681"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T15:51:56.851704"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T15:51:56.885051"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007225204416fc30ae75a411e'}",
+  "status": "failed"
+}

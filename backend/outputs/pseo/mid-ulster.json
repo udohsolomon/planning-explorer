@@ -1,0 +1,30 @@
+{
+  "authority_id": "mid-ulster",
+  "authority_name": "Mid Ulster",
+  "url_slug": "mid-ulster",
+  "generated_at": "2025-10-07T16:03:53.559016",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:03:53.559018"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:03:53.567089"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:04:28.601428"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:04:28.627734"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072304378d881cdd8a3d4907'}",
+  "status": "failed"
+}

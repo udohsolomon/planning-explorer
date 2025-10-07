@@ -42,7 +42,7 @@ const DEFAULT_TWITTER_CREATOR = '@PlanningExplorer'
  * export const metadata = generateMetadata({
  *   title: 'Planning Applications in Milton Keynes',
  *   description: 'View all planning applications...',
- *   canonical: '/authorities/milton-keynes',
+ *   canonical: '/planning-applications/milton-keynes',
  * })
  */
 export function generateMetadata(config: SEOConfig): Metadata {
@@ -131,7 +131,7 @@ export function generateAuthorityMetadata(authorityName: string, stats?: {
   return generateMetadata({
     title,
     description,
-    canonical: `/authorities/${authorityName.toLowerCase().replace(/\s+/g, '-')}`,
+    canonical: `/planning-applications/${authorityName.toLowerCase().replace(/\s+/g, '-')}`,
     keywords: [
       'planning applications',
       authorityName,
@@ -158,7 +158,7 @@ export function generateLocationMetadata(locationName: string, stats?: {
   return generateMetadata({
     title,
     description,
-    canonical: `/locations/${locationName.toLowerCase().replace(/\s+/g, '-')}`,
+    canonical: `/planning-applications/${locationName.toLowerCase().replace(/\s+/g, '-')}`,
     keywords: [
       'planning applications',
       locationName,

@@ -1,0 +1,30 @@
+{
+  "authority_id": "portsmouth",
+  "authority_name": "Portsmouth",
+  "url_slug": "portsmouth",
+  "generated_at": "2025-10-07T16:08:19.511439",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:08:19.511440"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:08:19.512605"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:08:19.512682"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:08:19.534801"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007230826eb0ce7d1fa3542da'}",
+  "status": "failed"
+}

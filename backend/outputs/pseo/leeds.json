@@ -1,0 +1,45 @@
+{
+  "authority_id": "leeds",
+  "authority_name": "Leeds",
+  "url_slug": "leeds",
+  "generated_at": "2025-10-07T04:51:33.181422",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T04:51:33.181428"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T04:51:33.181618"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T04:51:33.181706"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T04:51:33.274816"
+    },
+    {
+      "step": 5,
+      "action": "SEO optimization",
+      "timestamp": "2025-10-07T04:53:07.328244"
+    },
+    {
+      "step": 6,
+      "action": "Page assembly",
+      "timestamp": "2025-10-07T04:53:07.328267"
+    },
+    {
+      "step": 7,
+      "action": "Save page",
+      "timestamp": "2025-10-07T04:53:07.328484"
+    }
+  ],
+  "error": "'NoneType' object has no attribute 'index'",
+  "status": "failed"
+}

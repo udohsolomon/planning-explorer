@@ -3,7 +3,9 @@
     "allow": [
       "WebFetch(domain:www.anthropic.com)",
       "WebFetch(domain:planninginsights.co.uk)",
-      "Read(//mnt/c/Users/Solomon-PC/Documents/**)"
+      "Read(//mnt/c/Users/Solomon-PC/Documents/**)",
+      "Bash(source:*)",
+      "Bash(python3:*)"
     ],
     "deny": [],
     "ask": []

@@ -1,0 +1,30 @@
+{
+  "authority_id": "forest-of-dean",
+  "authority_name": "Forest of Dean",
+  "url_slug": "forest-of-dean",
+  "generated_at": "2025-10-07T15:46:39.931079",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T15:46:39.931083"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T15:46:40.021963"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T15:46:57.478866"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T15:46:57.504846"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072247036ee49b71d6ac45eb'}",
+  "status": "failed"
+}

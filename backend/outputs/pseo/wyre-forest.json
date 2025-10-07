@@ -1,0 +1,30 @@
+{
+  "authority_id": "wyre-forest",
+  "authority_name": "Wyre Forest",
+  "url_slug": "wyre-forest",
+  "generated_at": "2025-10-07T15:53:38.489038",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T15:53:38.489040"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T15:53:38.489472"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T15:54:02.149707"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T15:54:02.174862"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007225409a890e29e1753467c'}",
+  "status": "failed"
+}

@@ -1,0 +1,30 @@
+{
+  "authority_id": "derby",
+  "authority_name": "Derby",
+  "url_slug": "derby",
+  "generated_at": "2025-10-07T15:52:21.361395",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T15:52:21.361405"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T15:52:21.361887"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T15:52:21.362003"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T15:52:21.388656"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007225230b9570584e0574ad3'}",
+  "status": "failed"
+}

@@ -3,7 +3,7 @@ API v1 router configuration for Planning Explorer
 """
 from fastapi import APIRouter
 
-from app.api.endpoints import search, applications, auth, user, ai, personalization, reports
+from app.api.endpoints import search, applications, auth, user, ai, personalization, reports, pseo
 
 # Create API v1 router
 api_router = APIRouter()
@@ -50,4 +50,11 @@ api_router.include_router(
     prefix="/ai/personalization",
     tags=["AI Personalization"],
     responses={401: {"description": "Unauthorized"}}
+)
+
+api_router.include_router(
+    pseo.router,
+    prefix="/pseo",
+    tags=["pSEO"],
+    responses={404: {"description": "Not found"}}
 )

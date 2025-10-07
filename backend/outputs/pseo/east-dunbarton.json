@@ -1,0 +1,30 @@
+{
+  "authority_id": "east-dunbarton",
+  "authority_name": "East Dunbarton",
+  "url_slug": "east-dunbarton",
+  "generated_at": "2025-10-07T16:20:14.618689",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:20:14.618693"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:20:14.619112"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:20:31.559383"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:20:31.593756"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072320383a2e45da7ca74e53'}",
+  "status": "failed"
+}

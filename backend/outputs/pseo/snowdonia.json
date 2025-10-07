@@ -1,0 +1,30 @@
+{
+  "authority_id": "snowdonia",
+  "authority_name": "Snowdonia",
+  "url_slug": "snowdonia",
+  "generated_at": "2025-10-07T16:22:50.707006",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:22:50.707007"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:22:50.707255"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:23:04.126483"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:23:04.152486"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '2025100723231090d6e44544ae44f4'}",
+  "status": "failed"
+}

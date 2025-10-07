@@ -1,0 +1,30 @@
+{
+  "authority_id": "broxbourne",
+  "authority_name": "Broxbourne",
+  "url_slug": "broxbourne",
+  "generated_at": "2025-10-07T15:38:29.398197",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T15:38:29.398198"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T15:40:05.694490"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T15:44:03.015830"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T15:44:03.041349"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072244097b25895efdc84cd9'}",
+  "status": "failed"
+}

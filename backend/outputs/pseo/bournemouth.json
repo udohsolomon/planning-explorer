@@ -1,0 +1,30 @@
+{
+  "authority_id": "bournemouth",
+  "authority_name": "Bournemouth",
+  "url_slug": "bournemouth",
+  "generated_at": "2025-10-07T15:49:52.070971",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T15:49:52.070975"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T15:49:52.071590"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T15:50:20.012883"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T15:50:20.042682"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072250265725983b7b33440d'}",
+  "status": "failed"
+}

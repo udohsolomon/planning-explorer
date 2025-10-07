@@ -1,0 +1,30 @@
+{
+  "authority_id": "guernsey",
+  "authority_name": "Guernsey",
+  "url_slug": "guernsey",
+  "generated_at": "2025-10-07T16:05:35.305786",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:05:35.305788"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:05:35.318412"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:06:09.405881"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:06:09.437041"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072306188f7c3b3c040943d7'}",
+  "status": "failed"
+}

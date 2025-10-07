@@ -1,0 +1,30 @@
+{
+  "authority_id": "thurrock",
+  "authority_name": "Thurrock",
+  "url_slug": "thurrock",
+  "generated_at": "2025-10-07T16:05:43.597261",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:05:43.597264"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:05:43.599518"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:06:32.969035"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:06:32.993906"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007230642d089bce2279f4b24'}",
+  "status": "failed"
+}

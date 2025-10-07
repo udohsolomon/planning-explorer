@@ -1,0 +1,30 @@
+{
+  "authority_id": "loch-lomond",
+  "authority_name": "Loch Lomond",
+  "url_slug": "loch-lomond",
+  "generated_at": "2025-10-07T16:23:27.745160",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:23:27.745163"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:23:27.763965"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:23:47.154052"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:23:47.195910"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007232354efc3859ff7494b31'}",
+  "status": "failed"
+}

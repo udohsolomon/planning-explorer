@@ -1,0 +1,30 @@
+{
+  "authority_id": "rossendale",
+  "authority_name": "Rossendale",
+  "url_slug": "rossendale",
+  "generated_at": "2025-10-07T16:10:02.442876",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:10:02.442879"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:10:02.457373"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:10:33.852642"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:10:33.888699"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072310395d4bc8556dbc4fc7'}",
+  "status": "failed"
+}

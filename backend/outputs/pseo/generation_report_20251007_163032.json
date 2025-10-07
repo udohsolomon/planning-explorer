@@ -1,0 +1,3783 @@
+{
+  "generation_complete": true,
+  "timestamp": "2025-10-07T16:30:32.607023",
+  "statistics": {
+    "total_authorities": 424,
+    "generated": 418,
+    "failed": 0,
+    "success_rate": 100.0
+  },
+  "costs": {
+    "total": 1331.4965970000003,
+    "average_per_page": 3.1853985574162684
+  },
+  "time": {
+    "elapsed_seconds": 20384.259598,
+    "elapsed_hours": 5.662294332777778,
+    "avg_seconds_per_page": 48.76617128708134
+  },
+  "results": [
+    {
+      "slug": "babergh-mid-suffolk",
+      "name": "Babergh Mid Suffolk",
+      "status": "success",
+      "cost": 0.139623,
+      "words": 6402,
+      "elapsed": 123.155522,
+      "timestamp": "2025-10-07T10:52:51.580617"
+    },
+    {
+      "slug": "mid-kent",
+      "name": "Mid Kent",
+      "status": "success",
+      "cost": 0.258003,
+      "words": 5970,
+      "elapsed": 238.704192,
+      "timestamp": "2025-10-07T10:54:47.113834"
+    },
+    {
+      "slug": "chiltern-south-bucks",
+      "name": "Chiltern South Bucks",
+      "status": "success",
+      "cost": 0.493656,
+      "words": 5573,
+      "elapsed": 477.695702,
+      "timestamp": "2025-10-07T10:58:46.130357"
+    },
+    {
+      "slug": "south-cambridgeshire",
+      "name": "South Cambridgeshire",
+      "status": "success",
+      "cost": 0.37310699999999997,
+      "words": 5680,
+      "elapsed": 321.103305,
+      "timestamp": "2025-10-07T10:56:09.555658"
+    },
+    {
+      "slug": "wiltshire",
+      "name": "Wiltshire",
+      "status": "success",
+      "cost": 1.2160140000000004,
+      "words": 5183,
+      "elapsed": 1092.849557,
+      "timestamp": "2025-10-07T11:09:01.277547"
+    },
+    {
+      "slug": "south-norfolk-broadland",
+      "name": "South Norfolk Broadland",
+      "status": "success",
+      "cost": 0.6094259999999999,
+      "words": 5212,
+      "elapsed": 332.027361,
+      "timestamp": "2025-10-07T11:00:19.183010"
+    },
+    {
+      "slug": "dorset",
+      "name": "Dorset",
+      "status": "success",
+      "cost": 0.736305,
+      "words": 5089,
+      "elapsed": 417.459164,
+      "timestamp": "2025-10-07T11:01:44.631065"
+    },
+    {
+      "slug": "east-suffolk",
+      "name": "East Suffolk",
+      "status": "success",
+      "cost": 0.8510250000000001,
+      "words": 5446,
+      "elapsed": 438.498988,
+      "timestamp": "2025-10-07T11:03:28.108935"
+    },
+    {
+      "slug": "aylesbury-vale",
+      "name": "Aylesbury Vale",
+      "status": "success",
+      "cost": 0.9657030000000001,
+      "words": 5585,
+      "elapsed": 390.825765,
+      "timestamp": "2025-10-07T11:05:17.013238"
+    },
+    {
+      "slug": "south-west-devon",
+      "name": "South West Devon",
+      "status": "success",
+      "cost": 1.087212,
+      "words": 6091,
+      "elapsed": 402.793112,
+      "timestamp": "2025-10-07T11:07:02.021660"
+    },
+    {
+      "slug": "sevenoaks",
+      "name": "Sevenoaks",
+      "status": "success",
+      "cost": 1.6841700000000008,
+      "words": 5434,
+      "elapsed": 374.926471,
+      "timestamp": "2025-10-07T11:15:18.259776"
+    },
+    {
+      "slug": "harrogate",
+      "name": "Harrogate",
+      "status": "success",
+      "cost": 2.2381140000000004,
+      "words": 5544,
+      "elapsed": 904.276502,
+      "timestamp": "2025-10-07T11:24:07.631016"
+    },
+    {
+      "slug": "guildford",
+      "name": "Guildford",
+      "status": "success",
+      "cost": 1.3354950000000005,
+      "words": 5607,
+      "elapsed": 80.815628,
+      "timestamp": "2025-10-07T11:10:24.149530"
+    },
+    {
+      "slug": "wealden",
+      "name": "Wealden",
+      "status": "success",
+      "cost": 2.3437560000000004,
+      "words": 5088,
+      "elapsed": 973.21971,
+      "timestamp": "2025-10-07T11:25:16.547629"
+    },
+    {
+      "slug": "cotswold",
+      "name": "Cotswold",
+      "status": "success",
+      "cost": 1.5738210000000008,
+      "words": 5547,
+      "elapsed": 277.142846,
+      "timestamp": "2025-10-07T11:13:40.493467"
+    },
+    {
+      "slug": "barnet",
+      "name": "Barnet",
+      "status": "success",
+      "cost": 1.4534070000000008,
+      "words": 5209,
+      "elapsed": 65.275771,
+      "timestamp": "2025-10-07T11:11:29.462599"
+    },
+    {
+      "slug": "south-kesteven",
+      "name": "South Kesteven",
+      "status": "success",
+      "cost": 1.7973180000000009,
+      "words": 5590,
+      "elapsed": 347.715832,
+      "timestamp": "2025-10-07T11:17:17.227260"
+    },
+    {
+      "slug": "wycombe",
+      "name": "Wycombe",
+      "status": "success",
+      "cost": 2.0119950000000006,
+      "words": 5218,
+      "elapsed": 443.72615,
+      "timestamp": "2025-10-07T11:21:04.267302"
+    },
+    {
+      "slug": "stratford-on-avon",
+      "name": "Stratford on Avon",
+      "status": "success",
+      "cost": 2.1262800000000004,
+      "words": 5188,
+      "elapsed": 450.023321,
+      "timestamp": "2025-10-07T11:22:48.338214"
+    },
+    {
+      "slug": "edinburgh",
+      "name": "Edinburgh",
+      "status": "success",
+      "cost": 1.906770000000001,
+      "words": 5470,
+      "elapsed": 109.974661,
+      "timestamp": "2025-10-07T11:19:07.248908"
+    },
+    {
+      "slug": "elmbridge",
+      "name": "Elmbridge",
+      "status": "success",
+      "cost": 3.3194640000000013,
+      "words": 5486,
+      "elapsed": 1114.252709,
+      "timestamp": "2025-10-07T11:43:52.826931"
+    },
+    {
+      "slug": "cherwell",
+      "name": "Cherwell",
+      "status": "success",
+      "cost": 3.1981140000000012,
+      "words": 5955,
+      "elapsed": 1018.8607,
+      "timestamp": "2025-10-07T11:42:17.441503"
+    },
+    {
+      "slug": "reigate",
+      "name": "Reigate",
+      "status": "success",
+      "cost": 2.4620070000000007,
+      "words": 5284,
+      "elapsed": 159.384104,
+      "timestamp": "2025-10-07T11:27:57.985205"
+    },
+    {
+      "slug": "uttlesford",
+      "name": "Uttlesford",
+      "status": "success",
+      "cost": 2.7023070000000007,
+      "words": 5900,
+      "elapsed": 380.737121,
+      "timestamp": "2025-10-07T11:31:39.342746"
+    },
+    {
+      "slug": "epping-forest",
+      "name": "Epping Forest",
+      "status": "success",
+      "cost": 2.5837920000000008,
+      "words": 5757,
+      "elapsed": 252.389664,
+      "timestamp": "2025-10-07T11:29:31.010097"
+    },
+    {
+      "slug": "south-oxfordshire",
+      "name": "South Oxfordshire",
+      "status": "success",
+      "cost": 2.9271480000000007,
+      "words": 5309,
+      "elapsed": 402.64535,
+      "timestamp": "2025-10-07T11:34:40.691301"
+    },
+    {
+      "slug": "chelmsford",
+      "name": "Chelmsford",
+      "status": "success",
+      "cost": 3.451563000000002,
+      "words": 5370,
+      "elapsed": 974.55188,
+      "timestamp": "2025-10-07T11:45:45.593350"
+    },
+    {
+      "slug": "wandsworth",
+      "name": "Wandsworth",
+      "status": "success",
+      "cost": 2.8161780000000007,
+      "words": 5621,
+      "elapsed": 102.075342,
+      "timestamp": "2025-10-07T11:33:21.465122"
+    },
+    {
+      "slug": "tunbridge-wells",
+      "name": "Tunbridge Wells",
+      "status": "success",
+      "cost": 3.058119000000001,
+      "words": 5990,
+      "elapsed": 404.820821,
+      "timestamp": "2025-10-07T11:40:06.332844"
+    },
+    {
+      "slug": "huntingdonshire",
+      "name": "Huntingdonshire",
+      "status": "success",
+      "cost": 3.5599170000000013,
+      "words": 5221,
+      "elapsed": 745.124688,
+      "timestamp": "2025-10-07T11:47:05.863983"
+    },
+    {
+      "slug": "north-norfolk",
+      "name": "North Norfolk",
+      "status": "success",
+      "cost": 4.400985000000001,
+      "words": 5739,
+      "elapsed": 743.183502,
+      "timestamp": "2025-10-07T11:59:31.088135"
+    },
+    {
+      "slug": "east-hertfordshire",
+      "name": "East Hertfordshire",
+      "status": "success",
+      "cost": 3.898377000000001,
+      "words": 5453,
+      "elapsed": 328.209678,
+      "timestamp": "2025-10-07T11:52:36.123941"
+    },
+    {
+      "slug": "test-valley",
+      "name": "Test Valley",
+      "status": "success",
+      "cost": 3.786630000000001,
+      "words": 5725,
+      "elapsed": 169.926681,
+      "timestamp": "2025-10-07T11:49:57.842641"
+    },
+    {
+      "slug": "horsham",
+      "name": "Horsham",
+      "status": "success",
+      "cost": 4.82406,
+      "words": 6192,
+      "elapsed": 1150.978048,
+      "timestamp": "2025-10-07T12:06:18.875677"
+    },
+    {
+      "slug": "bristol",
+      "name": "Bristol",
+      "status": "success",
+      "cost": 3.6723000000000012,
+      "words": 5525,
+      "elapsed": 84.260598,
+      "timestamp": "2025-10-07T11:48:32.159266"
+    },
+    {
+      "slug": "kensington",
+      "name": "Kensington",
+      "status": "success",
+      "cost": 4.029840000000001,
+      "words": 5532,
+      "elapsed": 324.311357,
+      "timestamp": "2025-10-07T11:53:56.528748"
+    },
+    {
+      "slug": "waverley",
+      "name": "Waverley",
+      "status": "success",
+      "cost": 4.662249000000001,
+      "words": 5495,
+      "elapsed": 878.202525,
+      "timestamp": "2025-10-07T12:04:36.100723"
+    },
+    {
+      "slug": "east-devon",
+      "name": "East Devon",
+      "status": "success",
+      "cost": 4.284510000000002,
+      "words": 5881,
+      "elapsed": 261.713093,
+      "timestamp": "2025-10-07T11:56:57.859484"
+    },
+    {
+      "slug": "bromley",
+      "name": "Bromley",
+      "status": "success",
+      "cost": 4.146336000000002,
+      "words": 5755,
+      "elapsed": 86.093758,
+      "timestamp": "2025-10-07T11:55:22.643088"
+    },
+    {
+      "slug": "dacorum",
+      "name": "Dacorum",
+      "status": "success",
+      "cost": 4.5492750000000015,
+      "words": 5697,
+      "elapsed": 400.140398,
+      "timestamp": "2025-10-07T12:02:02.822292"
+    },
+    {
+      "slug": "ealing",
+      "name": "Ealing",
+      "status": "success",
+      "cost": 4.937265,
+      "words": 5608,
+      "elapsed": 94.888451,
+      "timestamp": "2025-10-07T12:07:55.805562"
+    },
+    {
+      "slug": "shropshire",
+      "name": "Shropshire",
+      "status": "success",
+      "cost": 5.5193610000000035,
+      "words": 5133,
+      "elapsed": 549.716752,
+      "timestamp": "2025-10-07T12:15:30.635759"
+    },
+    {
+      "slug": "kings-lynn",
+      "name": "Kings Lynn",
+      "status": "success",
+      "cost": 5.052876000000001,
+      "words": 5805,
+      "elapsed": 183.638597,
+      "timestamp": "2025-10-07T12:09:24.563349"
+    },
+    {
+      "slug": "mid-sussex",
+      "name": "Mid Sussex",
+      "status": "success",
+      "cost": 5.171631000000002,
+      "words": 5994,
+      "elapsed": 269.002307,
+      "timestamp": "2025-10-07T12:10:49.919070"
+    },
+    {
+      "slug": "hart",
+      "name": "Hart",
+      "status": "success",
+      "cost": 5.867289000000004,
+      "words": 5603,
+      "elapsed": 950.072288,
+      "timestamp": "2025-10-07T12:22:10.994185"
+    },
+    {
+      "slug": "winchester",
+      "name": "Winchester",
+      "status": "success",
+      "cost": 5.288643000000004,
+      "words": 5875,
+      "elapsed": 296.332163,
+      "timestamp": "2025-10-07T12:12:52.159929"
+    },
+    {
+      "slug": "canterbury",
+      "name": "Canterbury",
+      "status": "success",
+      "cost": 5.410506000000003,
+      "words": 5759,
+      "elapsed": 286.435572,
+      "timestamp": "2025-10-07T12:14:11.052498"
+    },
+    {
+      "slug": "stroud",
+      "name": "Stroud",
+      "status": "success",
+      "cost": 5.9797620000000045,
+      "words": 5096,
+      "elapsed": 778.821162,
+      "timestamp": "2025-10-07T12:23:48.808655"
+    },
+    {
+      "slug": "west-suffolk",
+      "name": "West Suffolk",
+      "status": "success",
+      "cost": 5.639766000000003,
+      "words": 6025,
+      "elapsed": 330.27693,
+      "timestamp": "2025-10-07T12:18:22.464046"
+    },
+    {
+      "slug": "north-hertfordshire",
+      "name": "North Hertfordshire",
+      "status": "success",
+      "cost": 5.755263000000004,
+      "words": 5664,
+      "elapsed": 377.517684,
+      "timestamp": "2025-10-07T12:20:28.590794"
+    },
+    {
+      "slug": "st-albans",
+      "name": "St Albans",
+      "status": "success",
+      "cost": 6.606153000000004,
+      "words": 5662,
+      "elapsed": 459.482651,
+      "timestamp": "2025-10-07T12:31:30.349373"
+    },
+    {
+      "slug": "south-somerset",
+      "name": "South Somerset",
+      "status": "success",
+      "cost": 6.717288000000004,
+      "words": 5606,
+      "elapsed": 555.483902,
+      "timestamp": "2025-10-07T12:33:06.345997"
+    },
+    {
+      "slug": "west-northamptonshire",
+      "name": "West Northamptonshire",
+      "status": "success",
+      "cost": 6.492219000000005,
+      "words": 5768,
+      "elapsed": 379.294796,
+      "timestamp": "2025-10-07T12:30:10.156002"
+    },
+    {
+      "slug": "bradford",
+      "name": "Bradford",
+      "status": "success",
+      "cost": 6.095664000000005,
+      "words": 5844,
+      "elapsed": 83.04064,
+      "timestamp": "2025-10-07T12:25:13.885542"
+    },
+    {
+      "slug": "croydon",
+      "name": "Croydon",
+      "status": "success",
+      "cost": 6.211488000000005,
+      "words": 5686,
+      "elapsed": 214.756503,
+      "timestamp": "2025-10-07T12:27:25.593084"
+    },
+    {
+      "slug": "richmond",
+      "name": "Richmond",
+      "status": "success",
+      "cost": 6.352515000000005,
+      "words": 5729,
+      "elapsed": 88.264675,
+      "timestamp": "2025-10-07T12:28:53.877303"
+    },
+    {
+      "slug": "ashford",
+      "name": "Ashford",
+      "status": "success",
+      "cost": 7.189740000000006,
+      "words": 5329,
+      "elapsed": 805.631897,
+      "timestamp": "2025-10-07T12:40:51.273195"
+    },
+    {
+      "slug": "tonbridge",
+      "name": "Tonbridge",
+      "status": "success",
+      "cost": 6.947415000000006,
+      "words": 5841,
+      "elapsed": 477.094249,
+      "timestamp": "2025-10-07T12:36:51.008992"
+    },
+    {
+      "slug": "basingstoke",
+      "name": "Basingstoke",
+      "status": "success",
+      "cost": 7.067778000000005,
+      "words": 5981,
+      "elapsed": 560.204595,
+      "timestamp": "2025-10-07T12:39:30.390364"
+    },
+    {
+      "slug": "brent",
+      "name": "Brent",
+      "status": "success",
+      "cost": 6.830535000000006,
+      "words": 5723,
+      "elapsed": 80.324245,
+      "timestamp": "2025-10-07T12:34:26.695847"
+    },
+    {
+      "slug": "bath",
+      "name": "Bath",
+      "status": "success",
+      "cost": 7.6613910000000045,
+      "words": 5522,
+      "elapsed": 391.509616,
+      "timestamp": "2025-10-07T12:47:24.827708"
+    },
+    {
+      "slug": "welwyn-hatfield",
+      "name": "Welwyn Hatfield",
+      "status": "success",
+      "cost": 7.4339100000000045,
+      "words": 5988,
+      "elapsed": 205.565916,
+      "timestamp": "2025-10-07T12:44:18.916364"
+    },
+    {
+      "slug": "arun",
+      "name": "Arun",
+      "status": "success",
+      "cost": 8.294088000000006,
+      "words": 5662,
+      "elapsed": 1012.604815,
+      "timestamp": "2025-10-07T12:57:45.918422"
+    },
+    {
+      "slug": "camden",
+      "name": "Camden",
+      "status": "success",
+      "cost": 7.3130220000000055,
+      "words": 6121,
+      "elapsed": 99.661713,
+      "timestamp": "2025-10-07T12:42:32.991419"
+    },
+    {
+      "slug": "cheshire-east",
+      "name": "Cheshire East",
+      "status": "success",
+      "cost": 7.548204000000005,
+      "words": 5664,
+      "elapsed": 306.88273,
+      "timestamp": "2025-10-07T12:46:00.224649"
+    },
+    {
+      "slug": "westmorland-and-furness",
+      "name": "Westmorland and Furness",
+      "status": "success",
+      "cost": 7.894242000000005,
+      "words": 5703,
+      "elapsed": 471.290374,
+      "timestamp": "2025-10-07T12:50:24.316424"
+    },
+    {
+      "slug": "northumberland-(county)",
+      "name": "Northumberland (County)",
+      "status": "success",
+      "cost": 8.024925000000005,
+      "words": 6113,
+      "elapsed": 489.33776,
+      "timestamp": "2025-10-07T12:52:28.281010"
+    },
+    {
+      "slug": "south-downs",
+      "name": "South Downs",
+      "status": "success",
+      "cost": 8.166579000000004,
+      "words": 6141,
+      "elapsed": 592.000422,
+      "timestamp": "2025-10-07T12:55:52.287977"
+    },
+    {
+      "slug": "redbridge",
+      "name": "Redbridge",
+      "status": "success",
+      "cost": 7.777896000000005,
+      "words": 5800,
+      "elapsed": 80.163768,
+      "timestamp": "2025-10-07T12:48:45.026652"
+    },
+    {
+      "slug": "mendip",
+      "name": "Mendip",
+      "status": "success",
+      "cost": 8.416755000000006,
+      "words": 5712,
+      "elapsed": 648.187488,
+      "timestamp": "2025-10-07T12:59:33.229476"
+    },
+    {
+      "slug": "breckland",
+      "name": "Breckland",
+      "status": "success",
+      "cost": 8.893701000000002,
+      "words": 5552,
+      "elapsed": 433.164544,
+      "timestamp": "2025-10-07T13:06:48.479742"
+    },
+    {
+      "slug": "newark-and-sherwood",
+      "name": "Newark and Sherwood",
+      "status": "success",
+      "cost": 8.768463000000004,
+      "words": 5997,
+      "elapsed": 329.365432,
+      "timestamp": "2025-10-07T13:05:04.644536"
+    },
+    {
+      "slug": "colchester",
+      "name": "Colchester",
+      "status": "success",
+      "cost": 9.355902,
+      "words": 5208,
+      "elapsed": 787.251519,
+      "timestamp": "2025-10-07T13:12:42.552094"
+    },
+    {
+      "slug": "charnwood",
+      "name": "Charnwood",
+      "status": "success",
+      "cost": 9.249477000000002,
+      "words": 5889,
+      "elapsed": 696.134722,
+      "timestamp": "2025-10-07T13:11:11.420238"
+    },
+    {
+      "slug": "manchester",
+      "name": "Manchester",
+      "status": "success",
+      "cost": 8.529180000000004,
+      "words": 5241,
+      "elapsed": 86.761482,
+      "timestamp": "2025-10-07T13:01:02.057148"
+    },
+    {
+      "slug": "mole-valley",
+      "name": "Mole Valley",
+      "status": "success",
+      "cost": 8.650719000000004,
+      "words": 6124,
+      "elapsed": 114.966439,
+      "timestamp": "2025-10-07T13:02:57.049782"
+    },
+    {
+      "slug": "three-rivers",
+      "name": "Three Rivers",
+      "status": "success",
+      "cost": 9.020433000000002,
+      "words": 5357,
+      "elapsed": 307.228265,
+      "timestamp": "2025-10-07T13:08:04.322876"
+    },
+    {
+      "slug": "west-oxfordshire",
+      "name": "West Oxfordshire",
+      "status": "success",
+      "cost": 9.130578000000002,
+      "words": 5389,
+      "elapsed": 278.734629,
+      "timestamp": "2025-10-07T13:09:43.425776"
+    },
+    {
+      "slug": "wychavon",
+      "name": "Wychavon",
+      "status": "success",
+      "cost": 9.597432000000003,
+      "words": 5649,
+      "elapsed": 813.38318,
+      "timestamp": "2025-10-07T13:20:21.894115"
+    },
+    {
+      "slug": "dover",
+      "name": "Dover",
+      "status": "success",
+      "cost": 9.470472000000001,
+      "words": 5830,
+      "elapsed": 404.624865,
+      "timestamp": "2025-10-07T13:14:48.991413"
+    },
+    {
+      "slug": "merton",
+      "name": "Merton",
+      "status": "success",
+      "cost": 10.757157000000003,
+      "words": 5676,
+      "elapsed": 1078.315616,
+      "timestamp": "2025-10-07T13:38:22.289486"
+    },
+    {
+      "slug": "cheltenham",
+      "name": "Cheltenham",
+      "status": "success",
+      "cost": 9.702945000000003,
+      "words": 5109,
+      "elapsed": 78.04145,
+      "timestamp": "2025-10-07T13:21:41.999018"
+    },
+    {
+      "slug": "chichester",
+      "name": "Chichester",
+      "status": "success",
+      "cost": 10.523481000000006,
+      "words": 5334,
+      "elapsed": 868.111178,
+      "timestamp": "2025-10-07T13:34:52.069369"
+    },
+    {
+      "slug": "hambleton",
+      "name": "Hambleton",
+      "status": "success",
+      "cost": 9.821994000000002,
+      "words": 5838,
+      "elapsed": 180.507766,
+      "timestamp": "2025-10-07T13:23:24.481690"
+    },
+    {
+      "slug": "tendring",
+      "name": "Tendring",
+      "status": "success",
+      "cost": 10.295892000000002,
+      "words": 5596,
+      "elapsed": 642.947819,
+      "timestamp": "2025-10-07T13:31:06.895336"
+    },
+    {
+      "slug": "vale-of-white-horse",
+      "name": "Vale of White Horse",
+      "status": "success",
+      "cost": 10.063149000000001,
+      "words": 5640,
+      "elapsed": 341.099038,
+      "timestamp": "2025-10-07T13:27:23.114042"
+    },
+    {
+      "slug": "hounslow",
+      "name": "Hounslow",
+      "status": "success",
+      "cost": 9.94332,
+      "words": 5291,
+      "elapsed": 153.330373,
+      "timestamp": "2025-10-07T13:25:57.850287"
+    },
+    {
+      "slug": "east-riding",
+      "name": "East Riding",
+      "status": "success",
+      "cost": 10.414212000000004,
+      "words": 5672,
+      "elapsed": 438.26174,
+      "timestamp": "2025-10-07T13:33:16.154680"
+    },
+    {
+      "slug": "lewisham",
+      "name": "Lewisham",
+      "status": "success",
+      "cost": 10.181163000000002,
+      "words": 5753,
+      "elapsed": 112.324818,
+      "timestamp": "2025-10-07T13:29:15.483639"
+    },
+    {
+      "slug": "kirklees",
+      "name": "Kirklees",
+      "status": "success",
+      "cost": 10.636650000000005,
+      "words": 5477,
+      "elapsed": 452.215084,
+      "timestamp": "2025-10-07T13:36:47.738566"
+    },
+    {
+      "slug": "haringey",
+      "name": "Haringey",
+      "status": "success",
+      "cost": 10.871826000000006,
+      "words": 5255,
+      "elapsed": 142.225401,
+      "timestamp": "2025-10-07T13:40:46.579483"
+    },
+    {
+      "slug": "teignbridge",
+      "name": "Teignbridge",
+      "status": "success",
+      "cost": 11.920863000000002,
+      "words": 5739,
+      "elapsed": 1280.815726,
+      "timestamp": "2025-10-07T13:59:45.160600"
+    },
+    {
+      "slug": "hillingdon",
+      "name": "Hillingdon",
+      "status": "success",
+      "cost": 10.989105000000004,
+      "words": 5721,
+      "elapsed": 335.575679,
+      "timestamp": "2025-10-07T13:43:59.940707"
+    },
+    {
+      "slug": "chester",
+      "name": "Chester",
+      "status": "success",
+      "cost": 11.805336000000002,
+      "words": 5730,
+      "elapsed": 1112.577444,
+      "timestamp": "2025-10-07T13:56:56.919997"
+    },
+    {
+      "slug": "greenwich",
+      "name": "Greenwich",
+      "status": "success",
+      "cost": 11.106507000000004,
+      "words": 5873,
+      "elapsed": 447.252552,
+      "timestamp": "2025-10-07T13:45:51.620396"
+    },
+    {
+      "slug": "lambeth",
+      "name": "Lambeth",
+      "status": "success",
+      "cost": 11.221374000000004,
+      "words": 5265,
+      "elapsed": 111.022307,
+      "timestamp": "2025-10-07T13:47:42.660430"
+    },
+    {
+      "slug": "enfield",
+      "name": "Enfield",
+      "status": "success",
+      "cost": 11.370213000000005,
+      "words": 6127,
+      "elapsed": 218.315497,
+      "timestamp": "2025-10-07T13:49:29.951797"
+    },
+    {
+      "slug": "adur-and-worthing",
+      "name": "Adur and Worthing",
+      "status": "success",
+      "cost": 11.689989000000004,
+      "words": 5360,
+      "elapsed": 505.482319,
+      "timestamp": "2025-10-07T13:54:17.149410"
+    },
+    {
+      "slug": "warwick",
+      "name": "Warwick",
+      "status": "success",
+      "cost": 11.470050000000004,
+      "words": 4931,
+      "elapsed": 64.646221,
+      "timestamp": "2025-10-07T13:50:34.636775"
+    },
+    {
+      "slug": "sheffield",
+      "name": "Sheffield",
+      "status": "success",
+      "cost": 11.581167000000006,
+      "words": 5617,
+      "elapsed": 154.229158,
+      "timestamp": "2025-10-07T13:52:04.229074"
+    },
+    {
+      "slug": "harborough",
+      "name": "Harborough",
+      "status": "success",
+      "cost": 12.148059000000002,
+      "words": 5570,
+      "elapsed": 212.639732,
+      "timestamp": "2025-10-07T14:03:22.121487"
+    },
+    {
+      "slug": "woking",
+      "name": "Woking",
+      "status": "success",
+      "cost": 12.713421,
+      "words": 4578,
+      "elapsed": 687.525018,
+      "timestamp": "2025-10-07T14:11:17.046025"
+    },
+    {
+      "slug": "southwark",
+      "name": "Southwark",
+      "status": "success",
+      "cost": 12.035433000000003,
+      "words": 5126,
+      "elapsed": 103.546542,
+      "timestamp": "2025-10-07T14:01:33.022251"
+    },
+    {
+      "slug": "runnymede",
+      "name": "Runnymede",
+      "status": "success",
+      "cost": 12.490424999999998,
+      "words": 5351,
+      "elapsed": 474.716616,
+      "timestamp": "2025-10-07T14:07:44.185160"
+    },
+    {
+      "slug": "lancaster",
+      "name": "Lancaster",
+      "status": "success",
+      "cost": 12.597798,
+      "words": 5317,
+      "elapsed": 619.892554,
+      "timestamp": "2025-10-07T14:10:09.367885"
+    },
+    {
+      "slug": "hertsmere",
+      "name": "Hertsmere",
+      "status": "success",
+      "cost": 12.259977000000001,
+      "words": 5329,
+      "elapsed": 200.211317,
+      "timestamp": "2025-10-07T14:04:53.301999"
+    },
+    {
+      "slug": "east-lindsey",
+      "name": "East Lindsey",
+      "status": "success",
+      "cost": 12.374396999999998,
+      "words": 5710,
+      "elapsed": 185.824331,
+      "timestamp": "2025-10-07T14:06:27.971501"
+    },
+    {
+      "slug": "durham",
+      "name": "Durham",
+      "status": "success",
+      "cost": 12.940313999999997,
+      "words": 5121,
+      "elapsed": 631.884061,
+      "timestamp": "2025-10-07T14:15:25.211156"
+    },
+    {
+      "slug": "tandridge",
+      "name": "Tandridge",
+      "status": "success",
+      "cost": 12.829031999999998,
+      "words": 5707,
+      "elapsed": 418.265285,
+      "timestamp": "2025-10-07T14:13:26.263539"
+    },
+    {
+      "slug": "windsor",
+      "name": "Windsor",
+      "status": "success",
+      "cost": 13.048769999999998,
+      "words": 5469,
+      "elapsed": 613.850201,
+      "timestamp": "2025-10-07T14:17:58.064057"
+    },
+    {
+      "slug": "east-cambridgeshire",
+      "name": "East Cambridgeshire",
+      "status": "success",
+      "cost": 13.390976999999998,
+      "words": 5524,
+      "elapsed": 323.936584,
+      "timestamp": "2025-10-07T14:23:24.053666"
+    },
+    {
+      "slug": "rushcliffe",
+      "name": "Rushcliffe",
+      "status": "success",
+      "cost": 13.982309999999998,
+      "words": 5349,
+      "elapsed": 1107.542586,
+      "timestamp": "2025-10-07T14:36:27.643818"
+    },
+    {
+      "slug": "surrey-heath",
+      "name": "Surrey Heath",
+      "status": "success",
+      "cost": 13.511933999999998,
+      "words": 5755,
+      "elapsed": 445.01428,
+      "timestamp": "2025-10-07T14:25:25.116088"
+    },
+    {
+      "slug": "harrow",
+      "name": "Harrow",
+      "status": "success",
+      "cost": 13.161104999999997,
+      "words": 5583,
+      "elapsed": 92.528604,
+      "timestamp": "2025-10-07T14:19:32.633855"
+    },
+    {
+      "slug": "highland",
+      "name": "Highland",
+      "status": "success",
+      "cost": 13.761876,
+      "words": 5826,
+      "elapsed": 761.993058,
+      "timestamp": "2025-10-07T14:30:42.124393"
+    },
+    {
+      "slug": "brighton",
+      "name": "Brighton",
+      "status": "success",
+      "cost": 13.280000999999997,
+      "words": 5566,
+      "elapsed": 146.986931,
+      "timestamp": "2025-10-07T14:21:59.651857"
+    },
+    {
+      "slug": "south-gloucestershire",
+      "name": "South Gloucestershire",
+      "status": "success",
+      "cost": 13.874604,
+      "words": 5543,
+      "elapsed": 649.136087,
+      "timestamp": "2025-10-07T14:32:48.820100"
+    },
+    {
+      "slug": "fife",
+      "name": "Fife",
+      "status": "success",
+      "cost": 14.098863,
+      "words": 5456,
+      "elapsed": 1005.344073,
+      "timestamp": "2025-10-07T14:40:09.418498"
+    },
+    {
+      "slug": "stockport",
+      "name": "Stockport",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 53.342654,
+      "timestamp": "2025-10-07T14:26:18.461011"
+    },
+    {
+      "slug": "havering",
+      "name": "Havering",
+      "status": "success",
+      "cost": 13.645959,
+      "words": 5170,
+      "elapsed": 133.794164,
+      "timestamp": "2025-10-07T14:28:32.302667"
+    },
+    {
+      "slug": "basildon",
+      "name": "Basildon",
+      "status": "success",
+      "cost": 14.571626999999998,
+      "words": 5542,
+      "elapsed": 439.759532,
+      "timestamp": "2025-10-07T14:47:31.226296"
+    },
+    {
+      "slug": "central-bedfordshire",
+      "name": "Central Bedfordshire",
+      "status": "success",
+      "cost": 14.457392999999998,
+      "words": 5507,
+      "elapsed": 306.930251,
+      "timestamp": "2025-10-07T14:45:18.400198"
+    },
+    {
+      "slug": "braintree",
+      "name": "Braintree",
+      "status": "success",
+      "cost": 14.809676999999997,
+      "words": 5721,
+      "elapsed": 649.666547,
+      "timestamp": "2025-10-07T14:51:01.160285"
+    },
+    {
+      "slug": "liverpool",
+      "name": "Liverpool",
+      "status": "success",
+      "cost": 14.22702,
+      "words": 6078,
+      "elapsed": 78.09947,
+      "timestamp": "2025-10-07T14:41:29.568483"
+    },
+    {
+      "slug": "shepway",
+      "name": "Shepway",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 937.907605,
+      "timestamp": "2025-10-07T14:55:49.358115"
+    },
+    {
+      "slug": "waltham-forest",
+      "name": "Waltham Forest",
+      "status": "success",
+      "cost": 14.338695,
+      "words": 5530,
+      "elapsed": 92.263433,
+      "timestamp": "2025-10-07T14:43:01.879751"
+    },
+    {
+      "slug": "kingston",
+      "name": "Kingston",
+      "status": "success",
+      "cost": 15.057485999999999,
+      "words": 5400,
+      "elapsed": 735.73444,
+      "timestamp": "2025-10-07T14:55:17.637534"
+    },
+    {
+      "slug": "herefordshire",
+      "name": "Herefordshire",
+      "status": "success",
+      "cost": 14.926415999999998,
+      "words": 5697,
+      "elapsed": 482.098997,
+      "timestamp": "2025-10-07T14:53:20.543372"
+    },
+    {
+      "slug": "islington",
+      "name": "Islington",
+      "status": "success",
+      "cost": 14.694506999999996,
+      "words": 6101,
+      "elapsed": 116.778324,
+      "timestamp": "2025-10-07T14:49:28.058957"
+    },
+    {
+      "slug": "brentwood",
+      "name": "Brentwood",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 249.387333,
+      "timestamp": "2025-10-07T14:53:37.450949"
+    },
+    {
+      "slug": "eastleigh",
+      "name": "Eastleigh",
+      "status": "success",
+      "cost": 15.805791000000003,
+      "words": 5990,
+      "elapsed": 722.279192,
+      "timestamp": "2025-10-07T15:07:53.672797"
+    },
+    {
+      "slug": "thanet",
+      "name": "Thanet",
+      "status": "success",
+      "cost": 15.567636000000002,
+      "words": 5284,
+      "elapsed": 527.331158,
+      "timestamp": "2025-10-07T15:04:38.765764"
+    },
+    {
+      "slug": "new-forest-(district)",
+      "name": "New Forest (District)",
+      "status": "success",
+      "cost": 15.216527999999998,
+      "words": 5691,
+      "elapsed": 175.023822,
+      "timestamp": "2025-10-07T14:58:46.436530"
+    },
+    {
+      "slug": "epsom-and-ewell",
+      "name": "Epsom and Ewell",
+      "status": "success",
+      "cost": 15.457773000000001,
+      "words": 5895,
+      "elapsed": 409.139666,
+      "timestamp": "2025-10-07T15:02:40.564227"
+    },
+    {
+      "slug": "west-lancashire",
+      "name": "West Lancashire",
+      "status": "success",
+      "cost": 15.338337000000001,
+      "words": 6017,
+      "elapsed": 299.964741,
+      "timestamp": "2025-10-07T15:00:51.371375"
+    },
+    {
+      "slug": "sedgemoor",
+      "name": "Sedgemoor",
+      "status": "success",
+      "cost": 16.149318000000005,
+      "words": 5678,
+      "elapsed": 845.61417,
+      "timestamp": "2025-10-07T15:12:52.062933"
+    },
+    {
+      "slug": "wokingham",
+      "name": "Wokingham",
+      "status": "success",
+      "cost": 15.687606000000002,
+      "words": 5790,
+      "elapsed": 329.298158,
+      "timestamp": "2025-10-07T15:06:20.689424"
+    },
+    {
+      "slug": "north-devon",
+      "name": "North Devon",
+      "status": "success",
+      "cost": 15.921306000000003,
+      "words": 5788,
+      "elapsed": 428.388652,
+      "timestamp": "2025-10-07T15:09:48.978742"
+    },
+    {
+      "slug": "north-kesteven",
+      "name": "North Kesteven",
+      "status": "success",
+      "cost": 16.032564000000004,
+      "words": 5507,
+      "elapsed": 404.617705,
+      "timestamp": "2025-10-07T15:11:23.419641"
+    },
+    {
+      "slug": "hammersmith-and-fulham",
+      "name": "Hammersmith and Fulham",
+      "status": "success",
+      "cost": 16.269942,
+      "words": 5245,
+      "elapsed": 504.293468,
+      "timestamp": "2025-10-07T15:14:45.019912"
+    },
+    {
+      "slug": "mid-devon",
+      "name": "Mid Devon",
+      "status": "success",
+      "cost": 16.509767999999998,
+      "words": 5767,
+      "elapsed": 242.959689,
+      "timestamp": "2025-10-07T15:18:50.041103"
+    },
+    {
+      "slug": "north-west-leicestershire",
+      "name": "North West Leicestershire",
+      "status": "success",
+      "cost": 16.878458999999992,
+      "words": 5954,
+      "elapsed": 658.863318,
+      "timestamp": "2025-10-07T15:25:45.931588"
+    },
+    {
+      "slug": "rother",
+      "name": "Rother",
+      "status": "success",
+      "cost": 17.466626999999995,
+      "words": 5620,
+      "elapsed": 1420.248029,
+      "timestamp": "2025-10-07T15:38:27.346341"
+    },
+    {
+      "slug": "fareham",
+      "name": "Fareham",
+      "status": "success",
+      "cost": 16.74824999999999,
+      "words": 5720,
+      "elapsed": 493.264434,
+      "timestamp": "2025-10-07T15:23:00.336043"
+    },
+    {
+      "slug": "trafford",
+      "name": "Trafford",
+      "status": "success",
+      "cost": 16.395152999999997,
+      "words": 5645,
+      "elapsed": 118.261186,
+      "timestamp": "2025-10-07T15:16:45.342530"
+    },
+    {
+      "slug": "malvern-hills",
+      "name": "Malvern Hills",
+      "status": "success",
+      "cost": 16.624976999999994,
+      "words": 5709,
+      "elapsed": 229.334015,
+      "timestamp": "2025-10-07T15:20:34.704009"
+    },
+    {
+      "slug": "spelthorne",
+      "name": "Spelthorne",
+      "status": "success",
+      "cost": 17.233772999999996,
+      "words": 5928,
+      "elapsed": 971.234708,
+      "timestamp": "2025-10-07T15:35:01.306065"
+    },
+    {
+      "slug": "telford",
+      "name": "Telford",
+      "status": "success",
+      "cost": 17.111594999999994,
+      "words": 5657,
+      "elapsed": 211.871803,
+      "timestamp": "2025-10-07T15:29:17.834312"
+    },
+    {
+      "slug": "maldon",
+      "name": "Maldon",
+      "status": "success",
+      "cost": 17.352431999999997,
+      "words": 5847,
+      "elapsed": 655.281446,
+      "timestamp": "2025-10-07T15:36:41.243977"
+    },
+    {
+      "slug": "west-berkshire",
+      "name": "West Berkshire",
+      "status": "success",
+      "cost": 16.996049999999993,
+      "words": 5435,
+      "elapsed": 98.957083,
+      "timestamp": "2025-10-07T15:27:24.911806"
+    },
+    {
+      "slug": "york",
+      "name": "York",
+      "status": "success",
+      "cost": 17.575952999999995,
+      "words": 5464,
+      "elapsed": 96.255113,
+      "timestamp": "2025-10-07T15:40:05.694177"
+    },
+    {
+      "slug": "bexley",
+      "name": "Bexley",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 357.237364,
+      "timestamp": "2025-10-07T15:44:26.637706"
+    },
+    {
+      "slug": "broxbourne",
+      "name": "Broxbourne",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 341.155624,
+      "timestamp": "2025-10-07T15:44:10.556240"
+    },
+    {
+      "slug": "gravesham",
+      "name": "Gravesham",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 333.35598,
+      "timestamp": "2025-10-07T15:44:02.756396"
+    },
+    {
+      "slug": "bassetlaw",
+      "name": "Bassetlaw",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 296.544612,
+      "timestamp": "2025-10-07T15:43:25.944838"
+    },
+    {
+      "slug": "torridge",
+      "name": "Torridge",
+      "status": "success",
+      "cost": 17.697392999999998,
+      "words": 6092,
+      "elapsed": 118.070412,
+      "timestamp": "2025-10-07T15:42:03.812389"
+    },
+    {
+      "slug": "north-somerset",
+      "name": "North Somerset",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 91.477337,
+      "timestamp": "2025-10-07T15:43:35.292527"
+    },
+    {
+      "slug": "east-staffordshire",
+      "name": "East Staffordshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 25.857251,
+      "timestamp": "2025-10-07T15:43:51.804479"
+    },
+    {
+      "slug": "coventry",
+      "name": "Coventry",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 7.461739,
+      "timestamp": "2025-10-07T15:43:42.757285"
+    },
+    {
+      "slug": "poole",
+      "name": "Poole",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 35.783958,
+      "timestamp": "2025-10-07T15:44:18.545492"
+    },
+    {
+      "slug": "hackney",
+      "name": "Hackney",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 10.026476,
+      "timestamp": "2025-10-07T15:44:38.699583"
+    },
+    {
+      "slug": "cardiff",
+      "name": "Cardiff",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 18.81812,
+      "timestamp": "2025-10-07T15:44:47.495893"
+    },
+    {
+      "slug": "exeter",
+      "name": "Exeter",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 26.330923,
+      "timestamp": "2025-10-07T15:44:55.016019"
+    },
+    {
+      "slug": "east-hampshire",
+      "name": "East Hampshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 66.336747,
+      "timestamp": "2025-10-07T15:45:35.016031"
+    },
+    {
+      "slug": "bromsgrove-redditch",
+      "name": "Bromsgrove Redditch",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 52.363398,
+      "timestamp": "2025-10-07T15:45:21.040592"
+    },
+    {
+      "slug": "newham",
+      "name": "Newham",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 7.345318,
+      "timestamp": "2025-10-07T15:45:02.364224"
+    },
+    {
+      "slug": "hinckley-and-bosworth",
+      "name": "Hinckley and Bosworth",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 32.656068,
+      "timestamp": "2025-10-07T15:45:27.675852"
+    },
+    {
+      "slug": "derbyshire-dales",
+      "name": "Derbyshire Dales",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 50.207787,
+      "timestamp": "2025-10-07T15:45:45.228990"
+    },
+    {
+      "slug": "norwich",
+      "name": "Norwich",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 9.464929,
+      "timestamp": "2025-10-07T15:45:11.831797"
+    },
+    {
+      "slug": "west-lindsey",
+      "name": "West Lindsey",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 46.908291,
+      "timestamp": "2025-10-07T15:45:58.751078"
+    },
+    {
+      "slug": "east-northamptonshire",
+      "name": "East Northamptonshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 55.741182,
+      "timestamp": "2025-10-07T15:46:56.523970"
+    },
+    {
+      "slug": "tower-hamlets",
+      "name": "Tower Hamlets",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 6.945201,
+      "timestamp": "2025-10-07T15:46:07.732228"
+    },
+    {
+      "slug": "dartford",
+      "name": "Dartford",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 46.75971,
+      "timestamp": "2025-10-07T15:46:47.543039"
+    },
+    {
+      "slug": "bedford",
+      "name": "Bedford",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 39.14668,
+      "timestamp": "2025-10-07T15:46:39.930986"
+    },
+    {
+      "slug": "south-staffordshire",
+      "name": "South Staffordshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 27.339004,
+      "timestamp": "2025-10-07T15:46:28.135205"
+    },
+    {
+      "slug": "taunton-deane",
+      "name": "Taunton Deane",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 12.472019,
+      "timestamp": "2025-10-07T15:46:20.216721"
+    },
+    {
+      "slug": "selby",
+      "name": "Selby",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 55.456675,
+      "timestamp": "2025-10-07T15:47:15.678133"
+    },
+    {
+      "slug": "allerdale",
+      "name": "Allerdale",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 67.614581,
+      "timestamp": "2025-10-07T15:47:35.753150"
+    },
+    {
+      "slug": "forest-of-dean",
+      "name": "Forest of Dean",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 24.446326,
+      "timestamp": "2025-10-07T15:47:04.380349"
+    },
+    {
+      "slug": "tewkesbury",
+      "name": "Tewkesbury",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 39.513964,
+      "timestamp": "2025-10-07T15:47:27.059519"
+    },
+    {
+      "slug": "swansea",
+      "name": "Swansea",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 66.094134,
+      "timestamp": "2025-10-07T15:48:43.872702"
+    },
+    {
+      "slug": "watford",
+      "name": "Watford",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 53.298197,
+      "timestamp": "2025-10-07T15:48:31.075517"
+    },
+    {
+      "slug": "glasgow",
+      "name": "Glasgow",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 6.798227,
+      "timestamp": "2025-10-07T15:47:44.571219"
+    },
+    {
+      "slug": "sutton",
+      "name": "Sutton",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 84.808275,
+      "timestamp": "2025-10-07T15:49:02.585388"
+    },
+    {
+      "slug": "south-derbyshire",
+      "name": "South Derbyshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 36.000387,
+      "timestamp": "2025-10-07T15:48:13.773210"
+    },
+    {
+      "slug": "south-holland",
+      "name": "South Holland",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 10.854286,
+      "timestamp": "2025-10-07T15:47:55.439604"
+    },
+    {
+      "slug": "solihull",
+      "name": "Solihull",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 10.490934,
+      "timestamp": "2025-10-07T15:48:05.932363"
+    },
+    {
+      "slug": "newcastle-under-lyme",
+      "name": "Newcastle under Lyme",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 15.748794,
+      "timestamp": "2025-10-07T15:48:21.687506"
+    },
+    {
+      "slug": "chorley",
+      "name": "Chorley",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 39.910645,
+      "timestamp": "2025-10-07T15:48:53.723494"
+    },
+    {
+      "slug": "rugby",
+      "name": "Rugby",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 58.212468,
+      "timestamp": "2025-10-07T15:49:19.903011"
+    },
+    {
+      "slug": "milton-keynes",
+      "name": "Milton Keynes",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 7.538153,
+      "timestamp": "2025-10-07T15:49:29.465962"
+    },
+    {
+      "slug": "bolton",
+      "name": "Bolton",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 16.18997,
+      "timestamp": "2025-10-07T15:49:38.120385"
+    },
+    {
+      "slug": "dumfries",
+      "name": "Dumfries",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 30.139518,
+      "timestamp": "2025-10-07T15:49:52.070699"
+    },
+    {
+      "slug": "medway",
+      "name": "Medway",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 38.951254,
+      "timestamp": "2025-10-07T15:50:00.884415"
+    },
+    {
+      "slug": "aberdeenshire",
+      "name": "Aberdeenshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 90.770988,
+      "timestamp": "2025-10-07T15:50:52.698919"
+    },
+    {
+      "slug": "north-east-derbyshire",
+      "name": "North East Derbyshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 32.137954,
+      "timestamp": "2025-10-07T15:50:10.262058"
+    },
+    {
+      "slug": "ribble-valley",
+      "name": "Ribble Valley",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 41.851577,
+      "timestamp": "2025-10-07T15:50:19.974238"
+    },
+    {
+      "slug": "bournemouth",
+      "name": "Bournemouth",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 36.098467,
+      "timestamp": "2025-10-07T15:50:28.175420"
+    },
+    {
+      "slug": "isle-of-wight",
+      "name": "Isle of Wight",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 36.267363,
+      "timestamp": "2025-10-07T15:50:37.168238"
+    },
+    {
+      "slug": "doncaster",
+      "name": "Doncaster",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 81.125416,
+      "timestamp": "2025-10-07T15:51:31.396041"
+    },
+    {
+      "slug": "wakefield",
+      "name": "Wakefield",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 67.008196,
+      "timestamp": "2025-10-07T15:52:40.417211"
+    },
+    {
+      "slug": "carlisle",
+      "name": "Carlisle",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 32.890284,
+      "timestamp": "2025-10-07T15:52:06.300488"
+    },
+    {
+      "slug": "stafford",
+      "name": "Stafford",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 11.272297,
+      "timestamp": "2025-10-07T15:51:44.687194"
+    },
+    {
+      "slug": "amber-valley",
+      "name": "Amber Valley",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 20.458857,
+      "timestamp": "2025-10-07T15:51:53.868255"
+    },
+    {
+      "slug": "wyre",
+      "name": "Wyre",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 47.940584,
+      "timestamp": "2025-10-07T15:52:21.350399"
+    },
+    {
+      "slug": "barking-and-dagenham",
+      "name": "Barking and Dagenham",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 29.085388,
+      "timestamp": "2025-10-07T15:52:13.775283"
+    },
+    {
+      "slug": "fenland",
+      "name": "Fenland",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 64.557938,
+      "timestamp": "2025-10-07T15:52:58.434974"
+    },
+    {
+      "slug": "ipswich",
+      "name": "Ipswich",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 64.075303,
+      "timestamp": "2025-10-07T15:53:10.380156"
+    },
+    {
+      "slug": "staffordshire-moorlands",
+      "name": "Staffordshire Moorlands",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 34.263692,
+      "timestamp": "2025-10-07T15:52:48.043226"
+    },
+    {
+      "slug": "derby",
+      "name": "Derby",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 8.746274,
+      "timestamp": "2025-10-07T15:52:30.110571"
+    },
+    {
+      "slug": "nottingham",
+      "name": "Nottingham",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 6.197175,
+      "timestamp": "2025-10-07T15:53:18.604066"
+    },
+    {
+      "slug": "newcastle-upon-tyne",
+      "name": "Newcastle upon Tyne",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 26.080427,
+      "timestamp": "2025-10-07T15:53:38.488971"
+    },
+    {
+      "slug": "leicester",
+      "name": "Leicester",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 13.654235,
+      "timestamp": "2025-10-07T15:53:26.078255"
+    },
+    {
+      "slug": "rochford",
+      "name": "Rochford",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 82.903684,
+      "timestamp": "2025-10-07T15:54:35.312846"
+    },
+    {
+      "slug": "havant",
+      "name": "Havant",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 74.286167,
+      "timestamp": "2025-10-07T15:54:26.694472"
+    },
+    {
+      "slug": "south-ribble",
+      "name": "South Ribble",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 35.481526,
+      "timestamp": "2025-10-07T15:54:01.568001"
+    },
+    {
+      "slug": "craven",
+      "name": "Craven",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 21.612292,
+      "timestamp": "2025-10-07T15:53:47.698763"
+    },
+    {
+      "slug": "wyre-forest",
+      "name": "Wyre Forest",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 31.348837,
+      "timestamp": "2025-10-07T15:54:09.845086"
+    },
+    {
+      "slug": "sefton",
+      "name": "Sefton",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 6.788647,
+      "timestamp": "2025-10-07T15:53:54.494566"
+    },
+    {
+      "slug": "lichfield",
+      "name": "Lichfield",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 25.151167,
+      "timestamp": "2025-10-07T15:54:19.649382"
+    },
+    {
+      "slug": "peterborough",
+      "name": "Peterborough",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 57.492426,
+      "timestamp": "2025-10-07T15:55:34.835689"
+    },
+    {
+      "slug": "argyll",
+      "name": "Argyll",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 30.429026,
+      "timestamp": "2025-10-07T15:55:07.774361"
+    },
+    {
+      "slug": "southend",
+      "name": "Southend",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 63.719604,
+      "timestamp": "2025-10-07T15:55:41.063410"
+    },
+    {
+      "slug": "lincoln",
+      "name": "Lincoln",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 38.590782,
+      "timestamp": "2025-10-07T15:55:15.934670"
+    },
+    {
+      "slug": "salford",
+      "name": "Salford",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 7.756362,
+      "timestamp": "2025-10-07T15:54:45.104255"
+    },
+    {
+      "slug": "lewes",
+      "name": "Lewes",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 12.899924,
+      "timestamp": "2025-10-07T15:54:58.037778"
+    },
+    {
+      "slug": "scarborough",
+      "name": "Scarborough",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 70.860303,
+      "timestamp": "2025-10-07T15:56:08.899926"
+    },
+    {
+      "slug": "blaby",
+      "name": "Blaby",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 40.531338,
+      "timestamp": "2025-10-07T15:55:48.308765"
+    },
+    {
+      "slug": "dudley",
+      "name": "Dudley",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 7.095529,
+      "timestamp": "2025-10-07T15:55:23.032876"
+    },
+    {
+      "slug": "pendle",
+      "name": "Pendle",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 34.301119,
+      "timestamp": "2025-10-07T15:55:57.341914"
+    },
+    {
+      "slug": "fylde",
+      "name": "Fylde",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 97.519868,
+      "timestamp": "2025-10-07T15:57:48.432456"
+    },
+    {
+      "slug": "calderdale",
+      "name": "Calderdale",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 69.92603,
+      "timestamp": "2025-10-07T15:57:20.836499"
+    },
+    {
+      "slug": "perth",
+      "name": "Perth",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 37.288837,
+      "timestamp": "2025-10-07T15:56:48.198924"
+    },
+    {
+      "slug": "high-peak",
+      "name": "High Peak",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 45.627089,
+      "timestamp": "2025-10-07T15:56:56.546412"
+    },
+    {
+      "slug": "plymouth",
+      "name": "Plymouth",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 8.256881,
+      "timestamp": "2025-10-07T15:56:19.167440"
+    },
+    {
+      "slug": "belfast",
+      "name": "Belfast",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 8.588588,
+      "timestamp": "2025-10-07T15:56:27.768396"
+    },
+    {
+      "slug": "southampton",
+      "name": "Southampton",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 10.388829,
+      "timestamp": "2025-10-07T15:56:38.159967"
+    },
+    {
+      "slug": "kettering",
+      "name": "Kettering",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 59.675682,
+      "timestamp": "2025-10-07T15:57:37.843735"
+    },
+    {
+      "slug": "carmarthenshire",
+      "name": "Carmarthenshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 16.903636,
+      "timestamp": "2025-10-07T15:57:05.114100"
+    },
+    {
+      "slug": "rotherham",
+      "name": "Rotherham",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 32.069449,
+      "timestamp": "2025-10-07T15:57:28.619388"
+    },
+    {
+      "slug": "ashfield",
+      "name": "Ashfield",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 32.856694,
+      "timestamp": "2025-10-07T15:58:23.309368"
+    },
+    {
+      "slug": "broxtowe",
+      "name": "Broxtowe",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 48.687944,
+      "timestamp": "2025-10-07T15:58:39.141656"
+    },
+    {
+      "slug": "rushmoor",
+      "name": "Rushmoor",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 14.708012,
+      "timestamp": "2025-10-07T15:58:05.157724"
+    },
+    {
+      "slug": "melton",
+      "name": "Melton",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 80.608359,
+      "timestamp": "2025-10-07T15:59:11.063515"
+    },
+    {
+      "slug": "crawley",
+      "name": "Crawley",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 22.341674,
+      "timestamp": "2025-10-07T15:58:12.791510"
+    },
+    {
+      "slug": "warrington",
+      "name": "Warrington",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 73.570104,
+      "timestamp": "2025-10-07T15:59:18.731687"
+    },
+    {
+      "slug": "sunderland",
+      "name": "Sunderland",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 45.753556,
+      "timestamp": "2025-10-07T15:58:58.547817"
+    },
+    {
+      "slug": "walsall",
+      "name": "Walsall",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 7.969186,
+      "timestamp": "2025-10-07T15:58:31.281883"
+    },
+    {
+      "slug": "new-forest-(park)",
+      "name": "New Forest (Park)",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 17.971232,
+      "timestamp": "2025-10-07T15:58:49.258905"
+    },
+    {
+      "slug": "lake-district",
+      "name": "Lake District",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 201.10552,
+      "timestamp": "2025-10-07T16:02:00.279428"
+    },
+    {
+      "slug": "peak-district",
+      "name": "Peak District",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 36.611184,
+      "timestamp": "2025-10-07T16:02:38.932771"
+    },
+    {
+      "slug": "swindon",
+      "name": "Swindon",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 6.35623,
+      "timestamp": "2025-10-07T16:02:08.679048"
+    },
+    {
+      "slug": "gedling",
+      "name": "Gedling",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 84.201972,
+      "timestamp": "2025-10-07T16:03:26.525899"
+    },
+    {
+      "slug": "sandwell",
+      "name": "Sandwell",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 13.164923,
+      "timestamp": "2025-10-07T16:02:15.486404"
+    },
+    {
+      "slug": "wellingborough",
+      "name": "Wellingborough",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 95.792528,
+      "timestamp": "2025-10-07T16:03:38.114536"
+    },
+    {
+      "slug": "hastings",
+      "name": "Hastings",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 41.050125,
+      "timestamp": "2025-10-07T16:02:56.546759"
+    },
+    {
+      "slug": "rhondda",
+      "name": "Rhondda",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 13.926978,
+      "timestamp": "2025-10-07T16:02:29.423532"
+    },
+    {
+      "slug": "powys",
+      "name": "Powys",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 48.797129,
+      "timestamp": "2025-10-07T16:03:18.225328"
+    },
+    {
+      "slug": "worcester",
+      "name": "Worcester",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 7.264937,
+      "timestamp": "2025-10-07T16:02:46.200390"
+    },
+    {
+      "slug": "chesterfield",
+      "name": "Chesterfield",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 23.105513,
+      "timestamp": "2025-10-07T16:03:09.309282"
+    },
+    {
+      "slug": "eastbourne",
+      "name": "Eastbourne",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 32.899381,
+      "timestamp": "2025-10-07T16:04:13.043743"
+    },
+    {
+      "slug": "castle-point",
+      "name": "Castle Point",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 24.56286,
+      "timestamp": "2025-10-07T16:04:04.707352"
+    },
+    {
+      "slug": "newry-mourne-down",
+      "name": "Newry Mourne Down",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 47.591899,
+      "timestamp": "2025-10-07T16:04:27.736806"
+    },
+    {
+      "slug": "reading",
+      "name": "Reading",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 6.881198,
+      "timestamp": "2025-10-07T16:03:47.025205"
+    },
+    {
+      "slug": "north-tyneside",
+      "name": "North Tyneside",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 40.327284,
+      "timestamp": "2025-10-07T16:04:20.471585"
+    },
+    {
+      "slug": "wirral",
+      "name": "Wirral",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 6.516477,
+      "timestamp": "2025-10-07T16:03:53.558875"
+    },
+    {
+      "slug": "mid-ulster",
+      "name": "Mid Ulster",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 45.645957,
+      "timestamp": "2025-10-07T16:04:39.207093"
+    },
+    {
+      "slug": "north-warwickshire",
+      "name": "North Warwickshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 42.419633,
+      "timestamp": "2025-10-07T16:04:47.132512"
+    },
+    {
+      "slug": "erewash",
+      "name": "Erewash",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 53.914368,
+      "timestamp": "2025-10-07T16:05:06.963919"
+    },
+    {
+      "slug": "great-yarmouth",
+      "name": "Great Yarmouth",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 36.2118,
+      "timestamp": "2025-10-07T16:04:56.688749"
+    },
+    {
+      "slug": "wigan",
+      "name": "Wigan",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 10.189315,
+      "timestamp": "2025-10-07T16:05:19.170779"
+    },
+    {
+      "slug": "slough",
+      "name": "Slough",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 79.200266,
+      "timestamp": "2025-10-07T16:06:28.182322"
+    },
+    {
+      "slug": "aberdeen",
+      "name": "Aberdeen",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 26.322072,
+      "timestamp": "2025-10-07T16:05:35.305709"
+    },
+    {
+      "slug": "north-lincs",
+      "name": "North Lincs",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 34.615373,
+      "timestamp": "2025-10-07T16:05:43.597061"
+    },
+    {
+      "slug": "south-lanark",
+      "name": "South Lanark",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 45.222129,
+      "timestamp": "2025-10-07T16:05:54.204034"
+    },
+    {
+      "slug": "gloucester",
+      "name": "Gloucester",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 7.187206,
+      "timestamp": "2025-10-07T16:05:26.362333"
+    },
+    {
+      "slug": "ryedale",
+      "name": "Ryedale",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 43.008868,
+      "timestamp": "2025-10-07T16:06:09.384171"
+    },
+    {
+      "slug": "guernsey",
+      "name": "Guernsey",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 42.633033,
+      "timestamp": "2025-10-07T16:06:17.948859"
+    },
+    {
+      "slug": "thurrock",
+      "name": "Thurrock",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 59.278011,
+      "timestamp": "2025-10-07T16:06:42.878023"
+    },
+    {
+      "slug": "oldham",
+      "name": "Oldham",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 6.842206,
+      "timestamp": "2025-10-07T16:06:01.050034"
+    },
+    {
+      "slug": "scottish-borders",
+      "name": "Scottish Borders",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 19.785328,
+      "timestamp": "2025-10-07T16:07:04.705986"
+    },
+    {
+      "slug": "boston",
+      "name": "Boston",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 46.538799,
+      "timestamp": "2025-10-07T16:07:31.450426"
+    },
+    {
+      "slug": "glamorgan",
+      "name": "Glamorgan",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 26.392749,
+      "timestamp": "2025-10-07T16:07:11.312694"
+    },
+    {
+      "slug": "bracknell",
+      "name": "Bracknell",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 12.961808,
+      "timestamp": "2025-10-07T16:06:57.872049"
+    },
+    {
+      "slug": "jersey",
+      "name": "Jersey",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 36.236092,
+      "timestamp": "2025-10-07T16:07:21.147814"
+    },
+    {
+      "slug": "luton",
+      "name": "Luton",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 72.990313,
+      "timestamp": "2025-10-07T16:08:10.864823"
+    },
+    {
+      "slug": "mansfield",
+      "name": "Mansfield",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 47.765195,
+      "timestamp": "2025-10-07T16:07:59.084423"
+    },
+    {
+      "slug": "richmondshire",
+      "name": "Richmondshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 66.167272,
+      "timestamp": "2025-10-07T16:08:17.482448"
+    },
+    {
+      "slug": "isle-of-man",
+      "name": "Isle of Man",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 26.653931,
+      "timestamp": "2025-10-07T16:07:47.804728"
+    },
+    {
+      "slug": "rochdale",
+      "name": "Rochdale",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 7.423911,
+      "timestamp": "2025-10-07T16:07:38.876468"
+    },
+    {
+      "slug": "causeway-and-glens",
+      "name": "Causeway and Glens",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 17.694265,
+      "timestamp": "2025-10-07T16:08:37.212695"
+    },
+    {
+      "slug": "portsmouth",
+      "name": "Portsmouth",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 7.024883,
+      "timestamp": "2025-10-07T16:08:26.538474"
+    },
+    {
+      "slug": "monmouthshire",
+      "name": "Monmouthshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 81.523081,
+      "timestamp": "2025-10-07T16:09:41.037516"
+    },
+    {
+      "slug": "bolsover",
+      "name": "Bolsover",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 63.315201,
+      "timestamp": "2025-10-07T16:09:22.839501"
+    },
+    {
+      "slug": "rutland",
+      "name": "Rutland",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 56.495706,
+      "timestamp": "2025-10-07T16:09:16.024630"
+    },
+    {
+      "slug": "stevenage",
+      "name": "Stevenage",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 20.823009,
+      "timestamp": "2025-10-07T16:08:47.376473"
+    },
+    {
+      "slug": "city",
+      "name": "City",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 17.347712,
+      "timestamp": "2025-10-07T16:08:54.562853"
+    },
+    {
+      "slug": "hull",
+      "name": "Hull",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 42.980132,
+      "timestamp": "2025-10-07T16:09:30.381051"
+    },
+    {
+      "slug": "wolverhampton",
+      "name": "Wolverhampton",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 6.81191,
+      "timestamp": "2025-10-07T16:09:01.389800"
+    },
+    {
+      "slug": "torbay",
+      "name": "Torbay",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 50.873161,
+      "timestamp": "2025-10-07T16:09:52.269674"
+    },
+    {
+      "slug": "tameside",
+      "name": "Tameside",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 8.13967,
+      "timestamp": "2025-10-07T16:10:02.442521"
+    },
+    {
+      "slug": "armagh-banbridge-craigavon",
+      "name": "Armagh Banbridge Craigavon",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 27.046733,
+      "timestamp": "2025-10-07T16:10:21.339373"
+    },
+    {
+      "slug": "harlow",
+      "name": "Harlow",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 64.817901,
+      "timestamp": "2025-10-07T16:10:59.110618"
+    },
+    {
+      "slug": "east-lothian",
+      "name": "East Lothian",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 18.335475,
+      "timestamp": "2025-10-07T16:10:12.634277"
+    },
+    {
+      "slug": "hyndburn",
+      "name": "Hyndburn",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 212.382363,
+      "timestamp": "2025-10-07T16:13:26.680994"
+    },
+    {
+      "slug": "rossendale",
+      "name": "Rossendale",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 38.231079,
+      "timestamp": "2025-10-07T16:10:40.676520"
+    },
+    {
+      "slug": "stockton-on-tees",
+      "name": "Stockton-on-Tees",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 21.022939,
+      "timestamp": "2025-10-07T16:10:33.664358"
+    },
+    {
+      "slug": "barrow",
+      "name": "Barrow",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 27.427594,
+      "timestamp": "2025-10-07T16:10:48.785761"
+    },
+    {
+      "slug": "flintshire",
+      "name": "Flintshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 32.598487,
+      "timestamp": "2025-10-07T16:11:06.273934"
+    },
+    {
+      "slug": "fermanagh-and-omagh",
+      "name": "Fermanagh and Omagh",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 32.665623,
+      "timestamp": "2025-10-07T16:11:13.347872"
+    },
+    {
+      "slug": "pembrokeshire",
+      "name": "Pembrokeshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 81.836763,
+      "timestamp": "2025-10-07T16:14:50.535233"
+    },
+    {
+      "slug": "blackburn",
+      "name": "Blackburn",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 39.16066,
+      "timestamp": "2025-10-07T16:14:07.858809"
+    },
+    {
+      "slug": "bury",
+      "name": "Bury",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 7.676177,
+      "timestamp": "2025-10-07T16:13:36.375112"
+    },
+    {
+      "slug": "dundee",
+      "name": "Dundee",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 17.771124,
+      "timestamp": "2025-10-07T16:13:46.470484"
+    },
+    {
+      "slug": "newport",
+      "name": "Newport",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 74.117715,
+      "timestamp": "2025-10-07T16:14:42.817282"
+    },
+    {
+      "slug": "gwynedd",
+      "name": "Gwynedd",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 19.406893,
+      "timestamp": "2025-10-07T16:13:55.798968"
+    },
+    {
+      "slug": "burnley",
+      "name": "Burnley",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 28.801986,
+      "timestamp": "2025-10-07T16:14:15.276822"
+    },
+    {
+      "slug": "ards-and-north-down",
+      "name": "Ards and North Down",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 30.303406,
+      "timestamp": "2025-10-07T16:14:26.117715"
+    },
+    {
+      "slug": "north-lanark",
+      "name": "North Lanark",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 26.405821,
+      "timestamp": "2025-10-07T16:14:34.283146"
+    },
+    {
+      "slug": "barnsley",
+      "name": "Barnsley",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 46.462546,
+      "timestamp": "2025-10-07T16:15:01.754917"
+    },
+    {
+      "slug": "conwy",
+      "name": "Conwy",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 68.792572,
+      "timestamp": "2025-10-07T16:16:12.578402"
+    },
+    {
+      "slug": "anglesey",
+      "name": "Anglesey",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 30.670985,
+      "timestamp": "2025-10-07T16:15:34.453851"
+    },
+    {
+      "slug": "north-east-lincs",
+      "name": "North East Lincs",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 20.363708,
+      "timestamp": "2025-10-07T16:15:24.151602"
+    },
+    {
+      "slug": "darlington",
+      "name": "Darlington",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 50.518732,
+      "timestamp": "2025-10-07T16:15:54.316069"
+    },
+    {
+      "slug": "st-helens",
+      "name": "St Helens",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 7.192611,
+      "timestamp": "2025-10-07T16:15:10.976958"
+    },
+    {
+      "slug": "caerphilly",
+      "name": "Caerphilly",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 69.643644,
+      "timestamp": "2025-10-07T16:16:20.647319"
+    },
+    {
+      "slug": "cannock-chase",
+      "name": "Cannock Chase",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 18.994928,
+      "timestamp": "2025-10-07T16:15:43.148928"
+    },
+    {
+      "slug": "ceredigion",
+      "name": "Ceredigion",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 27.050503,
+      "timestamp": "2025-10-07T16:16:01.528425"
+    },
+    {
+      "slug": "wrexham",
+      "name": "Wrexham",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 50.160149,
+      "timestamp": "2025-10-07T16:16:33.321847"
+    },
+    {
+      "slug": "copeland",
+      "name": "Copeland",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 49.287762,
+      "timestamp": "2025-10-07T16:16:43.617540"
+    },
+    {
+      "slug": "redcar-and-cleveland",
+      "name": "Redcar and Cleveland",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 11.802577,
+      "timestamp": "2025-10-07T16:16:57.455729"
+    },
+    {
+      "slug": "derry-and-strabane",
+      "name": "Derry and Strabane",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 18.411395,
+      "timestamp": "2025-10-07T16:17:04.067708"
+    },
+    {
+      "slug": "christchurch",
+      "name": "Christchurch",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 25.384887,
+      "timestamp": "2025-10-07T16:17:11.045552"
+    },
+    {
+      "slug": "oadby-and-wigston",
+      "name": "Oadby and Wigston",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 36.460536,
+      "timestamp": "2025-10-07T16:17:22.120706"
+    },
+    {
+      "slug": "gateshead",
+      "name": "Gateshead",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 83.405945,
+      "timestamp": "2025-10-07T16:18:09.060123"
+    },
+    {
+      "slug": "west-lothian",
+      "name": "West Lothian",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 31.403168,
+      "timestamp": "2025-10-07T16:17:28.864751"
+    },
+    {
+      "slug": "mid-east-antrim",
+      "name": "Mid East Antrim",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 32.707568,
+      "timestamp": "2025-10-07T16:17:36.789761"
+    },
+    {
+      "slug": "south-ayr",
+      "name": "South Ayr",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 32.75647,
+      "timestamp": "2025-10-07T16:17:43.807848"
+    },
+    {
+      "slug": "lisburn-and-castlereagh",
+      "name": "Lisburn and Castlereagh",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 40.477699,
+      "timestamp": "2025-10-07T16:18:02.603180"
+    },
+    {
+      "slug": "moray",
+      "name": "Moray",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 24.906422,
+      "timestamp": "2025-10-07T16:17:53.774173"
+    },
+    {
+      "slug": "antrim-and-newtownabbey",
+      "name": "Antrim and Newtownabbey",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 37.111611,
+      "timestamp": "2025-10-07T16:18:48.215469"
+    },
+    {
+      "slug": "east-ayr",
+      "name": "East Ayr",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 11.638067,
+      "timestamp": "2025-10-07T16:18:22.742077"
+    },
+    {
+      "slug": "corby",
+      "name": "Corby",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 88.975685,
+      "timestamp": "2025-10-07T16:19:40.079827"
+    },
+    {
+      "slug": "stirling",
+      "name": "Stirling",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 29.02502,
+      "timestamp": "2025-10-07T16:18:40.128450"
+    },
+    {
+      "slug": "yorkshire-dales",
+      "name": "Yorkshire Dales",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 20.636701,
+      "timestamp": "2025-10-07T16:18:31.745255"
+    },
+    {
+      "slug": "gosport",
+      "name": "Gosport",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 66.841877,
+      "timestamp": "2025-10-07T16:19:29.591112"
+    },
+    {
+      "slug": "bridgend",
+      "name": "Bridgend",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 42.129658,
+      "timestamp": "2025-10-07T16:19:13.878367"
+    },
+    {
+      "slug": "north-york-moors",
+      "name": "North York Moors",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 27.237734,
+      "timestamp": "2025-10-07T16:19:07.375549"
+    },
+    {
+      "slug": "stoke-on-trent",
+      "name": "Stoke on Trent",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 7.578661,
+      "timestamp": "2025-10-07T16:18:55.797313"
+    },
+    {
+      "slug": "west-somerset",
+      "name": "West Somerset",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 25.768236,
+      "timestamp": "2025-10-07T16:19:21.578920"
+    },
+    {
+      "slug": "neath",
+      "name": "Neath",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 11.490964,
+      "timestamp": "2025-10-07T16:19:53.607086"
+    },
+    {
+      "slug": "preston",
+      "name": "Preston",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 22.067503,
+      "timestamp": "2025-10-07T16:20:04.196597"
+    },
+    {
+      "slug": "angus",
+      "name": "Angus",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 75.144771,
+      "timestamp": "2025-10-07T16:20:57.275079"
+    },
+    {
+      "slug": "tamworth",
+      "name": "Tamworth",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 82.342218,
+      "timestamp": "2025-10-07T16:21:04.458341"
+    },
+    {
+      "slug": "midlothian",
+      "name": "Midlothian",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 32.492825,
+      "timestamp": "2025-10-07T16:20:14.608841"
+    },
+    {
+      "slug": "south-tyneside",
+      "name": "South Tyneside",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 28.780429,
+      "timestamp": "2025-10-07T16:20:22.389985"
+    },
+    {
+      "slug": "renfrew",
+      "name": "Renfrew",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 26.382059,
+      "timestamp": "2025-10-07T16:20:30.595026"
+    },
+    {
+      "slug": "east-dunbarton",
+      "name": "East Dunbarton",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 23.579665,
+      "timestamp": "2025-10-07T16:20:38.203363"
+    },
+    {
+      "slug": "dartmoor",
+      "name": "Dartmoor",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 50.155024,
+      "timestamp": "2025-10-07T16:21:12.558714"
+    },
+    {
+      "slug": "falkirk",
+      "name": "Falkirk",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 19.598165,
+      "timestamp": "2025-10-07T16:20:50.195928"
+    },
+    {
+      "slug": "pembroke-coast",
+      "name": "Pembroke Coast",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 14.355101,
+      "timestamp": "2025-10-07T16:21:28.954844"
+    },
+    {
+      "slug": "blackpool",
+      "name": "Blackpool",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 94.058821,
+      "timestamp": "2025-10-07T16:22:48.670956"
+    },
+    {
+      "slug": "east-renfrew",
+      "name": "East Renfrew",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 23.205191,
+      "timestamp": "2025-10-07T16:21:37.809741"
+    },
+    {
+      "slug": "denbighshire",
+      "name": "Denbighshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 51.564811,
+      "timestamp": "2025-10-07T16:22:06.164605"
+    },
+    {
+      "slug": "middlesbrough",
+      "name": "Middlesbrough",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 59.096545,
+      "timestamp": "2025-10-07T16:22:13.705929"
+    },
+    {
+      "slug": "north-ayr",
+      "name": "North Ayr",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 17.659268,
+      "timestamp": "2025-10-07T16:21:46.628477"
+    },
+    {
+      "slug": "brecon-beacons",
+      "name": "Brecon Beacons",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 46.0442,
+      "timestamp": "2025-10-07T16:22:23.856773"
+    },
+    {
+      "slug": "knowsley",
+      "name": "Knowsley",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 11.244625,
+      "timestamp": "2025-10-07T16:21:57.876569"
+    },
+    {
+      "slug": "torfaen",
+      "name": "Torfaen",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 43.241096,
+      "timestamp": "2025-10-07T16:22:41.121011"
+    },
+    {
+      "slug": "halton",
+      "name": "Halton",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 26.410951,
+      "timestamp": "2025-10-07T16:22:32.611369"
+    },
+    {
+      "slug": "london-legacy",
+      "name": "London Legacy",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 29.669265,
+      "timestamp": "2025-10-07T16:23:20.391253"
+    },
+    {
+      "slug": "snowdonia",
+      "name": "Snowdonia",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 20.778053,
+      "timestamp": "2025-10-07T16:23:11.489829"
+    },
+    {
+      "slug": "hartlepool",
+      "name": "Hartlepool",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 47.887641,
+      "timestamp": "2025-10-07T16:23:38.597450"
+    },
+    {
+      "slug": "cairngorms",
+      "name": "Cairngorms",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 37.028093,
+      "timestamp": "2025-10-07T16:23:27.745041"
+    },
+    {
+      "slug": "shetlands",
+      "name": "Shetlands",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 13.376577,
+      "timestamp": "2025-10-07T16:23:04.085481"
+    },
+    {
+      "slug": "orkney",
+      "name": "Orkney",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 73.972797,
+      "timestamp": "2025-10-07T16:24:18.091967"
+    },
+    {
+      "slug": "west-dunbarton",
+      "name": "West Dunbarton",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 54.118361,
+      "timestamp": "2025-10-07T16:24:05.631334"
+    },
+    {
+      "slug": "broads",
+      "name": "Broads",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 26.664322,
+      "timestamp": "2025-10-07T16:23:47.058780"
+    },
+    {
+      "slug": "loch-lomond",
+      "name": "Loch Lomond",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 27.191722,
+      "timestamp": "2025-10-07T16:23:54.948327"
+    },
+    {
+      "slug": "essex",
+      "name": "Essex",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 47.27737,
+      "timestamp": "2025-10-07T16:24:25.885885"
+    },
+    {
+      "slug": "inverclyde",
+      "name": "Inverclyde",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 61.223714,
+      "timestamp": "2025-10-07T16:25:29.141156"
+    },
+    {
+      "slug": "merthyr-tydfil",
+      "name": "Merthyr Tydfil",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 21.028591,
+      "timestamp": "2025-10-07T16:24:48.946555"
+    },
+    {
+      "slug": "exmoor",
+      "name": "Exmoor",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 27.812097,
+      "timestamp": "2025-10-07T16:24:55.741892"
+    },
+    {
+      "slug": "blaenau-gwent",
+      "name": "Blaenau Gwent",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 54.313214,
+      "timestamp": "2025-10-07T16:25:22.237191"
+    },
+    {
+      "slug": "western-isles",
+      "name": "Western Isles",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 11.039515,
+      "timestamp": "2025-10-07T16:24:38.956989"
+    },
+    {
+      "slug": "clackmannan",
+      "name": "Clackmannan",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 14.967895,
+      "timestamp": "2025-10-07T16:25:03.932371"
+    },
+    {
+      "slug": "old-oak-park-royal",
+      "name": "Old Oak Park Royal",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 22.159733,
+      "timestamp": "2025-10-07T16:25:11.113820"
+    },
+    {
+      "slug": "leicestershire",
+      "name": "Leicestershire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 49.36071,
+      "timestamp": "2025-10-07T16:25:45.114570"
+    },
+    {
+      "slug": "staffordshire",
+      "name": "Staffordshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 33.653472,
+      "timestamp": "2025-10-07T16:25:37.587970"
+    },
+    {
+      "slug": "oxfordshire",
+      "name": "Oxfordshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 44.949972,
+      "timestamp": "2025-10-07T16:25:56.081314"
+    },
+    {
+      "slug": "alderney",
+      "name": "Alderney",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 17.327384,
+      "timestamp": "2025-10-07T16:26:15.464889"
+    },
+    {
+      "slug": "kent",
+      "name": "Kent",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 90.647234,
+      "timestamp": "2025-10-07T16:27:28.838367"
+    },
+    {
+      "slug": "northumberland-(park)",
+      "name": "Northumberland (Park)",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 10.561577,
+      "timestamp": "2025-10-07T16:26:08.698337"
+    },
+    {
+      "slug": "norfolk",
+      "name": "Norfolk",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 26.620711,
+      "timestamp": "2025-10-07T16:26:24.752668"
+    },
+    {
+      "slug": "suffolk",
+      "name": "Suffolk",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 40.460661,
+      "timestamp": "2025-10-07T16:26:38.598362"
+    },
+    {
+      "slug": "lincolnshire",
+      "name": "Lincolnshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 37.242748,
+      "timestamp": "2025-10-07T16:26:45.954077"
+    },
+    {
+      "slug": "cambridgeshire",
+      "name": "Cambridgeshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 38.19181,
+      "timestamp": "2025-10-07T16:26:53.671709"
+    },
+    {
+      "slug": "scilly-isles",
+      "name": "Scilly Isles",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 37.215659,
+      "timestamp": "2025-10-07T16:27:01.976146"
+    },
+    {
+      "slug": "lancashire",
+      "name": "Lancashire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 42.093052,
+      "timestamp": "2025-10-07T16:27:20.693892"
+    },
+    {
+      "slug": "north-yorkshire",
+      "name": "North Yorkshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 26.961099,
+      "timestamp": "2025-10-07T16:27:12.928495"
+    },
+    {
+      "slug": "somerset",
+      "name": "Somerset",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 79.452162,
+      "timestamp": "2025-10-07T16:28:50.318680"
+    },
+    {
+      "slug": "nottinghamshire",
+      "name": "Nottinghamshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 23.235185,
+      "timestamp": "2025-10-07T16:27:54.096017"
+    },
+    {
+      "slug": "west-sussex",
+      "name": "West Sussex",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 14.916048,
+      "timestamp": "2025-10-07T16:27:45.771390"
+    },
+    {
+      "slug": "devon",
+      "name": "Devon",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 86.674017,
+      "timestamp": "2025-10-07T16:28:57.529145"
+    },
+    {
+      "slug": "gloucestershire",
+      "name": "Gloucestershire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 31.086138,
+      "timestamp": "2025-10-07T16:28:01.945310"
+    },
+    {
+      "slug": "cumbria",
+      "name": "Cumbria",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 28.165018,
+      "timestamp": "2025-10-07T16:28:13.940503"
+    },
+    {
+      "slug": "worcestershire",
+      "name": "Worcestershire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 45.125228,
+      "timestamp": "2025-10-07T16:28:39.223800"
+    },
+    {
+      "slug": "east-sussex",
+      "name": "East Sussex",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 20.36518,
+      "timestamp": "2025-10-07T16:28:22.314711"
+    },
+    {
+      "slug": "derbyshire",
+      "name": "Derbyshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 18.647172,
+      "timestamp": "2025-10-07T16:28:32.601015"
+    },
+    {
+      "slug": "warwickshire",
+      "name": "Warwickshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 52.984345,
+      "timestamp": "2025-10-07T16:29:15.327430"
+    },
+    {
+      "slug": "ni-strategic-planning",
+      "name": "NI Strategic Planning",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 14.976972,
+      "timestamp": "2025-10-07T16:29:32.333197"
+    },
+    {
+      "slug": "hampshire",
+      "name": "Hampshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 29.726145,
+      "timestamp": "2025-10-07T16:29:47.084198"
+    },
+    {
+      "slug": "hertfordshire",
+      "name": "Hertfordshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 40.067388,
+      "timestamp": "2025-10-07T16:29:57.423043"
+    },
+    {
+      "slug": "buckinghamshire",
+      "name": "Buckinghamshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 47.693028,
+      "timestamp": "2025-10-07T16:30:05.049208"
+    },
+    {
+      "slug": "planning-inspectorate",
+      "name": "Planning Inspectorate",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 22.997501,
+      "timestamp": "2025-10-07T16:29:40.356541"
+    },
+    {
+      "slug": "north-northamptonshire",
+      "name": "North Northamptonshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 39.970129,
+      "timestamp": "2025-10-07T16:30:12.310091"
+    },
+    {
+      "slug": "clackmannanshire",
+      "name": "Clackmannanshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 38.449042,
+      "timestamp": "2025-10-07T16:30:18.807432"
+    },
+    {
+      "slug": "renfrewshire",
+      "name": "Renfrewshire",
+      "status": "success",
+      "cost": 0.0,
+      "words": 0,
+      "elapsed": 45.484659,
+      "timestamp": "2025-10-07T16:30:32.572191"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "authority_id": "isle-of-man",
+  "authority_name": "Isle of Man",
+  "url_slug": "isle-of-man",
+  "generated_at": "2025-10-07T16:07:21.147880",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:07:21.147883"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:07:21.148305"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:07:40.376253"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:07:40.401331"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '2025100723074713385e5707c14fde'}",
+  "status": "failed"
+}

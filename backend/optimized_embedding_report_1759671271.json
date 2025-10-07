@@ -1,0 +1,19 @@
+{
+  "session_id": "optimized_batch_1759671271",
+  "start_time": "2025-10-05T14:34:31.276693",
+  "end_time": "2025-10-05T20:41:10.801786",
+  "duration_hours": 6.110976029038429,
+  "documents_processed": 725280,
+  "successful_embeddings": 725280,
+  "failed_embeddings": 0,
+  "success_rate": 100.0,
+  "total_tokens": 23570131,
+  "total_cost_usd": 0.47140262000000027,
+  "cost_per_document": 6.499594915067288e-07,
+  "throughput_docs_per_minute": 1978.0800877895217,
+  "configuration": {
+    "es_batch_size": 1000,
+    "api_batch_size": 500,
+    "concurrent_batches": 5
+  }
+}

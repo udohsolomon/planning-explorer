@@ -1,0 +1,30 @@
+{
+  "authority_id": "salford",
+  "authority_name": "Salford",
+  "url_slug": "salford",
+  "generated_at": "2025-10-07T15:54:37.341293",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T15:54:37.341295"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T15:54:37.341657"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T15:54:37.341732"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T15:54:37.363723"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007225445756858462b074cea'}",
+  "status": "failed"
+}

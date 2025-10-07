@@ -1,0 +1,30 @@
+{
+  "authority_id": "falkirk",
+  "authority_name": "Falkirk",
+  "url_slug": "falkirk",
+  "generated_at": "2025-10-07T16:20:30.595139",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:20:30.595144"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:20:30.595600"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:20:40.362420"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:20:40.385823"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072320499d77dcb618ea4d9c'}",
+  "status": "failed"
+}

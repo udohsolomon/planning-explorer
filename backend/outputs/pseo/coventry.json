@@ -1,0 +1,30 @@
+{
+  "authority_id": "coventry",
+  "authority_name": "Coventry",
+  "url_slug": "coventry",
+  "generated_at": "2025-10-07T15:43:35.292605",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T15:43:35.292607"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T15:43:35.311324"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T15:43:35.311417"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T15:43:35.333642"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072243429c17f6a2d51648e6'}",
+  "status": "failed"
+}

@@ -1,0 +1,30 @@
+{
+  "authority_id": "south-tyneside",
+  "authority_name": "South Tyneside",
+  "url_slug": "south-tyneside",
+  "generated_at": "2025-10-07T16:19:53.607155",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:19:53.607157"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:19:53.607529"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:20:15.626159"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:20:15.653649"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007232021e7838046fb054fb1'}",
+  "status": "failed"
+}

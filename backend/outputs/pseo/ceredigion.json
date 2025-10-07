@@ -1,0 +1,30 @@
+{
+  "authority_id": "ceredigion",
+  "authority_name": "Ceredigion",
+  "url_slug": "ceredigion",
+  "generated_at": "2025-10-07T16:15:34.453920",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:15:34.453922"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:15:34.459665"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:15:54.465842"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:15:54.504842"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007231601af7dca75b21d456c'}",
+  "status": "failed"
+}

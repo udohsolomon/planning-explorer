@@ -1,0 +1,30 @@
+{
+  "authority_id": "cambridgeshire",
+  "authority_name": "Cambridgeshire",
+  "url_slug": "cambridgeshire",
+  "generated_at": "2025-10-07T16:26:15.465074",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:26:15.465077"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:26:15.465445"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:26:46.222438"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:26:46.246003"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072326532664928a9b9a4011'}",
+  "status": "failed"
+}

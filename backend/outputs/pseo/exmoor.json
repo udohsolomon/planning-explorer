@@ -1,0 +1,30 @@
+{
+  "authority_id": "exmoor",
+  "authority_name": "Exmoor",
+  "url_slug": "exmoor",
+  "generated_at": "2025-10-07T16:24:27.914827",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:24:27.914828"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:24:27.915105"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:24:49.082074"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:24:49.118002"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007232454fca9b6258ec944b5'}",
+  "status": "failed"
+}

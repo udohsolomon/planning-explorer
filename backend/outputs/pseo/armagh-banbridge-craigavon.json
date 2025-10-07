@@ -1,0 +1,30 @@
+{
+  "authority_id": "armagh-banbridge-craigavon",
+  "authority_name": "Armagh Banbridge Craigavon",
+  "url_slug": "armagh-banbridge-craigavon",
+  "generated_at": "2025-10-07T16:09:54.288945",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:09:54.288947"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:10:02.442608"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:10:12.695752"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:10:12.719416"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007231021c79e557fa615444c'}",
+  "status": "failed"
+}

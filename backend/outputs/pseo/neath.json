@@ -1,0 +1,30 @@
+{
+  "authority_id": "neath",
+  "authority_name": "Neath",
+  "url_slug": "neath",
+  "generated_at": "2025-10-07T16:19:42.113598",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:19:42.113606"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:19:42.113891"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:19:45.862796"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:19:45.894209"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007231953c4b71c2dfc204abf'}",
+  "status": "failed"
+}

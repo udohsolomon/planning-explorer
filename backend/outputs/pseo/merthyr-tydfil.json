@@ -1,0 +1,30 @@
+{
+  "authority_id": "merthyr-tydfil",
+  "authority_name": "Merthyr Tydfil",
+  "url_slug": "merthyr-tydfil",
+  "generated_at": "2025-10-07T16:24:27.914800",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:24:27.914802"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:24:27.915083"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:24:38.957047"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:24:38.984839"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007232447bfddcfa659354e69'}",
+  "status": "failed"
+}

@@ -1,0 +1,30 @@
+{
+  "authority_id": "brentwood",
+  "authority_name": "Brentwood",
+  "url_slug": "brentwood",
+  "generated_at": "2025-10-07T14:49:28.059473",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T14:49:28.059478"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T14:49:28.109073"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T14:53:20.637525"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T14:53:20.726009"
+    }
+  ],
+  "error": "Error code: 400 - {'type': 'error', 'error': {'type': '1301', 'message': 'System detected potentially unsafe or sensitive content in input or generation. Please avoid using prompts that may generate sensitive content. Thank you for your cooperation.'}, 'request_id': '2025100721533417d0501f183f4c98'}",
+  "status": "failed"
+}

@@ -1,0 +1,30 @@
+{
+  "authority_id": "pembrokeshire",
+  "authority_name": "Pembrokeshire",
+  "url_slug": "pembrokeshire",
+  "generated_at": "2025-10-07T16:13:28.695676",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:13:28.695685"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:13:28.696365"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:14:42.896097"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:14:42.990673"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '2025100723145092e26fe0759a4d21'}",
+  "status": "failed"
+}

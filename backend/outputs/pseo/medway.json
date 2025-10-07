@@ -1,0 +1,30 @@
+{
+  "authority_id": "medway",
+  "authority_name": "Medway",
+  "url_slug": "medway",
+  "generated_at": "2025-10-07T15:49:21.926065",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T15:49:21.926066"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T15:49:38.120519"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T15:49:52.092306"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T15:49:52.118045"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007224959eaad0918c65f47ef'}",
+  "status": "failed"
+}

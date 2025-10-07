@@ -1,0 +1,30 @@
+{
+  "authority_id": "torfaen",
+  "authority_name": "Torfaen",
+  "url_slug": "torfaen",
+  "generated_at": "2025-10-07T16:21:57.876933",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:21:57.876938"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:21:57.877454"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:22:33.082202"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:22:33.117986"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '2025100723224086553c90535f4881'}",
+  "status": "failed"
+}

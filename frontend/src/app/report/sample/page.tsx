@@ -1,5 +1,16 @@
 'use client'
 
+/**
+ * Sample Report Preview Page
+ *
+ * This page demonstrates the Planning Explorer professional report template
+ * with live enrichment agent integration for Applicant and Agent Name fields.
+ *
+ * The sample data includes both fields populated to show the final result,
+ * but in production, these fields would be populated in real-time by the
+ * enrichment agent as described in the main report page.
+ */
+
 import { useState } from 'react'
 import { Container } from '@/components/ui/Container'
 import { Button } from '@/components/ui/Button'
@@ -33,6 +44,7 @@ const sampleApplication = {
   opportunity_score: 85,
   approval_probability: 0.78,
   applicant_name: "Sample Developments Ltd",
+  agent_name: "Planning Solutions LLP",
   application_type: "Full Planning Permission",
   case_officer: "John Smith",
   n_documents: 12,

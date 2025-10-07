@@ -1,0 +1,30 @@
+{
+  "authority_id": "bolsover",
+  "authority_name": "Bolsover",
+  "url_slug": "bolsover",
+  "generated_at": "2025-10-07T16:08:19.511491",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:08:19.511493"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:08:26.538595"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:09:16.231202"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:09:16.262093"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007230921fae4b51ee6654b9f'}",
+  "status": "failed"
+}

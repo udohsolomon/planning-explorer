@@ -1,0 +1,30 @@
+{
+  "authority_id": "fermanagh-and-omagh",
+  "authority_name": "Fermanagh and Omagh",
+  "url_slug": "fermanagh-and-omagh",
+  "generated_at": "2025-10-07T16:10:40.676590",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:10:40.676593"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:10:40.676908"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:11:06.508380"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:11:06.528580"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007231112f060d06bfbcd49a9'}",
+  "status": "failed"
+}

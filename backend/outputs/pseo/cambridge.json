@@ -1,0 +1,45 @@
+{
+  "authority_id": "cambridge",
+  "authority_name": "Cambridge",
+  "url_slug": "cambridge",
+  "generated_at": "2025-10-07T04:54:52.065932",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T04:54:52.065940"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T04:54:52.066089"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T04:54:52.066166"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T04:54:52.101079"
+    },
+    {
+      "step": 5,
+      "action": "SEO optimization",
+      "timestamp": "2025-10-07T04:56:25.809820"
+    },
+    {
+      "step": 6,
+      "action": "Page assembly",
+      "timestamp": "2025-10-07T04:56:25.809841"
+    },
+    {
+      "step": 7,
+      "action": "Save page",
+      "timestamp": "2025-10-07T04:56:25.810057"
+    }
+  ],
+  "error": "'NoneType' object has no attribute 'index'",
+  "status": "failed"
+}

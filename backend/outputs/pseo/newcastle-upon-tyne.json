@@ -1,0 +1,30 @@
+{
+  "authority_id": "newcastle-upon-tyne",
+  "authority_name": "Newcastle upon Tyne",
+  "url_slug": "newcastle-upon-tyne",
+  "generated_at": "2025-10-07T15:53:12.402138",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T15:53:12.402140"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T15:53:18.604122"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T15:53:30.107422"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T15:53:30.139243"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '2025100722533848711df014b44663'}",
+  "status": "failed"
+}

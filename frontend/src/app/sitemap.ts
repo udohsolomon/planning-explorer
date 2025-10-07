@@ -33,7 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${BASE_URL}/authorities`,
+      url: `${BASE_URL}/planning-applications`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.9,
@@ -55,7 +55,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Authority pages (425 pages)
   const authorityPages: MetadataRoute.Sitemap = Object.entries(slugsData.authorities).map(
     ([name, slug]) => ({
-      url: `${BASE_URL}/authorities/${slug}`,
+      url: `${BASE_URL}/planning-applications/${slug}`,
       lastModified: currentDate,
       changeFrequency: 'daily' as const,
       priority: 0.8,

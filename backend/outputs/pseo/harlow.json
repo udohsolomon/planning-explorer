@@ -1,0 +1,30 @@
+{
+  "authority_id": "harlow",
+  "authority_name": "Harlow",
+  "url_slug": "harlow",
+  "generated_at": "2025-10-07T16:09:54.288971",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:09:54.288972"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:10:02.442715"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:10:48.854989"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:10:48.883437"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007231057e80fdcc59e62446b'}",
+  "status": "failed"
+}

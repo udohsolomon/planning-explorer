@@ -1,0 +1,30 @@
+{
+  "authority_id": "bury",
+  "authority_name": "Bury",
+  "url_slug": "bury",
+  "generated_at": "2025-10-07T16:13:28.695759",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:13:28.695760"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:13:28.696471"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:13:28.696560"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:13:28.721189"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072313355a2c8f14757246d8'}",
+  "status": "failed"
+}

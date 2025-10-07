@@ -1,0 +1,30 @@
+{
+  "authority_id": "dartmoor",
+  "authority_name": "Dartmoor",
+  "url_slug": "dartmoor",
+  "generated_at": "2025-10-07T16:20:22.397170",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:20:22.397176"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:20:22.397541"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:21:04.926355"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:21:04.948887"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007232113d306e6cf6bd24076'}",
+  "status": "failed"
+}

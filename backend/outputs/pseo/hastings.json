@@ -1,0 +1,30 @@
+{
+  "authority_id": "hastings",
+  "authority_name": "Hastings",
+  "url_slug": "hastings",
+  "generated_at": "2025-10-07T16:02:15.491273",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:02:15.491279"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:02:15.496745"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:02:46.279865"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:02:46.318635"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007230254e8ac68261108409f'}",
+  "status": "failed"
+}

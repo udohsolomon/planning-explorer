@@ -68,7 +68,7 @@ const faqs = [
     questions: [
       {
         q: 'Can I change my plan at any time?',
-        a: 'Yes! You can upgrade or downgrade your plan anytime. Changes take effect in your next billing cycle, and we'll prorate any adjustments.'
+        a: 'Yes! You can upgrade or downgrade your plan anytime. Changes take effect in your next billing cycle, and we\'ll prorate any adjustments.'
       },
       {
         q: 'What payment methods do you accept?',

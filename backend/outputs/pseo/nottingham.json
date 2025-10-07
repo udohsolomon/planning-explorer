@@ -1,0 +1,30 @@
+{
+  "authority_id": "nottingham",
+  "authority_name": "Nottingham",
+  "url_slug": "nottingham",
+  "generated_at": "2025-10-07T15:53:12.402099",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T15:53:12.402105"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T15:53:12.402656"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T15:53:12.402719"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T15:53:12.425329"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '2025100722531740b3723ff7e34bfd'}",
+  "status": "failed"
+}

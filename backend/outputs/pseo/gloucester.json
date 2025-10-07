@@ -1,0 +1,30 @@
+{
+  "authority_id": "gloucester",
+  "authority_name": "Gloucester",
+  "url_slug": "gloucester",
+  "generated_at": "2025-10-07T16:05:19.171004",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:05:19.171006"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:05:19.189804"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:05:19.189866"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:05:19.216642"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '20251007230524239c5cf925a347b9'}",
+  "status": "failed"
+}

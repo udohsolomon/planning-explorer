@@ -1,0 +1,30 @@
+{
+  "authority_id": "western-isles",
+  "authority_name": "Western Isles",
+  "url_slug": "western-isles",
+  "generated_at": "2025-10-07T16:24:27.914870",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:24:27.914871"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:24:27.915140"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:24:31.746023"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:24:31.774639"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072324394b4cfa92a9594d4d'}",
+  "status": "failed"
+}

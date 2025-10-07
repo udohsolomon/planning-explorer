@@ -1,0 +1,30 @@
+{
+  "authority_id": "brecon-beacons",
+  "authority_name": "Brecon Beacons",
+  "url_slug": "brecon-beacons",
+  "generated_at": "2025-10-07T16:21:37.809926",
+  "generation_log": [
+    {
+      "step": 1,
+      "action": "Data extraction",
+      "timestamp": "2025-10-07T16:21:37.809929"
+    },
+    {
+      "step": 2,
+      "action": "Web scraping",
+      "timestamp": "2025-10-07T16:21:37.825228"
+    },
+    {
+      "step": 3,
+      "action": "Context enrichment",
+      "timestamp": "2025-10-07T16:22:14.816323"
+    },
+    {
+      "step": 4,
+      "action": "AI content generation",
+      "timestamp": "2025-10-07T16:22:14.846646"
+    }
+  ],
+  "error": "Error code: 429 - {'type': 'error', 'error': {'type': '1113', 'message': 'Insufficient balance or no resource package. Please recharge.'}, 'request_id': '202510072322249e1d07dba57e4857'}",
+  "status": "failed"
+}
